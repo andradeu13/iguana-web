@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Iguana Corp — Evoluciona. Adapta. Domina. Sobrevive.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="logo"><img src="images/logo-iguana.webp" alt="Iguana Corp" class="logo-img"></div>
+    <div class="nav-center">
+      <a href="nosotros.html">Nosotros</a>
+      <a href="precios.html">Servicios</a>
+      <a href="es-para-ti.html">¿Es para ti?</a>
+    </div>
+    <div class="nav-right">
+      <a href="https://wa.me/593959420676" target="_blank" rel="noopener" class="btn btn-primary" style="padding:11px 20px; font-size:13.5px;">Agenda Gratis</a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="navMobile">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+<div class="nav-mobile" id="navMobile">
+  <a href="nosotros.html">Nosotros</a>
+  <a href="precios.html">Servicios</a>
+  <a href="es-para-ti.html">¿Es para ti?</a>
+  <a href="https://wa.me/593959420676" target="_blank" rel="noopener" class="btn btn-primary">Agenda Gratis</a>
+</div>
+
+<!-- ============ HERO — parallax + kinetic type ============ -->
+<section class="hero" id="hero" style="min-height:100vh;">
+  <div class="hero-bg" aria-hidden="true">
+    <div class="grid" data-parallax="0.25"></div>
+    <div class="blob b1" data-parallax="0.55"></div>
+    <div class="blob b2" data-parallax="0.35"></div>
+    <div class="blob b3" data-parallax="0.7"></div>
+  </div>
+
+  <img src="images/iguana-hero.webp" alt="Iguana marina sobre roca volcánica de Galápagos" class="hero-iguana" data-parallax="0.18">
+  <img src="images/hero-rocas.webp" alt="Rocas volcánicas y cactus de Galápagos" class="hero-rocas" data-parallax="0.28">
+
+  <div class="wrap" data-parallax="-0.08">
+    <h1 class="hero-h1">
+      <span class="line line-1">
+        <span class="word">Tu</span>
+        <span class="word">negocio</span>
+        <span class="word">no</span>
+        <span class="word">necesita</span>
+      </span>
+      <span class="line line-2">
+        <span class="word cycle" data-cycle='["más manos.","más horas.","más planillas.","otro robot."]'>más manos.</span>
+      </span>
+      <span class="line line-3">
+        <span class="word">Necesita</span>
+        <span class="word soft">evolucionar.</span>
+      </span>
+    </h1>
+
+    <p class="lead">Un agente que responde tu WhatsApp con tu tono, y una agenda que no se olvida. Configurado por nosotros — listo en días, no en meses.</p>
+    <div class="hero-ctas">
+      <a href="https://wa.me/593959420676" target="_blank" rel="noopener" class="btn btn-primary">Quiero mi Diagnóstico Gratis</a>
+      <a href="#como-funciona" class="btn-text">Ver cómo funciona</a>
+    </div>
+
+
+  </div>
+
+  <div class="hero-scroll-hint" aria-hidden="true">
+    <span>Desliza</span>
+    <span class="hero-scroll-line"></span>
+  </div>
+</section>
+
+<!-- ============ ABOUT / STATS — 2ª sección, se pinta de negro al hacer scroll ============ -->
+<section class="about" id="como-funciona">
+  <div class="wrap about-grid">
+    <div class="bio-card reveal">
+      <div>
+        <h3>Iguana Corp</h3>
+        <p>Somos un estudio de innovación y automatización con IA agéntica. Construimos ecosistemas digitales completos para que tu negocio recupere el tiempo que hoy pierde en tareas repetitivas y se mantenga a la vanguardia frente a los demás. Hoy, ese ecosistema empieza en el WhatsApp que ya usas.</p>
+
+        <a class="slide-cta" id="slideCta" href="nosotros.html" aria-label="Ir a la página Nosotros">
+          <span class="slide-text" id="slideText">Conoce el modelo completo</span>
+          <span class="slide-arrow-static" aria-hidden="true">→</span>
+          <img src="images/iguana%20nado/1.webp" alt="" class="slide-iguana" id="slideIguana" aria-hidden="true">
+        </a>
+      </div>
+    </div>
+    <div class="stats-grid reveal">
+      <div class="stat-card">
+        <div class="num">91<sup>%</sup></div>
+        <div class="label">de las MiPymes en Ecuador quiere digitalizarse pero no sabe por dónde empezar</div>
+      </div>
+      <div class="stat-card">
+        <div class="num">2–4<sup>h</sup></div>
+        <div class="label">horas al día que se buscan recuperar de tareas manuales</div>
+      </div>
+      <div class="stat-card">
+        <div class="num">40<sup>%</sup></div>
+        <div class="label">de reducción esperada en citas perdidas (no-shows)</div>
+      </div>
+      <div class="stat-card">
+        <div class="num">1<sup>x</sup></div>
+        <div class="label">solo canal para empezar: el WhatsApp que ya usas</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPLORA — 3ª sección, blanco ============ -->
+<section class="explore">
+  <div class="wrap">
+    <div class="explore-head reveal">
+      <h2>Inspirado en <span class="accent">Galápagos</span></h2>
+    </div>
+
+    <div class="explore-fan" id="exploreFan" aria-hidden="true">
+      <div class="fan-photo" style="--r:-16deg; --y:40px;">
+        <img src="https://images.unsplash.com/photo-1506799964541-c7117a42cc22?w=400&q=80&fit=crop&auto=format" alt="" loading="lazy" decoding="async">
+      </div>
+      <div class="fan-photo" style="--r:-8deg; --y:12px;">
+        <img src="https://images.unsplash.com/photo-1595517930215-d2778a56ac93?w=400&q=80&fit=crop&auto=format" alt="" loading="lazy" decoding="async">
+      </div>
+      <div class="fan-photo" style="--r:0deg; --y:-14px;">
+        <img src="https://images.unsplash.com/photo-1503301360699-4f60cf292ec8?w=400&q=80&fit=crop&auto=format" alt="" loading="lazy" decoding="async">
+      </div>
+      <div class="fan-photo" style="--r:8deg; --y:12px;">
+        <img src="https://images.unsplash.com/photo-1533787896899-91b040188f57?w=400&q=80&fit=crop&auto=format" alt="" loading="lazy" decoding="async">
+      </div>
+      <div class="fan-photo" style="--r:16deg; --y:40px;">
+        <img src="https://images.unsplash.com/photo-1706957614198-8d2e5f0ed6ea?w=400&q=80&fit=crop&auto=format" alt="" loading="lazy" decoding="async">
+      </div>
+    </div>
+
+    <p class="explore-caption reveal">No es un producto hecho en Galápagos — es un producto <span class="accent-soft">inspirado</span> en la forma en que sus especies aprendieron a evolucionar.</p>
+
+    <div class="explore-links reveal">
+      <a href="nosotros.html" class="explore-link-item">Conócenos →</a>
+      <a href="precios.html" class="explore-link-item">Ver planes →</a>
+      <a href="es-para-ti.html" class="explore-link-item">Hacer el diagnóstico →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ISLANDS MAP — 4ª sección, blanco ============ -->
+<section class="islands-3d">
+  <div class="wrap islands-3d-grid">
+    <div class="islands-3d-copy reveal">
+      <h2>Recorre el archipiélago</h2>
+      <p class="lead">Cada plan de Iguana Corp lleva el nombre de una isla real de Galápagos, en el mismo mapa. Más islas se suman pronto.</p>
+
+      <div class="island-picker-row">
+        <button class="island-nav" id="islandPrev" type="button" aria-label="Isla anterior">‹</button>
+        <div class="island-picker" id="homeIslandPicker">
+          <span class="island-picker-thumb" id="homeIslandThumb"></span>
+        </div>
+        <button class="island-nav" id="islandNext" type="button" aria-label="Isla siguiente">›</button>
+      </div>
+
+      <p class="island-caption" id="homeIslandCaption">Isabela es, ella sola, más de la mitad de Galápagos, con el volcán más alto del archipiélago. El plan más completo, con tu propio número.</p>
+      <a href="precios.html" class="btn-text">Ver planes completos →</a>
+    </div>
+
+    <div class="islands-3d-stage-wrap">
+      <div class="islands-3d-stage" id="islandsStage">
+        <div class="map-world" id="mapWorld">
+          <div class="map-island" data-island="fernandina" style="left:90px; top:235px;">
+            <span class="map-label">Fernandina</span>
+            <img src="images/isla-fernandina.webp" alt="Isla Fernandina, Galápagos" class="map-island-art" style="width:100px;" loading="lazy" decoding="async">
+          </div>
+          <div class="map-island" data-island="santiago" style="left:380px; top:175px;">
+            <span class="map-label">Santiago</span>
+            <img src="images/isla-santiago.webp" alt="Isla Santiago, Galápagos" class="map-island-art" style="width:95px; transform:rotate(23deg);" loading="lazy" decoding="async">
+          </div>
+          <div class="map-island" data-island="sancristobal" style="left:820px; top:300px;">
+            <span class="map-label">San Cristóbal</span>
+            <img src="images/isla-sancristobal.webp" alt="Isla San Cristóbal, Galápagos" class="map-island-art" style="width:95px;" loading="lazy" decoding="async">
+          </div>
+          <div class="map-island" data-island="isabela" style="left:260px; top:270px;">
+            <span class="map-label">Isabela</span>
+            <img src="images/isla-isabela.webp" alt="Isla Isabela, Galápagos" class="map-island-art" style="width:260px; opacity:.85;" loading="lazy" decoding="async">
+          </div>
+          <div class="map-island" data-island="santacruz" style="left:560px; top:250px;">
+            <span class="map-label">Santa Cruz</span>
+            <img src="images/isla-santacruz.webp" alt="Isla Santa Cruz, Galápagos" class="map-island-art" style="width:120px;" loading="lazy" decoding="async">
+          </div>
+        </div>
+        <div class="islands-3d-fade-top" aria-hidden="true"></div>
+        <div class="islands-3d-fade-bottom" aria-hidden="true"></div>
+      </div>
+      <div class="island-dots" id="islandDots" role="tablist" aria-label="Seleccionar isla"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WORKING ON ============ -->
+<section class="working">
+  <div class="wrap">
+    <div class="working-head reveal">
+      <h2>Lo que estamos construyendo para tu negocio</h2>
+    </div>
+    <div class="proj-row reveal">
+      <div class="proj-card">
+        <img class="proj-media" src="https://images.unsplash.com/photo-1719204718581-5c95889c8ec9?w=760&q=68&fm=webp&fit=crop&auto=format" alt="Agente de WhatsApp respondiendo en un teléfono" loading="lazy" decoding="async">
+        <div class="proj-body">
+          <span class="tag">Atención automática</span>
+          <h4>Respuestas que suenan a ti</h4>
+          <p>Precios, horarios y disponibilidad, respondidos al instante.</p>
+        </div>
+      </div>
+      <div class="proj-card">
+        <img class="proj-media" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=760&q=68&fm=webp&fit=crop&auto=format" alt="Panel de agenda y métricas en una pantalla" loading="lazy" decoding="async">
+        <div class="proj-body">
+          <span class="tag">Panel de agenda</span>
+          <h4>Tu tiempo, de un vistazo</h4>
+          <p>Citas, horarios libres y conversaciones en un solo lugar.</p>
+        </div>
+      </div>
+      <div class="proj-card">
+        <img class="proj-media" src="https://images.unsplash.com/photo-1764818958908-d5efcec563d1?w=760&q=68&fm=webp&fit=crop&auto=format" alt="Agenda con recordatorios de citas" loading="lazy" decoding="async">
+        <div class="proj-body">
+          <span class="tag">Recordatorios</span>
+          <h4>Menos citas perdidas</h4>
+          <p>Recordatorios automáticos antes de cada cita.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PAIN ============ -->
+<section class="pain">
+  <div class="wrap">
+    <div class="pain-head reveal">
+      <h2>Perder clientes por no contestar <span class="accent">no es falta de talento</span>.</h2>
+    </div>
+
+    <div class="timeline" id="painTimeline">
+      <div class="timeline-track"></div>
+      <img src="images/iguana%20nado/1.webp" alt="" class="timeline-swimmer" id="timelineSwimmer">
+
+      <div class="pain-card reveal">
+        <div class="card-tab">WhatsApp / Atención</div>
+        <h4>Hoy</h4>
+        <p>Un cliente escribe a las 9pm preguntando precios. Lo ves recién al otro día — ya escogió a la competencia que sí contestó.</p>
+        <div class="sol"><h4>Con Iguana Corp</h4><p>Responde automáticamente lo que se pregunta siempre, al instante.</p></div>
+      </div>
+
+      <div class="pain-card reveal">
+        <div class="card-tab">Agenda y citas</div>
+        <h4>Hoy</h4>
+        <p>Confirmas una cita por WhatsApp, la anotas en un cuaderno, y aun así el cliente no llega.</p>
+        <div class="sol"><h4>Con Iguana Corp</h4><p>Recordatorios automáticos antes de cada cita.</p></div>
+      </div>
+
+      <div class="pain-card reveal">
+        <div class="card-tab">Seguimiento y cobros</div>
+        <h4>Hoy</h4>
+        <p>Alguien te debe una cuota. Lo tienes anotado en tres lugares distintos y ninguno coincide.</p>
+        <div class="sol"><h4>Con Iguana Corp</h4><p>Un solo lugar donde ves quién te debe, cuándo y cuánto.</p></div>
+      </div>
+
+      <div class="pain-card reveal">
+        <div class="card-tab">Falta de tiempo</div>
+        <h4>Hoy</h4>
+        <p>Sabes que necesitas digitalizarte, pero no hay tiempo ni conocimiento técnico.</p>
+        <div class="sol"><h4>Con Iguana Corp</h4><p>Nosotros configuramos todo. Tú solo apruebas.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ QUIEBRE 1 — marquee negro ============ -->
+<section class="dark-break" aria-hidden="true">
+  <div class="marquee">
+    <div class="marquee-track" id="marqueeTrack1">
+      <span>Evoluciona</span><span class="dot">·</span>
+      <span>Adapta</span><span class="dot">·</span>
+      <span>Domina</span><span class="dot">·</span>
+      <span>Sobrevive</span><span class="dot">·</span>
+      <span>Evoluciona</span><span class="dot">·</span>
+      <span>Adapta</span><span class="dot">·</span>
+      <span>Domina</span><span class="dot">·</span>
+      <span>Sobrevive</span><span class="dot">·</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COMPARE ============ -->
+<section class="compare">
+  <div class="wrap">
+    <div class="compare-head reveal">
+      <span class="pill dot" style="background:rgba(255,255,255,0.1); color:rgba(255,255,255,0.7); border:none;">Comparativa</span>
+      <h2>Más seguro que quedarte igual</h2>
+    </div>
+    <div class="compare-grid reveal">
+
+      <!-- Agencias -->
+      <div class="cmp-card">
+        <p class="cmp-name">Agencias</p>
+        <div class="cmp-rows">
+          <div class="cmp-row">
+            <span class="cmp-label">⏱ Tiempo</span>
+            <span class="cmp-val">2–4 meses</span>
+          </div>
+          <div class="cmp-row">
+            <span class="cmp-label">💰 Costo</span>
+            <span class="cmp-val">Proyecto grande</span>
+          </div>
+          <div class="cmp-row">
+            <span class="cmp-label">🔧 Técnico</span>
+            <span class="cmp-val">Depende del proveedor</span>
+          </div>
+          <div class="cmp-row">
+            <span class="cmp-label">⚠️ Riesgo</span>
+            <span class="cmp-val">Ya pagaste todo</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hazlo tú mismo -->
+      <div class="cmp-card">
+        <p class="cmp-name">Hazlo tú mismo</p>
+        <div class="cmp-rows">
+          <div class="cmp-row">
+            <span class="cmp-label">⏱ Tiempo</span>
+            <span class="cmp-val">Semanas de prueba y error</span>
+          </div>
+          <div class="cmp-row">
+            <span class="cmp-label">💰 Costo</span>
+            <span class="cmp-val">Tu tiempo vale mucho</span>
+          </div>
+          <div class="cmp-row">
+            <span class="cmp-label">🔧 Técnico</span>
+            <span class="cmp-val">Lo aprendes tú</span>
+          </div>
+          <div class="cmp-row">
+            <span class="cmp-label">⚠️ Riesgo</span>
+            <span class="cmp-val">Perdiste tiempo y ánimo</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quedarte igual -->
+      <div class="cmp-card cmp-card--worst">
+        <p class="cmp-name">Quedarte igual</p>
+        <div class="cmp-rows">
+          <div class="cmp-row">
+            <span class="cmp-label">⏱ Tiempo</span>
+            <span class="cmp-val">Nunca</span>
+          </div>
+          <div class="cmp-row">
+            <span class="cmp-label">💰 Costo</span>
+            <span class="cmp-val">Clientes perdidos</span>
+          </div>
+          <div class="cmp-row">
+            <span class="cmp-label">🔧 Técnico</span>
+            <span class="cmp-val">Ese es el problema</span>
+          </div>
+          <div class="cmp-row">
+            <span class="cmp-label">⚠️ Riesgo</span>
+            <span class="cmp-val">Sigues perdiendo clientes</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Iguana Corp — WINNER -->
+      <div class="cmp-card cmp-card--win">
+        <span class="cmp-win-badge">La mejor opción</span>
+        <p class="cmp-name">Iguana Corp</p>
+        <div class="cmp-rows">
+          <div class="cmp-row">
+            <span class="cmp-label">⏱ Tiempo</span>
+            <span class="cmp-val">Días</span>
+          </div>
+          <div class="cmp-row">
+            <span class="cmp-label">💰 Costo</span>
+            <span class="cmp-val">Suscripción flexible</span>
+          </div>
+          <div class="cmp-row">
+            <span class="cmp-label">🔧 Técnico</span>
+            <span class="cmp-val">Lo configuramos todo</span>
+          </div>
+          <div class="cmp-row">
+            <span class="cmp-label">⚠️ Riesgo</span>
+            <span class="cmp-val">Cancelas cuando quieras</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ FEATURES ============ -->
+<section class="features">
+  <div class="wrap">
+    <div class="features-head reveal">
+      <h2>Todo listo, sin mover un dedo</h2>
+    </div>
+    <div class="feat-grid reveal">
+      <div class="feat-card"><span class="tag">Llave en mano</span><h3>Configuramos todo</h3><p>Tú apruebas, nosotros ejecutamos.</p><img class="feat-media" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=680&q=68&fm=webp&fit=crop&auto=format" alt="Configuración del sistema en una pantalla" loading="lazy" decoding="async"></div>
+      <div class="feat-card"><span class="tag">Atención automática</span><h3>Suena a ti</h3><p>Respuestas inmediatas, con tu tono.</p><img class="feat-media" src="https://images.unsplash.com/photo-1719204718581-5c95889c8ec9?w=680&q=68&fm=webp&fit=crop&auto=format" alt="Respuesta de WhatsApp en un teléfono" loading="lazy" decoding="async"></div>
+      <div class="feat-card"><span class="tag">Memoria de negocio</span><h3>Todo a la mano</h3><p>Precios y políticas siempre accesibles.</p><img class="feat-media" src="https://images.unsplash.com/photo-1764818958908-d5efcec563d1?w=680&q=68&fm=webp&fit=crop&auto=format" alt="Notas y agenda del negocio organizadas" loading="lazy" decoding="async"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SCATTER 3D — galería flotante de tarjetas ============ -->
+<section class="scatter-section" id="scatterSection">
+  <div class="scatter-viewport">
+    <div class="scatter-scene" id="scatterScene">
+
+      <!-- Card 1 · imagen · iguana-hero · a=0° -->
+      <div class="sc-card sc-img" style="--tx:380px;--ty:-30px;--tz:0px;--rz:-4deg;">
+        <img src="images/iguana-hero.webp" alt="Iguana marina de Galápagos" loading="lazy" decoding="async">
+      </div>
+
+      <!-- Card 2 · texto · 91% · a=30° -->
+      <div class="sc-card sc-txt" style="--tx:329px;--ty:50px;--tz:175px;--rz:3deg;">
+        <div>
+          <span class="sc-tag">Mercado</span>
+          <div class="sc-stat">91<sup>%</sup></div>
+        </div>
+        <p>de MiPymes en Ecuador quiere digitalizarse</p>
+      </div>
+
+      <!-- Card 3 · imagen · WhatsApp · a=60° -->
+      <div class="sc-card sc-img" style="--tx:190px;--ty:-60px;--tz:303px;--rz:2deg;">
+        <img src="https://images.unsplash.com/photo-1719204718581-5c95889c8ec9?w=360&q=82&fit=crop&auto=format&fm=webp" alt="WhatsApp automático en un teléfono" loading="lazy" decoding="async">
+      </div>
+
+      <!-- Card 4 · texto · instante · a=90° -->
+      <div class="sc-card sc-txt" style="--tx:0px;--ty:80px;--tz:350px;--rz:-3deg;">
+        <span class="sc-tag">Atención</span>
+        <h3>Responde al instante.</h3>
+        <p>Con tu tono, 24/7</p>
+      </div>
+
+      <!-- Card 5 · imagen · Isabela · a=120° -->
+      <div class="sc-card sc-img sc-img--wide" style="--tx:-190px;--ty:-40px;--tz:303px;--rz:5deg;">
+        <img src="images/isla-isabela.webp" alt="Isla Isabela, Galápagos" loading="lazy" decoding="async">
+      </div>
+
+      <!-- Card 6 · texto · días · a=150° -->
+      <div class="sc-card sc-txt" style="--tx:-329px;--ty:30px;--tz:175px;--rz:-2deg;">
+        <span class="sc-tag">Velocidad</span>
+        <h3>Listo en días.</h3>
+        <p>No en meses</p>
+      </div>
+
+      <!-- Card 7 · imagen · iguana nado · a=180° -->
+      <div class="sc-card sc-img" style="--tx:-380px;--ty:-70px;--tz:0px;--rz:4deg;">
+        <img src="images/iguana%20nado/1.webp" alt="Iguana nadando en Galápagos" loading="lazy" decoding="async">
+      </div>
+
+      <!-- Card 8 · texto · 40% · a=210° -->
+      <div class="sc-card sc-txt" style="--tx:-303px;--ty:60px;--tz:-175px;--rz:-5deg;">
+        <div>
+          <span class="sc-tag">Resultados</span>
+          <div class="sc-stat">40<sup>%</sup></div>
+        </div>
+        <p>menos citas perdidas</p>
+      </div>
+
+      <!-- Card 9 · imagen · dashboard · a=240° -->
+      <div class="sc-card sc-img" style="--tx:-190px;--ty:-50px;--tz:-303px;--rz:3deg;">
+        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=360&q=82&fit=crop&auto=format&fm=webp" alt="Panel de agenda y métricas" loading="lazy" decoding="async">
+      </div>
+
+      <!-- Card 10 · texto · 2-4h · a=270° -->
+      <div class="sc-card sc-txt" style="--tx:0px;--ty:40px;--tz:-350px;--rz:-2deg;">
+        <div>
+          <span class="sc-tag">Eficiencia</span>
+          <div class="sc-stat">2–4<sup>h</sup></div>
+        </div>
+        <p>recuperadas al día</p>
+      </div>
+
+      <!-- Card 11 · imagen · rocas · a=300° -->
+      <div class="sc-card sc-img sc-img--wide" style="--tx:190px;--ty:-80px;--tz:-303px;--rz:4deg;">
+        <img src="images/hero-rocas.webp" alt="Costa volcánica de Galápagos" loading="lazy" decoding="async">
+      </div>
+
+      <!-- Card 12 · texto · flexible · a=330° -->
+      <div class="sc-card sc-txt" style="--tx:303px;--ty:20px;--tz:-175px;--rz:-3deg;">
+        <span class="sc-tag">Compromiso</span>
+        <h3>Cancelas cuando quieras.</h3>
+        <p>Sin permanencia</p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="scatter-copy wrap">
+    <h2 class="scatter-h2">La evolución ya empezó.<br><span class="scatter-accent">¿Tu negocio va a bordo?</span></h2>
+    <p>Todo lo que necesitas, configurado por nosotros. Listo en días.</p>
+    <a href="https://wa.me/593959420676" target="_blank" rel="noopener" class="btn btn-primary">Quiero mi Diagnóstico Gratis</a>
+  </div>
+</section>
+
+<!-- ============ QUIEBRE 2 — statement negro grande ============ -->
+<section class="dark-statement" id="darkStatement">
+  <div class="wrap">
+    <h2 class="statement-text">
+      <span class="statement-word">¿Quieres</span>
+      <span class="statement-word">ser</span>
+      <span class="statement-word">el</span>
+      <span class="statement-word">lagarto</span>
+      <span class="statement-word">que</span>
+      <span class="statement-word">se</span>
+      <span class="statement-word">quedó</span>
+      <span class="statement-word">en</span>
+      <span class="statement-word">tierra,</span>
+      <span class="statement-word">o</span>
+      <span class="statement-word statement-accent">el</span>
+      <span class="statement-word statement-accent">que</span>
+      <span class="statement-word statement-accent">aprendió</span>
+      <span class="statement-word statement-accent">a</span>
+      <span class="statement-word statement-accent">nadar?</span>
+    </h2>
+  </div>
+</section>
+
+<!-- ============ ARC GALLERY — Galápagos en movimiento ============ -->
+<section class="garc-section" id="garcSection">
+  <div class="garc-ring" id="garcRing">
+    <!-- Galápagos wildlife & landscape stock photos -->
+    <div class="garc-item"><img src="images/iguana-hero.webp" alt="Iguana marina de Galápagos" loading="lazy" decoding="async"></div>
+    <div class="garc-item"><img src="https://images.unsplash.com/photo-1540926030925-51b8e4baa491?w=300&h=370&q=82&fit=crop&crop=entropy&auto=format&fm=webp" alt="" loading="lazy" decoding="async"></div>
+    <div class="garc-item"><img src="https://images.unsplash.com/photo-1506799964541-c7117a42cc22?w=300&h=370&q=82&fit=crop&crop=entropy&auto=format&fm=webp" alt="" loading="lazy" decoding="async"></div>
+    <div class="garc-item"><img src="https://images.unsplash.com/photo-1595517930215-d2778a56ac93?w=300&h=370&q=82&fit=crop&crop=faces&auto=format&fm=webp" alt="" loading="lazy" decoding="async"></div>
+    <div class="garc-item"><img src="https://images.unsplash.com/photo-1503301360699-4f60cf292ec8?w=300&h=370&q=82&fit=crop&crop=entropy&auto=format&fm=webp" alt="" loading="lazy" decoding="async"></div>
+    <div class="garc-item"><img src="https://images.unsplash.com/photo-1757258632083-e9b8a5345047?w=300&h=370&q=82&fit=crop&crop=entropy&auto=format&fm=webp" alt="" loading="lazy" decoding="async"></div>
+    <div class="garc-item"><img src="https://images.unsplash.com/photo-1741456868616-dd15c485e2dd?w=300&h=370&q=82&fit=crop&crop=entropy&auto=format&fm=webp" alt="" loading="lazy" decoding="async"></div>
+    <div class="garc-item"><img src="https://images.unsplash.com/photo-1761133135231-2f2fe70907e7?w=300&h=370&q=82&fit=crop&crop=entropy&auto=format&fm=webp" alt="" loading="lazy" decoding="async"></div>
+    <div class="garc-item"><img src="https://images.unsplash.com/photo-1755877153513-85bdc0e5b89b?w=300&h=370&q=82&fit=crop&crop=entropy&auto=format&fm=webp" alt="" loading="lazy" decoding="async"></div>
+    <div class="garc-item"><img src="images/hero-rocas.webp" alt="Costa volcánica de Galápagos" loading="lazy" decoding="async"></div>
+  </div>
+  <div class="garc-center-glow" aria-hidden="true"></div>
+  <div class="garc-content">
+    <h2>No es un paisaje.<br>Es una estrategia.</h2>
+    <p>El archipiélago que reimaginó la evolución — nuestra inspiración para reimaginar los negocios ecuatorianos.</p>
+    <a href="nosotros.html" class="btn btn-primary">Conoce el equipo →</a>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="faq">
+  <div class="faq-head reveal"><h2>FAQ</h2></div>
+  <div class="faq-item reveal open">
+    <button class="faq-q">¿Y si mis clientes notan que es "un robot"?<span class="icon">+</span></button>
+    <div class="faq-a"><p>El sistema responde solo lo repetitivo, con el tono de tu negocio. Lo demás llega directo a ti.</p></div>
+  </div>
+  <div class="faq-item reveal">
+    <button class="faq-q">No sé nada de tecnología, ¿de verdad no aprendo nada?<span class="icon">+</span></button>
+    <div class="faq-a"><p>No instalas nada. Configuramos todo directo en el WhatsApp que ya usas.</p></div>
+  </div>
+  <div class="faq-item reveal">
+    <button class="faq-q">¿Cuánto cuesta?<span class="icon">+</span></button>
+    <div class="faq-a"><p>Dos planes: número de Iguana Corp (suscripción baja) o tu propio número (con implementación adicional).</p></div>
+  </div>
+  <div class="faq-item reveal">
+    <button class="faq-q">¿Necesito contratar a alguien de sistemas?<span class="icon">+</span></button>
+    <div class="faq-a"><p>No. Lo mantenemos como parte de la suscripción.</p></div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section class="final-cta">
+  <div class="wrap">
+    <div class="final-cta-inner reveal">
+      <h2>¿Listo para dejar de perder clientes?</h2>
+      <p>Agenda un diagnóstico gratis de 15 minutos. Sin compromiso.</p>
+      <a href="https://wa.me/593959420676" target="_blank" rel="noopener" class="btn btn-primary">Quiero mi Diagnóstico Gratis</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="logo"><img src="images/logo-iguana.webp" alt="Iguana Corp" class="logo-img"></div>
+        <p>Evoluciona. Adapta. Domina. Sobrevive.</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col"><h5>Empresa</h5><a href="nosotros.html">Nosotros</a><a href="precios.html">Precios</a></div>
+        <div class="footer-col"><h5>Contacto</h5><a href="#">Agenda una llamada</a><a href="#">WhatsApp</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Iguana Corp</span>
+      <div class="socials"><a href="#">ig</a><a href="#">in</a><a href="#">tt</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script src="js/home.js" defer></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>
