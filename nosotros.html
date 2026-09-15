@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nosotros — Iguana Corp</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<style>
+/* ---- page-hero ---- */
+.page-hero{padding:140px 0 80px;text-align:center;background:var(--ink);border-bottom:1px solid #1a1a1a;}
+.page-hero h1{font-size:clamp(2.2rem,5vw,3.8rem);font-weight:800;line-height:1.15;max-width:760px;margin:0 auto 24px;}
+.page-hero .lead{font-size:1.15rem;color:var(--muted);max-width:580px;margin:0 auto 36px;}
+
+/* ---- galapagos section ---- */
+.galapagos-section{padding:100px 0;background:var(--ink);}
+.galapagos-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:56px;}
+.galapagos-card{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.09);border-radius:20px;padding:36px 32px;}
+.galapagos-card .gc-icon{font-size:2rem;margin-bottom:16px;}
+.galapagos-card h3{font-size:1.1rem;font-weight:700;color:var(--lime);margin-bottom:12px;}
+.galapagos-card p{color:var(--muted);line-height:1.75;font-size:.95rem;}
+@media(max-width:700px){.galapagos-grid{grid-template-columns:1fr;}}
+
+/* ---- realidad section ---- */
+.realidad-section{padding:100px 0;background:#0a0a0a;}
+.realidad-cols{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:56px;}
+.realidad-col{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.09);border-radius:20px;padding:36px 32px;}
+.realidad-col h3{font-size:.85rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:16px;}
+.realidad-col p{font-size:1rem;line-height:1.75;color:var(--txt);}
+.realidad-cta{margin-top:56px;text-align:center;}
+.realidad-cta h3{font-size:1.6rem;font-weight:800;max-width:560px;margin:0 auto 16px;}
+.realidad-cta p{color:var(--muted);max-width:480px;margin:0 auto 28px;}
+@media(max-width:700px){.realidad-cols{grid-template-columns:1fr;}}
+
+/* ---- team section ---- */
+.team-section{padding:100px 0;background:var(--ink);}
+.team-placeholder{margin-top:48px;background:rgba(255,255,255,0.03);border:1px dashed rgba(255,255,255,0.15);border-radius:20px;padding:56px 32px;text-align:center;}
+.team-placeholder p{color:var(--muted);font-size:.95rem;}
+</style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="logo"><a href="index.html"><img src="images/logo-iguana.webp" alt="Iguana Corp" class="logo-img"></a></div>
+    <div class="nav-center">
+      <a href="nosotros.html" class="active">Nosotros</a>
+      <a href="precios.html">Servicios</a>
+      <a href="es-para-ti.html">¿Es para ti?</a>
+    </div>
+    <div class="nav-right">
+      <a href="https://wa.me/593959420676" target="_blank" rel="noopener" class="btn btn-primary" style="padding:11px 20px;font-size:13.5px;">Agenda Gratis</a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="navMobile">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+<div class="nav-mobile" id="navMobile">
+  <a href="nosotros.html">Nosotros</a>
+  <a href="precios.html">Servicios</a>
+  <a href="es-para-ti.html">¿Es para ti?</a>
+  <a href="https://wa.me/593959420676" target="_blank" rel="noopener" class="btn btn-primary">Agenda Gratis</a>
+</div>
+
+<!-- HERO -->
+<section class="page-hero">
+  <div class="wrap">
+    <div class="pill reveal">Nuestro origen</div>
+    <h1 class="reveal">Ayudar a que ningún negocio ecuatoriano se quede varado por no saber nadar en digital.</h1>
+    <p class="lead reveal">Somos un estudio de innovación y automatización. No vendemos un chatbot: construimos el ecosistema digital completo que hoy te falta — y el agente de WhatsApp es solo la primera pieza que ya está en pie.</p>
+  </div>
+</section>
+
+<!-- POR QUÉ GALÁPAGOS -->
+<section class="galapagos-section">
+  <div class="wrap">
+    <div class="working-head reveal">
+      <div class="pill">La lógica detrás</div>
+      <h2>Por qué Galápagos</h2>
+      <p class="lead">Cada detalle de lo que hacemos tiene una razón natural. Igual que en las islas.</p>
+    </div>
+    <div class="galapagos-grid">
+      <div class="galapagos-card reveal">
+        <div class="gc-icon">🏝️</div>
+        <h3>El aislamiento crea evolución</h3>
+        <p>Galápagos está a 973 km de la costa de Ecuador. Ese aislamiento produjo su biodiversidad única: el 95% de sus reptiles son endémicos — no existen en ningún otro lugar. Las MiPymes ecuatorianas están en una posición parecida: las herramientas digitales que existen fueron construidas para otro contexto. Iguana Corp construye el ecosistema pensado para el tuyo.</p>
+      </div>
+      <div class="galapagos-card reveal">
+        <div class="gc-icon">🐦</div>
+        <h3>13 picos distintos, 13 soluciones distintas</h3>
+        <p>Los pinzones de Darwin son 13 especies, cada una con un pico de forma distinta según lo que come en su isla. Ningún pico sirve para todo. Así configuramos cada agente: no hay una plantilla única, hay un ajuste según lo que tu negocio realmente necesita.</p>
+      </div>
+      <div class="galapagos-card reveal">
+        <div class="gc-icon">🌋</div>
+        <h3>Las islas nunca están "terminadas"</h3>
+        <p>Galápagos es geológicamente joven, y varias de sus islas todavía tienen actividad volcánica activa hoy. Las islas no llegaron a un estado final: siguen cambiando. Así vemos el producto: no es un software que se entrega "terminado", es un sistema que se ajusta con el uso real de tu negocio.</p>
+      </div>
+      <div class="galapagos-card reveal">
+        <div class="gc-icon">🦅</div>
+        <h3>El cormorán que dejó de volar</h3>
+        <p>El cormorán no volador de Galápagos es el único del mundo que perdió la capacidad de volar — porque, sin depredadores en las islas, no la necesitaba. Toda esa energía se fue a lo que importaba: nadar y pescar. Automatizar lo repetitivo funciona igual: no es quitarte control, es liberar tu energía para lo que mueve tu negocio.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REALIDAD HOY / MAÑANA -->
+<section class="realidad-section">
+  <div class="wrap">
+    <div class="working-head reveal">
+      <div class="pill">Evolución real</div>
+      <h2>Tu negocio, antes y después</h2>
+    </div>
+    <div class="realidad-cols">
+      <div class="realidad-col reveal">
+        <h3>Tu realidad hoy</h3>
+        <p>Estás perdiendo clientes por no contestar a tiempo. No es que no te importe — es que entre atender el local, la casa y todo lo demás, no alcanza el día. Sabes que necesitas digitalizarte, pero no sabes por dónde empezar, y las opciones que ves son o muy caras o muy complicadas para tu negocio.</p>
+      </div>
+      <div class="realidad-col reveal">
+        <h3>Tu negocio mañana</h3>
+        <p>Imagina un negocio que responde solo lo repetitivo, que te recuerda las citas antes de que se te olviden, y que no te pide aprender nada nuevo. Tu conocimiento del negocio — lo que sabes que funciona con tus clientes — se vuelve parte del sistema, no algo que solo está en tu cabeza.</p>
+      </div>
+    </div>
+    <div class="realidad-cta">
+      <h3 class="reveal">La iguana marina aprendió a nadar para sobrevivir.<br>Tu negocio puede hacer lo mismo.</h3>
+      <p class="reveal">No reemplazamos cómo atiendes a tus clientes — te damos la habilidad que te falta para seguir compitiendo.</p>
+      <a href="https://wa.me/593959420676" target="_blank" rel="noopener" class="btn btn-primary reveal">Quiero mi Diagnóstico Gratis</a>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM (placeholder) -->
+<section class="team-section">
+  <div class="wrap">
+    <div class="working-head reveal">
+      <div class="pill">El equipo</div>
+      <h2>Las personas detrás de Iguana Corp</h2>
+    </div>
+    <div class="team-placeholder reveal">
+      <p>Próximamente: conoce al equipo fundador de Iguana Corp.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+  <div class="wrap">
+    <div class="final-cta-inner reveal">
+      <h2>¿Listo para evolucionar?</h2>
+      <p>Agenda un diagnóstico gratis de 15 minutos. Sin compromiso.</p>
+      <a href="https://wa.me/593959420676" target="_blank" rel="noopener" class="btn btn-primary">Quiero mi Diagnóstico Gratis</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="logo"><img src="images/logo-iguana.webp" alt="Iguana Corp" class="logo-img"></div>
+        <p>Evoluciona. Adapta. Domina. Sobrevive.</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col"><h5>Empresa</h5><a href="nosotros.html">Nosotros</a><a href="precios.html">Precios</a></div>
+        <div class="footer-col"><h5>Contacto</h5><a href="https://wa.me/593959420676" target="_blank" rel="noopener">WhatsApp</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Iguana Corp</span>
+      <div class="socials"><a href="#">ig</a><a href="#">in</a><a href="#">tt</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>¿Es para ti? — Iguana Corp</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<style>
+/* ---- page-hero ---- */
+.page-hero{padding:140px 0 80px;text-align:center;background:var(--ink);border-bottom:1px solid #1a1a1a;}
+.page-hero h1{font-size:clamp(2rem,5vw,3.6rem);font-weight:800;line-height:1.15;max-width:760px;margin:0 auto 24px;}
+.page-hero .lead{font-size:1.1rem;color:var(--muted);max-width:580px;margin:0 auto 36px;}
+
+/* ---- fit-section ---- */
+.fit-section{padding:100px 0;background:var(--ink);}
+.fit-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:56px;}
+.fit-card{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.09);border-radius:20px;padding:36px 32px;}
+.fit-card .fc-icon{font-size:1.8rem;margin-bottom:16px;}
+.fit-card h3{font-size:1.05rem;font-weight:700;margin-bottom:12px;}
+.fit-card p{color:var(--muted);line-height:1.75;font-size:.95rem;}
+@media(max-width:680px){.fit-grid{grid-template-columns:1fr;}}
+
+/* ---- negocios section ---- */
+.negocios-section{padding:80px 0;background:#0a0a0a;}
+.negocios-list{display:flex;flex-wrap:wrap;gap:16px;margin-top:40px;}
+.negocio-tag{background:rgba(176,255,0,0.08);border:1px solid rgba(176,255,0,0.25);border-radius:99px;padding:12px 24px;font-size:.95rem;font-weight:600;color:var(--lime);}
+
+/* ---- riesgo section ---- */
+.riesgo-section{padding:100px 0;background:var(--ink);}
+.riesgo-inner{max-width:700px;margin:56px auto 0;text-align:center;}
+.riesgo-inner .big-quote{font-size:clamp(1.25rem,3vw,1.65rem);font-weight:700;line-height:1.5;margin-bottom:24px;}
+.riesgo-inner p{color:var(--muted);font-size:1rem;line-height:1.75;margin-bottom:36px;}
+
+/* ---- contrast section (calza / no calza) ---- */
+.calza-section{padding:80px 0;background:#0a0a0a;}
+.calza-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:48px;max-width:800px;margin-left:auto;margin-right:auto;}
+.calza-col{border-radius:20px;padding:36px 32px;}
+.calza-col.yes{background:rgba(176,255,0,0.05);border:1px solid rgba(176,255,0,0.2);}
+.calza-col.no{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);}
+.calza-col h3{font-size:.85rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:20px;}
+.calza-col.yes h3{color:var(--lime);}
+.calza-col.no h3{color:var(--muted);}
+.calza-col ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:12px;}
+.calza-col ul li{font-size:.95rem;color:var(--muted);display:flex;align-items:flex-start;gap:10px;line-height:1.5;}
+.calza-col.yes ul li::before{content:"✓";color:var(--lime);font-weight:700;flex-shrink:0;}
+.calza-col.no ul li::before{content:"✗";color:#555;font-weight:700;flex-shrink:0;}
+@media(max-width:640px){.calza-grid{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="logo"><a href="index.html"><img src="images/logo-iguana.webp" alt="Iguana Corp" class="logo-img"></a></div>
+    <div class="nav-center">
+      <a href="nosotros.html">Nosotros</a>
+      <a href="precios.html">Servicios</a>
+      <a href="es-para-ti.html" class="active">¿Es para ti?</a>
+    </div>
+    <div class="nav-right">
+      <a href="https://wa.me/593959420676" target="_blank" rel="noopener" class="btn btn-primary" style="padding:11px 20px;font-size:13.5px;">Agenda Gratis</a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="navMobile">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+<div class="nav-mobile" id="navMobile">
+  <a href="nosotros.html">Nosotros</a>
+  <a href="precios.html">Servicios</a>
+  <a href="es-para-ti.html">¿Es para ti?</a>
+  <a href="https://wa.me/593959420676" target="_blank" rel="noopener" class="btn btn-primary">Agenda Gratis</a>
+</div>
+
+<!-- HERO -->
+<section class="page-hero">
+  <div class="wrap">
+    <div class="pill reveal">60 segundos</div>
+    <h1 class="reveal">Iguana Corp no es para todos.<br>Descúbrelo antes de agendar nada.</h1>
+    <p class="lead reveal">Si lo que quieres son días predecibles y un WhatsApp que no se te acumula, sigue leyendo.</p>
+    <a href="https://wa.me/593959420676" target="_blank" rel="noopener" class="btn btn-primary reveal">Empezar mi Diagnóstico Gratis</a>
+  </div>
+</section>
+
+<!-- DÓNDE FUNCIONA MEJOR -->
+<section class="fit-section">
+  <div class="wrap">
+    <div class="working-head reveal">
+      <div class="pill">Dónde encaja</div>
+      <h2>Dónde funciona mejor Iguana Corp</h2>
+    </div>
+    <div class="fit-grid">
+      <div class="fit-card reveal">
+        <div class="fc-icon">📱</div>
+        <h3>Atención repetitiva y por WhatsApp</h3>
+        <p>Negocios donde el cliente pregunta lo mismo muchas veces al día — precio, horario, disponibilidad — y agendar ocupa más tiempo que atender.</p>
+      </div>
+      <div class="fit-card reveal">
+        <div class="fc-icon">📅</div>
+        <h3>Muchas citas, poco personal</h3>
+        <p>Negocios donde una sola persona agenda, confirma y recuerda citas de memoria, y se le escapan. El sistema lo hace por ti.</p>
+      </div>
+      <div class="fit-card reveal">
+        <div class="fc-icon">⏱️</div>
+        <h3>No alcanza el día</h3>
+        <p>Sabes que necesitas digitalizarte, pero entre atender el local, la casa y todo lo demás, no hay tiempo para investigar herramientas. Nosotros configuramos todo.</p>
+      </div>
+      <div class="fit-card reveal">
+        <div class="fc-icon">💸</div>
+        <h3>Las opciones actuales son muy caras o complicadas</h3>
+        <p>Las agencias tradicionales cobran proyectos grandes. Las herramientas sueltas requieren tiempo y conocimiento técnico. Iguana Corp es la alternativa accesible y llave en mano.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TIPOS DE NEGOCIO -->
+<section class="negocios-section">
+  <div class="wrap">
+    <div class="working-head reveal">
+      <div class="pill">Ejemplos</div>
+      <h2>¿Tu negocio está aquí?</h2>
+      <p class="lead">Estos son los tipos de negocio donde Iguana Corp genera el mayor impacto desde el primer día.</p>
+    </div>
+    <div class="negocios-list reveal">
+      <span class="negocio-tag">Peluquerías y barberías</span>
+      <span class="negocio-tag">Consultorios dentales</span>
+      <span class="negocio-tag">Consultorios estéticos</span>
+      <span class="negocio-tag">Terapias y bienestar</span>
+      <span class="negocio-tag">Talleres y servicios técnicos</span>
+      <span class="negocio-tag">Abogados independientes</span>
+      <span class="negocio-tag">Contadores</span>
+      <span class="negocio-tag">Entrenadores personales</span>
+      <span class="negocio-tag">Profesionales con agenda propia</span>
+    </div>
+  </div>
+</section>
+
+<!-- CALZA / NO CALZA -->
+<section class="calza-section">
+  <div class="wrap">
+    <div class="working-head reveal">
+      <div class="pill">La prueba rápida</div>
+      <h2>¿Tu negocio calza aquí?</h2>
+    </div>
+    <div class="calza-grid">
+      <div class="calza-col yes reveal">
+        <h3>Sí es para ti si...</h3>
+        <ul>
+          <li>Recibes las mismas preguntas por WhatsApp todos los días</li>
+          <li>Se te escapan citas o clientes por no contestar a tiempo</li>
+          <li>Tienes agenda pero no sistema para organizarla</li>
+          <li>No tienes tiempo (ni ganas) de aprender software nuevo</li>
+          <li>Quieres digitalizarte sin gastar una fortuna</li>
+        </ul>
+      </div>
+      <div class="calza-col no reveal">
+        <h3>No es para ti si...</h3>
+        <ul>
+          <li>No tienes clientes que contacten por WhatsApp</li>
+          <li>Tu negocio ya tiene un sistema digital funcionando bien</li>
+          <li>Necesitas integraciones complejas desde el primer día</li>
+          <li>Buscas una solución "lista en 30 años" sin adaptación</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RIESGO / GARANTÍA -->
+<section class="riesgo-section">
+  <div class="wrap">
+    <div class="working-head reveal">
+      <div class="pill">Sin compromiso</div>
+      <h2>Cómo reducimos el riesgo de probar algo nuevo</h2>
+    </div>
+    <div class="riesgo-inner">
+      <p class="big-quote reveal">"Empiezas con un diagnóstico gratis, sin compromiso. Si después de ver cómo funciona no es para ti, no pasa nada — no hay contrato que romper."</p>
+      <p class="reveal">Un solo problema a la vez. Si en las primeras semanas no ves que se resuelve lo que te está costando clientes o tiempo, cancelas — es una suscripción, no un contrato de proyecto grande.</p>
+      <a href="https://wa.me/593959420676" target="_blank" rel="noopener" class="btn btn-primary reveal">Empezar mi Diagnóstico Gratis</a>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+  <div class="wrap">
+    <div class="final-cta-inner reveal">
+      <h2>¿Tu negocio calza aquí?</h2>
+      <p>Agenda un diagnóstico gratis de 15 minutos. Sin compromiso.</p>
+      <a href="https://wa.me/593959420676" target="_blank" rel="noopener" class="btn btn-primary">Empezar mi Diagnóstico Gratis</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="logo"><img src="images/logo-iguana.webp" alt="Iguana Corp" class="logo-img"></div>
+        <p>Evoluciona. Adapta. Domina. Sobrevive.</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col"><h5>Empresa</h5><a href="nosotros.html">Nosotros</a><a href="precios.html">Precios</a></div>
+        <div class="footer-col"><h5>Contacto</h5><a href="https://wa.me/593959420676" target="_blank" rel="noopener">WhatsApp</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Iguana Corp</span>
+      <div class="socials"><a href="#">ig</a><a href="#">in</a><a href="#">tt</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
