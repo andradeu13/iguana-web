@@ -6,39 +6,9 @@
 <title>Nosotros — Iguana Corp</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
-<style>
-/* ---- page-hero ---- */
-.page-hero{padding:140px 0 80px;text-align:center;background:var(--ink);border-bottom:1px solid #1a1a1a;}
-.page-hero h1{font-size:clamp(2.2rem,5vw,3.8rem);font-weight:800;line-height:1.15;max-width:760px;margin:0 auto 24px;}
-.page-hero .lead{font-size:1.15rem;color:var(--muted);max-width:580px;margin:0 auto 36px;}
-
-/* ---- galapagos section ---- */
-.galapagos-section{padding:100px 0;background:var(--ink);}
-.galapagos-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:56px;}
-.galapagos-card{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.09);border-radius:20px;padding:36px 32px;}
-.galapagos-card .gc-icon{font-size:2rem;margin-bottom:16px;}
-.galapagos-card h3{font-size:1.1rem;font-weight:700;color:var(--lime);margin-bottom:12px;}
-.galapagos-card p{color:var(--muted);line-height:1.75;font-size:.95rem;}
-@media(max-width:700px){.galapagos-grid{grid-template-columns:1fr;}}
-
-/* ---- realidad section ---- */
-.realidad-section{padding:100px 0;background:#0a0a0a;}
-.realidad-cols{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:56px;}
-.realidad-col{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.09);border-radius:20px;padding:36px 32px;}
-.realidad-col h3{font-size:.85rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:16px;}
-.realidad-col p{font-size:1rem;line-height:1.75;color:var(--txt);}
-.realidad-cta{margin-top:56px;text-align:center;}
-.realidad-cta h3{font-size:1.6rem;font-weight:800;max-width:560px;margin:0 auto 16px;}
-.realidad-cta p{color:var(--muted);max-width:480px;margin:0 auto 28px;}
-@media(max-width:700px){.realidad-cols{grid-template-columns:1fr;}}
-
-/* ---- team section ---- */
-.team-section{padding:100px 0;background:var(--ink);}
-.team-placeholder{margin-top:48px;background:rgba(255,255,255,0.03);border:1px dashed rgba(255,255,255,0.15);border-radius:20px;padding:56px 32px;text-align:center;}
-.team-placeholder p{color:var(--muted);font-size:.95rem;}
-</style>
 </head>
 <body>
 
@@ -51,7 +21,7 @@
       <a href="es-para-ti.html">¿Es para ti?</a>
     </div>
     <div class="nav-right">
-      <a href="https://wa.me/593959420676" target="_blank" rel="noopener" class="btn btn-primary" style="padding:11px 20px;font-size:13.5px;">Agenda Gratis</a>
+      <a href="https://wa.me/593959420676" target="_blank" rel="noopener" class="btn btn-primary" style="padding:11px 20px; font-size:13.5px;">Agenda Gratis</a>
       <button class="nav-toggle" id="navToggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="navMobile">
         <span></span><span></span><span></span>
       </button>
@@ -65,91 +35,238 @@
   <a href="https://wa.me/593959420676" target="_blank" rel="noopener" class="btn btn-primary">Agenda Gratis</a>
 </div>
 
-<!-- HERO -->
-<section class="page-hero">
-  <div class="wrap">
-    <div class="pill reveal">Nuestro origen</div>
-    <h1 class="reveal">Ayudar a que ningún negocio ecuatoriano se quede varado por no saber nadar en digital.</h1>
-    <p class="lead reveal">Somos un estudio de innovación y automatización. No vendemos un chatbot: construimos el ecosistema digital completo que hoy te falta — y el agente de WhatsApp es solo la primera pieza que ya está en pie.</p>
+<!-- ============ HERO ============ -->
+<section class="nosotros-hero">
+  <div class="wrap nh-wrap-top">
+    <span class="nh-eyebrow reveal">Nuestro origen</span>
+    <h1 class="nh-title reveal"><em class="nh-accent">Construimos el ecosistema</em><br>digital que tu negocio<br>necesitaba.</h1>
+  </div>
+
+  <div class="nh-stage reveal">
+    <div class="nh-row">
+      <div class="nh-card">
+        <img src="https://images.unsplash.com/photo-1755877153513-85bdc0e5b89b?w=360&h=360&q=82&fit=crop&crop=entropy&auto=format&fm=webp" alt="" loading="eager" decoding="async">
+        <span class="nh-bubble">La iguana me ignoró 🦎</span>
+      </div>
+      <div class="nh-card">
+        <img src="https://images.unsplash.com/photo-1757258632083-e9b8a5345047?w=360&h=360&q=82&fit=crop&crop=entropy&auto=format&fm=webp" alt="" loading="eager" decoding="async">
+        <span class="nh-bubble">El volcán sí responde 🌋</span>
+      </div>
+      <div class="nh-card">
+        <img src="https://images.unsplash.com/photo-1761133135231-2f2fe70907e7?w=360&h=360&q=82&fit=crop&crop=entropy&auto=format&fm=webp" alt="" loading="eager" decoding="async">
+        <span class="nh-bubble">La tortuga tiene 150 años 🐢</span>
+      </div>
+      <div class="nh-card nh-card-center">
+        <img src="images/iguana-hero.webp" alt="Iguana marina de Galápagos" loading="eager" decoding="async">
+        <span class="nh-bubble">Darwin tenía razón 🧬</span>
+      </div>
+      <div class="nh-card">
+        <img src="https://images.unsplash.com/photo-1506799964541-c7117a42cc22?w=360&h=360&q=82&fit=crop&crop=entropy&auto=format&fm=webp" alt="" loading="lazy" decoding="async">
+        <span class="nh-bubble">El agua era otro planeta 🌊</span>
+      </div>
+      <div class="nh-card">
+        <img src="https://images.unsplash.com/photo-1595517930215-d2778a56ac93?w=360&h=360&q=82&fit=crop&crop=faces&auto=format&fm=webp" alt="" loading="lazy" decoding="async">
+        <span class="nh-bubble">Me perdí 3 días aquí 🏝️</span>
+      </div>
+      <div class="nh-card">
+        <img src="https://images.unsplash.com/photo-1741456868616-dd15c485e2dd?w=360&h=360&q=82&fit=crop&crop=entropy&auto=format&fm=webp" alt="" loading="lazy" decoding="async">
+        <span class="nh-bubble">Ya quiero volver 🌅</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap nh-wrap-bottom">
+    <p class="nh-sub reveal">Somos un estudio de innovación y automatización con IA agéntica.<br>Construimos el ecosistema digital que tu negocio necesita — empezando por el WhatsApp que ya usas.</p>
+    <div class="nh-ctas reveal">
+      <a href="https://wa.me/593959420676" target="_blank" rel="noopener" class="btn btn-primary">Agenda tu diagnóstico gratis</a>
+      <a href="#origin" class="btn-text">Nuestra historia ↓</a>
+    </div>
   </div>
 </section>
 
-<!-- POR QUÉ GALÁPAGOS -->
-<section class="galapagos-section">
+<!-- ============ POR QUÉ GALÁPAGOS — 3D carousel ============ -->
+<section class="origin" id="origin">
   <div class="wrap">
-    <div class="working-head reveal">
-      <div class="pill">La lógica detrás</div>
-      <h2>Por qué Galápagos</h2>
-      <p class="lead">Cada detalle de lo que hacemos tiene una razón natural. Igual que en las islas.</p>
+    <div class="origin-head reveal">
+      <span class="pill dot">Por qué Galápagos</span>
+      <h2>Cinco ideas que tomamos prestadas de la naturaleza</h2>
     </div>
-    <div class="galapagos-grid">
-      <div class="galapagos-card reveal">
-        <div class="gc-icon">🏝️</div>
-        <h3>El aislamiento crea evolución</h3>
-        <p>Galápagos está a 973 km de la costa de Ecuador. Ese aislamiento produjo su biodiversidad única: el 95% de sus reptiles son endémicos — no existen en ningún otro lugar. Las MiPymes ecuatorianas están en una posición parecida: las herramientas digitales que existen fueron construidas para otro contexto. Iguana Corp construye el ecosistema pensado para el tuyo.</p>
+  </div>
+
+  <div class="origin-carousel-wrap">
+    <div class="origin-stage" id="originStage">
+      <div class="origin-crd" data-idx="0">
+        <img src="https://images.unsplash.com/photo-1757258632083-e9b8a5345047?w=620&q=72&fm=webp&fit=crop&auto=format" alt="Costa aislada de Galápagos" loading="lazy" decoding="async">
       </div>
-      <div class="galapagos-card reveal">
-        <div class="gc-icon">🐦</div>
+      <div class="origin-crd" data-idx="1">
+        <img src="https://images.unsplash.com/photo-1741456868616-dd15c485e2dd?w=620&q=72&fm=webp&fit=crop&auto=format" alt="Pinzón de Darwin" loading="lazy" decoding="async">
+      </div>
+      <div class="origin-crd" data-idx="2">
+        <img src="https://images.unsplash.com/photo-1761133135231-2f2fe70907e7?w=620&q=72&fm=webp&fit=crop&auto=format" alt="Volcán activo de Galápagos" loading="lazy" decoding="async">
+      </div>
+      <div class="origin-crd" data-idx="3">
+        <img src="https://images.unsplash.com/photo-1755877153513-85bdc0e5b89b?w=620&q=72&fm=webp&fit=crop&auto=format" alt="Cormorán no volador" loading="lazy" decoding="async">
+      </div>
+      <div class="origin-crd" data-idx="4">
+        <img src="https://images.unsplash.com/photo-1595517930215-d2778a56ac93?w=620&q=72&fm=webp&fit=crop&auto=format" alt="Tortuga gigante de Galápagos" loading="lazy" decoding="async">
+      </div>
+    </div>
+
+    <div class="origin-text-panel" id="originTextPanel">
+      <div class="origin-text-slide is-active" data-idx="0">
+        <span class="origin-num">01 / 05</span>
+        <h3>El aislamiento es lo que crea evolución</h3>
+        <p>973&nbsp;km de aislamiento produjeron el 95&nbsp;% de los reptiles, el 82&nbsp;% de los mamíferos y el 80&nbsp;% de las aves terrestres endémicos de las islas. Las herramientas digitales que existen fueron construidas para otro contexto — nosotros construimos el ecosistema pensado para el tuyo.</p>
+      </div>
+      <div class="origin-text-slide" data-idx="1">
+        <span class="origin-num">02 / 05</span>
         <h3>13 picos distintos, 13 soluciones distintas</h3>
-        <p>Los pinzones de Darwin son 13 especies, cada una con un pico de forma distinta según lo que come en su isla. Ningún pico sirve para todo. Así configuramos cada agente: no hay una plantilla única, hay un ajuste según lo que tu negocio realmente necesita.</p>
+        <p>Los pinzones de Darwin son 13 especies, cada una con un pico de forma distinta según lo que comen. Ningún pico sirve para todo. Así configuramos cada agente: sin plantillas únicas, con ajuste real a lo que tu negocio necesita.</p>
       </div>
-      <div class="galapagos-card reveal">
-        <div class="gc-icon">🌋</div>
+      <div class="origin-text-slide" data-idx="2">
+        <span class="origin-num">03 / 05</span>
         <h3>Las islas nunca están "terminadas"</h3>
-        <p>Galápagos es geológicamente joven, y varias de sus islas todavía tienen actividad volcánica activa hoy. Las islas no llegaron a un estado final: siguen cambiando. Así vemos el producto: no es un software que se entrega "terminado", es un sistema que se ajusta con el uso real de tu negocio.</p>
+        <p>Galápagos es geológicamente joven y varias islas — Fernandina e Isabela — tienen actividad volcánica activa hoy mismo. Así vemos el producto: no es software que se entrega "terminado", es un sistema que se ajusta con el uso real de tu negocio.</p>
       </div>
-      <div class="galapagos-card reveal">
-        <div class="gc-icon">🦅</div>
-        <h3>El cormorán que dejó de volar</h3>
-        <p>El cormorán no volador de Galápagos es el único del mundo que perdió la capacidad de volar — porque, sin depredadores en las islas, no la necesitaba. Toda esa energía se fue a lo que importaba: nadar y pescar. Automatizar lo repetitivo funciona igual: no es quitarte control, es liberar tu energía para lo que mueve tu negocio.</p>
+      <div class="origin-text-slide" data-idx="3">
+        <span class="origin-num">04 / 05</span>
+        <h3>El ave que dejó de volar</h3>
+        <p>El cormorán no volador de Galápagos es el único de su especie que perdió esa capacidad — porque, sin depredadores, no la necesitaba. Automatizar lo repetitivo funciona igual: no es quitarte control, es liberar tu energía para lo que de verdad mueve el negocio.</p>
       </div>
+      <div class="origin-text-slide" data-idx="4">
+        <span class="origin-num">05 / 05</span>
+        <h3>La tortuga que vive dos siglos</h3>
+        <p>Las tortugas gigantes de Galápagos pueden vivir más de 170 años. No porque corran más rápido — sino porque conservan energía, se adaptan al entorno y nunca desperdician un movimiento. Así construimos los sistemas que entregamos: eficientes por diseño, no por presupuesto.</p>
+      </div>
+    </div>
+
+    <div class="origin-controls">
+      <button class="island-nav" id="originPrev" type="button" aria-label="Idea anterior">‹</button>
+      <div class="origin-dots" id="originDots"></div>
+      <button class="island-nav" id="originNext" type="button" aria-label="Idea siguiente">›</button>
     </div>
   </div>
 </section>
 
-<!-- REALIDAD HOY / MAÑANA -->
-<section class="realidad-section">
+<!-- ============ DE AQUÍ A ALLÁ — comparación antes / después ============ -->
+<section class="story" id="storySection">
   <div class="wrap">
-    <div class="working-head reveal">
-      <div class="pill">Evolución real</div>
+    <div class="story-head reveal">
+      <span class="pill dot">De aquí a allá</span>
       <h2>Tu negocio, antes y después</h2>
     </div>
-    <div class="realidad-cols">
-      <div class="realidad-col reveal">
-        <h3>Tu realidad hoy</h3>
-        <p>Estás perdiendo clientes por no contestar a tiempo. No es que no te importe — es que entre atender el local, la casa y todo lo demás, no alcanza el día. Sabes que necesitas digitalizarte, pero no sabes por dónde empezar, y las opciones que ves son o muy caras o muy complicadas para tu negocio.</p>
+
+    <div class="story-compare reveal">
+      <div class="story-col story-col-before">
+        <div class="story-col-label">Hoy</div>
+        <ul class="story-list">
+          <li>Son las 9pm. Suena el WhatsApp — pero ya dejaste de mirar el teléfono hace horas.</li>
+          <li>Confirmaste la cita, la anotaste en el cuaderno. El cliente no apareció y no avisó.</li>
+          <li>Sabes que hay plata que te deben, pero el registro está en tres partes y ninguna coincide.</li>
+          <li>Llevas meses queriendo ordenar esto. Pero entre atender, producir y vivir, no queda tiempo.</li>
+        </ul>
       </div>
-      <div class="realidad-col reveal">
-        <h3>Tu negocio mañana</h3>
-        <p>Imagina un negocio que responde solo lo repetitivo, que te recuerda las citas antes de que se te olviden, y que no te pide aprender nada nuevo. Tu conocimiento del negocio — lo que sabes que funciona con tus clientes — se vuelve parte del sistema, no algo que solo está en tu cabeza.</p>
+      <div class="story-divider" aria-hidden="true">→</div>
+      <div class="story-col story-col-after">
+        <div class="story-col-label">Con Iguana Corp</div>
+        <ul class="story-list">
+          <li>El agente lee la pregunta, busca en tu información y responde en segundos. Tú duermes.</li>
+          <li>Un mensaje llega al cliente la noche anterior. La cita se cumple. Tú no tuviste que acordarte.</li>
+          <li>Un solo panel: quién te debe, cuánto y desde cuándo. Sin hojas, sin suposiciones.</li>
+          <li>Nosotros configuramos todo. Tú revisas, apruebas y sigues haciendo lo que sabes hacer.</li>
+        </ul>
       </div>
-    </div>
-    <div class="realidad-cta">
-      <h3 class="reveal">La iguana marina aprendió a nadar para sobrevivir.<br>Tu negocio puede hacer lo mismo.</h3>
-      <p class="reveal">No reemplazamos cómo atiendes a tus clientes — te damos la habilidad que te falta para seguir compitiendo.</p>
-      <a href="https://wa.me/593959420676" target="_blank" rel="noopener" class="btn btn-primary reveal">Quiero mi Diagnóstico Gratis</a>
     </div>
   </div>
 </section>
 
-<!-- TEAM (placeholder) -->
-<section class="team-section">
+<!-- ============ NUESTRO EQUIPO ============ -->
+<section class="team">
   <div class="wrap">
-    <div class="working-head reveal">
-      <div class="pill">El equipo</div>
-      <h2>Las personas detrás de Iguana Corp</h2>
+    <div class="team-head reveal">
+      <span class="pill dot">Nuestro equipo</span>
+      <h2>Quién está detrás de Iguana Corp</h2>
     </div>
-    <div class="team-placeholder reveal">
-      <p>Próximamente: conoce al equipo fundador de Iguana Corp.</p>
+    <div class="team-rail reveal">
+
+      <div class="team-card">
+        <div class="tc-top">
+          <div class="tc-tags">
+            <span class="tc-tag">CEO</span>
+            <span class="tc-tag">Fundador</span>
+          </div>
+          <div class="tc-dot">↗</div>
+        </div>
+        <div class="tc-mid">
+          <h3 class="tc-name">Gustavo Campana</h3>
+          <p class="tc-bio">Estrategia y crecimiento. Responsable de la visión del producto y la expansión del negocio.</p>
+        </div>
+        <a href="https://wa.me/593959420676" target="_blank" rel="noopener" class="tc-btn">Contactar →</a>
+        <div class="tc-photo">
+          <div class="tc-photo-inner">
+            <svg viewBox="0 0 280 220" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <ellipse cx="140" cy="68" rx="52" ry="54" fill="rgba(18,18,18,0.13)"/>
+              <ellipse cx="140" cy="190" rx="96" ry="52" fill="rgba(18,18,18,0.08)"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="team-card">
+        <div class="tc-top">
+          <div class="tc-tags">
+            <span class="tc-tag">CTO</span>
+            <span class="tc-tag">Fundadora</span>
+          </div>
+          <div class="tc-dot">↗</div>
+        </div>
+        <div class="tc-mid">
+          <h3 class="tc-name">Doménica Escobar</h3>
+          <p class="tc-bio">Arquitectura técnica e IA agéntica. Diseña los sistemas que hacen posible todo lo demás.</p>
+        </div>
+        <a href="https://wa.me/593959420676" target="_blank" rel="noopener" class="tc-btn">Contactar →</a>
+        <div class="tc-photo">
+          <div class="tc-photo-inner">
+            <svg viewBox="0 0 280 220" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <ellipse cx="140" cy="68" rx="52" ry="54" fill="rgba(18,18,18,0.13)"/>
+              <ellipse cx="140" cy="190" rx="96" ry="52" fill="rgba(18,18,18,0.08)"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="team-card">
+        <div class="tc-top">
+          <div class="tc-tags">
+            <span class="tc-tag">CPO</span>
+            <span class="tc-tag">Fundador</span>
+          </div>
+          <div class="tc-dot">↗</div>
+        </div>
+        <div class="tc-mid">
+          <h3 class="tc-name">Esteban Andrade</h3>
+          <p class="tc-bio">Producto y experiencia. Traduce las necesidades del cliente en sistemas que realmente funcionan.</p>
+        </div>
+        <a href="https://wa.me/593959420676" target="_blank" rel="noopener" class="tc-btn">Contactar →</a>
+        <div class="tc-photo">
+          <div class="tc-photo-inner">
+            <svg viewBox="0 0 280 220" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <ellipse cx="140" cy="68" rx="52" ry="54" fill="rgba(18,18,18,0.13)"/>
+              <ellipse cx="140" cy="190" rx="96" ry="52" fill="rgba(18,18,18,0.08)"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
 
-<!-- FINAL CTA -->
+<!-- ============ FINAL CTA ============ -->
 <section class="final-cta">
   <div class="wrap">
     <div class="final-cta-inner reveal">
-      <h2>¿Listo para evolucionar?</h2>
+      <h2>¿Listo para dejar de perder clientes?</h2>
       <p>Agenda un diagnóstico gratis de 15 minutos. Sin compromiso.</p>
       <a href="https://wa.me/593959420676" target="_blank" rel="noopener" class="btn btn-primary">Quiero mi Diagnóstico Gratis</a>
     </div>
@@ -175,6 +292,8 @@
   </div>
 </footer>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
 <script src="js/main.js" defer></script>
 </body>
 </html>
