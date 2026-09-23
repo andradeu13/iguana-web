@@ -1718,13 +1718,25 @@ button, input, select, textarea{font-family:inherit;}
 @media (max-width:900px){
   .about-arc{--R:52vw; --pw:100px; --ph:124px;}
   .arc-photo[data-far]{display:none;}
+  .arc-content h2{font-size:clamp(24px,5vw,38px);}
+  .arc-content p{font-size:14.5px;}
   .arc-stats{grid-template-columns:repeat(2,1fr); row-gap:30px;}
   .arc-stat:nth-child(3){border-left:none;}
 }
 @media (max-width:560px){
-  .about-arc{--R:70vw; --pw:72px; --ph:90px; --T:44px;}
+  .about-arc{--R:76vw; --pw:72px; --ph:90px; --T:44px;}
   .arc-photo{border-width:3px; border-radius:16px;}
-  .arc-content{padding-top:calc(var(--T) + var(--ph) + 40px);}
+  .arc-content{padding-top:calc(var(--T) + var(--ph) + 40px); padding-left:24px; padding-right:24px;}
+  .arc-content h2{font-size:clamp(21px,6.4vw,28px); max-width:280px; margin-left:auto; margin-right:auto;}
+  .arc-content p{font-size:13px; max-width:260px; margin-left:auto; margin-right:auto;}
+  .arc-badge{font-size:10.5px; padding:6px 12px;}
+  .arc-cta{font-size:12.5px; padding:7px 7px 7px 18px; gap:10px;}
+  .arc-cta span{width:28px; height:28px;}
+}
+@media (max-width:380px){
+  .about-arc{--R:86vw;}
+  .arc-content h2{font-size:19px; max-width:230px;}
+  .arc-content p{font-size:12.5px; max-width:230px;}
 }
 @media (prefers-reduced-motion:reduce){ .arc-photo{transition:none;} }
 
