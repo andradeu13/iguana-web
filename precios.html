@@ -3,7 +3,23 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Precios — Iguana Corp</title>
+<title>Planes y precios — Iguana Corp</title>
+<meta name="description" content="Planes de asistente con IA para WhatsApp desde $15 al mes: Esencial $15, Crecimiento $35, Pro $60 y un plan a medida. Configuración incluida, sin permanencia.">
+<link rel="canonical" href="https://iguana.ec/precios.html">
+<link rel="icon" href="images/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<meta name="theme-color" content="#0C7A3E">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Iguana Corp">
+<meta property="og:locale" content="es_EC">
+<meta property="og:url" content="https://iguana.ec/precios.html">
+<meta property="og:title" content="Planes y precios — Iguana Corp">
+<meta property="og:description" content="Desde $15 al mes. Configuración incluida y sin permanencia.">
+<meta property="og:image" content="https://iguana.ec/images/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
@@ -14,14 +30,14 @@
 
 <header>
   <nav>
-    <div class="logo"><a href="index.html"><img src="images/logo-iguana.webp" alt="Iguana Corp" class="logo-img"></a></div>
+    <div class="logo"><a href="index.html" aria-label="Iguana Corp, inicio"><img src="images/logo-iguana.webp" alt="Iguana Corp" class="logo-img"></a></div>
     <div class="nav-center">
       <a href="nosotros.html">Nosotros</a>
-      <a href="precios.html" class="active">Servicios</a>
+      <a href="precios.html" class="active" aria-current="page">Planes</a>
       <a href="es-para-ti.html">¿Es para ti?</a>
     </div>
     <div class="nav-right">
-      <a href="https://wa.me/593959420676" target="_blank" rel="noopener" class="btn btn-primary" style="padding:11px 20px; font-size:13.5px;">Agenda Gratis</a>
+      <a href="https://wa.me/593959420676?text=Hola%20Iguana%20Corp%2C%20quiero%20mi%20diagn%C3%B3stico%20gratis" target="_blank" rel="noopener" class="btn btn-primary" style="padding:11px 20px; font-size:13.5px;">Agenda gratis</a>
       <button class="nav-toggle" id="navToggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="navMobile">
         <span></span><span></span><span></span>
       </button>
@@ -30,22 +46,22 @@
 </header>
 <div class="nav-mobile" id="navMobile">
   <a href="nosotros.html">Nosotros</a>
-  <a href="precios.html">Servicios</a>
+  <a href="precios.html" aria-current="page">Planes</a>
   <a href="es-para-ti.html">¿Es para ti?</a>
-  <a href="https://wa.me/593959420676" target="_blank" rel="noopener" class="btn btn-primary">Agenda Gratis</a>
+  <a href="https://wa.me/593959420676?text=Hola%20Iguana%20Corp%2C%20quiero%20mi%20diagn%C3%B3stico%20gratis" target="_blank" rel="noopener" class="btn btn-primary">Agenda gratis</a>
 </div>
 
 <!-- ============ HERO ============ -->
 <section class="page-hero">
   <div class="wrap hero-precios-grid">
     <div class="hero-precios-visual reveal">
-      <img class="hero-precios-img" src="https://images.unsplash.com/photo-1746723375184-5f537d2e6f31?w=820&q=70&fm=webp&fit=crop&auto=format" alt="Negocio pequeño atendiendo a un cliente en el mostrador" loading="lazy" decoding="async">
+      <img class="hero-precios-img" src="https://images.unsplash.com/photo-1746723375184-5f537d2e6f31?w=820&q=70&fm=webp&fit=crop&auto=format" alt="Dueña de un negocio pequeño atendiendo a un cliente en el mostrador" decoding="async">
     </div>
 
     <div class="hero-precios-copy reveal">
-      <span class="pill dot">Precios</span>
-      <h1>Un precio pensado para negocios pequeños, no para corporaciones.</h1>
-      <p class="lead">Cada plan lleva el nombre de una isla real de Galápagos. Mientras más grande la isla, más territorio es tuyo.</p>
+      <span class="pill dot">Planes y precios</span>
+      <h1>Planes claros, desde $15 al mes.</h1>
+      <p class="lead">Cada plan lleva el nombre de una isla de Galápagos: mientras más grande la isla, más hace por tu negocio. Todos incluyen la configuración y se cancelan cuando quieras.</p>
     </div>
   </div>
 </section>
@@ -53,130 +69,186 @@
 <!-- ============ DATA STRIP ============ -->
 <section class="data-strip">
   <div class="wrap data-strip-row reveal">
-    <span>Listo en días, no en meses</span>
-    <span>Empiezas con un solo canal: tu WhatsApp</span>
-    <span>Sin instalar nada nuevo</span>
-    <span>Cancelas cuando quieras</span>
+    <span>Configuración incluida</span>
+    <span>Listo en unos 11 días</span>
+    <span>Sin contrato de permanencia</span>
+    <span>Precios mensuales en USD</span>
   </div>
 </section>
 
-<!-- ============ PLANES — slider por isla ============ -->
-<section class="plans">
+<!-- ============ PLANES ============ -->
+<section class="plans pricing">
   <div class="wrap">
     <div class="plans-head reveal">
       <span class="pill dot">Elige tu isla</span>
-      <h2>Un plan por isla</h2>
+      <h2>Cuatro planes, un mismo objetivo: que no pierdas clientes</h2>
     </div>
 
-    <div class="plans-slider reveal" id="plansSlider">
-      <div class="plans-slider-left">
-        <button class="island-nav" id="planPrev" type="button" aria-label="Isla anterior">‹</button>
-        <div class="plan-island-stack" id="planIslandStack">
-          <img class="plan-island-thumb" id="planThumb" src="" alt="" loading="lazy" decoding="async">
-          <h3 class="plan-island-name" id="planName"></h3>
-          <span class="plan-island-next" id="planNextLabel"></span>
+    <div class="pricing-grid reveal">
+
+      <article class="price-card">
+        <div class="price-island">
+          <img src="images/isla-sancristobal.webp" alt="" loading="lazy" decoding="async">
+          <div><span class="price-island-name">San Cristóbal</span><h3 class="price-tier">Esencial</h3></div>
         </div>
-        <button class="island-nav" id="planNext" type="button" aria-label="Isla siguiente">›</button>
-      </div>
+        <div class="price"><span class="price-amount">$15</span><span class="price-period">/mes</span></div>
+        <p class="price-desc">Para empezar a responder a tiempo.</p>
+        <ul class="price-list">
+          <li>Asistente que responde preguntas frecuentes 24/7</li>
+          <li>Atiendes desde un número de WhatsApp de Iguana Corp</li>
+          <li>Respuestas con el tono que tú apruebas</li>
+          <li>Configuración incluida</li>
+          <li>Soporte por WhatsApp</li>
+        </ul>
+        <a href="https://wa.me/593959420676?text=Hola%20Iguana%20Corp%2C%20me%20interesa%20el%20plan%20Esencial%20(%2415)" target="_blank" rel="noopener" class="btn btn-outline">Elegir Esencial</a>
+      </article>
 
-      <div class="plan-card" id="planCard">
-        <div class="card-tab" id="planCardTab"></div>
-        <span class="plan-sub" id="planCardSub"></span>
-        <ul class="plan-list" id="planCardList"></ul>
-        <p class="plan-note" id="planCardNote"></p>
-        <a href="https://wa.me/593959420676" target="_blank" rel="noopener" class="btn btn-primary" id="planCardCta">Escríbenos para tu precio</a>
-      </div>
+      <article class="price-card featured">
+        <span class="price-badge">Recomendado</span>
+        <div class="price-island">
+          <img src="images/isla-santiago.webp" alt="" loading="lazy" decoding="async">
+          <div><span class="price-island-name">Santiago</span><h3 class="price-tier">Crecimiento</h3></div>
+        </div>
+        <div class="price"><span class="price-amount">$35</span><span class="price-period">/mes</span></div>
+        <p class="price-desc">Para negocios que viven de las citas.</p>
+        <ul class="price-list">
+          <li>Todo lo del plan Esencial</li>
+          <li>Agenda automática en tus horarios libres</li>
+          <li>Recordatorios antes de cada cita</li>
+          <li>Panel para ver citas y conversaciones</li>
+        </ul>
+        <a href="https://wa.me/593959420676?text=Hola%20Iguana%20Corp%2C%20me%20interesa%20el%20plan%20Crecimiento%20(%2435)" target="_blank" rel="noopener" class="btn btn-primary">Elegir Crecimiento</a>
+      </article>
+
+      <article class="price-card">
+        <div class="price-island">
+          <img src="images/isla-santacruz.webp" alt="" loading="lazy" decoding="async">
+          <div><span class="price-island-name">Santa Cruz</span><h3 class="price-tier">Pro</h3></div>
+        </div>
+        <div class="price"><span class="price-amount">$60</span><span class="price-period">/mes</span></div>
+        <p class="price-desc">Tu marca, tu número, todo en un lugar.</p>
+        <ul class="price-list">
+          <li>Todo lo del plan Crecimiento</li>
+          <li>Funciona en tu propio WhatsApp Business</li>
+          <li>Seguimiento de pagos y cuotas pendientes</li>
+          <li>Ajuste mensual de respuestas</li>
+        </ul>
+        <a href="https://wa.me/593959420676?text=Hola%20Iguana%20Corp%2C%20me%20interesa%20el%20plan%20Pro%20(%2460)" target="_blank" rel="noopener" class="btn btn-outline">Elegir Pro</a>
+      </article>
+
+      <article class="price-card">
+        <div class="price-island">
+          <img src="images/isla-isabela.webp" alt="" loading="lazy" decoding="async">
+          <div><span class="price-island-name">Isabela</span><h3 class="price-tier">A medida</h3></div>
+        </div>
+        <div class="price"><span class="price-amount is-text">Hablemos</span></div>
+        <p class="price-desc">Para varias sedes o procesos propios.</p>
+        <ul class="price-list">
+          <li>Todo lo del plan Pro</li>
+          <li>Varios números o sucursales</li>
+          <li>Integración con tu calendario, pagos o sistema actual</li>
+          <li>Flujos diseñados para tu operación</li>
+          <li>Acompañamiento dedicado</li>
+        </ul>
+        <a href="https://wa.me/593959420676?text=Hola%20Iguana%20Corp%2C%20quiero%20cotizar%20un%20plan%20a%20medida" target="_blank" rel="noopener" class="btn btn-outline">Contáctanos</a>
+      </article>
+
     </div>
 
-    <p class="pending-note"><span class="pending-badge">Próximamente</span> Los montos exactos en dólares de cada plan se publican aquí muy pronto.</p>
+    <p class="price-foot">¿No sabes cuál elegir? <a href="es-para-ti.html">Haz el diagnóstico de 4 preguntas</a> y te recomendamos uno.</p>
   </div>
 </section>
 
-<!-- ============ LO QUE TE PEDIMOS A TI ============ -->
+<!-- ============ LO QUE TE PEDIMOS ============ -->
 <section class="working">
   <div class="wrap">
     <div class="working-head reveal">
-      <span class="pill dot">Lo que te pedimos a ti</span>
-      <h2>Tres cosas, nada más</h2>
+      <span class="pill dot">Tu parte</span>
+      <h2>Solo te pedimos tres cosas</h2>
     </div>
     <div class="proj-row reveal">
-      <div class="proj-card">
-        <div class="proj-body">
-          <h4>Aprobar el tono de las respuestas</h4>
-          <p>Una sola vez al inicio (~30 min).</p>
-        </div>
-      </div>
-      <div class="proj-card">
-        <div class="proj-body">
-          <h4>Revisar la agenda armada</h4>
-          <p>Los primeros días, unos minutos al día.</p>
-        </div>
-      </div>
-      <div class="proj-card">
-        <div class="proj-body">
-          <h4>Avisar si algo no calza</h4>
-          <p>Cuando pase, no hay horario fijo.</p>
-        </div>
-      </div>
+      <div class="proj-card"><div class="proj-body"><span class="tag">Al inicio · 30 min</span><h4>Aprobar el tono</h4><p>Nos cuentas cómo le hablas a tus clientes y revisas las respuestas antes de activarlas.</p></div></div>
+      <div class="proj-card"><div class="proj-body"><span class="tag">Primeros días</span><h4>Revisar la agenda</h4><p>Unos minutos al día para confirmar que las citas se guardan como esperas.</p></div></div>
+      <div class="proj-card"><div class="proj-body"><span class="tag">Cuando pase</span><h4>Avisar si algo no calza</h4><p>Nos escribes por WhatsApp y lo ajustamos. Sin horarios ni tickets.</p></div></div>
     </div>
   </div>
 </section>
 
-<!-- ============ PROCESO (movido desde el home) ============ -->
+<!-- ============ PROCESO ============ -->
 <section class="timeline-section">
   <div class="wrap">
     <div class="timeline-head reveal">
-      <span class="pill dot">Olvídate de proyectos de meses</span>
+      <span class="pill dot">Nada de proyectos de meses</span>
       <h2>Así se ve el proceso</h2>
     </div>
     <div class="stepper reveal">
-      <div class="t-item"><span class="day">Días 1–2</span><h4>Diagnóstico</h4><p>Definimos el primer problema a resolver.</p></div>
-      <div class="t-item"><span class="day">Día 3</span><h4>Primer flujo</h4><p>Configurado directo en tu WhatsApp.</p></div>
-      <div class="t-item"><span class="day">Días 4–10</span><h4>Ajustes reales</h4><p>Se afina con tu uso diario.</p></div>
-      <div class="t-item"><span class="day">Día 11</span><h4>En marcha</h4><p>Sistema estable, funcionando solo.</p></div>
+      <div class="t-item"><span class="day">Días 1–2</span><h4>Diagnóstico</h4><p>Vemos dónde pierdes clientes o tiempo y elegimos el primer problema a resolver.</p></div>
+      <div class="t-item"><span class="day">Día 3</span><h4>Primer flujo</h4><p>El asistente queda activo en WhatsApp, probado con casos reales.</p></div>
+      <div class="t-item"><span class="day">Días 4–10</span><h4>Ajustes</h4><p>Lo afinamos con lo que pasa en tu día a día.</p></div>
+      <div class="t-item"><span class="day">Día 11</span><h4>En marcha</h4><p>Funciona solo. Elegimos juntos lo siguiente a mejorar.</p></div>
     </div>
   </div>
 </section>
 
-<!-- ============ CAMINO DE EVOLUCIÓN (movido desde el home) ============ -->
+<!-- ============ CAMINO ============ -->
 <section class="roadmap">
   <div class="wrap">
     <div class="roadmap-head reveal">
-      <span class="pill dot">Tu camino de evolución</span>
+      <span class="pill dot">Tu camino</span>
       <h2>De la primera semana al primer año</h2>
     </div>
     <div class="roadmap-grid reveal">
-      <div class="roadmap-card"><div class="period">Semana 1</div><p>Tu primer flujo de atención automática funcionando.</p></div>
-      <div class="roadmap-card"><div class="period">Mes 1</div><p>Sumamos agenda y recordatorios automáticos.</p></div>
-      <div class="roadmap-card"><div class="period">Trimestre 1</div><p>Un solo lugar para conversaciones y pagos.</p></div>
-      <div class="roadmap-card"><div class="period">Año 1</div><p>Un negocio que trabaja para ti todos los días.</p></div>
+      <div class="roadmap-card"><div class="period">Semana 1</div><p>Tu WhatsApp ya responde solo las preguntas de siempre.</p></div>
+      <div class="roadmap-card"><div class="period">Mes 1</div><p>Agenda y recordatorios automáticos funcionando.</p></div>
+      <div class="roadmap-card"><div class="period">Trimestre 1</div><p>Conversaciones, citas y pagos en un solo lugar.</p></div>
+      <div class="roadmap-card"><div class="period">Año 1</div><p>Un negocio que atiende bien aunque tú no estés.</p></div>
     </div>
   </div>
 </section>
 
-<!-- ============ PAQUETES POR ANIMAL (próximamente) ============ -->
+<!-- ============ COMPLEMENTOS ============ -->
 <section class="features">
   <div class="wrap">
     <div class="features-head reveal">
       <span class="pill dot">Próximamente</span>
-      <h2>Paquetes adicionales, nombrados por animal</h2>
+      <h2>Complementos para cualquier plan</h2>
     </div>
     <div class="feat-grid reveal">
-      <div class="feat-card"><span class="tag">Personalización</span><h3>Paquete Pinzón</h3><p>Ajuste fino del agente a tu tipo de negocio específico.</p></div>
-      <div class="feat-card"><span class="tag">Automatización</span><h3>Paquete Cormorán</h3><p>Elimina tareas repetitivas para enfocar tu energía en lo que importa.</p></div>
-      <div class="feat-card"><span class="tag">Memoria de negocio</span><h3>Paquete Tortuga Gigante</h3><p>Historial de clientes, preferencias y cobros a largo plazo.</p></div>
+      <div class="feat-card"><span class="tag">Personalización</span><h3>Pinzón</h3><p>Como los pinzones de Darwin, cada pico para su alimento: ajustes profundos para tu tipo de negocio.</p></div>
+      <div class="feat-card"><span class="tag">Automatización</span><h3>Cormorán</h3><p>Más tareas repetitivas fuera de tu día: cotizaciones, confirmaciones de pedido y seguimientos.</p></div>
+      <div class="feat-card"><span class="tag">Memoria de negocio</span><h3>Tortuga Gigante</h3><p>Historial de cada cliente: lo que compró, cuándo volvió y qué prefiere.</p></div>
     </div>
-    <p class="pending-note"><span class="pending-badge">Próximamente</span> El contenido concreto de cada paquete se publica aquí en cuanto esté confirmado.</p>
   </div>
 </section>
 
-<!-- ============ FINAL CTA ============ -->
+<!-- ============ FAQ PRECIOS ============ -->
+<section class="faq">
+  <div class="faq-head reveal"><h2>Dudas sobre los planes</h2></div>
+  <div class="faq-item reveal open">
+    <button class="faq-q" type="button">¿Puedo cambiar de plan después?<span class="icon" aria-hidden="true">+</span></button>
+    <div class="faq-a"><p>Sí. Puedes empezar con Esencial y subir a Crecimiento o Pro cuando tu negocio lo necesite.</p></div>
+  </div>
+  <div class="faq-item reveal">
+    <button class="faq-q" type="button">¿Cuál es la diferencia entre usar su número y el mío?<span class="icon" aria-hidden="true">+</span></button>
+    <div class="faq-a"><p>En Esencial y Crecimiento tus clientes escriben a un número de Iguana Corp que atiende a tu nombre. En Pro el asistente trabaja directo en tu WhatsApp Business, con tu número y tu marca.</p></div>
+  </div>
+  <div class="faq-item reveal">
+    <button class="faq-q" type="button">¿Hay permanencia mínima?<span class="icon" aria-hidden="true">+</span></button>
+    <div class="faq-a"><p>No. Pagas mes a mes y cancelas cuando quieras.</p></div>
+  </div>
+  <div class="faq-item reveal">
+    <button class="faq-q" type="button">¿Qué plan me conviene?<span class="icon" aria-hidden="true">+</span></button>
+    <div class="faq-a"><p>Si solo quieres dejar de perder mensajes, Esencial. Si trabajas con citas, Crecimiento. Si quieres usar tu propio número, Pro. <a href="es-para-ti.html">El diagnóstico</a> te lo dice en un minuto.</p></div>
+  </div>
+</section>
+
+<!-- ============ CTA FINAL ============ -->
 <section class="final-cta">
   <div class="wrap">
     <div class="final-cta-inner reveal">
       <h2>¿Listo para dejar de perder clientes?</h2>
       <p>Agenda un diagnóstico gratis de 15 minutos. Sin compromiso.</p>
-      <a href="https://wa.me/593959420676" target="_blank" rel="noopener" class="btn btn-primary">Quiero mi Diagnóstico Gratis</a>
+      <a href="https://wa.me/593959420676?text=Hola%20Iguana%20Corp%2C%20quiero%20mi%20diagn%C3%B3stico%20gratis" target="_blank" rel="noopener" class="btn btn-primary">Quiero mi diagnóstico gratis</a>
     </div>
   </div>
 </section>
@@ -185,17 +257,21 @@
   <div class="wrap">
     <div class="footer-top">
       <div class="footer-brand">
-        <div class="logo"><img src="images/logo-iguana.webp" alt="Iguana Corp" class="logo-img"></div>
-        <p>Evoluciona. Adapta. Domina. Sobrevive.</p>
+        <a href="index.html" class="logo" aria-label="Iguana Corp, inicio"><img src="images/logo-iguana.webp" alt="Iguana Corp" class="logo-img"></a>
+        <p>Automatización con IA para negocios ecuatorianos. Empezamos por tu WhatsApp.</p>
       </div>
       <div class="footer-cols">
-        <div class="footer-col"><h5>Empresa</h5><a href="nosotros.html">Nosotros</a><a href="precios.html">Precios</a></div>
-        <div class="footer-col"><h5>Contacto</h5><a href="https://wa.me/593959420676" target="_blank" rel="noopener">WhatsApp</a></div>
+        <div class="footer-col"><h5>Iguana Corp</h5><a href="nosotros.html">Nosotros</a><a href="precios.html">Planes y precios</a><a href="es-para-ti.html">¿Es para ti?</a></div>
+        <div class="footer-col"><h5>Contacto</h5><a href="https://wa.me/593959420676" target="_blank" rel="noopener">WhatsApp +593 95 942 0676</a><a href="https://wa.me/593959420676?text=Hola%20Iguana%20Corp%2C%20quiero%20mi%20diagn%C3%B3stico%20gratis" target="_blank" rel="noopener">Agenda tu diagnóstico</a></div>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 Iguana Corp</span>
-      <div class="socials"><a href="#">ig</a><a href="#">in</a><a href="#">tt</a></div>
+      <span>© 2026 Iguana Corp · Ecuador</span>
+      <div class="socials">
+        <a href="https://www.instagram.com/iguana.ec" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg></a>
+        <a href="https://www.facebook.com/iguanaec" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+        <a href="https://www.linkedin.com/company/iguana-ec" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+      </div>
     </div>
   </div>
 </footer>

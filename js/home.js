@@ -231,8 +231,9 @@ window.addEventListener('DOMContentLoaded', ()=>{
     if(!match) return;
     const target = parseInt(match[1], 10);
     const rest = raw.slice(match[1].length);
-    const supHTML = numEl.querySelector('sup') ? numEl.querySelector('sup').outerHTML : '';
-    const restText = rest.replace(/<sup[\s\S]*?<\/sup>/, '');
+    const sup = numEl.querySelector('sup');
+    const supHTML = sup ? sup.outerHTML : '';
+    const restText = sup ? rest.slice(0, rest.length - sup.textContent.length) : rest;
 
     const counter = { val: 0 };
     ScrollTrigger.create({
