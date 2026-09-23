@@ -23,7 +23,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -53,49 +53,43 @@
   <a href="https://wa.me/593959420676?text=Hola%20Iguana%20Corp%2C%20quiero%20mi%20diagn%C3%B3stico%20gratis" target="_blank" rel="noopener" class="btn btn-primary">Agenda gratis</a>
 </div>
 
-<!-- ============ HERO ============ -->
-<section class="hero" id="hero" style="min-height:100vh;">
-  <div class="hero-bg" aria-hidden="true">
-    <div class="grid" data-parallax="0.25"></div>
-    <div class="blob b1" data-parallax="0.55"></div>
-    <div class="blob b2" data-parallax="0.35"></div>
-    <div class="blob b3" data-parallax="0.7"></div>
-  </div>
+<main class="fj">
 
-  <img src="images/iguana-hero.webp" alt="Iguana marina sobre roca volcánica de Galápagos" class="hero-iguana" data-parallax="0.18">
-  <img src="images/hero-rocas.webp" alt="" class="hero-rocas" data-parallax="0.28">
-
-  <div class="wrap" data-parallax="-0.08">
-    <h1 class="hero-h1">
-      <span class="line line-1">
-        <span class="word">Tu</span>
-        <span class="word">negocio</span>
-        <span class="word">no</span>
-        <span class="word">necesita</span>
-      </span>
-      <span class="line line-2">
-        <span class="word cycle" data-cycle='["más manos.","más horas.","más planillas.","otro robot."]'>más manos.</span>
-      </span>
-      <span class="line line-3">
-        <span class="word">Necesita</span>
-        <span class="word soft">evolucionar.</span>
-      </span>
-    </h1>
-
-    <p class="lead">Somos un estudio ecuatoriano de inteligencia artificial. Creamos asistentes, agentes y webs que se hacen cargo del trabajo repetitivo, para que tú vuelvas a lo que haces mejor.</p>
-    <div class="hero-ctas">
-      <a href="https://wa.me/593959420676?text=Hola%20Iguana%20Corp%2C%20quiero%20mi%20diagn%C3%B3stico%20gratis" target="_blank" rel="noopener" class="btn btn-primary">Quiero mi diagnóstico gratis</a>
-      <a href="#soluciones" class="btn-text">Ver lo que hacemos</a>
+<!-- ============ 1 · APERTURA ============ -->
+<section class="h-hero">
+  <div class="wrap h-hero-grid">
+    <div class="h-hero-copy">
+      <h1 class="h-title"><span class="h-line">Aprende</span> <span class="h-line">a <em>nadar</em>.</span></h1>
+      <p class="h-lead">Tecnología con inteligencia artificial para negocios del Ecuador que ya no dan abasto. Tú sigues atendiendo; nosotros ponemos a trabajar lo demás.</p>
+      <div class="h-ctas">
+        <a href="https://wa.me/593959420676?text=Hola%20Iguana%20Corp%2C%20quiero%20mi%20diagn%C3%B3stico%20gratis" target="_blank" rel="noopener" class="btn btn-primary">Agenda tu diagnóstico gratis</a>
+        <a href="#historia" class="h-link">Empieza la historia ↓</a>
+      </div>
     </div>
-  </div>
-
-  <div class="hero-scroll-hint" aria-hidden="true">
-    <span>Desliza</span>
-    <span class="hero-scroll-line"></span>
+    <figure class="h-hero-art">
+      <img src="images/iguana-hero.webp" alt="Grabado de una iguana marina sobre roca volcánica" width="560" height="585">
+      <figcaption><i>Amblyrhynchus cristatus</i><span>El único lagarto del mundo que aprendió a nadar.</span></figcaption>
+    </figure>
   </div>
 </section>
 
-<!-- ============ SOBRE IGUANA — arco de negocios + datos del sector ============ -->
+<!-- ============ 2 · LA ORILLA ============ -->
+<section class="h-night" id="historia">
+  <div class="wrap h-night-grid">
+    <div class="h-night-copy reveal">
+      <h2 class="h-h2">Son las 9 de la noche.</h2>
+      <p>Cerraste hace una hora. Mientras atendías al último cliente, alguien te escribió preguntando precio y horario. Nadie le contestó.</p>
+    </div>
+    <ol class="h-log" id="nightLog">
+      <li><time>21:03</time><span>“Hola, ¿tienen turno para mañana?”</span></li>
+      <li><time>21:07</time><span>Sin respuesta. Seguías con las manos ocupadas.</span></li>
+      <li><time>21:11</time><span>Ya agendó en otro lado.</span></li>
+    </ol>
+  </div>
+  <p class="wrap h-night-close reveal">No fue falta de talento. Fue un solo par de manos para dos cosas a la vez.</p>
+</section>
+
+<!-- ============ 3 · NO ES SOLO TU CASO ============ -->
 <section class="about-arc" id="sobre">
   <div class="arc-stage" aria-hidden="true">
     <div class="arc-ticks-clip"><div class="arc-ticks"></div></div>
@@ -114,146 +108,84 @@
 
   <div class="wrap">
     <div class="arc-content reveal">
-      <span class="arc-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>Sobre Iguana Corp</span>
-      <h2>Ayudamos a los negocios del Ecuador a <em>adaptarse</em> sin dejar de ser quienes son.</h2>
-      <p>La iguana marina es el único lagarto del mundo que aprendió a nadar. No dejó de ser lagarto: aprendió algo nuevo para seguir viva. Eso hacemos contigo. La tecnología se adapta a tu negocio, no al revés.</p>
-      <a href="nosotros.html" class="arc-cta">Conoce nuestra historia<span aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m13 17 5-5-5-5M6 17l5-5-5-5"/></svg></span></a>
+      <h2>No te pasa solo a ti.</h2>
+      <p>Casi todos los negocios del país son pequeños y se atienden con las mismas manos que cobran, agendan y contestan. Para ellos trabajamos.</p>
+      <a href="nosotros.html" class="arc-cta">Conoce quiénes somos<span aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m13 17 5-5-5-5M6 17l5-5-5-5"/></svg></span></a>
     </div>
 
     <div class="arc-stats reveal">
       <div class="arc-stat"><div class="n">92,2<small>%</small></div><div class="l">de las empresas del Ecuador son microempresas</div></div>
-      <div class="arc-stat"><div class="n">51,7<small>%</small></div><div class="l">de las empresas trabajan en servicios, como la tuya</div></div>
-      <div class="arc-stat"><div class="n">83,7<small>%</small></div><div class="l">de los ecuatorianos ya está en internet, buscando dónde comprar</div></div>
-      <div class="arc-stat"><div class="n">94<small>%</small></div><div class="l">de las facturas ya llega al SRI en tiempo real</div></div>
+      <div class="arc-stat"><div class="n">51,7<small>%</small></div><div class="l">trabajan en servicios, como la tuya</div></div>
+      <div class="arc-stat"><div class="n">83,7<small>%</small></div><div class="l">de los ecuatorianos ya está en internet</div></div>
+      <div class="arc-stat"><div class="n">94<small>%</small></div><div class="l">de las facturas llega al SRI en tiempo real</div></div>
     </div>
-    <p class="arc-source">Fuentes: <a href="https://www.ecuadorencifras.gob.ec/directoriodeempresas/" target="_blank" rel="noopener">INEC, Registro Estadístico de Empresas 2024</a> · <a href="https://datareportal.com/reports/digital-2025-ecuador" target="_blank" rel="noopener">DataReportal, Digital 2025 Ecuador</a> · <a href="https://www.eluniverso.com/noticias/economia/facturacion-electronica-sri-plazo-control-recaudacion-ecuador-2026-nota/" target="_blank" rel="noopener">SRI vía El Universo, agosto 2026</a></p>
+    <p class="arc-source">Fuentes: <a href="https://www.ecuadorencifras.gob.ec/directoriodeempresas/" target="_blank" rel="noopener">INEC 2024</a> · <a href="https://datareportal.com/reports/digital-2025-ecuador" target="_blank" rel="noopener">DataReportal 2025</a> · <a href="https://www.eluniverso.com/noticias/economia/facturacion-electronica-sri-plazo-control-recaudacion-ecuador-2026-nota/" target="_blank" rel="noopener">SRI, agosto 2026</a></p>
   </div>
 </section>
 
-<!-- ============ DOLORES ============ -->
-<section class="pain">
-  <div class="wrap">
-    <div class="pain-head reveal">
-      <span class="pill dot">Capítulo 1 · La orilla</span>
-      <h2 style="margin-top:18px;">Perder clientes por no contestar <span class="accent">no es falta de talento</span>.</h2>
-      <p class="lead" style="color:var(--ink-soft); margin-top:14px;">Es un solo par de manos intentando atender a quien tienes enfrente y a quien te escribe al mismo tiempo. Seguro te suena alguna de estas escenas.</p>
-    </div>
-
-    <div class="timeline" id="painTimeline">
-      <div class="timeline-track"></div>
-      <img src="images/iguana%20nado/1.webp" alt="" class="timeline-swimmer" id="timelineSwimmer">
-
-      <div class="pain-card reveal">
-        <div class="card-tab">WhatsApp y atención</div>
-        <h4>Hoy</h4>
-        <p>Un cliente escribe a las 9pm preguntando precios. Lo ves al día siguiente y ya le compró a quien sí contestó.</p>
-        <div class="sol"><h4>Con Iguana Corp</h4><p>Responde al instante lo que siempre te preguntan.</p></div>
-      </div>
-
-      <div class="pain-card reveal">
-        <div class="card-tab">Agenda y citas</div>
-        <h4>Hoy</h4>
-        <p>Confirmas la cita por WhatsApp, la anotas en un cuaderno y aun así el cliente no llega ni avisa.</p>
-        <div class="sol"><h4>Con Iguana Corp</h4><p>Un recordatorio automático antes de cada cita.</p></div>
-      </div>
-
-      <div class="pain-card reveal">
-        <div class="card-tab">Seguimiento y cobros</div>
-        <h4>Hoy</h4>
-        <p>Alguien te debe una cuota. La tienes anotada en tres lugares distintos y ninguno coincide.</p>
-        <div class="sol"><h4>Con Iguana Corp</h4><p>Un solo lugar donde ves quién te debe, cuánto y desde cuándo.</p></div>
-      </div>
-
-      <div class="pain-card reveal">
-        <div class="card-tab">Falta de tiempo</div>
-        <h4>Hoy</h4>
-        <p>Sabes que necesitas digitalizarte, pero entre atender y vivir no queda tiempo para aprender herramientas.</p>
-        <div class="sol"><h4>Con Iguana Corp</h4><p>Nosotros configuramos todo. Tú solo apruebas.</p></div>
-      </div>
-    </div>
+<!-- ============ 4 · EL GIRO ============ -->
+<section class="h-turn">
+  <img src="images/iguana%20nado/1.webp" alt="" class="h-swimmer" id="swimmer" aria-hidden="true">
+  <div class="wrap h-turn-inner reveal">
+    <h2 class="h-h2">La iguana no dejó de ser lagarto.</h2>
+    <p>Cuando la comida en tierra se acabó, aprendió a nadar. No cambió lo que era: sumó una habilidad nueva para seguir viva.</p>
+    <p>Tu negocio tampoco tiene que volverse una empresa de tecnología. Solo necesita moverse en el agua nueva: WhatsApp, la factura electrónica, clientes que esperan respuesta al instante.</p>
   </div>
 </section>
 
-<!-- ============ SOLUCIONES — portafolio ============ -->
-<section class="solutions" id="soluciones">
+<!-- ============ 5 · LO QUE HACEMOS ============ -->
+<section class="h-work" id="soluciones">
   <div class="wrap">
-    <div class="solutions-head reveal">
-      <span class="pill dot">Capítulo 2 · Aprender a nadar</span>
-      <h2>No tienes que cambiar quién eres. Solo aprender a moverte en el agua.</h2>
-      <p>Empezamos por donde más duele, tu WhatsApp, y seguimos con lo que tu negocio vaya necesitando. Todo lo configuramos nosotros.</p>
+    <div class="h-sec-head reveal">
+      <h2 class="h-h2">Lo que hacemos.</h2>
+      <p>Empezamos por tu WhatsApp. Seguimos con lo que tu negocio necesite.</p>
     </div>
-    <div class="sol-grid reveal">
-      <article class="sol-card main">
-        <span class="sol-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></span>
-        <span class="sol-kicker">Producto principal</span>
+    <div class="tags reveal">
+      <article class="tag-card tag-main">
+        <div class="tag-top"><span>Nº 01</span><span>Producto principal</span></div>
         <h3>Asistente de WhatsApp</h3>
-        <p>Un número de WhatsApp nuevo, solo para tu negocio, que contesta, agenda y recuerda las citas mientras tú trabajas.</p>
+        <p>Un número nuevo, solo para tu negocio, que contesta, agenda y recuerda las citas mientras tú trabajas.</p>
         <ul>
           <li>Responde precios, horarios y disponibilidad</li>
           <li>Agenda en tus horarios libres</li>
           <li>Recuerda cada cita para que el cliente llegue</li>
-          <li>Te pasa lo que necesita una persona</li>
         </ul>
-        <div class="sol-foot">
-          <span class="sol-price">Desde <b>$15</b>/mes · IVA incluido</span>
-          <a href="precios.html" class="btn btn-primary">Ver planes</a>
-        </div>
+        <div class="tag-foot"><span class="tag-price">desde <b>$15</b>/mes · IVA incl.</span><a href="precios.html" class="btn btn-primary">Ver planes</a></div>
       </article>
-      <article class="sol-card">
-        <span class="sol-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="8" width="16" height="12" rx="3"/><path d="M12 8V4M8 4h8M9 14h.01M15 14h.01"/></svg></span>
-        <span class="sol-kicker">A medida</span>
+      <article class="tag-card">
+        <div class="tag-top"><span>Nº 02</span><span>A medida</span></div>
         <h3>Agentes de IA</h3>
-        <p>Un asistente pensado para tu proceso: filtra a los clientes interesados, atiende también en Instagram y Facebook, y se conecta con lo que ya usas.</p>
-        <div class="sol-foot"><a href="https://wa.me/593959420676?text=Hola%20Iguana%20Corp%2C%20quiero%20un%20agente%20a%20medida" target="_blank" rel="noopener" class="sol-link">Cuéntanos tu caso →</a></div>
+        <p>Filtran a los clientes interesados, atienden en Instagram y Facebook, y se conectan con lo que ya usas.</p>
+        <a class="tag-link" href="https://wa.me/593959420676?text=Hola%20Iguana%20Corp%2C%20quiero%20un%20agente%20a%20medida" target="_blank" rel="noopener">Cuéntanos tu caso</a>
       </article>
-      <article class="sol-card">
-        <span class="sol-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 15 4-4 3 3 5-6"/></svg></span>
-        <span class="sol-kicker">A medida</span>
-        <h3>Consultoría de procesos</h3>
-        <p>Nos sentamos contigo, vemos en qué se te va el día y te decimos qué automatizar primero. También qué no vale la pena tocar.</p>
-        <div class="sol-foot"><a href="https://wa.me/593959420676?text=Hola%20Iguana%20Corp%2C%20quiero%20ordenar%20los%20procesos%20de%20mi%20negocio" target="_blank" rel="noopener" class="sol-link">Agenda una conversación →</a></div>
+      <article class="tag-card">
+        <div class="tag-top"><span>Nº 03</span><span>A medida</span></div>
+        <h3>Consultoría</h3>
+        <p>Vemos en qué se te va el día y te decimos qué automatizar primero. Y qué no vale la pena tocar.</p>
+        <a class="tag-link" href="https://wa.me/593959420676?text=Hola%20Iguana%20Corp%2C%20quiero%20ordenar%20los%20procesos%20de%20mi%20negocio" target="_blank" rel="noopener">Agenda una conversación</a>
       </article>
-      <article class="sol-card">
-        <span class="sol-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 9h20M6 6.5h.01M9 6.5h.01"/></svg></span>
-        <span class="sol-kicker">A medida</span>
+      <article class="tag-card">
+        <div class="tag-top"><span>Nº 04</span><span>A medida</span></div>
         <h3>Páginas web</h3>
-        <p>Webs claras y rápidas que convierten visitas en conversaciones de WhatsApp. Como la que estás viendo.</p>
-        <div class="sol-foot"><a href="https://wa.me/593959420676?text=Hola%20Iguana%20Corp%2C%20quiero%20una%20p%C3%A1gina%20web" target="_blank" rel="noopener" class="sol-link">Pide tu cotización →</a></div>
-      </article>
-      <article class="sol-card">
-        <span class="sol-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3M12 17h.01"/></svg></span>
-        <span class="sol-kicker">¿No sabes por dónde empezar?</span>
-        <h3>Diagnóstico gratis</h3>
-        <p>Cuatro preguntas y te decimos qué le serviría hoy a tu negocio. Sin compromiso.</p>
-        <div class="sol-foot"><a href="es-para-ti.html" class="sol-link">Hacer el diagnóstico →</a></div>
+        <p>Webs claras y rápidas que convierten visitas en conversaciones de WhatsApp. Como esta.</p>
+        <a class="tag-link" href="https://wa.me/593959420676?text=Hola%20Iguana%20Corp%2C%20quiero%20una%20p%C3%A1gina%20web" target="_blank" rel="noopener">Pide tu cotización</a>
       </article>
     </div>
   </div>
 </section>
 
-<!-- ============ DEMO — así se ve en WhatsApp ============ -->
-<section class="working">
+<!-- ============ 6 · ASÍ SE VE ============ -->
+<section class="h-demo">
   <div class="wrap demo-grid">
     <div class="demo-copy reveal">
-      <span class="pill dot">Asistente de WhatsApp · así funciona</span>
-      <h2>Un cliente escribe a las 9pm. Tu negocio contesta.</h2>
-      <p class="lead">El asistente conoce tus precios, horarios y servicios. Responde en segundos, agenda en tus horarios libres y te deja a ti las conversaciones que necesitan una persona.</p>
-      <ul class="demo-points">
-        <li>
-          <span class="demo-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></span>
-          <div><h4>Responde como tú</h4><p>Precios, horarios, ubicación y disponibilidad, con el tono que tú apruebas.</p></div>
-        </li>
-        <li>
-          <span class="demo-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18M9 16l2 2 4-4"/></svg></span>
-          <div><h4>Agenda sin cruces</h4><p>Ofrece solo los horarios libres y guarda la cita en tu panel.</p></div>
-        </li>
-        <li>
-          <span class="demo-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg></span>
-          <div><h4>Recuerda por ti</h4><p>Le escribe al cliente antes de su cita para que no se le olvide.</p></div>
-        </li>
-      </ul>
+      <h2 class="h-h2">Así se ve.</h2>
+      <p class="lead">La misma escena de las 9 de la noche, pero con alguien que sí contesta. Tu asistente conoce tus precios y horarios, agenda solo en tus espacios libres y te deja las conversaciones que necesitan una persona.</p>
+      <ol class="h-steps">
+        <li><b>Responde</b><span>en segundos, con el tono que tú apruebas.</span></li>
+        <li><b>Agenda</b><span>sin cruces, directo en tu panel.</span></li>
+        <li><b>Recuerda</b><span>la cita antes de que al cliente se le olvide.</span></li>
+      </ol>
     </div>
-
     <div class="demo-phone reveal">
       <div class="phone" role="img" aria-label="Ejemplo de conversación de WhatsApp entre un cliente y el asistente de una barbería">
         <div class="phone-top">
@@ -273,15 +205,16 @@
       </div>
       <p class="demo-note">Conversación de ejemplo</p>
     </div>
+  
   </div>
 </section>
 
-<!-- ============ MAPA DE PLANES ============ -->
+<!-- ============ 7 · UN PLAN POR ISLA ============ -->
 <section class="islands-3d">
   <div class="wrap islands-3d-grid">
     <div class="islands-3d-copy reveal">
-      <h2>Planes del asistente: uno por isla</h2>
-      <p class="lead">Cada plan lleva el nombre de una isla real de Galápagos. Mientras más grande la isla, más hace por tu negocio. Todos con IVA incluido.</p>
+      <h2 class="h-h2">Un plan por isla.</h2>
+      <p class="lead">Mientras más grande la isla, más hace por ti. Desde $15 al mes, IVA incluido.</p>
 
       <div class="island-picker-row">
         <button class="island-nav" id="islandPrev" type="button" aria-label="Isla anterior">‹</button>
@@ -292,7 +225,7 @@
       </div>
 
       <p class="island-caption" id="homeIslandCaption" aria-live="polite">Isabela · A medida. Para negocios con varias sedes o procesos propios. Isabela es, ella sola, más de la mitad de Galápagos.</p>
-      <a href="precios.html" class="btn-text">Ver todos los planes →</a>
+      <a href="precios.html" class="h-link">Comparar los planes →</a>
     </div>
 
     <div class="islands-3d-stage-wrap">
@@ -324,191 +257,39 @@
       </div>
       <div class="island-dots" id="islandDots" role="tablist" aria-label="Seleccionar isla"></div>
     </div>
+  
   </div>
 </section>
 
-<!-- ============ MARQUEE ============ -->
-<section class="dark-break" aria-hidden="true">
-  <div class="marquee">
-    <div class="marquee-track" id="marqueeTrack1">
-      <span>Evoluciona</span><span class="dot">·</span>
-      <span>Adapta</span><span class="dot">·</span>
-      <span>Domina</span><span class="dot">·</span>
-      <span>Sobrevive</span><span class="dot">·</span>
-      <span>Evoluciona</span><span class="dot">·</span>
-      <span>Adapta</span><span class="dot">·</span>
-      <span>Domina</span><span class="dot">·</span>
-      <span>Sobrevive</span><span class="dot">·</span>
-    </div>
-  </div>
-</section>
-
-<!-- ============ COMPARATIVA ============ -->
-<section class="compare">
+<!-- ============ 8 · DE LA ORILLA AL AGUA ============ -->
+<section class="h-path">
   <div class="wrap">
-    <div class="compare-head reveal">
-      <span class="pill dot" style="background:rgba(255,255,255,0.1); color:rgba(255,255,255,0.7); border:none;">Comparativa</span>
-      <h2>Más seguro que quedarte igual</h2>
+    <div class="h-sec-head reveal">
+      <h2 class="h-h2">Once días, de la orilla al agua.</h2>
     </div>
-    <div class="compare-grid reveal">
-
-      <div class="cmp-card">
-        <p class="cmp-name">Agencia tradicional</p>
-        <div class="cmp-rows">
-          <div class="cmp-row"><span class="cmp-label ic-time">Tiempo</span><span class="cmp-val">2 a 4 meses</span></div>
-          <div class="cmp-row"><span class="cmp-label ic-cost">Costo</span><span class="cmp-val">Proyecto grande por adelantado</span></div>
-          <div class="cmp-row"><span class="cmp-label ic-tech">Técnico</span><span class="cmp-val">Dependes del proveedor</span></div>
-          <div class="cmp-row"><span class="cmp-label ic-risk">Riesgo</span><span class="cmp-val">Ya pagaste todo</span></div>
-        </div>
-      </div>
-
-      <div class="cmp-card">
-        <p class="cmp-name">Hacerlo tú mismo</p>
-        <div class="cmp-rows">
-          <div class="cmp-row"><span class="cmp-label ic-time">Tiempo</span><span class="cmp-val">Semanas de prueba y error</span></div>
-          <div class="cmp-row"><span class="cmp-label ic-cost">Costo</span><span class="cmp-val">Tus horas, que valen mucho</span></div>
-          <div class="cmp-row"><span class="cmp-label ic-tech">Técnico</span><span class="cmp-val">Lo aprendes tú</span></div>
-          <div class="cmp-row"><span class="cmp-label ic-risk">Riesgo</span><span class="cmp-val">Pierdes tiempo y ánimo</span></div>
-        </div>
-      </div>
-
-      <div class="cmp-card cmp-card--worst">
-        <p class="cmp-name">Quedarte igual</p>
-        <div class="cmp-rows">
-          <div class="cmp-row"><span class="cmp-label ic-time">Tiempo</span><span class="cmp-val">No avanzas</span></div>
-          <div class="cmp-row"><span class="cmp-label ic-cost">Costo</span><span class="cmp-val">Clientes que se van</span></div>
-          <div class="cmp-row"><span class="cmp-label ic-tech">Técnico</span><span class="cmp-val">Todo sigue a mano</span></div>
-          <div class="cmp-row"><span class="cmp-label ic-risk">Riesgo</span><span class="cmp-val">La competencia contesta primero</span></div>
-        </div>
-      </div>
-
-      <div class="cmp-card cmp-card--win">
-        <span class="cmp-win-badge">La mejor opción</span>
-        <p class="cmp-name">Iguana Corp</p>
-        <div class="cmp-rows">
-          <div class="cmp-row"><span class="cmp-label ic-time">Tiempo</span><span class="cmp-val">Unos 11 días</span></div>
-          <div class="cmp-row"><span class="cmp-label ic-cost">Costo</span><span class="cmp-val">Desde $15 al mes</span></div>
-          <div class="cmp-row"><span class="cmp-label ic-tech">Técnico</span><span class="cmp-val">Lo configuramos todo</span></div>
-          <div class="cmp-row"><span class="cmp-label ic-risk">Riesgo</span><span class="cmp-val">Cancelas cuando quieras</span></div>
-        </div>
-      </div>
-
-    </div>
+    <ol class="h-path-list reveal">
+      <li><time>Días 1–2</time><h3>Te escuchamos</h3><p>Vemos dónde se te van los clientes y el tiempo.</p></li>
+      <li><time>Día 3</time><h3>Primer flujo</h3><p>Tu asistente ya responde con casos reales.</p></li>
+      <li><time>Días 4–10</time><h3>Afinamos</h3><p>Ajustamos el tono con lo que pasa en tu día.</p></li>
+      <li><time>Día 11</time><h3>A nadar</h3><p>Funciona solo. Tú vuelves a lo tuyo.</p></li>
+    </ol>
   </div>
 </section>
 
-<!-- ============ SCATTER 3D ============ -->
-<section class="scatter-section" id="scatterSection">
-  <div class="scatter-viewport">
-    <div class="scatter-scene" id="scatterScene">
-
-      <div class="sc-card sc-img" style="--tx:380px;--ty:-30px;--tz:0px;--rz:-4deg;">
-        <img src="images/iguana-hero.webp" alt="" loading="lazy" decoding="async">
-      </div>
-
-      <div class="sc-card sc-txt" style="--tx:329px;--ty:50px;--tz:175px;--rz:3deg;">
-        <div>
-          <span class="sc-tag">Atención</span>
-          <div class="sc-stat">24<sup>/7</sup></div>
-        </div>
-        <p>respuestas aunque estés ocupado</p>
-      </div>
-
-      <div class="sc-card sc-img" style="--tx:190px;--ty:-60px;--tz:303px;--rz:2deg;">
-        <img src="https://images.unsplash.com/photo-1719204718581-5c95889c8ec9?w=360&q=82&fit=crop&auto=format&fm=webp" alt="" loading="lazy" decoding="async">
-      </div>
-
-      <div class="sc-card sc-txt" style="--tx:0px;--ty:80px;--tz:350px;--rz:-3deg;">
-        <span class="sc-tag">Tono</span>
-        <h3>Responde como tú.</h3>
-        <p>Tú apruebas cada respuesta</p>
-      </div>
-
-      <div class="sc-card sc-img sc-img--wide" style="--tx:-190px;--ty:-40px;--tz:303px;--rz:5deg;">
-        <img src="images/isla-isabela.webp" alt="" loading="lazy" decoding="async">
-      </div>
-
-      <div class="sc-card sc-txt" style="--tx:-329px;--ty:30px;--tz:175px;--rz:-2deg;">
-        <span class="sc-tag">Velocidad</span>
-        <h3>Listo en días.</h3>
-        <p>No en meses</p>
-      </div>
-
-      <div class="sc-card sc-img" style="--tx:-380px;--ty:-70px;--tz:0px;--rz:4deg;">
-        <img src="images/iguana%20nado/1.webp" alt="" loading="lazy" decoding="async">
-      </div>
-
-      <div class="sc-card sc-txt" style="--tx:-303px;--ty:60px;--tz:-175px;--rz:-5deg;">
-        <div>
-          <span class="sc-tag">Precio</span>
-          <div class="sc-stat">$15<sup>/mes</sup></div>
-        </div>
-        <p>plan de entrada</p>
-      </div>
-
-      <div class="sc-card sc-img" style="--tx:-190px;--ty:-50px;--tz:-303px;--rz:3deg;">
-        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=360&q=82&fit=crop&auto=format&fm=webp" alt="" loading="lazy" decoding="async">
-      </div>
-
-      <div class="sc-card sc-txt" style="--tx:0px;--ty:40px;--tz:-350px;--rz:-2deg;">
-        <span class="sc-tag">Tu número</span>
-        <h3>Un WhatsApp solo tuyo.</h3>
-        <p>En todos los planes</p>
-      </div>
-
-      <div class="sc-card sc-img sc-img--wide" style="--tx:190px;--ty:-80px;--tz:-303px;--rz:4deg;">
-        <img src="images/hero-rocas.webp" alt="" loading="lazy" decoding="async">
-      </div>
-
-      <div class="sc-card sc-txt" style="--tx:303px;--ty:20px;--tz:-175px;--rz:-3deg;">
-        <span class="sc-tag">Compromiso</span>
-        <h3>Cancelas cuando quieras.</h3>
-        <p>Sin permanencia</p>
-      </div>
-
-    </div>
-  </div>
-
-  <div class="scatter-copy wrap">
-    <h2 class="scatter-h2">La evolución ya empezó.<br><span class="scatter-accent">¿Tu negocio se sube?</span></h2>
-    <p>Cuéntanos cómo trabajas y te decimos por dónde empezar.</p>
-    <a href="https://wa.me/593959420676?text=Hola%20Iguana%20Corp%2C%20quiero%20mi%20diagn%C3%B3stico%20gratis" target="_blank" rel="noopener" class="btn btn-primary">Quiero mi diagnóstico gratis</a>
-  </div>
-</section>
-
-<!-- ============ STATEMENT ============ -->
-<section class="dark-statement" id="darkStatement">
+<!-- ============ 9 · CIERRE ============ -->
+<section class="dark-statement h-close" id="darkStatement">
   <div class="wrap">
     <h2 class="statement-text">
-      <span class="statement-word">¿Quieres</span>
-      <span class="statement-word">ser</span>
-      <span class="statement-word">el</span>
-      <span class="statement-word">lagarto</span>
-      <span class="statement-word">que</span>
-      <span class="statement-word">se</span>
-      <span class="statement-word">quedó</span>
-      <span class="statement-word">en</span>
-      <span class="statement-word">tierra,</span>
-      <span class="statement-word">o</span>
-      <span class="statement-word statement-accent">el</span>
-      <span class="statement-word statement-accent">que</span>
-      <span class="statement-word statement-accent">aprendió</span>
-      <span class="statement-word statement-accent">a</span>
-      <span class="statement-word statement-accent">nadar?</span>
+      <span class="statement-word">¿Quieres</span> <span class="statement-word">ser</span> <span class="statement-word">el</span> <span class="statement-word">lagarto</span> <span class="statement-word">que</span> <span class="statement-word">se</span> <span class="statement-word">quedó</span> <span class="statement-word">en</span> <span class="statement-word">tierra,</span> <span class="statement-word">o</span> <span class="statement-word statement-accent">el</span> <span class="statement-word statement-accent">que</span> <span class="statement-word statement-accent">aprendió</span> <span class="statement-word statement-accent">a</span> <span class="statement-word statement-accent">nadar?</span>
     </h2>
-  </div>
-</section>
-
-<!-- ============ CTA FINAL ============ -->
-<section class="final-cta">
-  <div class="wrap">
-    <div class="final-cta-inner reveal">
-      <h2>La iguana se adaptó. ¿Qué esperas tú?</h2>
-      <p>Agenda un diagnóstico gratis de 15 minutos. Te decimos qué le sirve hoy a tu negocio, sin compromiso.</p>
-      <a href="https://wa.me/593959420676?text=Hola%20Iguana%20Corp%2C%20quiero%20mi%20diagn%C3%B3stico%20gratis" target="_blank" rel="noopener" class="btn btn-primary">Quiero mi diagnóstico gratis</a>
+    <div class="h-close-cta reveal">
+      <a href="https://wa.me/593959420676?text=Hola%20Iguana%20Corp%2C%20quiero%20mi%20diagn%C3%B3stico%20gratis" target="_blank" rel="noopener" class="btn btn-primary">Agenda tu diagnóstico gratis</a>
+      <p>15 minutos, sin compromiso. La iguana se adaptó. ¿Qué esperas tú?</p>
     </div>
   </div>
 </section>
+
+</main>
 
 <footer>
   <div class="wrap">
