@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>¿Es para ti? Diagnóstico gratis — Iguana Corp</title>
+<meta name="description" content="Responde 4 preguntas y descubre si un asistente de WhatsApp con IA le sirve a tu negocio y qué plan te conviene. Gratis y en un minuto.">
+<link rel="canonical" href="https://iguana.ec/es-para-ti">
+<link rel="icon" href="images/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<meta name="theme-color" content="#0C7A3E">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Iguana Corp">
+<meta property="og:locale" content="es_EC">
+<meta property="og:url" content="https://iguana.ec/es-para-ti">
+<meta property="og:title" content="¿Iguana Corp es para tu negocio? Diagnóstico gratis">
+<meta property="og:description" content="4 preguntas, un minuto y una recomendación de plan.">
+<meta property="og:image" content="https://iguana.ec/images/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="logo"><a href="index.html" aria-label="Iguana Corp, inicio"><img src="images/logo-iguana.webp" alt="Iguana Corp" class="logo-img"></a></div>
+    <div class="nav-center">
+      <a href="index.html#soluciones">Soluciones</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="precios.html">Planes</a>
+      <a href="es-para-ti.html" class="active" aria-current="page">¿Es para ti?</a>
+    </div>
+    <div class="nav-right">
+      <a href="https://wa.me/593959420676?text=Hola%20Iguana%20Corp%2C%20quiero%20mi%20diagn%C3%B3stico%20gratis" target="_blank" rel="noopener" class="btn btn-primary" style="padding:11px 20px; font-size:13.5px;">Agenda gratis</a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="navMobile">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+<div class="nav-mobile" id="navMobile">
+  <a href="index.html#soluciones">Soluciones</a>
+  <a href="nosotros.html">Nosotros</a>
+  <a href="precios.html">Planes</a>
+  <a href="es-para-ti.html">¿Es para ti?</a>
+  <a href="https://wa.me/593959420676?text=Hola%20Iguana%20Corp%2C%20quiero%20mi%20diagn%C3%B3stico%20gratis" target="_blank" rel="noopener" class="btn btn-primary">Agenda gratis</a>
+</div>
+
+<!-- ============ QUIZ — sin scroll, paso a paso ============ -->
+<section class="quiz-section">
+  <div class="quiz-layout">
+    <div class="quiz-deco quiz-deco-left" aria-hidden="true">
+      <img src="images/iguana-hero.webp" alt="">
+    </div>
+
+    <div class="quiz-center">
+    <div class="wrap">
+    <div class="quiz-intro reveal">
+      <span class="pill dot">Diagnóstico gratis · 4 preguntas</span>
+      <h1>¿Iguana Corp es para tu negocio?</h1>
+    </div>
+
+    <div class="quiz-card reveal" id="quizCard">
+      <div class="quiz-progress"><div class="quiz-progress-fill" id="quizProgressFill"></div></div>
+
+      <div class="quiz-step active" data-step="1">
+        <span class="quiz-step-label">Pregunta 1 de 4</span>
+        <h2>¿Qué tipo de negocio tienes?</h2>
+        <div class="quiz-options">
+          <button class="quiz-option" type="button" data-q="negocio" data-value="Peluquería o barbería">Peluquería o barbería</button>
+          <button class="quiz-option" type="button" data-q="negocio" data-value="Consultorio">Consultorio (dental, estético, terapias)</button>
+          <button class="quiz-option" type="button" data-q="negocio" data-value="Taller o servicio técnico">Taller o servicio técnico</button>
+          <button class="quiz-option" type="button" data-q="negocio" data-value="Profesional independiente">Profesional independiente</button>
+        </div>
+      </div>
+
+      <div class="quiz-step" data-step="2">
+        <span class="quiz-step-label">Pregunta 2 de 4</span>
+        <h2>¿Contestas las mismas preguntas de WhatsApp todos los días?</h2>
+        <div class="quiz-options">
+          <button class="quiz-option" type="button" data-q="repetitivo" data-value="Sí, todo el tiempo">Sí, todo el tiempo</button>
+          <button class="quiz-option" type="button" data-q="repetitivo" data-value="No realmente">No realmente</button>
+        </div>
+      </div>
+
+      <div class="quiz-step" data-step="3">
+        <span class="quiz-step-label">Pregunta 3 de 4</span>
+        <h2>¿Cuántas citas o pedidos manejas por semana?</h2>
+        <div class="quiz-options">
+          <button class="quiz-option" type="button" data-q="volumen" data-value="Menos de 10">Menos de 10</button>
+          <button class="quiz-option" type="button" data-q="volumen" data-value="Entre 10 y 30">Entre 10 y 30</button>
+          <button class="quiz-option" type="button" data-q="volumen" data-value="Más de 30">Más de 30</button>
+        </div>
+      </div>
+
+      <div class="quiz-step" data-step="4">
+        <span class="quiz-step-label">Pregunta 4 de 4</span>
+        <h2>¿Qué te gustaría resolver primero?</h2>
+        <div class="quiz-options">
+          <button class="quiz-option" type="button" data-q="prioridad" data-value="Responder más rápido">Responder más rápido</button>
+          <button class="quiz-option" type="button" data-q="prioridad" data-value="Que no se me olviden las citas">Que no se me olviden las citas</button>
+          <button class="quiz-option" type="button" data-q="prioridad" data-value="Ordenar cobros y pagos">Ordenar cobros y pagos</button>
+          <button class="quiz-option" type="button" data-q="prioridad" data-value="Algo a medida de mi negocio">Algo a medida de mi negocio</button>
+        </div>
+      </div>
+
+      <div class="quiz-step quiz-result" data-step="result">
+        <span class="quiz-step-label" id="quizResultTag">Tu resultado</span>
+        <h2 id="quizResultTitle">Iguana Corp sí es para ti.</h2>
+        <p id="quizResultText"></p>
+
+        <form class="quiz-form" id="quizForm">
+          <input type="text" id="quizName" placeholder="Tu nombre" aria-label="Tu nombre" required autocomplete="name">
+          <input type="tel" id="quizPhone" placeholder="Tu número de WhatsApp" aria-label="Tu número de WhatsApp" required autocomplete="tel" inputmode="tel">
+          <button type="submit" class="btn btn-primary">Enviar por WhatsApp</button>
+        </form>
+        <p class="quiz-form-note" id="quizFormNote" aria-live="polite">Se abrirá WhatsApp con tus respuestas listas para enviar.</p>
+      </div>
+
+      <div class="quiz-nav" id="quizNav">
+        <button class="quiz-back" id="quizBack" type="button">← Atrás</button>
+        <button class="quiz-restart" id="quizRestart" type="button">Empezar de nuevo</button>
+      </div>
+    </div>
+    </div><!-- /.wrap -->
+    </div><!-- /.quiz-center -->
+
+    <div class="quiz-deco quiz-deco-right" aria-hidden="true">
+      <img src="images/hero-rocas.webp" alt="">
+    </div>
+  </div><!-- /.quiz-layout -->
+</section>
+
+<!-- ============ DÓNDE FUNCIONA MEJOR ============ -->
+<section class="features">
+  <div class="wrap">
+    <div class="features-head reveal">
+      <span class="pill dot">Dónde funciona mejor</span>
+      <h2>Los dos casos donde más ayudamos</h2>
+    </div>
+    <div class="feat-grid cols-2 reveal">
+      <div class="feat-card">
+        <h3>Atención repetitiva y por WhatsApp</h3>
+        <p>Negocios donde el cliente pregunta lo mismo muchas veces al día — precio, horario, disponibilidad — y agendar ocupa más tiempo que atender.</p>
+        <img class="feat-media" src="https://images.unsplash.com/photo-1719204718581-5c95889c8ec9?w=800&q=68&fm=webp&fit=crop&auto=format" alt="Cliente escribiendo por WhatsApp a un negocio" loading="lazy" decoding="async">
+      </div>
+      <div class="feat-card">
+        <h3>Muchas citas, poco personal</h3>
+        <p>Negocios donde una sola persona agenda, confirma y recuerda las citas de memoria, y alguna siempre se escapa.</p>
+        <img class="feat-media" src="https://images.unsplash.com/photo-1770253980732-dfed1cfdfa43?w=800&q=68&fm=webp&fit=crop&auto=format" alt="Barbería con citas a lo largo del día" loading="lazy" decoding="async">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EJEMPLOS DE TIPO DE NEGOCIO ============ -->
+<section class="working" id="ejemplos">
+  <div class="wrap">
+    <div class="working-head reveal">
+      <span class="pill dot">Ejemplos de tipo de negocio</span>
+      <h2>¿Te reconoces en alguno?</h2>
+    </div>
+    <div class="proj-row cols-4 reveal">
+      <div class="proj-card"><div class="proj-body"><h4>Peluquerías y barberías</h4><p>Turnos, precios y recordatorios</p></div></div>
+      <div class="proj-card"><div class="proj-body"><h4>Consultorios</h4><p>Dental, estético, terapias</p></div></div>
+      <div class="proj-card"><div class="proj-body"><h4>Talleres y servicios técnicos</h4><p>Cotizaciones y estado del trabajo</p></div></div>
+      <div class="proj-card"><div class="proj-body"><h4>Profesionales independientes</h4><p>Abogados, contadores, entrenadores</p></div></div>
+    </div>
+    <p class="price-foot" style="color:#a9ada9;">¿Tu negocio no está en la lista? <a href="https://wa.me/593959420676?text=Hola%20Iguana%20Corp%2C%20quiero%20saber%20si%20sirve%20para%20mi%20negocio" target="_blank" rel="noopener" style="color:#7fe0a8;">Escríbenos y lo vemos juntos</a>.</p>
+  </div>
+</section>
+
+<!-- ============ CÓMO REDUCIMOS EL RIESGO ============ -->
+<section class="final-cta fit-risk">
+  <div class="wrap">
+    <div class="final-cta-inner reveal">
+      <h2>Cómo reducimos el riesgo de probar algo nuevo</h2>
+      <p>Empiezas con un diagnóstico gratis y sin compromiso. Si después de probarlo no es para ti, cancelas: no hay contrato que romper.</p>
+      <a href="https://wa.me/593959420676?text=Hola%20Iguana%20Corp%2C%20quiero%20mi%20diagn%C3%B3stico%20gratis" target="_blank" rel="noopener" class="btn btn-primary">Empezar mi diagnóstico gratis</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="logo" aria-label="Iguana Corp, inicio"><img src="images/logo-iguana.webp" alt="Iguana Corp" class="logo-img"></a>
+        <p>Soluciones con inteligencia artificial para negocios del Ecuador. La iguana se adaptó. ¿Qué esperas tú?</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col"><h5>Iguana Corp</h5><a href="index.html#soluciones">Soluciones</a><a href="nosotros.html">Nosotros</a><a href="precios.html">Planes del asistente</a><a href="es-para-ti.html">¿Es para ti?</a></div>
+        <div class="footer-col"><h5>Contacto</h5><a href="https://wa.me/593959420676" target="_blank" rel="noopener">WhatsApp +593 95 942 0676</a><a href="https://wa.me/593959420676?text=Hola%20Iguana%20Corp%2C%20quiero%20mi%20diagn%C3%B3stico%20gratis" target="_blank" rel="noopener">Agenda tu diagnóstico</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Iguana Corp · Ecuador</span>
+      <div class="socials">
+        <a href="https://www.instagram.com/iguana.ec" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg></a>
+        <a href="https://www.facebook.com/people/Iguana-Ec/61594253138914/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+        <a href="https://www.linkedin.com/company/iguanaec/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>

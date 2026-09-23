@@ -110,18 +110,6 @@ if(heroSection){
   const iguana = document.getElementById('slideIguana');
   if(!track || !iguana || typeof gsap === 'undefined') return;
 
-  const frames = [
-    'images/iguana%20nado/1.webp',
-    'images/iguana%20nado/2.webp',
-    'images/iguana%20nado/3.webp',
-    'images/iguana%20nado/4.webp'
-  ];
-  let frameIndex = 0;
-  setInterval(()=>{
-    frameIndex = (frameIndex + 1) % frames.length;
-    iguana.src = frames[frameIndex];
-  }, 180);
-
   const PAD = 8;
   function getMax(){ return Math.max(track.clientWidth - iguana.offsetWidth - PAD * 2, 0); }
 
@@ -153,13 +141,6 @@ if(heroSection){
   const swimmer = document.getElementById('timelineSwimmer');
   if(!timeline || !swimmer) return;
 
-  const frames = [
-    'images/iguana%20nado/1.webp',
-    'images/iguana%20nado/2.webp',
-    'images/iguana%20nado/3.webp',
-    'images/iguana%20nado/4.webp'
-  ];
-  let lastFrameIndex = -1;
   let lastScrollY = window.scrollY;
   let ticking = false;
 
@@ -178,12 +159,6 @@ if(heroSection){
     progress = Math.min(Math.max(progress, 0), 1);
 
     swimmer.style.top = (progress * rect.height) + 'px';
-
-    const frameIndex = Math.floor((progress * 100) / 1.5) % frames.length;
-    if(frameIndex !== lastFrameIndex){
-      swimmer.src = frames[frameIndex];
-      lastFrameIndex = frameIndex;
-    }
 
     ticking = false;
   }
@@ -235,32 +210,7 @@ if(heroSection){
   card.addEventListener('click', flip);
 })();
 
-// ---------- precios hero: island size picker (Baltra / Isabela) ----------
-(function(){
-  const picker = document.getElementById('islandPicker');
-  const preview = document.getElementById('islandPreview');
-  const caption = document.getElementById('islandCaption');
-  if(!picker || !preview || !caption) return;
-
-  const captions = {
-    baltra: 'Baltra es la puerta de entrada a Galápagos — el aeropuerto por donde llega casi todo el mundo. Tu primer paso, con el número de Iguana Corp.',
-    isabela: 'Isabela es, ella sola, más de la mitad de Galápagos y tiene el volcán más alto del archipiélago. Todo el territorio, operando bajo tu propia marca.'
-  };
-
-  picker.querySelectorAll('.island-btn').forEach(btn=>{
-    btn.addEventListener('click', ()=>{
-      const island = btn.dataset.island;
-      picker.querySelectorAll('.island-btn').forEach(b=> b.classList.toggle('is-active', b === btn));
-      picker.dataset.active = island;
-      preview.dataset.active = island;
-      caption.textContent = captions[island] || '';
-    });
-  });
-})();
-
-// ---------- es-para-ti: full step-by-step quiz, no scroll needed to complete it ----------
-// NOTE: the final form only shows a client-side confirmation message — it is not wired to
-// any real backend/WhatsApp number/CRM yet. That destination is still pending confirmation.
+// ---------- es-para-ti: quiz paso a paso; el resultado se envía por WhatsApp ----------
 (function(){
   const card = document.getElementById('quizCard');
   if(!card) return;
@@ -290,20 +240,25 @@ if(heroSection){
   function goNext(){ if(current < order.length - 1){ current++; render(); } }
   function goBack(){ if(current > 0){ current--; render(); } }
 
+  let recommended = '';
+
   function computeResult(){
     let fit = 0;
     if(answers.repetitivo === 'Sí, todo el tiempo') fit++;
     if(answers.volumen && answers.volumen !== 'Menos de 10') fit++;
     if(answers.negocio) fit++;
 
-    const plan = answers.numero === 'Mi propio número' ? 'Plan Isabela' : 'Plan Baltra';
+    if(answers.prioridad === 'Algo a medida de mi negocio') recommended = 'plan A medida';
+    else if(answers.prioridad === 'Ordenar cobros y pagos' || answers.volumen === 'Más de 30') recommended = 'plan Pro ($60 al mes)';
+    else if(answers.volumen === 'Entre 10 y 30') recommended = 'plan Crecimiento ($35 al mes)';
+    else recommended = 'plan Esencial ($15 al mes)';
 
     if(fit >= 2){
       resultTitle.textContent = 'Iguana Corp sí es para ti.';
-      resultText.textContent = `Con lo que nos cuentas — ${answers.negocio.toLowerCase()}, atención repetitiva por WhatsApp — te recomendamos empezar con el ${plan}.`;
+      resultText.textContent = `Por lo que nos cuentas, te recomendamos empezar con el ${recommended}. Déjanos tu nombre y te escribimos para tu diagnóstico gratis.`;
     } else {
-      resultTitle.textContent = 'Puede que aplique, con matices.';
-      resultText.textContent = `Tu caso es distinto al de los negocios donde más ayudamos hoy, pero igual vale la pena conversar — el ${plan} podría servirte.`;
+      resultTitle.textContent = 'Puede servirte, conversemos.';
+      resultText.textContent = `Tu caso es un poco distinto al de los negocios donde más ayudamos, pero vale la pena revisarlo juntos. Por tus respuestas, el ${recommended} es el que mejor encaja.`;
     }
   }
 
@@ -325,8 +280,8 @@ if(heroSection){
       current = 0;
       Object.keys(answers).forEach(k=> delete answers[k]);
       card.querySelectorAll('.quiz-option.chosen').forEach(b=> b.classList.remove('chosen'));
-      if(form){ form.reset(); form.style.display = ''; }
-      if(formNote){ formNote.textContent = ''; }
+      if(form){ form.reset(); }
+      if(formNote){ formNote.textContent = 'Se abrirá WhatsApp con tus respuestas listas para enviar.'; }
       render();
     });
   }
@@ -334,8 +289,21 @@ if(heroSection){
   if(form){
     form.addEventListener('submit', (e)=>{
       e.preventDefault();
-      formNote.textContent = '¡Gracias! Te contactaremos pronto a este WhatsApp.';
-      form.style.display = 'none';
+      const name = document.getElementById('quizName').value.trim();
+      const phone = document.getElementById('quizPhone').value.trim();
+      const msg = [
+        `Hola Iguana Corp, soy ${name}. Hice el diagnóstico en la web:`,
+        `• Negocio: ${answers.negocio || '-'}`,
+        `• Preguntas repetidas por WhatsApp: ${answers.repetitivo || '-'}`,
+        `• Citas o pedidos por semana: ${answers.volumen || '-'}`,
+        `• Quiere resolver primero: ${answers.prioridad || '-'}`,
+        `Me recomendaron el ${recommended}. Mi WhatsApp: ${phone}`
+      ].join('\n');
+      const url = 'https://wa.me/593959420676?text=' + encodeURIComponent(msg);
+      const win = window.open(url, '_blank');
+      if(win) win.opener = null;
+      else window.location.href = url;
+      formNote.textContent = 'Listo. Envía el mensaje en WhatsApp y te respondemos para agendar tu diagnóstico.';
     });
   }
 
@@ -379,11 +347,11 @@ if(heroSection){
   };
 
   const captions = {
-    isabela: 'Isabela es, ella sola, más de la mitad de Galápagos, con el volcán más alto del archipiélago. El plan más completo, con tu propio número.',
-    santacruz: 'Santa Cruz es la única isla con un pueblo real, Puerto Ayora — más pequeña que Isabela, pero el corazón del archipiélago. Un plan a su medida.',
-    fernandina: 'Fernandina es la isla más joven y volcánicamente activa de Galápagos, casi sin especies introducidas. Todavía sin plan asignado. [ PENDIENTE ]',
-    santiago: 'Santiago fue parada frecuente de piratas y balleneros en los siglos XVII-XIX, y Darwin pasó semanas explorándola en 1835. Todavía sin plan asignado. [ PENDIENTE ]',
-    sancristobal: 'San Cristóbal fue la primera isla que pisó Darwin, en 1835, y hoy tiene la capital de la provincia. Todavía sin plan asignado. [ PENDIENTE ]'
+    sancristobal: 'San Cristóbal · Esencial, $15/mes. Un WhatsApp nuevo para tu negocio con 50 mensajes al mes, agenda y recordatorios. Fue la primera isla que pisó Darwin, en 1835.',
+    santiago: 'Santiago · Crecimiento, $35/mes. Más mensajes y un panel para ver tus citas y conversaciones. Darwin pasó semanas explorándola.',
+    santacruz: 'Santa Cruz · Pro, $60/mes. Para negocios con mucho movimiento: aún más mensajes y seguimiento de pagos. Es el corazón habitado del archipiélago.',
+    isabela: 'Isabela · Plan a medida. Para negocios con varias sedes o procesos propios. Isabela es, ella sola, más de la mitad de Galápagos.',
+    fernandina: 'Fernandina es la isla más joven y volcánicamente activa del archipiélago. Aquí nacen nuestros próximos complementos.'
   };
 
   let index = ORDER.indexOf('isabela'); // arranca directo en Isabela, sin plano general
@@ -500,121 +468,6 @@ if(heroSection){
   markCurrent(current);
   renderPicker();
   renderDots();
-})();
-
-/* ---------- precios — slider de planes por isla ---------- */
-(function(){
-  const slider = document.getElementById('plansSlider');
-  const prevBtn = document.getElementById('planPrev');
-  const nextBtn = document.getElementById('planNext');
-  const thumb = document.getElementById('planThumb');
-  const nameEl = document.getElementById('planName');
-  const nextLabel = document.getElementById('planNextLabel');
-  const card = document.getElementById('planCard');
-  const cardTab = document.getElementById('planCardTab');
-  const cardSub = document.getElementById('planCardSub');
-  const cardList = document.getElementById('planCardList');
-  const cardNote = document.getElementById('planCardNote');
-  if(!slider || !card) return;
-
-  const hasGsap = typeof gsap !== 'undefined';
-
-  // mismo orden real del archipiélago que en el home; solo Isabela y Santa Cruz
-  // tienen plan confirmado hoy, el resto queda como "próximamente".
-  const ORDER = ['isabela', 'santacruz', 'fernandina', 'santiago', 'sancristobal'];
-  const NAMES = {
-    isabela:'Isabela', santacruz:'Santa Cruz', fernandina:'Fernandina',
-    santiago:'Santiago', sancristobal:'San Cristóbal'
-  };
-
-  const PLANS = {
-    isabela: {
-      img:'images/isla-isabela.webp', tag:'Plan Isabela', featured:true,
-      sub:'Todo el territorio, a tu nombre',
-      list:[
-        'Todo lo del Plan Santa Cruz',
-        'Integrado directo a tu propio número de WhatsApp Business',
-        'Costo de implementación adicional (pago único) + suscripción mensual'
-      ],
-      note:'Isabela es, ella sola, más de la mitad de Galápagos. Este plan es el negocio completo, operando bajo tu propia marca.'
-    },
-    santacruz: {
-      img:'images/isla-santacruz.webp', tag:'Plan Santa Cruz', featured:false,
-      sub:'La puerta de entrada',
-      list:[
-        'Atiendes desde el número de WhatsApp de Iguana Corp',
-        'Suscripción mensual baja y accesible',
-        'Agente de WhatsApp + dashboard de agenda',
-        'Cancelas cuando quieras'
-      ],
-      note:'Santa Cruz es la única isla con un pueblo real, Puerto Ayora — el corazón habitado del archipiélago. Este plan es tu primer paso.'
-    },
-    fernandina: {
-      img:'images/isla-fernandina.webp', tag:'Próximamente', featured:false, sub:'Plan por definir',
-      list:[], note:'Fernandina es la isla más joven y volcánicamente activa de Galápagos. Todavía sin plan asignado. [ PENDIENTE ]'
-    },
-    santiago: {
-      img:'images/isla-santiago.webp', tag:'Próximamente', featured:false, sub:'Plan por definir',
-      list:[], note:'Santiago fue parada frecuente de piratas y balleneros, y Darwin la exploró en 1835. Todavía sin plan asignado. [ PENDIENTE ]'
-    },
-    sancristobal: {
-      img:'images/isla-sancristobal.webp', tag:'Próximamente', featured:false, sub:'Plan por definir',
-      list:[], note:'San Cristóbal fue la primera isla que pisó Darwin, en 1835. Todavía sin plan asignado. [ PENDIENTE ]'
-    }
-  };
-
-  let index = 0;
-
-  function render(animate){
-    const name = ORDER[index];
-    const data = PLANS[name];
-    const nextName = NAMES[ORDER[(index + 1) % ORDER.length]];
-
-    function paint(){
-      if(thumb){
-        if(data.img){ thumb.src = data.img; thumb.alt = 'Isla ' + NAMES[name]; thumb.style.display = ''; }
-        else{ thumb.style.display = 'none'; }
-      }
-      if(nameEl) nameEl.textContent = NAMES[name];
-      if(nextLabel) nextLabel.textContent = 'Siguiente: ' + nextName;
-
-      if(cardTab) cardTab.textContent = data.tag;
-      if(cardSub) cardSub.textContent = data.sub;
-      if(cardList){
-        cardList.innerHTML = '';
-        data.list.forEach(item=>{
-          const li = document.createElement('li');
-          li.textContent = item;
-          cardList.appendChild(li);
-        });
-      }
-      if(cardNote) cardNote.textContent = data.note;
-      card.classList.toggle('featured', !!data.featured);
-    }
-
-    if(animate && hasGsap){
-      gsap.to([card, document.getElementById('planIslandStack')], {
-        opacity:0, y:8, duration:.18, ease:'power1.in',
-        onComplete:()=>{
-          paint();
-          gsap.fromTo([card, document.getElementById('planIslandStack')],
-            { opacity:0, y:-8 }, { opacity:1, y:0, duration:.35, ease:'power2.out' });
-        }
-      });
-    }else{
-      paint();
-    }
-  }
-
-  function step(dir){
-    index = (index + dir + ORDER.length) % ORDER.length;
-    render(true);
-  }
-
-  if(prevBtn) prevBtn.addEventListener('click', ()=> step(-1));
-  if(nextBtn) nextBtn.addEventListener('click', ()=> step(1));
-
-  render(false);
 })();
 
 /* ---------- nosotros — 3D carousel "Por qué Galápagos" ---------- */
