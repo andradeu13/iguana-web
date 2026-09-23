@@ -248,8 +248,9 @@ if(heroSection){
     if(answers.volumen && answers.volumen !== 'Menos de 10') fit++;
     if(answers.negocio) fit++;
 
-    if(answers.numero === 'Mi propio número') recommended = 'plan Pro ($60 al mes)';
-    else if(answers.volumen && answers.volumen !== 'Menos de 10') recommended = 'plan Crecimiento ($35 al mes)';
+    if(answers.prioridad === 'Algo a medida de mi negocio') recommended = 'plan A medida';
+    else if(answers.prioridad === 'Ordenar cobros y pagos' || answers.volumen === 'Más de 30') recommended = 'plan Pro ($60 al mes)';
+    else if(answers.volumen === 'Entre 10 y 30') recommended = 'plan Crecimiento ($35 al mes)';
     else recommended = 'plan Esencial ($15 al mes)';
 
     if(fit >= 2){
@@ -295,7 +296,7 @@ if(heroSection){
         `• Negocio: ${answers.negocio || '-'}`,
         `• Preguntas repetidas por WhatsApp: ${answers.repetitivo || '-'}`,
         `• Citas o pedidos por semana: ${answers.volumen || '-'}`,
-        `• Número: ${answers.numero || '-'}`,
+        `• Quiere resolver primero: ${answers.prioridad || '-'}`,
         `Me recomendaron el ${recommended}. Mi WhatsApp: ${phone}`
       ].join('\n');
       const url = 'https://wa.me/593959420676?text=' + encodeURIComponent(msg);
@@ -346,9 +347,9 @@ if(heroSection){
   };
 
   const captions = {
-    sancristobal: 'San Cristóbal · Esencial, $15/mes. Tu asistente responde las preguntas frecuentes desde un número de Iguana Corp. Fue la primera isla que pisó Darwin, en 1835.',
-    santiago: 'Santiago · Crecimiento, $35/mes. Suma agenda automática y recordatorios de citas. Darwin pasó semanas explorándola.',
-    santacruz: 'Santa Cruz · Pro, $60/mes. Todo funcionando en tu propio WhatsApp Business. Es el corazón habitado del archipiélago.',
+    sancristobal: 'San Cristóbal · Esencial, $15/mes. Un WhatsApp nuevo para tu negocio con 50 mensajes al mes, agenda y recordatorios. Fue la primera isla que pisó Darwin, en 1835.',
+    santiago: 'Santiago · Crecimiento, $35/mes. Más mensajes y un panel para ver tus citas y conversaciones. Darwin pasó semanas explorándola.',
+    santacruz: 'Santa Cruz · Pro, $60/mes. Para negocios con mucho movimiento: aún más mensajes y seguimiento de pagos. Es el corazón habitado del archipiélago.',
     isabela: 'Isabela · Plan a medida. Para negocios con varias sedes o procesos propios. Isabela es, ella sola, más de la mitad de Galápagos.',
     fernandina: 'Fernandina es la isla más joven y volcánicamente activa del archipiélago. Aquí nacen nuestros próximos complementos.'
   };
