@@ -3,16 +3,24 @@
    Requiere GSAP + ScrollTrigger cargados antes (defer en index.html).
 ============================================================ */
 
-/* ---------- sobre Iguana: las fotos se abren en arco al entrar en pantalla ---------- */
+/* ---------- cifra grande de datos: cuenta de 0 a 21 al entrar en pantalla ---------- */
 (function(){
-  const photos = document.getElementById('arcPhotos');
-  const section = document.getElementById('sobre');
-  if(!photos || !section) return;
-  if(typeof IntersectionObserver === 'undefined'){ photos.classList.add('in'); return; }
+  const el = document.getElementById('arcCount');
+  if(!el || typeof IntersectionObserver === 'undefined') return;
+  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const to = parseInt(el.textContent, 10);
+  el.textContent = '0';
   const io = new IntersectionObserver(entries=>{
-    if(entries[0].isIntersecting){ photos.classList.add('in'); io.disconnect(); }
-  }, { threshold: 0.15 });
-  io.observe(section);
+    if(!entries[0].isIntersecting) return;
+    io.disconnect();
+    const t0 = performance.now(), dur = 1600;
+    (function tick(now){
+      const p = Math.min((now - t0) / dur, 1);
+      el.textContent = Math.round(to * (1 - Math.pow(1 - p, 3)));
+      if(p < 1) requestAnimationFrame(tick);
+    })(t0);
+  }, { threshold: 0.5 });
+  io.observe(el);
 })();
 
 window.addEventListener('DOMContentLoaded', ()=>{
@@ -164,21 +172,3 @@ window.addEventListener('DOMContentLoaded', ()=>{
     });
   });
 });
-
-/* ---------- scatter 3D: inicia rotación al entrar en viewport ---------- */
-(function(){
-  const scene = document.getElementById('scatterScene');
-  if(!scene) return;
-  if(typeof IntersectionObserver !== 'undefined'){
-    const io = new IntersectionObserver(entries=>{
-      if(entries[0].isIntersecting){
-        scene.classList.add('is-spinning');
-      } else {
-        scene.classList.remove('is-spinning');
-      }
-    }, { threshold: 0.05 });
-    io.observe(scene.closest('.scatter-section') || scene);
-  } else {
-    scene.classList.add('is-spinning');
-  }
-})();

@@ -310,7 +310,7 @@ if(heroSection){
   render();
 })();
 
-/* ---------- home — mapa del archipiélago con cámara animada (GSAP) ---------- */
+/* ---------- precios — mapa de planes con cámara animada (GSAP) ---------- */
 (function(){
   const picker = document.getElementById('homeIslandPicker');
   const thumb = document.getElementById('homeIslandThumb');
@@ -324,14 +324,12 @@ if(heroSection){
 
   const hasGsap = typeof gsap !== 'undefined';
 
-  // orden real, de oeste a este: Fernandina/Isabela primero, Santiago al
-  // norte-centro, Santa Cruz al centro, San Cristóbal al sureste.
-  // El picker siempre muestra 2 islas vecinas de esta lista (ventana deslizante).
-  const ORDER = ['fernandina', 'isabela', 'santiago', 'santacruz', 'sancristobal'];
+  // orden de los planes, de menor a mayor; las flechas recorren esta lista.
+  const ORDER = ['sancristobal', 'santiago', 'santacruz', 'isabela', 'fernandina'];
 
   const NAMES = {
-    fernandina: 'Fernandina', isabela: 'Isabela', santiago: 'Santiago',
-    santacruz: 'Santa Cruz', sancristobal: 'San Cristóbal'
+    fernandina: 'Próximamente', isabela: 'A medida', santiago: 'Crecimiento',
+    santacruz: 'Pro', sancristobal: 'Esencial'
   };
 
   // posiciones y tamaños relativos ajustados al mapa real de Galápagos:
@@ -347,14 +345,14 @@ if(heroSection){
   };
 
   const captions = {
-    sancristobal: 'San Cristóbal · Esencial, $15/mes. Un WhatsApp nuevo para tu negocio con 50 mensajes al mes, agenda y recordatorios. Fue la primera isla que pisó Darwin, en 1835.',
-    santiago: 'Santiago · Crecimiento, $35/mes. Más mensajes y un panel para ver tus citas y conversaciones. Darwin pasó semanas explorándola.',
-    santacruz: 'Santa Cruz · Pro, $60/mes. Para negocios con mucho movimiento: aún más mensajes y seguimiento de pagos. Es el corazón habitado del archipiélago.',
-    isabela: 'Isabela · Plan a medida. Para negocios con varias sedes o procesos propios. Isabela es, ella sola, más de la mitad de Galápagos.',
-    fernandina: 'Fernandina es la isla más joven y volcánicamente activa del archipiélago. Aquí nacen nuestros próximos complementos.'
+    sancristobal: 'Esencial · $15/mes. Un WhatsApp nuevo para tu negocio con 50 mensajes al mes, agenda y recordatorios.',
+    santiago: 'Crecimiento · $35/mes. Más mensajes y un panel para ver tus citas y conversaciones.',
+    santacruz: 'Pro · $60/mes. Para negocios con mucho movimiento: aún más mensajes y seguimiento de pagos.',
+    isabela: 'A medida. Para negocios con varias sedes o procesos propios.',
+    fernandina: 'Próximamente. Aquí nacen nuestros próximos complementos.'
   };
 
-  let index = ORDER.indexOf('isabela'); // arranca directo en Isabela, sin plano general
+  let index = 0; // arranca en Esencial
   let current = ORDER[index];
   let manualZoom = null; // si el usuario hizo scroll-zoom, guarda {x,y,scale} temporal
 
@@ -470,7 +468,7 @@ if(heroSection){
   renderDots();
 })();
 
-/* ---------- nosotros — 3D carousel "Por qué Galápagos" ---------- */
+/* ---------- nosotros — 3D carousel "Por qué la iguana" ---------- */
 (function(){
   const stage = document.getElementById('originStage');
   const textPanel = document.getElementById('originTextPanel');

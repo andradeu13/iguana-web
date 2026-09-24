@@ -62,7 +62,7 @@
 
     <div class="hero-precios-copy reveal">
       <h1>Planes desde $15 al mes.</h1>
-      <p class="lead">Cada plan es una isla de Galápagos: mientras más grande, más hace por ti. Todos incluyen tu propio número de WhatsApp, la configuración y el IVA.</p>
+      <p class="lead">Todos incluyen tu propio número de WhatsApp, la configuración y el IVA.</p>
     </div>
   </div>
 </section>
@@ -81,7 +81,7 @@
 <section class="plans pricing">
   <div class="wrap">
     <div class="plans-head reveal">
-      <h2>Elige tu isla.</h2>
+      <h2>Elige tu plan.</h2>
     </div>
 
     <div class="pricing-grid reveal">
@@ -89,7 +89,7 @@
       <article class="price-card">
         <div class="price-island">
           <img src="images/isla-sancristobal.webp" alt="" loading="lazy" decoding="async">
-          <div><span class="price-island-name">San Cristóbal</span><h3 class="price-tier">Esencial</h3></div>
+          <div><h3 class="price-tier">Esencial</h3></div>
         </div>
         <div class="price"><span class="price-amount">$15</span><span class="price-period">/mes · IVA incl.</span></div>
         <p class="price-desc">Para empezar a responder a tiempo.</p>
@@ -108,7 +108,7 @@
         <span class="price-badge">Recomendado</span>
         <div class="price-island">
           <img src="images/isla-santiago.webp" alt="" loading="lazy" decoding="async">
-          <div><span class="price-island-name">Santiago</span><h3 class="price-tier">Crecimiento</h3></div>
+          <div><h3 class="price-tier">Crecimiento</h3></div>
         </div>
         <div class="price"><span class="price-amount">$35</span><span class="price-period">/mes · IVA incl.</span></div>
         <p class="price-desc">Para negocios que viven de las citas.</p>
@@ -124,7 +124,7 @@
       <article class="price-card">
         <div class="price-island">
           <img src="images/isla-santacruz.webp" alt="" loading="lazy" decoding="async">
-          <div><span class="price-island-name">Santa Cruz</span><h3 class="price-tier">Pro</h3></div>
+          <div><h3 class="price-tier">Pro</h3></div>
         </div>
         <div class="price"><span class="price-amount">$60</span><span class="price-period">/mes · IVA incl.</span></div>
         <p class="price-desc">Para negocios con mucho movimiento.</p>
@@ -140,7 +140,7 @@
       <article class="price-card">
         <div class="price-island">
           <img src="images/isla-isabela.webp" alt="" loading="lazy" decoding="async">
-          <div><span class="price-island-name">Isabela</span><h3 class="price-tier">A medida</h3></div>
+          <div><h3 class="price-tier">A medida</h3></div>
         </div>
         <div class="price"><span class="price-amount is-text">Hablemos</span></div>
         <p class="price-desc">Para varias sedes o procesos propios.</p>
@@ -157,6 +157,57 @@
     </div>
 
     <p class="price-foot">¿No sabes cuál elegir? <a href="es-para-ti.html">Haz el diagnóstico de 4 preguntas</a> y te recomendamos uno.</p>
+  </div>
+</section>
+
+<!-- ============ MAPA DE PLANES ============ -->
+<section class="islands-3d">
+  <div class="wrap islands-3d-grid">
+    <div class="islands-3d-copy reveal">
+      <h2>Mientras más grande, más hace por ti.</h2>
+      <p class="lead">Recorre los planes con las flechas. Desde $15, IVA incluido.</p>
+
+      <div class="island-picker-row">
+        <button class="island-nav" id="islandPrev" type="button" aria-label="Plan anterior">‹</button>
+        <div class="island-picker" id="homeIslandPicker">
+          <span class="island-picker-thumb" id="homeIslandThumb"></span>
+        </div>
+        <button class="island-nav" id="islandNext" type="button" aria-label="Plan siguiente">›</button>
+      </div>
+
+      <p class="island-caption" id="homeIslandCaption" aria-live="polite">Esencial · $15/mes. Un WhatsApp nuevo para tu negocio con 50 mensajes al mes, agenda y recordatorios.</p>
+      <a href="https://wa.me/593959420676?text=Hola%20Iguana%20Corp%2C%20quiero%20mi%20diagn%C3%B3stico%20gratis" target="_blank" rel="noopener" class="btn-text">Te ayudamos a elegir →</a>
+    </div>
+
+    <div class="islands-3d-stage-wrap">
+      <div class="islands-3d-stage" id="islandsStage">
+        <div class="map-world" id="mapWorld">
+          <div class="map-island" data-island="fernandina" style="left:90px; top:235px;">
+            <span class="map-label">Próximamente</span>
+            <img src="images/isla-fernandina.webp" alt="" class="map-island-art" style="width:100px;" loading="lazy" decoding="async">
+          </div>
+          <div class="map-island" data-island="santiago" style="left:380px; top:175px;">
+            <span class="map-label">Crecimiento</span>
+            <img src="images/isla-santiago.webp" alt="" class="map-island-art" style="width:95px; transform:rotate(23deg);" loading="lazy" decoding="async">
+          </div>
+          <div class="map-island" data-island="sancristobal" style="left:820px; top:300px;">
+            <span class="map-label">Esencial</span>
+            <img src="images/isla-sancristobal.webp" alt="" class="map-island-art" style="width:95px;" loading="lazy" decoding="async">
+          </div>
+          <div class="map-island" data-island="isabela" style="left:260px; top:270px;">
+            <span class="map-label">A medida</span>
+            <img src="images/isla-isabela.webp" alt="" class="map-island-art" style="width:260px; opacity:.85;" loading="lazy" decoding="async">
+          </div>
+          <div class="map-island" data-island="santacruz" style="left:560px; top:250px;">
+            <span class="map-label">Pro</span>
+            <img src="images/isla-santacruz.webp" alt="" class="map-island-art" style="width:120px;" loading="lazy" decoding="async">
+          </div>
+        </div>
+        <div class="islands-3d-fade-top" aria-hidden="true"></div>
+        <div class="islands-3d-fade-bottom" aria-hidden="true"></div>
+      </div>
+      <div class="island-dots" id="islandDots" role="tablist" aria-label="Seleccionar plan"></div>
+    </div>
   </div>
 </section>
 
@@ -211,9 +262,9 @@
       <h2>Lo que viene.</h2>
     </div>
     <div class="feat-grid reveal">
-      <div class="feat-card"><span class="tag">Personalización</span><h3>Pinzón</h3><p>Como los pinzones de Darwin, cada pico para su alimento: ajustes profundos para tu tipo de negocio.</p></div>
-      <div class="feat-card"><span class="tag">Automatización</span><h3>Cormorán</h3><p>Más tareas repetitivas fuera de tu día: cotizaciones, confirmaciones de pedido y seguimientos.</p></div>
-      <div class="feat-card"><span class="tag">Memoria de negocio</span><h3>Tortuga Gigante</h3><p>Historial de cada cliente: lo que compró, cuándo volvió y qué prefiere.</p></div>
+      <div class="feat-card"><span class="tag">Personalización</span><h3>A tu medida</h3><p>Ajustes profundos para tu tipo de negocio: tu forma de hablar, tus servicios, tus reglas.</p></div>
+      <div class="feat-card"><span class="tag">Automatización</span><h3>Más automatización</h3><p>Más tareas repetitivas fuera de tu día: cotizaciones, confirmaciones de pedido y seguimientos.</p></div>
+      <div class="feat-card"><span class="tag">Memoria de negocio</span><h3>Memoria de clientes</h3><p>Historial de cada cliente: lo que compró, cuándo volvió y qué prefiere.</p></div>
     </div>
   </div>
 </section>
