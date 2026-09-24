@@ -28,6 +28,9 @@
 </head>
 <body>
 
+<!-- PRELOADER — pantalla con el logo que se retira hacia arriba (≤1 s). Idea tomada de mindmarket.com -->
+<div class="p-preloader" aria-hidden="true"><img src="images/logo-iguana.webp" alt=""></div>
+
 <header>
   <nav>
     <div class="logo"><a href="index.html" aria-label="Iguana Corp, inicio"><img src="images/logo-iguana.webp" alt="Iguana Corp" class="logo-img"></a></div>
@@ -79,13 +82,13 @@
   </div>
 </section>
 
-<!-- ============ 2 · FRANJA DE CONFIANZA — logos que se desplazan en bucle ============ -->
-<!-- LOGOS: clientes reales con permiso cuando existan; mientras tanto se pueden quitar o usar alianzas/medios. Todos en gris y al mismo alto. -->
-<section class="p-trust" aria-label="Lorem ipsum">
-  <p class="p-trust-label">Lorem ipsum dolor sit amet</p>
-  <div class="p-trust-track-wrap">
-    <div class="p-trust-track"><span class="p-logo">LOGO</span><span class="p-logo">LOGO</span><span class="p-logo">LOGO</span><span class="p-logo">LOGO</span><span class="p-logo">LOGO</span><span class="p-logo">LOGO</span><span class="p-logo">LOGO</span><span class="p-logo">LOGO</span><span class="p-logo">LOGO</span><span class="p-logo">LOGO</span><span class="p-logo">LOGO</span><span class="p-logo">LOGO</span><span class="p-logo">LOGO</span><span class="p-logo">LOGO</span></div>
-  </div>
+<!-- ============ 2 · RIELES — pastillas que se desplazan en sentidos opuestos (como los rieles de marcas de mindmarket) ============ -->
+<!-- PASTILLAS: pueden ser tipos de negocio (Barberías, Consultorios, Talleres…) o logos de clientes reales con permiso.
+     IMG: el círculo puede llevar un ícono o mini-logo en gris. -->
+<section class="p-rails" aria-label="Lorem ipsum">
+  <p class="p-rails-label reveal">Lorem ipsum dolor sit amet</p>
+  <div class="p-rail" data-dir="left"><div class="p-rail-track"><span class="p-pill"><span class="p-pill-dot"></span>Lorem ipsum</span><span class="p-pill"><span class="p-pill-dot"></span>Lorem ipsum</span><span class="p-pill"><span class="p-pill-dot"></span>Lorem ipsum</span><span class="p-pill"><span class="p-pill-dot"></span>Lorem ipsum</span><span class="p-pill"><span class="p-pill-dot"></span>Lorem ipsum</span><span class="p-pill"><span class="p-pill-dot"></span>Lorem ipsum</span><span class="p-pill"><span class="p-pill-dot"></span>Lorem ipsum</span><span class="p-pill"><span class="p-pill-dot"></span>Lorem ipsum</span><span class="p-pill"><span class="p-pill-dot"></span>Lorem ipsum</span><span class="p-pill"><span class="p-pill-dot"></span>Lorem ipsum</span><span class="p-pill"><span class="p-pill-dot"></span>Lorem ipsum</span><span class="p-pill"><span class="p-pill-dot"></span>Lorem ipsum</span><span class="p-pill"><span class="p-pill-dot"></span>Lorem ipsum</span><span class="p-pill"><span class="p-pill-dot"></span>Lorem ipsum</span><span class="p-pill"><span class="p-pill-dot"></span>Lorem ipsum</span><span class="p-pill"><span class="p-pill-dot"></span>Lorem ipsum</span></div></div>
+  <div class="p-rail" data-dir="right"><div class="p-rail-track"><span class="p-pill"><span class="p-pill-dot"></span>Lorem ipsum</span><span class="p-pill"><span class="p-pill-dot"></span>Lorem ipsum</span><span class="p-pill"><span class="p-pill-dot"></span>Lorem ipsum</span><span class="p-pill"><span class="p-pill-dot"></span>Lorem ipsum</span><span class="p-pill"><span class="p-pill-dot"></span>Lorem ipsum</span><span class="p-pill"><span class="p-pill-dot"></span>Lorem ipsum</span><span class="p-pill"><span class="p-pill-dot"></span>Lorem ipsum</span><span class="p-pill"><span class="p-pill-dot"></span>Lorem ipsum</span><span class="p-pill"><span class="p-pill-dot"></span>Lorem ipsum</span><span class="p-pill"><span class="p-pill-dot"></span>Lorem ipsum</span><span class="p-pill"><span class="p-pill-dot"></span>Lorem ipsum</span><span class="p-pill"><span class="p-pill-dot"></span>Lorem ipsum</span><span class="p-pill"><span class="p-pill-dot"></span>Lorem ipsum</span><span class="p-pill"><span class="p-pill-dot"></span>Lorem ipsum</span><span class="p-pill"><span class="p-pill-dot"></span>Lorem ipsum</span><span class="p-pill"><span class="p-pill-dot"></span>Lorem ipsum</span></div></div>
 </section>
 
 <!-- ============ 3 · CIFRA GRANDE + TARJETA INTERACTIVA CON TABS (como "One platform. 225,000* hours saved.") ============ -->
@@ -140,8 +143,8 @@
   </div>
 </section>
 
-<!-- ============ 4 · CASOS — carrusel de tarjetas con 2 cifras, cita y persona ============ -->
-<section class="p-section p-panel" data-carousel>
+<!-- ============ 4 · CASOS — carrusel arrastrable (auto-avance, se pausa al pasar el mouse) con 2 cifras, cita y persona ============ -->
+<section class="p-section p-panel p-layer" data-carousel>
   <div class="wrap">
     <div class="p-cases-top reveal">
       <h2>Lorem ipsum dolor sit amet, consectetur adipiscing.</h2>
@@ -150,7 +153,7 @@
         <button class="p-round" type="button" data-next aria-label="Siguiente">›</button>
       </div>
     </div>
-    <div class="p-track reveal">
+    <div class="p-track reveal" data-cursor="Arrastra">
         <article class="p-case">
           <!-- LOGO: logo real del cliente cuando exista (con permiso) -->
           <span class="p-logo">LOGO</span>
@@ -199,18 +202,71 @@
           <div class="p-person"><span class="p-avatar" aria-hidden="true">CE</span><div><strong>Lorem Ipsum</strong><small>Lorem ipsum, Dolor</small></div></div>
           <a href="#" class="p-link">Lorem ipsum <span class="p-arrow" aria-hidden="true">›</span></a>
         </article>
+        <article class="p-case">
+          <!-- LOGO: logo real del cliente cuando exista (con permiso) -->
+          <span class="p-logo">LOGO</span>
+          <div class="p-metrics">
+            <div><b>00%</b><small>Lorem ipsum</small></div>
+            <div><b>00h</b><small>Lorem ipsum</small></div>
+          </div>
+          <p class="p-quote">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</p>
+          <!-- PERSONA: iniciales de color en vez de foto (convención del sitio) -->
+          <div class="p-person"><span class="p-avatar" aria-hidden="true">RP</span><div><strong>Lorem Ipsum</strong><small>Lorem ipsum, Dolor</small></div></div>
+          <a href="#" class="p-link">Lorem ipsum <span class="p-arrow" aria-hidden="true">›</span></a>
+        </article>
+        <article class="p-case">
+          <!-- LOGO: logo real del cliente cuando exista (con permiso) -->
+          <span class="p-logo">LOGO</span>
+          <div class="p-metrics">
+            <div><b>00%</b><small>Lorem ipsum</small></div>
+            <div><b>00h</b><small>Lorem ipsum</small></div>
+          </div>
+          <p class="p-quote">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</p>
+          <!-- PERSONA: iniciales de color en vez de foto (convención del sitio) -->
+          <div class="p-person"><span class="p-avatar" aria-hidden="true">MV</span><div><strong>Lorem Ipsum</strong><small>Lorem ipsum, Dolor</small></div></div>
+          <a href="#" class="p-link">Lorem ipsum <span class="p-arrow" aria-hidden="true">›</span></a>
+        </article>
     </div>
+    <div class="p-dots" aria-label="Lorem ipsum"></div>
   </div>
 </section>
 
-<!-- ============ 5 · CIFRA GRANDE #2 — impacto, centrada, fondo oscuro ============ -->
-<!-- DATO: reemplazar por una cifra real con fuente. -->
-<section class="p-section p-dark p-impact">
-  <div class="wrap reveal">
-    <h2>$<span class="p-count" data-from="0" data-to="1000">1.000</span><span class="p-star">*</span> lorem ipsum dolor sit amet.</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    <a href="https://wa.me/593959420676?text=Hola%20Iguana%20Corp%2C%20quiero%20mi%20diagn%C3%B3stico%20gratis" target="_blank" rel="noopener" class="btn btn-primary">Lorem ipsum <span class="p-arrow" aria-hidden="true">›</span></a>
-    <small class="p-foot">*Lorem ipsum dolor sit amet (fuente).</small>
+<!-- ============ 5 · NÚMEROS APILADOS — como "A few numbers behind the insights we deliver" de mindmarket.com ============
+     Izquierda: título fijo (sticky) con una ola verde animada bajo la palabra clave.
+     Derecha: 3 tarjetas que entran rotadas y se enderezan al hacer scroll, apilándose.
+     DATO: cada número debe ser real y verificable (ej. mensajes respondidos, horas ahorradas, negocios atendidos). -->
+<section class="p-section p-nums p-layer">
+  <div class="wrap p-nums-grid">
+    <div class="p-nums-copy">
+      <div class="p-nums-sticky">
+        <h2 class="p-wave-title">Lorem ipsum dolor <strong>sit amet</strong> consectetur</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <a href="https://wa.me/593959420676?text=Hola%20Iguana%20Corp%2C%20quiero%20mi%20diagn%C3%B3stico%20gratis" target="_blank" rel="noopener" class="btn btn-primary">Lorem ipsum <span class="p-arrow" aria-hidden="true">›</span></a>
+      </div>
+    </div>
+    <div class="p-nums-list">
+      <div class="p-num-item" style="--i:1">
+        <div class="p-num-card is-white">
+          <span class="p-num-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8v.5z"/></svg></span>
+          <p class="p-num-stat"><span class="p-count" data-from="0" data-to="100">100</span>+</p>
+          <p class="p-num-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.</p>
+        </div>
+      </div>
+      <div class="p-num-item" style="--i:2">
+        <div class="p-num-card is-green">
+          <span class="p-num-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+          <p class="p-num-stat"><span class="p-count" data-from="0" data-to="24">24</span>/7</p>
+          <p class="p-num-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.</p>
+        </div>
+      </div>
+      <div class="p-num-item" style="--i:3">
+        <div class="p-num-card is-ink">
+          <span class="p-num-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 15 4-4 3 3 5-6"/></svg></span>
+          <p class="p-num-stat"><span class="p-count" data-from="0" data-to="60">60</span>%</p>
+          <p class="p-num-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.</p>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -222,26 +278,26 @@
       <h2>Lorem ipsum dolor sit amet.</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </div>
-    <div class="p-pillars reveal p-stagger">
-      <div class="p-pillar">
+    <div class="p-pillars">
+      <div class="p-pillar p-grow">
         <span class="p-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></span>
         <span class="p-label">Lorem</span>
         <h3>Lorem ipsum dolor sit amet.</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
       </div>
-      <div class="p-pillar">
+      <div class="p-pillar p-grow">
         <span class="p-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg></span>
         <span class="p-label">Lorem</span>
         <h3>Lorem ipsum dolor sit amet.</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
       </div>
-      <div class="p-pillar">
+      <div class="p-pillar p-grow">
         <span class="p-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M5.6 18.4l2.8-2.8M15.6 8.4l2.8-2.8"/></svg></span>
         <span class="p-label">Lorem</span>
         <h3>Lorem ipsum dolor sit amet.</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
       </div>
-      <div class="p-pillar">
+      <div class="p-pillar p-grow">
         <span class="p-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 15 4-4 3 3 5-6"/></svg></span>
         <span class="p-label">Lorem</span>
         <h3>Lorem ipsum dolor sit amet.</h3>
@@ -252,49 +308,49 @@
 </section>
 
 <!-- ============ 7 · CIFRA + SEIS TARJETAS (como "100,000 tasks handled everyday. None of them yours.") ============ -->
-<section class="p-section p-panel">
+<section class="p-section p-panel p-layer">
   <div class="wrap">
     <div class="p-head reveal">
       <h2><span class="p-count" data-from="9000" data-to="10000">10.000</span><span class="p-star">*</span> lorem ipsum dolor. Sit amet.</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </div>
-    <div class="p-tiles reveal p-stagger">
-      <article class="p-tile">
+    <div class="p-tiles">
+      <article class="p-tile p-grow">
         <span class="p-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8v.5z"/></svg></span>
         <span class="p-label">Lorem ipsum</span>
         <h3>Lorem ipsum dolor sit amet.</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.</p>
         <a href="#" class="p-link">Lorem ipsum <span class="p-arrow" aria-hidden="true">›</span></a>
       </article>
-      <article class="p-tile">
+      <article class="p-tile p-grow">
         <span class="p-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18M9 16l2 2 4-4"/></svg></span>
         <span class="p-label">Lorem ipsum</span>
         <h3>Lorem ipsum dolor sit amet.</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.</p>
         <a href="#" class="p-link">Lorem ipsum <span class="p-arrow" aria-hidden="true">›</span></a>
       </article>
-      <article class="p-tile">
+      <article class="p-tile p-grow">
         <span class="p-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg></span>
         <span class="p-label">Lorem ipsum</span>
         <h3>Lorem ipsum dolor sit amet.</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.</p>
         <a href="#" class="p-link">Lorem ipsum <span class="p-arrow" aria-hidden="true">›</span></a>
       </article>
-      <article class="p-tile">
+      <article class="p-tile p-grow">
         <span class="p-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9z"/></svg></span>
         <span class="p-label">Lorem ipsum</span>
         <h3>Lorem ipsum dolor sit amet.</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.</p>
         <a href="#" class="p-link">Lorem ipsum <span class="p-arrow" aria-hidden="true">›</span></a>
       </article>
-      <article class="p-tile">
+      <article class="p-tile p-grow">
         <span class="p-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg></span>
         <span class="p-label">Lorem ipsum</span>
         <h3>Lorem ipsum dolor sit amet.</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.</p>
         <a href="#" class="p-link">Lorem ipsum <span class="p-arrow" aria-hidden="true">›</span></a>
       </article>
-      <article class="p-tile">
+      <article class="p-tile p-grow">
         <span class="p-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 15 4-4 3 3 5-6"/></svg></span>
         <span class="p-label">Lorem ipsum</span>
         <h3>Lorem ipsum dolor sit amet.</h3>
@@ -463,7 +519,7 @@
 
 
 <!-- ============ 11 · RECURSOS — 3 tarjetas (reporte, guía, calculadora) ============ -->
-<section class="p-section p-panel">
+<section class="p-section p-panel p-layer">
   <div class="wrap">
     <div class="p-head reveal">
       <h2>Lorem ipsum dolor sit amet.</h2>
