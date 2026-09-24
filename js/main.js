@@ -346,7 +346,7 @@ if(heroSection){
     sancristobal:{ x:820, y:300, zoom:2.3 }
   };
 
-  const captions = {
+  const captions = window.ISLAND_CAPTIONS || {
     sancristobal: 'San Cristóbal · Esencial, $15/mes. Un WhatsApp nuevo para tu negocio con 50 mensajes al mes, agenda y recordatorios. Fue la primera isla que pisó Darwin, en 1835.',
     santiago: 'Santiago · Crecimiento, $35/mes. Más mensajes y un panel para ver tus citas y conversaciones. Darwin pasó semanas explorándola.',
     santacruz: 'Santa Cruz · Pro, $60/mes. Para negocios con mucho movimiento: aún más mensajes y seguimiento de pagos. Es el corazón habitado del archipiélago.',

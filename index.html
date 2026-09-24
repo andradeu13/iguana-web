@@ -53,229 +53,369 @@
   <a href="https://wa.me/593959420676?text=Hola%20Iguana%20Corp%2C%20quiero%20mi%20diagn%C3%B3stico%20gratis" target="_blank" rel="noopener" class="btn btn-primary">Agenda gratis</a>
 </div>
 
-<!-- ============ HERO ============ -->
-<section class="hero" id="hero" style="min-height:100vh;">
-  <div class="hero-bg" aria-hidden="true">
-    <div class="grid" data-parallax="0.25"></div>
-    <div class="blob b1" data-parallax="0.55"></div>
-    <div class="blob b2" data-parallax="0.35"></div>
-    <div class="blob b3" data-parallax="0.7"></div>
-  </div>
+<!-- =====================================================================
+     HOME — estructura tipo perk.com, todo en lorem ipsum.
+     Los comentarios "IMG:" sugieren qué imagen puede ir en cada lugar.
+     ===================================================================== -->
 
-  <img src="images/iguana-hero.webp" alt="Iguana marina sobre roca volcánica de Galápagos" class="hero-iguana" data-parallax="0.18">
-  <img src="images/hero-rocas.webp" alt="" class="hero-rocas" data-parallax="0.28">
-
-  <div class="wrap" data-parallax="-0.08">
-    <h1 class="hero-h1">
-      <span class="line line-1">
-        <span class="word">Tu</span>
-        <span class="word">negocio</span>
-        <span class="word">no</span>
-        <span class="word">necesita</span>
-      </span>
-      <span class="line line-2">
-        <span class="word cycle" data-cycle='["más manos.","más horas.","más planillas.","otro robot."]'>más manos.</span>
-      </span>
-      <span class="line line-3">
-        <span class="word">Necesita</span>
-        <span class="word soft">evolucionar.</span>
-      </span>
+<!-- ============ 1 · HERO — título corto + línea de apoyo + 2 botones + imagen grande del producto ============ -->
+<section class="p-hero">
+  <div class="wrap">
+    <h1>
+      <span class="word">Lorem</span><span class="word">ipsum</span><span class="word">dolor</span><span class="word">sit</span>
+      <span class="word">amet</span><span class="word">consectetur</span>
     </h1>
-
-    <p class="lead">Nos encargamos de lo repetitivo con inteligencia artificial, para que tú vuelvas a lo que haces mejor.</p>
-    <div class="hero-ctas">
-      <a href="https://wa.me/593959420676?text=Hola%20Iguana%20Corp%2C%20quiero%20mi%20diagn%C3%B3stico%20gratis" target="_blank" rel="noopener" class="btn btn-primary">Quiero mi diagnóstico gratis</a>
-      <a href="#soluciones" class="btn-text">Ver lo que hacemos</a>
+    <p class="p-sub">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <div class="p-hero-ctas">
+      <a href="https://wa.me/593959420676?text=Hola%20Iguana%20Corp%2C%20quiero%20mi%20diagn%C3%B3stico%20gratis" target="_blank" rel="noopener" class="btn btn-primary">Lorem ipsum <span class="p-arrow" aria-hidden="true">›</span></a>
+      <a href="#pTabs" class="btn btn-outline">Lorem ipsum <span class="p-arrow" aria-hidden="true">›</span></a>
     </div>
   </div>
-
-  <div class="hero-scroll-hint" aria-hidden="true">
-    <span>Desliza</span>
-    <span class="hero-scroll-line"></span>
+  <div class="p-hero-media-wrap">
+    <!-- IMG: mockup grande del producto, como la captura de Perk: celular o pantalla con la conversación
+         de WhatsApp del asistente (agenda, precios, recordatorio) sobre fondo verde suave.
+         Alternativa de marca: iguana nadando (estilo grabado) junto al celular. No usar fotos de stock. -->
+    <div class="p-media p-hero-media" role="img" aria-label="Imagen de ejemplo"><span>Mockup grande del producto: celular con el asistente de WhatsApp</span></div>
   </div>
 </section>
 
-<!-- ============ DOLORES ============ -->
-<section class="pain">
+<!-- ============ 2 · FRANJA DE CONFIANZA — logos que se desplazan en bucle ============ -->
+<!-- LOGOS: clientes reales con permiso cuando existan; mientras tanto se pueden quitar o usar alianzas/medios. Todos en gris y al mismo alto. -->
+<section class="p-trust" aria-label="Lorem ipsum">
+  <p class="p-trust-label">Lorem ipsum dolor sit amet</p>
+  <div class="p-trust-track-wrap">
+    <div class="p-trust-track"><span class="p-logo">LOGO</span><span class="p-logo">LOGO</span><span class="p-logo">LOGO</span><span class="p-logo">LOGO</span><span class="p-logo">LOGO</span><span class="p-logo">LOGO</span><span class="p-logo">LOGO</span><span class="p-logo">LOGO</span><span class="p-logo">LOGO</span><span class="p-logo">LOGO</span><span class="p-logo">LOGO</span><span class="p-logo">LOGO</span><span class="p-logo">LOGO</span><span class="p-logo">LOGO</span></div>
+  </div>
+</section>
+
+<!-- ============ 3 · CIFRA GRANDE + TARJETA INTERACTIVA CON TABS (como "One platform. 225,000* hours saved.") ============ -->
+<!-- DATO: reemplazar 100.000 por una cifra real con su fuente en la nota al pie. -->
+<section class="p-section" id="soluciones">
   <div class="wrap">
-    <div class="pain-head reveal">
-      <h2>No es falta de <span class="accent">talento</span>.</h2>
-      <p class="lead" style="color:var(--ink-soft); margin-top:14px;">Es un solo par de manos para todo. ¿Te suena?</p>
+    <div class="p-stat reveal">
+      <h2>Lorem ipsum. <span class="p-count" data-from="90000" data-to="100000">100.000</span><span class="p-star">*</span> lorem ipsum.</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <a href="#" class="p-link">Lorem ipsum dolor <span class="p-arrow" aria-hidden="true">›</span></a>
     </div>
 
-    <div class="timeline" id="painTimeline">
-      <div class="timeline-track"></div>
-      <img src="images/iguana%20nado/1.webp" alt="" class="timeline-swimmer" id="timelineSwimmer">
-
-      <div class="pain-card reveal">
-        <div class="card-tab">WhatsApp y atención</div>
-        <h4>Hoy</h4>
-        <p>Te escriben a las 9 pm. Lo ves al otro día y ya compró en otro lado.</p>
-        <div class="sol"><h4>Con Iguana Corp</h4><p>Responde al instante.</p></div>
+    <div class="p-tabs reveal" id="pTabs" data-tabs>
+      <div class="p-tablist" role="tablist" aria-label="Lorem ipsum">
+        <span class="p-tab-ind" aria-hidden="true"></span>
+        <button class="p-tab" role="tab" id="ptab-0" aria-controls="ppanel-0" aria-selected="true" tabindex="0" type="button">Lorem</button><button class="p-tab" role="tab" id="ptab-1" aria-controls="ppanel-1" aria-selected="false" tabindex="-1" type="button">Ipsum</button><button class="p-tab" role="tab" id="ptab-2" aria-controls="ppanel-2" aria-selected="false" tabindex="-1" type="button">Dolor</button>
       </div>
-
-      <div class="pain-card reveal">
-        <div class="card-tab">Agenda y citas</div>
-        <h4>Hoy</h4>
-        <p>Anotas la cita en un cuaderno y el cliente no llega.</p>
-        <div class="sol"><h4>Con Iguana Corp</h4><p>Le recuerda la cita un día antes.</p></div>
-      </div>
-
-      <div class="pain-card reveal">
-        <div class="card-tab">Seguimiento y cobros</div>
-        <h4>Hoy</h4>
-        <p>Te deben una cuota y cada cuaderno dice algo distinto.</p>
-        <div class="sol"><h4>Con Iguana Corp</h4><p>Ves quién te debe y cuánto, en un solo lugar.</p></div>
-      </div>
-
-      <div class="pain-card reveal">
-        <div class="card-tab">Falta de tiempo</div>
-        <h4>Hoy</h4>
-        <p>Quieres ordenarte, pero no te queda tiempo.</p>
-        <div class="sol"><h4>Con Iguana Corp</h4><p>Lo configuramos todo. Tú apruebas.</p></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ SOBRE IGUANA — arco de islas + datos del sector ============ -->
-<section class="about-arc" id="sobre">
-  <div class="arc-stage" aria-hidden="true">
-    <div class="arc-ticks-clip"><div class="arc-ticks"></div></div>
-  </div>
-  <div class="arc-photos" id="arcPhotos">
-      <figure class="arc-photo is-art" style="--a:-60deg; --i:3;" data-far><img src="images/hero-rocas.webp" alt="Costa volcánica de Galápagos" loading="lazy" decoding="async"></figure>
-      <figure class="arc-photo is-art" style="--a:-40deg; --i:2;"><img src="images/isla-fernandina.webp" alt="Isla Fernandina, Galápagos" loading="lazy" decoding="async"></figure>
-      <figure class="arc-photo is-art" style="--a:-20deg; --i:1;"><img src="images/isla-santiago.webp" alt="Isla Santiago, Galápagos" loading="lazy" decoding="async"></figure>
-      <figure class="arc-photo is-art" style="--a:0deg; --i:0;"><img src="images/isla-isabela.webp" alt="Isla Isabela, Galápagos" loading="lazy" decoding="async"></figure>
-      <figure class="arc-photo is-art" style="--a:20deg; --i:1;"><img src="images/isla-santacruz.webp" alt="Isla Santa Cruz, Galápagos" loading="lazy" decoding="async"></figure>
-      <figure class="arc-photo is-art" style="--a:40deg; --i:2;"><img src="images/isla-sancristobal.webp" alt="Isla San Cristóbal, Galápagos" loading="lazy" decoding="async"></figure>
-      <figure class="arc-photo is-art" style="--a:60deg; --i:3;" data-far><img src="images/iguana-hero.webp" alt="Iguana marina de Galápagos" loading="lazy" decoding="async"></figure>
-  </div>
-
-  <div class="wrap">
-    <div class="arc-content reveal">
-      <h2>Un archipiélago de <em>negocios</em>.</h2>
-      <p>En Galápagos, cada isla evolucionó sola, con lo que tenía a mano. Los negocios del Ecuador se parecen: pequeños, aislados, resolviéndolo todo por su cuenta.</p>
-      <a href="nosotros.html" class="arc-cta">Quiénes somos<span aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m13 17 5-5-5-5M6 17l5-5-5-5"/></svg></span></a>
-    </div>
-
-    <div class="arc-stats reveal">
-      <div class="arc-stat"><div class="n">92,2<small>%</small></div><div class="l">de las empresas del Ecuador son microempresas</div></div>
-      <div class="arc-stat"><div class="n">51,7<small>%</small></div><div class="l">son de servicios, como la tuya</div></div>
-      <div class="arc-stat"><div class="n">83,7<small>%</small></div><div class="l">de los ecuatorianos ya está en internet</div></div>
-      <div class="arc-stat"><div class="n">94<small>%</small></div><div class="l">de las facturas llega al SRI en tiempo real</div></div>
-    </div>
-    <p class="arc-source">Fuentes: <a href="https://www.ecuadorencifras.gob.ec/directoriodeempresas/" target="_blank" rel="noopener">INEC, Registro Estadístico de Empresas 2024</a> · <a href="https://datareportal.com/reports/digital-2025-ecuador" target="_blank" rel="noopener">DataReportal, Digital 2025 Ecuador</a> · <a href="https://www.eluniverso.com/noticias/economia/facturacion-electronica-sri-plazo-control-recaudacion-ecuador-2026-nota/" target="_blank" rel="noopener">SRI vía El Universo, agosto 2026</a></p>
-  </div>
-</section>
-
-<!-- ============ SOLUCIONES — portafolio ============ -->
-<section class="solutions" id="soluciones">
-  <div class="wrap">
-    <div class="solutions-head reveal">
-      <h2>Lo que hacemos.</h2>
-      <p>Empezamos por tu WhatsApp y seguimos con lo que necesites.</p>
-    </div>
-    <div class="sol-grid reveal">
-      <article class="sol-card main">
-        <span class="sol-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></span>
-        <span class="sol-kicker">Producto principal</span>
-        <h3>Asistente de WhatsApp</h3>
-        <p>Un WhatsApp solo para tu negocio que contesta, agenda y recuerda citas por ti.</p>
-        <ul>
-          <li>Responde precios y horarios</li>
-          <li>Agenda en tus horarios libres</li>
-          <li>Recuerda cada cita</li>
-          <li>Te pasa lo que necesita de ti</li>
-        </ul>
-        <div class="sol-foot">
-          <span class="sol-price">Desde <b>$15</b>/mes · IVA incluido</span>
-          <a href="precios.html" class="btn btn-primary">Ver planes</a>
-        </div>
-      </article>
-      <article class="sol-card">
-        <span class="sol-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="8" width="16" height="12" rx="3"/><path d="M12 8V4M8 4h8M9 14h.01M15 14h.01"/></svg></span>
-        <span class="sol-kicker">A medida</span>
-        <h3>Agentes de IA</h3>
-        <p>Filtran clientes, atienden en Instagram y Facebook y se conectan con lo que ya usas.</p>
-        <div class="sol-foot"><a href="https://wa.me/593959420676?text=Hola%20Iguana%20Corp%2C%20quiero%20un%20agente%20a%20medida" target="_blank" rel="noopener" class="sol-link">Cuéntanos tu caso →</a></div>
-      </article>
-      <article class="sol-card">
-        <span class="sol-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 15 4-4 3 3 5-6"/></svg></span>
-        <span class="sol-kicker">A medida</span>
-        <h3>Consultoría</h3>
-        <p>Vemos en qué se te va el día y te decimos qué automatizar primero.</p>
-        <div class="sol-foot"><a href="https://wa.me/593959420676?text=Hola%20Iguana%20Corp%2C%20quiero%20ordenar%20los%20procesos%20de%20mi%20negocio" target="_blank" rel="noopener" class="sol-link">Agenda una conversación →</a></div>
-      </article>
-      <article class="sol-card">
-        <span class="sol-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 9h20M6 6.5h.01M9 6.5h.01"/></svg></span>
-        <span class="sol-kicker">A medida</span>
-        <h3>Páginas web</h3>
-        <p>Webs rápidas que convierten visitas en mensajes. Como esta.</p>
-        <div class="sol-foot"><a href="https://wa.me/593959420676?text=Hola%20Iguana%20Corp%2C%20quiero%20una%20p%C3%A1gina%20web" target="_blank" rel="noopener" class="sol-link">Pide tu cotización →</a></div>
-      </article>
-      <article class="sol-card">
-        <span class="sol-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3M12 17h.01"/></svg></span>
-        <span class="sol-kicker">Para empezar</span>
-        <h3>Diagnóstico gratis</h3>
-        <p>Cuatro preguntas y te decimos qué te sirve. Sin compromiso.</p>
-        <div class="sol-foot"><a href="es-para-ti.html" class="sol-link">Hacer el diagnóstico →</a></div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- ============ DEMO — así se ve en WhatsApp ============ -->
-<section class="working">
-  <div class="wrap demo-grid">
-    <div class="demo-copy reveal">
-      <h2>Así se ve.</h2>
-      <p class="lead">Son las 9 pm y alguien pregunta por un turno. Esta vez, tu negocio contesta.</p>
-      <ul class="demo-points">
-        <li>
-          <span class="demo-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></span>
-          <div><h4>Responde como tú</h4><p>Con el tono que tú apruebas.</p></div>
-        </li>
-        <li>
-          <span class="demo-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18M9 16l2 2 4-4"/></svg></span>
-          <div><h4>Agenda sin cruces</h4><p>Solo en tus horarios libres.</p></div>
-        </li>
-        <li>
-          <span class="demo-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg></span>
-          <div><h4>Recuerda por ti</h4><p>Para que el cliente sí llegue.</p></div>
-        </li>
-      </ul>
-    </div>
-
-    <div class="demo-phone reveal">
-      <div class="phone" role="img" aria-label="Ejemplo de conversación de WhatsApp entre un cliente y el asistente de una barbería">
-        <div class="phone-top">
-          <span class="phone-avatar" aria-hidden="true">BL</span>
-          <div>
-            <div class="phone-name">Barbería La Esquina</div>
-            <div class="phone-status">en línea</div>
+      <div class="p-panels">
+        <!-- IMG: captura del chat del asistente respondiendo precios y horarios (ej. Barbería La Esquina). -->
+        <div class="p-panel-item" role="tabpanel" id="ppanel-0" aria-labelledby="ptab-0">
+          <div class="p-panel-copy">
+            <span class="p-label">Lorem ipsum</span>
+            <h3>Lorem ipsum dolor sit amet.</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a href="#" class="btn btn-primary">Lorem ipsum <span class="p-arrow" aria-hidden="true">›</span></a>
           </div>
+          <div class="p-media " role="img" aria-label="Imagen de ejemplo"><span>Captura del chat del asistente respondiendo precios y horarios</span></div>
         </div>
-        <div class="chat reveal">
-          <span class="msg-day">Hoy</span>
-          <div class="msg msg-in">Hola, ¿cuánto cuesta el corte? ¿Tienen turno mañana?<time>21:14</time></div>
-          <div class="msg msg-out">¡Hola! El corte cuesta $8 y con barba $12. Mañana tengo libre a las 10:00, 15:30 y 17:00. ¿Cuál te guardo?<time>21:14</time></div>
-          <div class="msg msg-in">15:30 porfa<time>21:15</time></div>
-          <div class="msg msg-out">Listo, quedaste agendado mañana a las 15:30. Te escribo una hora antes para recordarte.<time>21:15</time></div>
+        <!-- IMG: vista del panel con la agenda del día y citas confirmadas. -->
+        <div class="p-panel-item" role="tabpanel" id="ppanel-1" aria-labelledby="ptab-1" hidden>
+          <div class="p-panel-copy">
+            <span class="p-label">Lorem ipsum</span>
+            <h3>Lorem ipsum dolor sit amet.</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a href="#" class="btn btn-primary">Lorem ipsum <span class="p-arrow" aria-hidden="true">›</span></a>
+          </div>
+          <div class="p-media " role="img" aria-label="Imagen de ejemplo"><span>Vista del panel con la agenda del día y citas confirmadas</span></div>
+        </div>
+        <!-- IMG: recordatorio de cita llegando por WhatsApp al celular del cliente. -->
+        <div class="p-panel-item" role="tabpanel" id="ppanel-2" aria-labelledby="ptab-2" hidden>
+          <div class="p-panel-copy">
+            <span class="p-label">Lorem ipsum</span>
+            <h3>Lorem ipsum dolor sit amet.</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a href="#" class="btn btn-primary">Lorem ipsum <span class="p-arrow" aria-hidden="true">›</span></a>
+          </div>
+          <div class="p-media " role="img" aria-label="Imagen de ejemplo"><span>Recordatorio de cita llegando por WhatsApp al celular del cliente</span></div>
         </div>
       </div>
-      <p class="demo-note">Conversación de ejemplo</p>
+    </div>
+    <small class="p-foot" style="text-align:center;">*Lorem ipsum dolor sit amet, consectetur adipiscing elit (fuente).</small>
+  </div>
+</section>
+
+<!-- ============ 4 · CASOS — carrusel de tarjetas con 2 cifras, cita y persona ============ -->
+<section class="p-section p-panel" data-carousel>
+  <div class="wrap">
+    <div class="p-cases-top reveal">
+      <h2>Lorem ipsum dolor sit amet, consectetur adipiscing.</h2>
+      <div class="p-carousel-nav">
+        <button class="p-round" type="button" data-prev aria-label="Anterior">‹</button>
+        <button class="p-round" type="button" data-next aria-label="Siguiente">›</button>
+      </div>
+    </div>
+    <div class="p-track reveal">
+        <article class="p-case">
+          <!-- LOGO: logo real del cliente cuando exista (con permiso) -->
+          <span class="p-logo">LOGO</span>
+          <div class="p-metrics">
+            <div><b>00%</b><small>Lorem ipsum</small></div>
+            <div><b>00h</b><small>Lorem ipsum</small></div>
+          </div>
+          <p class="p-quote">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</p>
+          <!-- PERSONA: iniciales de color en vez de foto (convención del sitio) -->
+          <div class="p-person"><span class="p-avatar" aria-hidden="true">LI</span><div><strong>Lorem Ipsum</strong><small>Lorem ipsum, Dolor</small></div></div>
+          <a href="#" class="p-link">Lorem ipsum <span class="p-arrow" aria-hidden="true">›</span></a>
+        </article>
+        <article class="p-case">
+          <!-- LOGO: logo real del cliente cuando exista (con permiso) -->
+          <span class="p-logo">LOGO</span>
+          <div class="p-metrics">
+            <div><b>00%</b><small>Lorem ipsum</small></div>
+            <div><b>00h</b><small>Lorem ipsum</small></div>
+          </div>
+          <p class="p-quote">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</p>
+          <!-- PERSONA: iniciales de color en vez de foto (convención del sitio) -->
+          <div class="p-person"><span class="p-avatar" aria-hidden="true">DS</span><div><strong>Lorem Ipsum</strong><small>Lorem ipsum, Dolor</small></div></div>
+          <a href="#" class="p-link">Lorem ipsum <span class="p-arrow" aria-hidden="true">›</span></a>
+        </article>
+        <article class="p-case">
+          <!-- LOGO: logo real del cliente cuando exista (con permiso) -->
+          <span class="p-logo">LOGO</span>
+          <div class="p-metrics">
+            <div><b>00%</b><small>Lorem ipsum</small></div>
+            <div><b>00h</b><small>Lorem ipsum</small></div>
+          </div>
+          <p class="p-quote">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</p>
+          <!-- PERSONA: iniciales de color en vez de foto (convención del sitio) -->
+          <div class="p-person"><span class="p-avatar" aria-hidden="true">AM</span><div><strong>Lorem Ipsum</strong><small>Lorem ipsum, Dolor</small></div></div>
+          <a href="#" class="p-link">Lorem ipsum <span class="p-arrow" aria-hidden="true">›</span></a>
+        </article>
+        <article class="p-case">
+          <!-- LOGO: logo real del cliente cuando exista (con permiso) -->
+          <span class="p-logo">LOGO</span>
+          <div class="p-metrics">
+            <div><b>00%</b><small>Lorem ipsum</small></div>
+            <div><b>00h</b><small>Lorem ipsum</small></div>
+          </div>
+          <p class="p-quote">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</p>
+          <!-- PERSONA: iniciales de color en vez de foto (convención del sitio) -->
+          <div class="p-person"><span class="p-avatar" aria-hidden="true">CE</span><div><strong>Lorem Ipsum</strong><small>Lorem ipsum, Dolor</small></div></div>
+          <a href="#" class="p-link">Lorem ipsum <span class="p-arrow" aria-hidden="true">›</span></a>
+        </article>
     </div>
   </div>
 </section>
 
-<!-- ============ MAPA DE PLANES ============ -->
+<!-- ============ 5 · CIFRA GRANDE #2 — impacto, centrada, fondo oscuro ============ -->
+<!-- DATO: reemplazar por una cifra real con fuente. -->
+<section class="p-section p-dark p-impact">
+  <div class="wrap reveal">
+    <h2>$<span class="p-count" data-from="0" data-to="1000">1.000</span><span class="p-star">*</span> lorem ipsum dolor sit amet.</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <a href="https://wa.me/593959420676?text=Hola%20Iguana%20Corp%2C%20quiero%20mi%20diagn%C3%B3stico%20gratis" target="_blank" rel="noopener" class="btn btn-primary">Lorem ipsum <span class="p-arrow" aria-hidden="true">›</span></a>
+    <small class="p-foot">*Lorem ipsum dolor sit amet (fuente).</small>
+  </div>
+</section>
+
+<!-- ============ 6 · CUATRO PILARES — icono + palabra + título + texto ============ -->
+<!-- IMG: los íconos pueden cambiarse por mini-ilustraciones de marca (estilo grabado). -->
+<section class="p-section">
+  <div class="wrap">
+    <div class="p-head reveal">
+      <h2>Lorem ipsum dolor sit amet.</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="p-pillars reveal p-stagger">
+      <div class="p-pillar">
+        <span class="p-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></span>
+        <span class="p-label">Lorem</span>
+        <h3>Lorem ipsum dolor sit amet.</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
+      </div>
+      <div class="p-pillar">
+        <span class="p-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg></span>
+        <span class="p-label">Lorem</span>
+        <h3>Lorem ipsum dolor sit amet.</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
+      </div>
+      <div class="p-pillar">
+        <span class="p-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M5.6 18.4l2.8-2.8M15.6 8.4l2.8-2.8"/></svg></span>
+        <span class="p-label">Lorem</span>
+        <h3>Lorem ipsum dolor sit amet.</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
+      </div>
+      <div class="p-pillar">
+        <span class="p-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 15 4-4 3 3 5-6"/></svg></span>
+        <span class="p-label">Lorem</span>
+        <h3>Lorem ipsum dolor sit amet.</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 7 · CIFRA + SEIS TARJETAS (como "100,000 tasks handled everyday. None of them yours.") ============ -->
+<section class="p-section p-panel">
+  <div class="wrap">
+    <div class="p-head reveal">
+      <h2><span class="p-count" data-from="9000" data-to="10000">10.000</span><span class="p-star">*</span> lorem ipsum dolor. Sit amet.</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="p-tiles reveal p-stagger">
+      <article class="p-tile">
+        <span class="p-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8v.5z"/></svg></span>
+        <span class="p-label">Lorem ipsum</span>
+        <h3>Lorem ipsum dolor sit amet.</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.</p>
+        <a href="#" class="p-link">Lorem ipsum <span class="p-arrow" aria-hidden="true">›</span></a>
+      </article>
+      <article class="p-tile">
+        <span class="p-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18M9 16l2 2 4-4"/></svg></span>
+        <span class="p-label">Lorem ipsum</span>
+        <h3>Lorem ipsum dolor sit amet.</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.</p>
+        <a href="#" class="p-link">Lorem ipsum <span class="p-arrow" aria-hidden="true">›</span></a>
+      </article>
+      <article class="p-tile">
+        <span class="p-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg></span>
+        <span class="p-label">Lorem ipsum</span>
+        <h3>Lorem ipsum dolor sit amet.</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.</p>
+        <a href="#" class="p-link">Lorem ipsum <span class="p-arrow" aria-hidden="true">›</span></a>
+      </article>
+      <article class="p-tile">
+        <span class="p-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9z"/></svg></span>
+        <span class="p-label">Lorem ipsum</span>
+        <h3>Lorem ipsum dolor sit amet.</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.</p>
+        <a href="#" class="p-link">Lorem ipsum <span class="p-arrow" aria-hidden="true">›</span></a>
+      </article>
+      <article class="p-tile">
+        <span class="p-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg></span>
+        <span class="p-label">Lorem ipsum</span>
+        <h3>Lorem ipsum dolor sit amet.</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.</p>
+        <a href="#" class="p-link">Lorem ipsum <span class="p-arrow" aria-hidden="true">›</span></a>
+      </article>
+      <article class="p-tile">
+        <span class="p-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 15 4-4 3 3 5-6"/></svg></span>
+        <span class="p-label">Lorem ipsum</span>
+        <h3>Lorem ipsum dolor sit amet.</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.</p>
+        <a href="#" class="p-link">Lorem ipsum <span class="p-arrow" aria-hidden="true">›</span></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 8 · PARA CADA TIPO DE NEGOCIO — 4 tarjetas con imagen ============ -->
+<section class="p-section">
+  <div class="wrap">
+    <div class="p-head reveal">
+      <h2>Lorem ipsum dolor sit amet, consectetur adipiscing.</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="p-personas reveal p-stagger">
+      <article class="p-persona">
+        <!-- IMG: ilustración estilo grabado de una peluquería o barbería (sin fotos de personas) -->
+        <div class="p-media " role="img" aria-label="Imagen de ejemplo"><span>Ilustración estilo grabado de una peluquería o barbería (sin fotos de personas)</span></div>
+        <div class="p-persona-body">
+          <span class="p-label">Lorem ipsum</span>
+          <h3>Lorem ipsum dolor sit amet.</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <a href="#" class="p-link">Lorem ipsum dolor <span class="p-arrow" aria-hidden="true">›</span></a>
+        </div>
+      </article>
+      <article class="p-persona">
+        <!-- IMG: ilustración de un consultorio (dental, estético o terapias) -->
+        <div class="p-media " role="img" aria-label="Imagen de ejemplo"><span>Ilustración de un consultorio (dental, estético o terapias)</span></div>
+        <div class="p-persona-body">
+          <span class="p-label">Lorem ipsum</span>
+          <h3>Lorem ipsum dolor sit amet.</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <a href="#" class="p-link">Lorem ipsum dolor <span class="p-arrow" aria-hidden="true">›</span></a>
+        </div>
+      </article>
+      <article class="p-persona">
+        <!-- IMG: ilustración de un taller o servicio técnico -->
+        <div class="p-media " role="img" aria-label="Imagen de ejemplo"><span>Ilustración de un taller o servicio técnico</span></div>
+        <div class="p-persona-body">
+          <span class="p-label">Lorem ipsum</span>
+          <h3>Lorem ipsum dolor sit amet.</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <a href="#" class="p-link">Lorem ipsum dolor <span class="p-arrow" aria-hidden="true">›</span></a>
+        </div>
+      </article>
+      <article class="p-persona">
+        <!-- IMG: ilustración de un profesional independiente con su celular -->
+        <div class="p-media " role="img" aria-label="Imagen de ejemplo"><span>Ilustración de un profesional independiente con su celular</span></div>
+        <div class="p-persona-body">
+          <span class="p-label">Lorem ipsum</span>
+          <h3>Lorem ipsum dolor sit amet.</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <a href="#" class="p-link">Lorem ipsum dolor <span class="p-arrow" aria-hidden="true">›</span></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 9 · COMPARATIVA (estructura ya existente, en lorem ipsum) ============ -->
+<section class="compare">
+  <div class="wrap">
+    <div class="compare-head reveal">
+      <h2>Lorem ipsum dolor sit amet.</h2>
+    </div>
+    <div class="compare-grid reveal">
+
+      <div class="cmp-card">
+        <p class="cmp-name">Lorem ipsum</p>
+        <div class="cmp-rows">
+          <div class="cmp-row"><span class="cmp-label ic-time">Lorem</span><span class="cmp-val">Lorem ipsum dolor</span></div>
+          <div class="cmp-row"><span class="cmp-label ic-cost">Lorem</span><span class="cmp-val">Lorem ipsum dolor</span></div>
+          <div class="cmp-row"><span class="cmp-label ic-tech">Lorem</span><span class="cmp-val">Lorem ipsum dolor</span></div>
+          <div class="cmp-row"><span class="cmp-label ic-risk">Lorem</span><span class="cmp-val">Lorem ipsum dolor</span></div>
+        </div>
+      </div>
+
+      <div class="cmp-card">
+        <p class="cmp-name">Lorem ipsum</p>
+        <div class="cmp-rows">
+          <div class="cmp-row"><span class="cmp-label ic-time">Lorem</span><span class="cmp-val">Lorem ipsum dolor</span></div>
+          <div class="cmp-row"><span class="cmp-label ic-cost">Lorem</span><span class="cmp-val">Lorem ipsum dolor</span></div>
+          <div class="cmp-row"><span class="cmp-label ic-tech">Lorem</span><span class="cmp-val">Lorem ipsum dolor</span></div>
+          <div class="cmp-row"><span class="cmp-label ic-risk">Lorem</span><span class="cmp-val">Lorem ipsum dolor</span></div>
+        </div>
+      </div>
+
+      <div class="cmp-card cmp-card--worst">
+        <p class="cmp-name">Lorem ipsum</p>
+        <div class="cmp-rows">
+          <div class="cmp-row"><span class="cmp-label ic-time">Lorem</span><span class="cmp-val">Lorem ipsum dolor</span></div>
+          <div class="cmp-row"><span class="cmp-label ic-cost">Lorem</span><span class="cmp-val">Lorem ipsum dolor</span></div>
+          <div class="cmp-row"><span class="cmp-label ic-tech">Lorem</span><span class="cmp-val">Lorem ipsum dolor</span></div>
+          <div class="cmp-row"><span class="cmp-label ic-risk">Lorem</span><span class="cmp-val">Lorem ipsum dolor</span></div>
+        </div>
+      </div>
+
+      <div class="cmp-card cmp-card--win">
+        <span class="cmp-win-badge">Lorem ipsum</span>
+        <p class="cmp-name">Lorem ipsum</p>
+        <div class="cmp-rows">
+          <div class="cmp-row"><span class="cmp-label ic-time">Lorem</span><span class="cmp-val">Lorem ipsum dolor</span></div>
+          <div class="cmp-row"><span class="cmp-label ic-cost">Lorem</span><span class="cmp-val">Lorem ipsum dolor</span></div>
+          <div class="cmp-row"><span class="cmp-label ic-tech">Lorem</span><span class="cmp-val">Lorem ipsum dolor</span></div>
+          <div class="cmp-row"><span class="cmp-label ic-risk">Lorem</span><span class="cmp-val">Lorem ipsum dolor</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ 10 · PRECIOS — mapa de islas ya existente (en lorem ipsum) ============ -->
 <section class="islands-3d">
   <div class="wrap islands-3d-grid">
     <div class="islands-3d-copy reveal">
-      <h2>Un plan por isla.</h2>
-      <p class="lead">Mientras más grande la isla, más hace por ti. Desde $15, IVA incluido.</p>
+      <h2>Lorem ipsum dolor.</h2>
+      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
       <div class="island-picker-row">
         <button class="island-nav" id="islandPrev" type="button" aria-label="Isla anterior">‹</button>
@@ -285,8 +425,8 @@
         <button class="island-nav" id="islandNext" type="button" aria-label="Isla siguiente">›</button>
       </div>
 
-      <p class="island-caption" id="homeIslandCaption" aria-live="polite">Isabela · A medida. Para negocios con varias sedes o procesos propios. Isabela es, ella sola, más de la mitad de Galápagos.</p>
-      <a href="precios.html" class="btn-text">Ver planes →</a>
+      <p class="island-caption" id="homeIslandCaption" aria-live="polite">Lorem ipsum · Dolor sit amet, consectetur adipiscing elit.</p>
+      <a href="precios.html" class="btn-text">Lorem ipsum →</a>
     </div>
 
     <div class="islands-3d-stage-wrap">
@@ -321,184 +461,53 @@
   </div>
 </section>
 
-<!-- ============ MARQUEE ============ -->
-<section class="dark-break" aria-hidden="true">
-  <div class="marquee">
-    <div class="marquee-track" id="marqueeTrack1">
-      <span>Evoluciona</span><span class="dot">·</span>
-      <span>Adapta</span><span class="dot">·</span>
-      <span>Domina</span><span class="dot">·</span>
-      <span>Sobrevive</span><span class="dot">·</span>
-      <span>Evoluciona</span><span class="dot">·</span>
-      <span>Adapta</span><span class="dot">·</span>
-      <span>Domina</span><span class="dot">·</span>
-      <span>Sobrevive</span><span class="dot">·</span>
-    </div>
-  </div>
-</section>
 
-<!-- ============ COMPARATIVA ============ -->
-<section class="compare">
+<!-- ============ 11 · RECURSOS — 3 tarjetas (reporte, guía, calculadora) ============ -->
+<section class="p-section p-panel">
   <div class="wrap">
-    <div class="compare-head reveal">
-      <h2>Mejor que quedarte igual.</h2>
+    <div class="p-head reveal">
+      <h2>Lorem ipsum dolor sit amet.</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </div>
-    <div class="compare-grid reveal">
-
-      <div class="cmp-card">
-        <p class="cmp-name">Agencia tradicional</p>
-        <div class="cmp-rows">
-          <div class="cmp-row"><span class="cmp-label ic-time">Tiempo</span><span class="cmp-val">2 a 4 meses</span></div>
-          <div class="cmp-row"><span class="cmp-label ic-cost">Costo</span><span class="cmp-val">Proyecto grande por adelantado</span></div>
-          <div class="cmp-row"><span class="cmp-label ic-tech">Técnico</span><span class="cmp-val">Dependes del proveedor</span></div>
-          <div class="cmp-row"><span class="cmp-label ic-risk">Riesgo</span><span class="cmp-val">Ya pagaste todo</span></div>
+    <div class="p-resources reveal p-stagger">
+      <article class="p-resource">
+        <!-- IMG: ilustración de la iguana con un reporte o documento -->
+        <div class="p-media " role="img" aria-label="Imagen de ejemplo"><span>Ilustración de la iguana con un reporte o documento</span></div>
+        <div class="p-resource-body">
+          <h3>Lorem ipsum dolor sit amet.</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <a href="#" class="p-link">Lorem ipsum <span class="p-arrow" aria-hidden="true">›</span></a>
         </div>
-      </div>
-
-      <div class="cmp-card">
-        <p class="cmp-name">Hacerlo tú mismo</p>
-        <div class="cmp-rows">
-          <div class="cmp-row"><span class="cmp-label ic-time">Tiempo</span><span class="cmp-val">Semanas de prueba y error</span></div>
-          <div class="cmp-row"><span class="cmp-label ic-cost">Costo</span><span class="cmp-val">Tus horas, que valen mucho</span></div>
-          <div class="cmp-row"><span class="cmp-label ic-tech">Técnico</span><span class="cmp-val">Lo aprendes tú</span></div>
-          <div class="cmp-row"><span class="cmp-label ic-risk">Riesgo</span><span class="cmp-val">Pierdes tiempo y ánimo</span></div>
+      </article>
+      <article class="p-resource">
+        <!-- IMG: ilustración de una guía o libreta de campo -->
+        <div class="p-media " role="img" aria-label="Imagen de ejemplo"><span>Ilustración de una guía o libreta de campo</span></div>
+        <div class="p-resource-body">
+          <h3>Lorem ipsum dolor sit amet.</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <a href="#" class="p-link">Lorem ipsum <span class="p-arrow" aria-hidden="true">›</span></a>
         </div>
-      </div>
-
-      <div class="cmp-card cmp-card--worst">
-        <p class="cmp-name">Quedarte igual</p>
-        <div class="cmp-rows">
-          <div class="cmp-row"><span class="cmp-label ic-time">Tiempo</span><span class="cmp-val">No avanzas</span></div>
-          <div class="cmp-row"><span class="cmp-label ic-cost">Costo</span><span class="cmp-val">Clientes que se van</span></div>
-          <div class="cmp-row"><span class="cmp-label ic-tech">Técnico</span><span class="cmp-val">Todo sigue a mano</span></div>
-          <div class="cmp-row"><span class="cmp-label ic-risk">Riesgo</span><span class="cmp-val">La competencia contesta primero</span></div>
+      </article>
+      <article class="p-resource">
+        <!-- IMG: ilustración de una calculadora de ahorro -->
+        <div class="p-media " role="img" aria-label="Imagen de ejemplo"><span>Ilustración de una calculadora de ahorro</span></div>
+        <div class="p-resource-body">
+          <h3>Lorem ipsum dolor sit amet.</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <a href="#" class="p-link">Lorem ipsum <span class="p-arrow" aria-hidden="true">›</span></a>
         </div>
-      </div>
-
-      <div class="cmp-card cmp-card--win">
-        <span class="cmp-win-badge">La mejor opción</span>
-        <p class="cmp-name">Iguana Corp</p>
-        <div class="cmp-rows">
-          <div class="cmp-row"><span class="cmp-label ic-time">Tiempo</span><span class="cmp-val">Unos 11 días</span></div>
-          <div class="cmp-row"><span class="cmp-label ic-cost">Costo</span><span class="cmp-val">Desde $15 al mes</span></div>
-          <div class="cmp-row"><span class="cmp-label ic-tech">Técnico</span><span class="cmp-val">Lo configuramos todo</span></div>
-          <div class="cmp-row"><span class="cmp-label ic-risk">Riesgo</span><span class="cmp-val">Cancelas cuando quieras</span></div>
-        </div>
-      </div>
-
+      </article>
     </div>
   </div>
 </section>
 
-<!-- ============ SCATTER 3D ============ -->
-<section class="scatter-section" id="scatterSection">
-  <div class="scatter-viewport">
-    <div class="scatter-scene" id="scatterScene">
-
-      <div class="sc-card sc-img" style="--tx:380px;--ty:-30px;--tz:0px;--rz:-4deg;">
-        <img src="images/iguana-hero.webp" alt="" loading="lazy" decoding="async">
-      </div>
-
-      <div class="sc-card sc-txt" style="--tx:329px;--ty:50px;--tz:175px;--rz:3deg;">
-        <div>
-          <span class="sc-tag">Atención</span>
-          <div class="sc-stat">24<sup>/7</sup></div>
-        </div>
-        <p>respuestas aunque estés ocupado</p>
-      </div>
-
-      <div class="sc-card sc-img" style="--tx:190px;--ty:-60px;--tz:303px;--rz:2deg;">
-        <img src="https://images.unsplash.com/photo-1719204718581-5c95889c8ec9?w=360&q=82&fit=crop&auto=format&fm=webp" alt="" loading="lazy" decoding="async">
-      </div>
-
-      <div class="sc-card sc-txt" style="--tx:0px;--ty:80px;--tz:350px;--rz:-3deg;">
-        <span class="sc-tag">Tono</span>
-        <h3>Responde como tú.</h3>
-        <p>Tú apruebas cada respuesta</p>
-      </div>
-
-      <div class="sc-card sc-img sc-img--wide" style="--tx:-190px;--ty:-40px;--tz:303px;--rz:5deg;">
-        <img src="images/isla-isabela.webp" alt="" loading="lazy" decoding="async">
-      </div>
-
-      <div class="sc-card sc-txt" style="--tx:-329px;--ty:30px;--tz:175px;--rz:-2deg;">
-        <span class="sc-tag">Velocidad</span>
-        <h3>Listo en días.</h3>
-        <p>No en meses</p>
-      </div>
-
-      <div class="sc-card sc-img" style="--tx:-380px;--ty:-70px;--tz:0px;--rz:4deg;">
-        <img src="images/iguana%20nado/1.webp" alt="" loading="lazy" decoding="async">
-      </div>
-
-      <div class="sc-card sc-txt" style="--tx:-303px;--ty:60px;--tz:-175px;--rz:-5deg;">
-        <div>
-          <span class="sc-tag">Precio</span>
-          <div class="sc-stat">$15<sup>/mes</sup></div>
-        </div>
-        <p>plan de entrada</p>
-      </div>
-
-      <div class="sc-card sc-img" style="--tx:-190px;--ty:-50px;--tz:-303px;--rz:3deg;">
-        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=360&q=82&fit=crop&auto=format&fm=webp" alt="" loading="lazy" decoding="async">
-      </div>
-
-      <div class="sc-card sc-txt" style="--tx:0px;--ty:40px;--tz:-350px;--rz:-2deg;">
-        <span class="sc-tag">Tu número</span>
-        <h3>Un WhatsApp solo tuyo.</h3>
-        <p>En todos los planes</p>
-      </div>
-
-      <div class="sc-card sc-img sc-img--wide" style="--tx:190px;--ty:-80px;--tz:-303px;--rz:4deg;">
-        <img src="images/hero-rocas.webp" alt="" loading="lazy" decoding="async">
-      </div>
-
-      <div class="sc-card sc-txt" style="--tx:303px;--ty:20px;--tz:-175px;--rz:-3deg;">
-        <span class="sc-tag">Compromiso</span>
-        <h3>Cancelas cuando quieras.</h3>
-        <p>Sin permanencia</p>
-      </div>
-
-    </div>
-  </div>
-
-  <div class="scatter-copy wrap">
-    <h2 class="scatter-h2">La evolución ya empezó.<br><span class="scatter-accent">¿Te subes?</span></h2>
-    <p>Te decimos por dónde empezar.</p>
-    <a href="https://wa.me/593959420676?text=Hola%20Iguana%20Corp%2C%20quiero%20mi%20diagn%C3%B3stico%20gratis" target="_blank" rel="noopener" class="btn btn-primary">Quiero mi diagnóstico gratis</a>
-  </div>
-</section>
-
-<!-- ============ STATEMENT ============ -->
-<section class="dark-statement" id="darkStatement">
-  <div class="wrap">
-    <h2 class="statement-text">
-      <span class="statement-word">¿Quieres</span>
-      <span class="statement-word">ser</span>
-      <span class="statement-word">el</span>
-      <span class="statement-word">lagarto</span>
-      <span class="statement-word">que</span>
-      <span class="statement-word">se</span>
-      <span class="statement-word">quedó</span>
-      <span class="statement-word">en</span>
-      <span class="statement-word">tierra,</span>
-      <span class="statement-word">o</span>
-      <span class="statement-word statement-accent">el</span>
-      <span class="statement-word statement-accent">que</span>
-      <span class="statement-word statement-accent">aprendió</span>
-      <span class="statement-word statement-accent">a</span>
-      <span class="statement-word statement-accent">nadar?</span>
-    </h2>
-  </div>
-</section>
-
-<!-- ============ CTA FINAL ============ -->
+<!-- ============ 12 · CTA FINAL ============ -->
 <section class="final-cta">
   <div class="wrap">
     <div class="final-cta-inner reveal">
-      <h2>La iguana se adaptó. ¿Y tú?</h2>
-      <p>Diagnóstico gratis de 15 minutos. Sin compromiso.</p>
-      <a href="https://wa.me/593959420676?text=Hola%20Iguana%20Corp%2C%20quiero%20mi%20diagn%C3%B3stico%20gratis" target="_blank" rel="noopener" class="btn btn-primary">Quiero mi diagnóstico gratis</a>
+      <h2>Lorem ipsum dolor sit amet.</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <a href="https://wa.me/593959420676?text=Hola%20Iguana%20Corp%2C%20quiero%20mi%20diagn%C3%B3stico%20gratis" target="_blank" rel="noopener" class="btn btn-primary">Lorem ipsum <span class="p-arrow" aria-hidden="true">›</span></a>
     </div>
   </div>
 </section>
@@ -526,9 +535,20 @@
   </div>
 </footer>
 
+<script>
+  /* textos del mapa de islas en lorem ipsum (main.js usa estos si existen) */
+  window.ISLAND_CAPTIONS = {
+    sancristobal: 'Lorem ipsum · Dolor sit amet, consectetur adipiscing elit.',
+    santiago: 'Lorem ipsum · Sed do eiusmod tempor incididunt ut labore.',
+    santacruz: 'Lorem ipsum · Ut enim ad minim veniam, quis nostrud.',
+    isabela: 'Lorem ipsum · Dolor sit amet, consectetur adipiscing elit.',
+    fernandina: 'Lorem ipsum · Duis aute irure dolor in reprehenderit.'
+  };
+</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
 <script src="js/home.js" defer></script>
 <script src="js/main.js" defer></script>
+<script src="js/perk-home.js" defer></script>
 </body>
 </html>
