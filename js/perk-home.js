@@ -77,12 +77,15 @@
     function run(el){
       const from = parseFloat(el.dataset.from || 0);
       const to = parseFloat(el.dataset.to);
-      if(reduce){ el.textContent = fmt.format(to); return; }
+      const dec = parseInt(el.dataset.decimals || 0, 10);
+      const f = dec ? new Intl.NumberFormat('es-EC', { minimumFractionDigits: dec, maximumFractionDigits: dec }) : fmt;
+      if(reduce){ el.textContent = f.format(to); return; }
       const dur = 1800, t0 = performance.now();
       (function tick(now){
         const p = Math.min((now - t0) / dur, 1);
         const eased = 1 - Math.pow(1 - p, 3);
-        el.textContent = fmt.format(Math.round(from + (to - from) * eased));
+        const v = from + (to - from) * eased;
+        el.textContent = f.format(dec ? v : Math.round(v));
         if(p < 1) requestAnimationFrame(tick);
       })(t0);
     }

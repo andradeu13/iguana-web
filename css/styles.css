@@ -1995,6 +1995,12 @@ html.is-loaded .p-preloader{clip-path:inset(0 0 100% 0 round 0 0 32px 32px); poi
 .p-dot.is-active{width:34px; background:var(--green);}
 .p-case{will-change:transform;}
 
+/* 4 · nota de ejemplos y respuesta del asistente */
+.p-cases-note{font-family:var(--mono); font-size:11.5px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--ink-soft); margin-left:auto; align-self:center;}
+.p-case .p-logo{width:auto; padding:0 14px; align-self:flex-start;}
+.p-case .p-metrics b{font-size:22px; letter-spacing:-.02em;}
+.p-case .p-person small{font-size:13px; line-height:1.45; color:var(--ink);}
+
 /* 5 · números apilados */
 .p-nums{background:var(--panel); --gap-top:110px;}
 .p-nums-grid{display:grid; grid-template-columns:1.1fr .9fr; gap:60px; align-items:stretch;}
