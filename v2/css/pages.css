@@ -71,7 +71,7 @@ main > .shero + section, main > .nhero + section { margin-top: 0; }
 .phero { display: grid; justify-items: center; padding-top: calc(env(safe-area-inset-top, 0px) + clamp(120px, 13vw, 160px)); text-align: center; }
 .phero .kicker { margin-bottom: 18px; }
 .phero__title { display: grid; justify-items: center; font-size: clamp(32px, 4.6vw, 64px); font-weight: var(--ig-weight-extrabold); letter-spacing: var(--ig-tracking-display); line-height: 1; }
-.phero__big { display: block; margin: 6px 0 10px; font: 400 clamp(150px, 27vw, 400px)/.86 var(--display-xl); letter-spacing: -.01em; color: var(--ink-panel); scale: calc(1 + var(--p, 0) * .35); transform-origin: 50% 70%; }
+.phero__big { display: block; margin: 22px 0 10px; font: 400 clamp(150px, 27vw, 400px)/.86 var(--display-xl); letter-spacing: -.01em; color: var(--ink-panel); scale: calc(1 + var(--p, 0) * .35); transform-origin: 50% 70%; }
 .phero__lead { max-width: 46ch; margin-top: 22px; font-size: clamp(16px, 1.5vw, 20px); line-height: 1.55; color: var(--ig-color-text-muted); }
 
 /* Mazo de planes: cada tarjeta se queda pegada y la siguiente la tapa */
@@ -166,6 +166,7 @@ html:not(.motion) .grow { height: auto; }
 .manif__who { max-width: 52ch; font-size: var(--ig-text-md); line-height: 1.6; color: var(--ig-color-text-muted); }
 
 /* Equipo: filas a todo el ancho con el nombre gigante */
+.team { overflow-x: clip; } /* las filas entran desde los lados */
 .team .kicker { display: block; margin-bottom: 8px; }
 .team__list { margin: 0; padding: 0; list-style: none; }
 .tm { display: grid; grid-template-columns: minmax(120px, .5fr) minmax(0, 2fr) minmax(0, 1fr); align-items: end; gap: 12px clamp(20px, 3vw, 40px); padding: clamp(24px, 3vw, 40px) 0; }
