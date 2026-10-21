@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1090 1366" width="1090" height="1366" role="img" aria-label="Wireframe Cómo trabajamos">
+<title>Wireframe Cómo trabajamos</title>
+<rect x="0" y="0" width="1090" height="1366" rx="0" fill="#ffffff" stroke="none" stroke-width="1"/>
+<text x="40" y="46" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="22" font-weight="700" fill="#1a1a1a" text-anchor="start">Cómo trabajamos</text>
+<text x="40" y="70" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="13" font-weight="400" fill="#6b6b6b" text-anchor="start">/como-trabajamos</text>
+<text x="180" y="70" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6b6b6b" text-anchor="start">· bajar el riesgo percibido</text>
+<text x="790" y="104" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#6b6b6b" text-anchor="start" letter-spacing="1.2">NOTAS / CTA</text>
+<g id="blk-nav">
+<rect x="40" y="120" width="720" height="56" rx="0" fill="#fff" stroke="#b8b8b8" stroke-width="1"/>
+<rect x="60" y="138" width="70" height="20" rx="4" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="250" y="144" width="56" height="8" rx="4" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="322" y="144" width="56" height="8" rx="4" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="394" y="144" width="56" height="8" rx="4" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="466" y="144" width="56" height="8" rx="4" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="538" y="144" width="56" height="8" rx="4" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="530" y="133" width="150" height="30" rx="15" fill="#3a3a3a" stroke="#3a3a3a" stroke-width="1.2"/>
+<rect x="721.4" y="126" width="30.6" height="18" rx="3" fill="#fff" stroke="#3a3a3a" stroke-width="1"/>
+<text x="736.7" y="139" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="600" fill="#1a1a1a" text-anchor="middle">#nav</text>
+</g>
+<g id="blk-hero">
+<rect x="40" y="176" width="720" height="150" rx="0" fill="#fff" stroke="#b8b8b8" stroke-width="1"/>
+<rect x="180.0" y="216" width="440" height="18" rx="9" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="240.0" y="246" width="320" height="18" rx="9" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="210.0" y="280" width="380" height="8" rx="4" fill="#efefef" stroke="none" stroke-width="1"/>
+<rect x="714.2" y="182" width="37.8" height="18" rx="3" fill="#fff" stroke="#3a3a3a" stroke-width="1"/>
+<text x="733.1" y="195" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="600" fill="#1a1a1a" text-anchor="middle">#hero</text>
+</g>
+<g id="blk-proceso">
+<rect x="40" y="326" width="720" height="150" rx="0" fill="#fff" stroke="#b8b8b8" stroke-width="1"/>
+<line x1="100" y1="376" x2="700" y2="376" stroke="#b8b8b8" stroke-width="2"/>
+<circle cx="100.0" cy="376" r="20" fill="#fff" stroke="#3a3a3a" stroke-width="1.5"/>
+<text x="100.0" y="381" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#1a1a1a" text-anchor="middle">1</text>
+<rect x="50.0" y="416" width="100" height="8" rx="4.0" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="50.0" y="432" width="80" height="8" rx="4.0" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<circle cx="300.0" cy="376" r="20" fill="#fff" stroke="#3a3a3a" stroke-width="1.5"/>
+<text x="300.0" y="381" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#1a1a1a" text-anchor="middle">2</text>
+<rect x="250.0" y="416" width="100" height="8" rx="4.0" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="250.0" y="432" width="80" height="8" rx="4.0" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<circle cx="500.0" cy="376" r="20" fill="#fff" stroke="#3a3a3a" stroke-width="1.5"/>
+<text x="500.0" y="381" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#1a1a1a" text-anchor="middle">3</text>
+<rect x="450.0" y="416" width="100" height="8" rx="4.0" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="450.0" y="432" width="80" height="8" rx="4.0" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<circle cx="700.0" cy="376" r="20" fill="#fff" stroke="#3a3a3a" stroke-width="1.5"/>
+<text x="700.0" y="381" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#1a1a1a" text-anchor="middle">4</text>
+<rect x="650.0" y="416" width="100" height="8" rx="4.0" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="650.0" y="432" width="80" height="8" rx="4.0" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="692.6" y="332" width="59.4" height="18" rx="3" fill="#fff" stroke="#3a3a3a" stroke-width="1"/>
+<text x="722.3" y="345" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="600" fill="#1a1a1a" text-anchor="middle">#proceso</text>
+</g>
+<line x1="766" y1="341" x2="784" y2="341" stroke="#b8b8b8"/>
+<text x="790" y="345" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1a1a1a" text-anchor="start">4 pasos con plazos</text>
+<text x="790" y="362" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#6b6b6b" text-anchor="start">diagnóstico → propuesta → implementación (~11 días) → acompañamiento</text>
+<g id="blk-tu-parte">
+<rect x="40" y="476" width="720" height="120" rx="0" fill="#fff" stroke="#b8b8b8" stroke-width="1"/>
+<rect x="64" y="500" width="260" height="16" rx="8" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="64" y="532" width="576.0" height="8" rx="4.0" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="64" y="548" width="540.0" height="8" rx="4.0" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="64" y="564" width="432.0" height="8" rx="4.0" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="685.4" y="482" width="66.6" height="18" rx="3" fill="#fff" stroke="#3a3a3a" stroke-width="1"/>
+<text x="718.7" y="495" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="600" fill="#1a1a1a" text-anchor="middle">#tu-parte</text>
+</g>
+<line x1="766" y1="491" x2="784" y2="491" stroke="#b8b8b8"/>
+<text x="790" y="495" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1a1a1a" text-anchor="start">Tu parte</text>
+<text x="790" y="512" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#6b6b6b" text-anchor="start">qué necesitamos de ti</text>
+<g id="blk-despues">
+<rect x="40" y="596" width="720" height="120" rx="0" fill="#fff" stroke="#b8b8b8" stroke-width="1"/>
+<rect x="64" y="620" width="260" height="16" rx="8" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="64" y="652" width="576.0" height="8" rx="4.0" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="64" y="668" width="540.0" height="8" rx="4.0" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="64" y="684" width="432.0" height="8" rx="4.0" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="692.6" y="602" width="59.4" height="18" rx="3" fill="#fff" stroke="#3a3a3a" stroke-width="1"/>
+<text x="722.3" y="615" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="600" fill="#1a1a1a" text-anchor="middle">#despues</text>
+</g>
+<line x1="766" y1="611" x2="784" y2="611" stroke="#b8b8b8"/>
+<text x="790" y="615" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1a1a1a" text-anchor="start">Después de lanzar</text>
+<text x="790" y="632" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#6b6b6b" text-anchor="start">acompañamiento y ajustes</text>
+<g id="blk-condiciones">
+<rect x="40" y="716" width="720" height="80" rx="0" fill="#fff" stroke="#b8b8b8" stroke-width="1"/>
+<circle cx="74.0" cy="754" r="8" fill="#fff" stroke="#3a3a3a"/>
+<rect x="90.0" y="750" width="101.4" height="8" rx="4" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<circle cx="246.0" cy="754" r="8" fill="#fff" stroke="#3a3a3a"/>
+<rect x="262.0" y="750" width="101.4" height="8" rx="4" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<circle cx="418.0" cy="754" r="8" fill="#fff" stroke="#3a3a3a"/>
+<rect x="434.0" y="750" width="101.4" height="8" rx="4" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<circle cx="590.0" cy="754" r="8" fill="#fff" stroke="#3a3a3a"/>
+<rect x="606.0" y="750" width="101.4" height="8" rx="4" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="663.8" y="722" width="88.2" height="18" rx="3" fill="#fff" stroke="#3a3a3a" stroke-width="1"/>
+<text x="707.9" y="735" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="600" fill="#1a1a1a" text-anchor="middle">#condiciones</text>
+</g>
+<line x1="766" y1="731" x2="784" y2="731" stroke="#b8b8b8"/>
+<text x="790" y="735" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1a1a1a" text-anchor="start">Sin letras chicas</text>
+<text x="790" y="752" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#6b6b6b" text-anchor="start">IVA incl. · config. incl. · sin permanencia</text>
+<g id="blk-faq">
+<rect x="40" y="796" width="720" height="200" rx="0" fill="#fff" stroke="#b8b8b8" stroke-width="1"/>
+<rect x="64" y="820" width="672" height="32" rx="6" fill="#fff" stroke="#b8b8b8" stroke-width="1"/>
+<rect x="80" y="832" width="260" height="8" rx="4" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<text x="716" y="841" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="400" fill="#6b6b6b" text-anchor="middle">+</text>
+<rect x="64" y="860" width="672" height="32" rx="6" fill="#fff" stroke="#b8b8b8" stroke-width="1"/>
+<rect x="80" y="872" width="300" height="8" rx="4" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<text x="716" y="881" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="400" fill="#6b6b6b" text-anchor="middle">+</text>
+<rect x="64" y="900" width="672" height="32" rx="6" fill="#fff" stroke="#b8b8b8" stroke-width="1"/>
+<rect x="80" y="912" width="340" height="8" rx="4" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<text x="716" y="921" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="400" fill="#6b6b6b" text-anchor="middle">+</text>
+<rect x="64" y="940" width="672" height="32" rx="6" fill="#fff" stroke="#b8b8b8" stroke-width="1"/>
+<rect x="80" y="952" width="260" height="8" rx="4" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<text x="716" y="961" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="400" fill="#6b6b6b" text-anchor="middle">+</text>
+<rect x="721.4" y="802" width="30.6" height="18" rx="3" fill="#fff" stroke="#3a3a3a" stroke-width="1"/>
+<text x="736.7" y="815" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="600" fill="#1a1a1a" text-anchor="middle">#faq</text>
+</g>
+<g id="blk-cta-final">
+<rect x="40" y="996" width="720" height="150" rx="0" fill="#fff" stroke="#b8b8b8" stroke-width="1"/>
+<rect x="56" y="1012" width="688" height="118" rx="12" fill="#3a3a3a" stroke="none" stroke-width="1"/>
+<rect x="220.0" y="1040" width="360" height="18" rx="9" fill="#777" stroke="none" stroke-width="1"/>
+<rect x="310.0" y="1076" width="180" height="32" rx="16" fill="#fff" stroke="none" stroke-width="1"/>
+<rect x="678.2" y="1002" width="73.8" height="18" rx="3" fill="#fff" stroke="#3a3a3a" stroke-width="1"/>
+<text x="715.1" y="1015" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="600" fill="#1a1a1a" text-anchor="middle">#cta-final</text>
+</g>
+<g id="blk-footer">
+<rect x="40" y="1146" width="720" height="170" rx="0" fill="#fff" stroke="#b8b8b8" stroke-width="1"/>
+<rect x="40" y="1146" width="720" height="170" rx="0" fill="#efefef" stroke="none" stroke-width="1"/>
+<rect x="64.0" y="1170" width="72.96" height="10" rx="5" fill="#3a3a3a" stroke="none" stroke-width="1"/>
+<rect x="64.0" y="1196" width="85.11999999999999" height="7" rx="3.5" fill="#cfcfcf" stroke="none" stroke-width="1"/>
+<rect x="64.0" y="1213" width="60.8" height="7" rx="3.5" fill="#cfcfcf" stroke="none" stroke-width="1"/>
+<rect x="64.0" y="1230" width="79.03999999999999" height="7" rx="3.5" fill="#cfcfcf" stroke="none" stroke-width="1"/>
+<rect x="64.0" y="1247" width="48.64" height="7" rx="3.5" fill="#cfcfcf" stroke="none" stroke-width="1"/>
+<rect x="201.6" y="1170" width="72.96" height="10" rx="5" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="201.6" y="1196" width="85.11999999999999" height="7" rx="3.5" fill="#cfcfcf" stroke="none" stroke-width="1"/>
+<rect x="201.6" y="1213" width="60.8" height="7" rx="3.5" fill="#cfcfcf" stroke="none" stroke-width="1"/>
+<rect x="201.6" y="1230" width="79.03999999999999" height="7" rx="3.5" fill="#cfcfcf" stroke="none" stroke-width="1"/>
+<rect x="201.6" y="1247" width="48.64" height="7" rx="3.5" fill="#cfcfcf" stroke="none" stroke-width="1"/>
+<rect x="339.2" y="1170" width="72.96" height="10" rx="5" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="339.2" y="1196" width="85.11999999999999" height="7" rx="3.5" fill="#cfcfcf" stroke="none" stroke-width="1"/>
+<rect x="339.2" y="1213" width="60.8" height="7" rx="3.5" fill="#cfcfcf" stroke="none" stroke-width="1"/>
+<rect x="339.2" y="1230" width="79.03999999999999" height="7" rx="3.5" fill="#cfcfcf" stroke="none" stroke-width="1"/>
+<rect x="339.2" y="1247" width="48.64" height="7" rx="3.5" fill="#cfcfcf" stroke="none" stroke-width="1"/>
+<rect x="476.79999999999995" y="1170" width="72.96" height="10" rx="5" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="476.79999999999995" y="1196" width="85.11999999999999" height="7" rx="3.5" fill="#cfcfcf" stroke="none" stroke-width="1"/>
+<rect x="476.79999999999995" y="1213" width="60.8" height="7" rx="3.5" fill="#cfcfcf" stroke="none" stroke-width="1"/>
+<rect x="476.79999999999995" y="1230" width="79.03999999999999" height="7" rx="3.5" fill="#cfcfcf" stroke="none" stroke-width="1"/>
+<rect x="476.79999999999995" y="1247" width="48.64" height="7" rx="3.5" fill="#cfcfcf" stroke="none" stroke-width="1"/>
+<rect x="614.4" y="1170" width="72.96" height="10" rx="5" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="614.4" y="1196" width="85.11999999999999" height="7" rx="3.5" fill="#cfcfcf" stroke="none" stroke-width="1"/>
+<rect x="614.4" y="1213" width="60.8" height="7" rx="3.5" fill="#cfcfcf" stroke="none" stroke-width="1"/>
+<rect x="614.4" y="1230" width="79.03999999999999" height="7" rx="3.5" fill="#cfcfcf" stroke="none" stroke-width="1"/>
+<rect x="614.4" y="1247" width="48.64" height="7" rx="3.5" fill="#cfcfcf" stroke="none" stroke-width="1"/>
+<rect x="699.8" y="1152" width="52.2" height="18" rx="3" fill="#fff" stroke="#3a3a3a" stroke-width="1"/>
+<text x="725.9" y="1165" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="600" fill="#1a1a1a" text-anchor="middle">#footer</text>
+</g>
+<text x="40" y="1348" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6b6b6b" text-anchor="start">Wireframe de baja fidelidad (desktop). Sin diseño ni copy: los bloques se adaptarán a los diseños entregados.</text>
+</svg>

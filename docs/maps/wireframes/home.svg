@@ -1,0 +1,293 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1090 2566" width="1090" height="2566" role="img" aria-label="Wireframe Home">
+<title>Wireframe Home</title>
+<rect x="0" y="0" width="1090" height="2566" rx="0" fill="#ffffff" stroke="none" stroke-width="1"/>
+<text x="40" y="46" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="22" font-weight="700" fill="#1a1a1a" text-anchor="start">Home</text>
+<text x="40" y="70" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="13" font-weight="400" fill="#6b6b6b" text-anchor="start">/</text>
+<text x="60" y="70" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#6b6b6b" text-anchor="start">· agencia de IA: tiempo, procesos, adaptación</text>
+<text x="790" y="104" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#6b6b6b" text-anchor="start" letter-spacing="1.2">NOTAS / CTA</text>
+<g id="blk-nav">
+<rect x="40" y="120" width="720" height="56" rx="0" fill="#fff" stroke="#b8b8b8" stroke-width="1"/>
+<rect x="60" y="138" width="70" height="20" rx="4" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="250" y="144" width="56" height="8" rx="4" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="322" y="144" width="56" height="8" rx="4" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="394" y="144" width="56" height="8" rx="4" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="466" y="144" width="56" height="8" rx="4" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="538" y="144" width="56" height="8" rx="4" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="530" y="133" width="150" height="30" rx="15" fill="#3a3a3a" stroke="#3a3a3a" stroke-width="1.2"/>
+<rect x="721.4" y="126" width="30.6" height="18" rx="3" fill="#fff" stroke="#3a3a3a" stroke-width="1"/>
+<text x="736.7" y="139" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="600" fill="#1a1a1a" text-anchor="middle">#nav</text>
+</g>
+<line x1="766" y1="135" x2="784" y2="135" stroke="#b8b8b8"/>
+<text x="790" y="139" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1a1a1a" text-anchor="start">Header</text>
+<text x="790" y="156" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#6b6b6b" text-anchor="start">CTA fijo: diagnóstico gratis</text>
+<g id="blk-hero">
+<rect x="40" y="176" width="720" height="300" rx="0" fill="#fff" stroke="#b8b8b8" stroke-width="1"/>
+<rect x="70" y="236" width="300" height="22" rx="11" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="70" y="268" width="260" height="22" rx="11" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="70" y="300" width="200" height="22" rx="11" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="70" y="346" width="290" height="8" rx="4.0" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="70" y="362" width="240" height="8" rx="4.0" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="70" y="396" width="150" height="30" rx="15" fill="#3a3a3a" stroke="#3a3a3a" stroke-width="1.2"/>
+<rect x="234" y="396" width="110" height="30" rx="15" fill="#fff" stroke="#3a3a3a" stroke-width="1.2"/>
+<rect x="430" y="206" width="300" height="240" rx="6" fill="#efefef" stroke="#b8b8b8" stroke-width="1"/>
+<line x1="430" y1="206" x2="730" y2="446" stroke="#b8b8b8"/>
+<line x1="730" y1="206" x2="430" y2="446" stroke="#b8b8b8"/>
+<rect x="714.2" y="182" width="37.8" height="18" rx="3" fill="#fff" stroke="#3a3a3a" stroke-width="1"/>
+<text x="733.1" y="195" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="600" fill="#1a1a1a" text-anchor="middle">#hero</text>
+</g>
+<line x1="766" y1="191" x2="784" y2="191" stroke="#b8b8b8"/>
+<text x="790" y="195" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1a1a1a" text-anchor="start">Agencia de IA + adaptarse</text>
+<text x="790" y="212" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#6b6b6b" text-anchor="start">CTA: diagnóstico · 2º: ¿Es para ti?</text>
+<g id="blk-stats">
+<rect x="40" y="476" width="720" height="150" rx="0" fill="#fff" stroke="#b8b8b8" stroke-width="1"/>
+<rect x="64.0" y="506" width="106.66666666666667" height="34" rx="6" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="64.0" y="556" width="170.66666666666669" height="8" rx="4.0" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="64.0" y="572" width="128.0" height="8" rx="4.0" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="293.33333333333337" y="506" width="106.66666666666667" height="34" rx="6" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="293.33333333333337" y="556" width="170.66666666666669" height="8" rx="4.0" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="293.33333333333337" y="572" width="128.0" height="8" rx="4.0" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="522.6666666666667" y="506" width="106.66666666666667" height="34" rx="6" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="522.6666666666667" y="556" width="170.66666666666669" height="8" rx="4.0" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="522.6666666666667" y="572" width="128.0" height="8" rx="4.0" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="707.0" y="482" width="45.0" height="18" rx="3" fill="#fff" stroke="#3a3a3a" stroke-width="1"/>
+<text x="729.5" y="495" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="600" fill="#1a1a1a" text-anchor="middle">#stats</text>
+</g>
+<line x1="766" y1="491" x2="784" y2="491" stroke="#b8b8b8"/>
+<text x="790" y="495" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1a1a1a" text-anchor="start">El mercado cambia rápido</text>
+<text x="790" y="512" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#6b6b6b" text-anchor="start">3 cifras con fuente</text>
+<g id="blk-pilares">
+<rect x="40" y="626" width="720" height="170" rx="0" fill="#fff" stroke="#b8b8b8" stroke-width="1"/>
+<circle cx="170.66666666666669" cy="676" r="22" fill="#dcdcdc"/>
+<rect x="117.33333333333334" y="712" width="106.66666666666667" height="12" rx="6" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="96.0" y="736" width="149.33333333333334" height="8" rx="4.0" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="96.0" y="752" width="117.33333333333334" height="8" rx="4.0" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<circle cx="400.00000000000006" cy="676" r="22" fill="#dcdcdc"/>
+<rect x="346.6666666666667" y="712" width="106.66666666666667" height="12" rx="6" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="325.33333333333337" y="736" width="149.33333333333334" height="8" rx="4.0" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="325.33333333333337" y="752" width="117.33333333333334" height="8" rx="4.0" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<circle cx="629.3333333333334" cy="676" r="22" fill="#dcdcdc"/>
+<rect x="576.0000000000001" y="712" width="106.66666666666667" height="12" rx="6" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="554.6666666666667" y="736" width="149.33333333333334" height="8" rx="4.0" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="554.6666666666667" y="752" width="117.33333333333334" height="8" rx="4.0" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="692.6" y="632" width="59.4" height="18" rx="3" fill="#fff" stroke="#3a3a3a" stroke-width="1"/>
+<text x="722.3" y="645" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="600" fill="#1a1a1a" text-anchor="middle">#pilares</text>
+</g>
+<line x1="766" y1="641" x2="784" y2="641" stroke="#b8b8b8"/>
+<text x="790" y="645" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1a1a1a" text-anchor="start">Qué resolvemos</text>
+<text x="790" y="662" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#6b6b6b" text-anchor="start">Tiempo · Procesos · Adaptación</text>
+<g id="blk-servicios-grid">
+<rect x="40" y="796" width="720" height="220" rx="0" fill="#fff" stroke="#b8b8b8" stroke-width="1"/>
+<rect x="64.0" y="820" width="159.0" height="170" rx="8" fill="#fff" stroke="#b8b8b8" stroke-width="1"/>
+<circle cx="92.0" cy="850" r="12" fill="#dcdcdc"/>
+<rect x="80.0" y="876" width="95.39999999999999" height="8" rx="4.0" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="80.0" y="892" width="127.2" height="8" rx="4.0" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="80.0" y="908" width="111.3" height="8" rx="4.0" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<text x="207.0" y="974" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#6b6b6b" text-anchor="end">Ver →</text>
+<rect x="235.0" y="820" width="159.0" height="170" rx="8" fill="#fff" stroke="#b8b8b8" stroke-width="1"/>
+<circle cx="263.0" cy="850" r="12" fill="#dcdcdc"/>
+<rect x="251.0" y="876" width="95.39999999999999" height="8" rx="4.0" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="251.0" y="892" width="127.2" height="8" rx="4.0" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="251.0" y="908" width="111.3" height="8" rx="4.0" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<text x="378.0" y="974" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#6b6b6b" text-anchor="end">Ver →</text>
+<rect x="406.0" y="820" width="159.0" height="170" rx="8" fill="#fff" stroke="#b8b8b8" stroke-width="1"/>
+<circle cx="434.0" cy="850" r="12" fill="#dcdcdc"/>
+<rect x="422.0" y="876" width="95.39999999999999" height="8" rx="4.0" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="422.0" y="892" width="127.2" height="8" rx="4.0" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="422.0" y="908" width="111.3" height="8" rx="4.0" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<text x="549.0" y="974" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#6b6b6b" text-anchor="end">Ver →</text>
+<rect x="577.0" y="820" width="159.0" height="170" rx="8" fill="#fff" stroke="#b8b8b8" stroke-width="1"/>
+<circle cx="605.0" cy="850" r="12" fill="#dcdcdc"/>
+<rect x="593.0" y="876" width="95.39999999999999" height="8" rx="4.0" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="593.0" y="892" width="127.2" height="8" rx="4.0" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="593.0" y="908" width="111.3" height="8" rx="4.0" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<text x="720.0" y="974" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#6b6b6b" text-anchor="end">Ver →</text>
+<rect x="642.2" y="802" width="109.8" height="18" rx="3" fill="#fff" stroke="#3a3a3a" stroke-width="1"/>
+<text x="697.1" y="815" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="600" fill="#1a1a1a" text-anchor="middle">#servicios-grid</text>
+</g>
+<line x1="766" y1="811" x2="784" y2="811" stroke="#b8b8b8"/>
+<text x="790" y="815" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1a1a1a" text-anchor="start">Los 4 servicios</text>
+<text x="790" y="832" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#6b6b6b" text-anchor="start">→ /servicios/*</text>
+<g id="blk-proceso">
+<rect x="40" y="1016" width="720" height="150" rx="0" fill="#fff" stroke="#b8b8b8" stroke-width="1"/>
+<line x1="100" y1="1066" x2="700" y2="1066" stroke="#b8b8b8" stroke-width="2"/>
+<circle cx="100.0" cy="1066" r="20" fill="#fff" stroke="#3a3a3a" stroke-width="1.5"/>
+<text x="100.0" y="1071" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#1a1a1a" text-anchor="middle">1</text>
+<rect x="50.0" y="1106" width="100" height="8" rx="4.0" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="50.0" y="1122" width="80" height="8" rx="4.0" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<circle cx="300.0" cy="1066" r="20" fill="#fff" stroke="#3a3a3a" stroke-width="1.5"/>
+<text x="300.0" y="1071" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#1a1a1a" text-anchor="middle">2</text>
+<rect x="250.0" y="1106" width="100" height="8" rx="4.0" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="250.0" y="1122" width="80" height="8" rx="4.0" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<circle cx="500.0" cy="1066" r="20" fill="#fff" stroke="#3a3a3a" stroke-width="1.5"/>
+<text x="500.0" y="1071" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#1a1a1a" text-anchor="middle">3</text>
+<rect x="450.0" y="1106" width="100" height="8" rx="4.0" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="450.0" y="1122" width="80" height="8" rx="4.0" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<circle cx="700.0" cy="1066" r="20" fill="#fff" stroke="#3a3a3a" stroke-width="1.5"/>
+<text x="700.0" y="1071" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#1a1a1a" text-anchor="middle">4</text>
+<rect x="650.0" y="1106" width="100" height="8" rx="4.0" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="650.0" y="1122" width="80" height="8" rx="4.0" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="692.6" y="1022" width="59.4" height="18" rx="3" fill="#fff" stroke="#3a3a3a" stroke-width="1"/>
+<text x="722.3" y="1035" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="600" fill="#1a1a1a" text-anchor="middle">#proceso</text>
+</g>
+<line x1="766" y1="1031" x2="784" y2="1031" stroke="#b8b8b8"/>
+<text x="790" y="1035" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1a1a1a" text-anchor="start">Cómo trabajamos (corto)</text>
+<text x="790" y="1052" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#6b6b6b" text-anchor="start">→ /como-trabajamos</text>
+<g id="blk-verticales">
+<rect x="40" y="1166" width="720" height="230" rx="0" fill="#fff" stroke="#b8b8b8" stroke-width="1"/>
+<rect x="64" y="1190" width="100" height="28" rx="14" fill="#3a3a3a" stroke="#3a3a3a" stroke-width="1"/>
+<rect x="176" y="1190" width="100" height="28" rx="14" fill="#fff" stroke="#3a3a3a" stroke-width="1"/>
+<rect x="288" y="1190" width="100" height="28" rx="14" fill="#fff" stroke="#3a3a3a" stroke-width="1"/>
+<rect x="400" y="1190" width="100" height="28" rx="14" fill="#fff" stroke="#3a3a3a" stroke-width="1"/>
+<rect x="512" y="1190" width="100" height="28" rx="14" fill="#fff" stroke="#3a3a3a" stroke-width="1"/>
+<rect x="624" y="1190" width="100" height="28" rx="14" fill="#fff" stroke="#3a3a3a" stroke-width="1"/>
+<rect x="64" y="1246" width="260" height="10" rx="5.0" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="64" y="1268" width="220" height="10" rx="5.0" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="64" y="1290" width="240" height="10" rx="5.0" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="64" y="1312" width="180" height="10" rx="5.0" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="64" y="1342" width="140" height="30" rx="15" fill="#3a3a3a" stroke="#3a3a3a" stroke-width="1.2"/>
+<rect x="430" y="1236" width="306" height="140" rx="6" fill="#efefef" stroke="#b8b8b8" stroke-width="1"/>
+<line x1="430" y1="1236" x2="736" y2="1376" stroke="#b8b8b8"/>
+<line x1="736" y1="1236" x2="430" y2="1376" stroke="#b8b8b8"/>
+<rect x="671.0" y="1172" width="81.0" height="18" rx="3" fill="#fff" stroke="#3a3a3a" stroke-width="1"/>
+<text x="711.5" y="1185" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="600" fill="#1a1a1a" text-anchor="middle">#verticales</text>
+</g>
+<line x1="766" y1="1181" x2="784" y2="1181" stroke="#b8b8b8"/>
+<text x="790" y="1185" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1a1a1a" text-anchor="start">Por tipo de negocio</text>
+<text x="790" y="1202" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#6b6b6b" text-anchor="start">→ /soluciones</text>
+<g id="blk-a-medida">
+<rect x="40" y="1396" width="720" height="120" rx="0" fill="#fff" stroke="#b8b8b8" stroke-width="1"/>
+<rect x="56" y="1412" width="688" height="88" rx="10" fill="#3a3a3a" stroke="none" stroke-width="1"/>
+<rect x="84" y="1436" width="280" height="14" rx="7" fill="#777" stroke="none" stroke-width="1"/>
+<rect x="84" y="1462" width="220" height="8" rx="4" fill="#666" stroke="none" stroke-width="1"/>
+<rect x="550" y="1440" width="160" height="30" rx="15" fill="#fff" stroke="none" stroke-width="1"/>
+<rect x="685.4" y="1402" width="66.6" height="18" rx="3" fill="#fff" stroke="#3a3a3a" stroke-width="1"/>
+<text x="718.7" y="1415" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="600" fill="#1a1a1a" text-anchor="middle">#a-medida</text>
+</g>
+<line x1="766" y1="1411" x2="784" y2="1411" stroke="#b8b8b8"/>
+<text x="790" y="1415" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1a1a1a" text-anchor="start">Soluciones a medida</text>
+<text x="790" y="1432" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#6b6b6b" text-anchor="start">→ /servicios/a-medida</text>
+<g id="blk-planes">
+<rect x="40" y="1516" width="720" height="260" rx="0" fill="#fff" stroke="#b8b8b8" stroke-width="1"/>
+<rect x="64.0" y="1546" width="159.0" height="210" rx="8" fill="#fff" stroke="#b8b8b8" stroke-width="1"/>
+<text x="80.0" y="1580" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#1a1a1a" text-anchor="start">Básico</text>
+<text x="80.0" y="1610" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="20" font-weight="700" fill="#1a1a1a" text-anchor="start">$15</text>
+<rect x="80.0" y="1632" width="111.3" height="8" rx="4.0" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="80.0" y="1648" width="95.39999999999999" height="8" rx="4.0" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="80.0" y="1664" width="119.25" height="8" rx="4.0" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="80.0" y="1680" width="79.5" height="8" rx="4.0" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="80.0" y="1710" width="127.0" height="30" rx="15" fill="#fff" stroke="#3a3a3a" stroke-width="1"/>
+<rect x="235.0" y="1546" width="159.0" height="210" rx="8" fill="#fff" stroke="#3a3a3a" stroke-width="2.5"/>
+<rect x="266.5" y="1536" width="96" height="20" rx="10" fill="#3a3a3a" stroke="none" stroke-width="1"/>
+<text x="314.5" y="1550" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="9" font-weight="700" fill="#fff" text-anchor="middle">RECOMENDADO</text>
+<text x="251.0" y="1580" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#1a1a1a" text-anchor="start">Estándar</text>
+<text x="251.0" y="1610" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="20" font-weight="700" fill="#1a1a1a" text-anchor="start">$35</text>
+<rect x="251.0" y="1632" width="111.3" height="8" rx="4.0" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="251.0" y="1648" width="95.39999999999999" height="8" rx="4.0" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="251.0" y="1664" width="119.25" height="8" rx="4.0" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="251.0" y="1680" width="79.5" height="8" rx="4.0" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="251.0" y="1710" width="127.0" height="30" rx="15" fill="#3a3a3a" stroke="#3a3a3a" stroke-width="1"/>
+<rect x="406.0" y="1546" width="159.0" height="210" rx="8" fill="#fff" stroke="#b8b8b8" stroke-width="1"/>
+<text x="422.0" y="1580" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#1a1a1a" text-anchor="start">Pro</text>
+<text x="422.0" y="1610" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="20" font-weight="700" fill="#1a1a1a" text-anchor="start">$60</text>
+<rect x="422.0" y="1632" width="111.3" height="8" rx="4.0" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="422.0" y="1648" width="95.39999999999999" height="8" rx="4.0" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="422.0" y="1664" width="119.25" height="8" rx="4.0" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="422.0" y="1680" width="79.5" height="8" rx="4.0" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="422.0" y="1710" width="127.0" height="30" rx="15" fill="#fff" stroke="#3a3a3a" stroke-width="1"/>
+<rect x="577.0" y="1546" width="159.0" height="210" rx="8" fill="#fff" stroke="#b8b8b8" stroke-width="1"/>
+<text x="593.0" y="1580" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#1a1a1a" text-anchor="start">A medida</text>
+<text x="593.0" y="1610" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="20" font-weight="700" fill="#1a1a1a" text-anchor="start">Hablemos</text>
+<rect x="593.0" y="1632" width="111.3" height="8" rx="4.0" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="593.0" y="1648" width="95.39999999999999" height="8" rx="4.0" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="593.0" y="1664" width="119.25" height="8" rx="4.0" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="593.0" y="1680" width="79.5" height="8" rx="4.0" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="593.0" y="1710" width="127.0" height="30" rx="15" fill="#fff" stroke="#3a3a3a" stroke-width="1"/>
+<rect x="699.8" y="1522" width="52.2" height="18" rx="3" fill="#fff" stroke="#3a3a3a" stroke-width="1"/>
+<text x="725.9" y="1535" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="600" fill="#1a1a1a" text-anchor="middle">#planes</text>
+</g>
+<line x1="766" y1="1531" x2="784" y2="1531" stroke="#b8b8b8"/>
+<text x="790" y="1535" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1a1a1a" text-anchor="start">Planes (resumen)</text>
+<text x="790" y="1552" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#6b6b6b" text-anchor="start">→ /precios</text>
+<g id="blk-concepto">
+<rect x="40" y="1776" width="720" height="220" rx="0" fill="#fff" stroke="#b8b8b8" stroke-width="1"/>
+<rect x="64" y="1800" width="300" height="170" rx="6" fill="#efefef" stroke="#b8b8b8" stroke-width="1"/>
+<line x1="64" y1="1800" x2="364" y2="1970" stroke="#b8b8b8"/>
+<line x1="364" y1="1800" x2="64" y2="1970" stroke="#b8b8b8"/>
+<rect x="400" y="1826" width="260" height="18" rx="9" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="400" y="1866" width="300" height="8" rx="4.0" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="400" y="1882" width="280" height="8" rx="4.0" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="400" y="1898" width="260" height="8" rx="4.0" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="400" y="1914" width="200" height="8" rx="4.0" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="685.4" y="1782" width="66.6" height="18" rx="3" fill="#fff" stroke="#3a3a3a" stroke-width="1"/>
+<text x="718.7" y="1795" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="600" fill="#1a1a1a" text-anchor="middle">#concepto</text>
+</g>
+<line x1="766" y1="1791" x2="784" y2="1791" stroke="#b8b8b8"/>
+<text x="790" y="1795" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1a1a1a" text-anchor="start">Por qué la iguana</text>
+<text x="790" y="1812" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#6b6b6b" text-anchor="start">la iguana se adaptó</text>
+<g id="blk-faq">
+<rect x="40" y="1996" width="720" height="200" rx="0" fill="#fff" stroke="#b8b8b8" stroke-width="1"/>
+<rect x="64" y="2020" width="672" height="32" rx="6" fill="#fff" stroke="#b8b8b8" stroke-width="1"/>
+<rect x="80" y="2032" width="260" height="8" rx="4" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<text x="716" y="2041" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="400" fill="#6b6b6b" text-anchor="middle">+</text>
+<rect x="64" y="2060" width="672" height="32" rx="6" fill="#fff" stroke="#b8b8b8" stroke-width="1"/>
+<rect x="80" y="2072" width="300" height="8" rx="4" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<text x="716" y="2081" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="400" fill="#6b6b6b" text-anchor="middle">+</text>
+<rect x="64" y="2100" width="672" height="32" rx="6" fill="#fff" stroke="#b8b8b8" stroke-width="1"/>
+<rect x="80" y="2112" width="340" height="8" rx="4" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<text x="716" y="2121" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="400" fill="#6b6b6b" text-anchor="middle">+</text>
+<rect x="64" y="2140" width="672" height="32" rx="6" fill="#fff" stroke="#b8b8b8" stroke-width="1"/>
+<rect x="80" y="2152" width="260" height="8" rx="4" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<text x="716" y="2161" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="400" fill="#6b6b6b" text-anchor="middle">+</text>
+<rect x="721.4" y="2002" width="30.6" height="18" rx="3" fill="#fff" stroke="#3a3a3a" stroke-width="1"/>
+<text x="736.7" y="2015" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="600" fill="#1a1a1a" text-anchor="middle">#faq</text>
+</g>
+<line x1="766" y1="2011" x2="784" y2="2011" stroke="#b8b8b8"/>
+<text x="790" y="2015" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1a1a1a" text-anchor="start">FAQ corta</text>
+<text x="790" y="2032" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#6b6b6b" text-anchor="start">→ /faq</text>
+<g id="blk-cta-final">
+<rect x="40" y="2196" width="720" height="150" rx="0" fill="#fff" stroke="#b8b8b8" stroke-width="1"/>
+<rect x="56" y="2212" width="688" height="118" rx="12" fill="#3a3a3a" stroke="none" stroke-width="1"/>
+<rect x="220.0" y="2240" width="360" height="18" rx="9" fill="#777" stroke="none" stroke-width="1"/>
+<rect x="310.0" y="2276" width="180" height="32" rx="16" fill="#fff" stroke="none" stroke-width="1"/>
+<rect x="678.2" y="2202" width="73.8" height="18" rx="3" fill="#fff" stroke="#3a3a3a" stroke-width="1"/>
+<text x="715.1" y="2215" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="600" fill="#1a1a1a" text-anchor="middle">#cta-final</text>
+</g>
+<line x1="766" y1="2211" x2="784" y2="2211" stroke="#b8b8b8"/>
+<text x="790" y="2215" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1a1a1a" text-anchor="start">«La iguana se adaptó. ¿Y tú?»</text>
+<text x="790" y="2232" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#6b6b6b" text-anchor="start">CTA: diagnóstico gratis</text>
+<g id="blk-footer">
+<rect x="40" y="2346" width="720" height="170" rx="0" fill="#fff" stroke="#b8b8b8" stroke-width="1"/>
+<rect x="40" y="2346" width="720" height="170" rx="0" fill="#efefef" stroke="none" stroke-width="1"/>
+<rect x="64.0" y="2370" width="72.96" height="10" rx="5" fill="#3a3a3a" stroke="none" stroke-width="1"/>
+<rect x="64.0" y="2396" width="85.11999999999999" height="7" rx="3.5" fill="#cfcfcf" stroke="none" stroke-width="1"/>
+<rect x="64.0" y="2413" width="60.8" height="7" rx="3.5" fill="#cfcfcf" stroke="none" stroke-width="1"/>
+<rect x="64.0" y="2430" width="79.03999999999999" height="7" rx="3.5" fill="#cfcfcf" stroke="none" stroke-width="1"/>
+<rect x="64.0" y="2447" width="48.64" height="7" rx="3.5" fill="#cfcfcf" stroke="none" stroke-width="1"/>
+<rect x="201.6" y="2370" width="72.96" height="10" rx="5" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="201.6" y="2396" width="85.11999999999999" height="7" rx="3.5" fill="#cfcfcf" stroke="none" stroke-width="1"/>
+<rect x="201.6" y="2413" width="60.8" height="7" rx="3.5" fill="#cfcfcf" stroke="none" stroke-width="1"/>
+<rect x="201.6" y="2430" width="79.03999999999999" height="7" rx="3.5" fill="#cfcfcf" stroke="none" stroke-width="1"/>
+<rect x="201.6" y="2447" width="48.64" height="7" rx="3.5" fill="#cfcfcf" stroke="none" stroke-width="1"/>
+<rect x="339.2" y="2370" width="72.96" height="10" rx="5" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="339.2" y="2396" width="85.11999999999999" height="7" rx="3.5" fill="#cfcfcf" stroke="none" stroke-width="1"/>
+<rect x="339.2" y="2413" width="60.8" height="7" rx="3.5" fill="#cfcfcf" stroke="none" stroke-width="1"/>
+<rect x="339.2" y="2430" width="79.03999999999999" height="7" rx="3.5" fill="#cfcfcf" stroke="none" stroke-width="1"/>
+<rect x="339.2" y="2447" width="48.64" height="7" rx="3.5" fill="#cfcfcf" stroke="none" stroke-width="1"/>
+<rect x="476.79999999999995" y="2370" width="72.96" height="10" rx="5" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="476.79999999999995" y="2396" width="85.11999999999999" height="7" rx="3.5" fill="#cfcfcf" stroke="none" stroke-width="1"/>
+<rect x="476.79999999999995" y="2413" width="60.8" height="7" rx="3.5" fill="#cfcfcf" stroke="none" stroke-width="1"/>
+<rect x="476.79999999999995" y="2430" width="79.03999999999999" height="7" rx="3.5" fill="#cfcfcf" stroke="none" stroke-width="1"/>
+<rect x="476.79999999999995" y="2447" width="48.64" height="7" rx="3.5" fill="#cfcfcf" stroke="none" stroke-width="1"/>
+<rect x="614.4" y="2370" width="72.96" height="10" rx="5" fill="#dcdcdc" stroke="none" stroke-width="1"/>
+<rect x="614.4" y="2396" width="85.11999999999999" height="7" rx="3.5" fill="#cfcfcf" stroke="none" stroke-width="1"/>
+<rect x="614.4" y="2413" width="60.8" height="7" rx="3.5" fill="#cfcfcf" stroke="none" stroke-width="1"/>
+<rect x="614.4" y="2430" width="79.03999999999999" height="7" rx="3.5" fill="#cfcfcf" stroke="none" stroke-width="1"/>
+<rect x="614.4" y="2447" width="48.64" height="7" rx="3.5" fill="#cfcfcf" stroke="none" stroke-width="1"/>
+<rect x="699.8" y="2352" width="52.2" height="18" rx="3" fill="#fff" stroke="#3a3a3a" stroke-width="1"/>
+<text x="725.9" y="2365" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="600" fill="#1a1a1a" text-anchor="middle">#footer</text>
+</g>
+<line x1="766" y1="2361" x2="784" y2="2361" stroke="#b8b8b8"/>
+<text x="790" y="2365" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1a1a1a" text-anchor="start">Footer</text>
+<text x="790" y="2382" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#6b6b6b" text-anchor="start">servicios · empresa · legal · redes</text>
+<text x="40" y="2548" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6b6b6b" text-anchor="start">Wireframe de baja fidelidad (desktop). Sin diseño ni copy: los bloques se adaptarán a los diseños entregados.</text>
+</svg>
