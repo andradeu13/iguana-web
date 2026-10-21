@@ -35,11 +35,11 @@ main > .shero + section, main > .nhero + section { margin-top: 0; }
 .chap { position: relative; display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); }
 .chap__stage { position: sticky; top: 0; align-self: start; height: 100svh; padding: 96px 0 24px clamp(16px, 3vw, 40px); box-sizing: border-box; }
 .chap__media { position: relative; height: 100%; overflow: hidden; border-radius: var(--ig-radius-xl); background: var(--ig-gray-900); }
-.chap__media img, .story__stage > img {
+.chap__media img, .story__stage > img[data-media] {
   position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transform: scale(1.08);
   transition: opacity .9s var(--ig-ease-out), transform 1.6s var(--ig-ease-out);
 }
-.chap__media img.is-active, .story__stage > img.is-active { opacity: 1; transform: scale(1); }
+.chap__media img.is-active, .story__stage > img[data-media].is-active { opacity: 1; transform: scale(1); }
 .chap__media::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 55%, rgba(12, 14, 11, .6)); }
 .chap__num { position: absolute; z-index: 1; left: calc(clamp(16px, 3vw, 40px) + 28px); bottom: 44px; display: grid; margin: 0; font: 400 clamp(96px, 13vw, 200px)/.8 var(--display-xl); color: #fff; }
 .chap__num span { grid-area: 1 / 1; opacity: 0; transform: translateY(30px); transition: opacity .5s var(--ig-ease-out), transform .7s var(--ig-ease-out); }
@@ -85,7 +85,10 @@ main > .shero + section, main > .nhero + section { margin-top: 0; }
 .deck__card:last-child { margin-bottom: 0; }
 .deck__card--hi { box-shadow: inset 0 0 0 3px var(--ig-green-400), 0 -10px 40px rgba(20, 24, 18, .08); }
 .deck__card--dark { background: var(--ink-panel); color: #fff; }
-.deck__head { display: grid; align-content: start; gap: 10px; }
+.deck__head { position: relative; isolation: isolate; display: grid; align-content: start; gap: 10px; }
+/* Isla en grabado detrás del precio, como en la línea anterior pero tenue y sin nombre */
+.deck__isla { position: absolute; z-index: -1; right: -8px; bottom: -6px; width: clamp(180px, 21vw, 300px); height: auto; opacity: .14; mix-blend-mode: multiply; pointer-events: none; translate: 0 calc(var(--p, 0) * -18px); }
+.deck__card--dark .deck__isla { filter: invert(1); mix-blend-mode: screen; opacity: .12; }
 .deck__n { font: var(--ig-weight-medium) var(--ig-text-xs)/1 var(--ig-font-mono); letter-spacing: var(--ig-tracking-label); color: var(--ig-color-text-subtle); }
 .deck__badge { justify-self: start; font: var(--ig-weight-bold) var(--ig-text-xs)/1 var(--ig-font-mono); letter-spacing: var(--ig-tracking-label); text-transform: uppercase; color: var(--ig-green-700, #2E5E12); }
 .deck__card h3 { margin-top: 8px; font-size: clamp(32px, 4vw, 56px); font-weight: var(--ig-weight-extrabold); letter-spacing: var(--ig-tracking-display); line-height: 1; }
@@ -133,6 +136,15 @@ main > .shero + section, main > .nhero + section { margin-top: 0; }
 .story__stage { grid-area: 1 / 1; position: sticky; top: 0; align-self: start; height: 100svh; overflow: hidden; }
 .story__stage::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(8, 10, 9, .78), rgba(8, 10, 9, .25) 70%), linear-gradient(0deg, rgba(8, 10, 9, .4), transparent 40%); }
 .story__dots { right: clamp(16px, 3vw, 40px); top: 50%; transform: translateY(-50%); }
+/* La iguana nadadora de la línea anterior: baja junto al riel con el scroll y se da vuelta al subir */
+.story__swimmer {
+  position: absolute; z-index: 1; right: calc(clamp(16px, 3vw, 40px) + 30px); top: calc(12% + var(--p, 0) * 72%); width: 64px; height: auto;
+  opacity: .45; filter: invert(1) drop-shadow(0 4px 10px rgba(0, 0, 0, .35)); pointer-events: none;
+  transform: translateY(-50%); transition: top .6s cubic-bezier(.16, 1, .3, 1), scale .4s var(--ig-ease-out);
+}
+.story__swimmer.is-up { scale: 1 -1; }
+.motion .story__swimmer { animation: swim 2.6s ease-in-out infinite; }
+@keyframes swim { 0%, 100% { rotate: -5deg; translate: -3px 0; } 50% { rotate: 5deg; translate: 3px 0; } }
 .story__steps { grid-area: 1 / 1; position: relative; z-index: 1; }
 .story__step { display: grid; align-content: center; gap: 18px; min-height: 100svh; padding: 0 clamp(20px, 8vw, 140px); box-sizing: border-box; max-width: 980px; }
 .motion .story__step > * { opacity: .12; transform: translateY(30px); transition: opacity .7s var(--ig-ease-out), transform .9s var(--ig-ease-out); }
@@ -201,6 +213,7 @@ html:not(.motion) .grow { height: auto; }
 
   .deck__card { grid-template-columns: minmax(0, 1fr); top: calc(80px + var(--i) * 12px); min-height: 0; margin-bottom: 16vh; gap: 20px; }
   .deck__price { padding-top: 8px; }
+  .deck__isla { width: 150px; right: -4px; bottom: -4px; }
   .deck__body > a { justify-self: stretch; }
   .cmp-hint { display: block; }
   .cmp table { min-width: 600px; }
@@ -213,6 +226,7 @@ html:not(.motion) .grow { height: auto; }
 
   .story__stage::after { background: linear-gradient(0deg, rgba(8, 10, 9, .85), rgba(8, 10, 9, .2) 75%); }
   .story__step { align-content: end; padding: 0 22px 18svh; }
+  .story__swimmer { width: 44px; right: 34px; opacity: .4; }
   .tm { grid-template-columns: minmax(0, 1fr); gap: 10px; }
   .tm__role, .tm__bio { padding-bottom: 0; }
 }

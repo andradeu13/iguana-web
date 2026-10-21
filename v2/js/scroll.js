@@ -4,7 +4,8 @@
                     "exit" mientras sale por arriba, "pin" mientras recorre su contenedor sticky,
                     "stack" cuánto lo tapa la siguiente tarjeta de un mazo sticky
    [data-words]     parte el texto en palabras que se encienden con --p
-   [data-chapters]  el [data-step] que cruza el centro activa su [data-media] y su punto [data-dot] */
+   [data-chapters]  el [data-step] que cruza el centro activa su [data-media] y su punto [data-dot]
+   [data-swim]      recibe .is-up mientras el scroll sube (la iguana nadadora se da vuelta) */
 (function () {
   var root = document.documentElement;
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -36,9 +37,15 @@
     return { steps: $$('[data-step]', c), media: $$('[data-media]', c), dots: $$('[data-dot]', c), nums: $$('[data-num]', c), current: -1 };
   });
   var clamp = function (v) { return v < 0 ? 0 : v > 1 ? 1 : v; };
+  var swimmers = reduce ? [] : $$('[data-swim]');
+  var lastY = window.scrollY;
 
   function update() {
-    var vh = window.innerHeight;
+    var vh = window.innerHeight, y = window.scrollY;
+    if (y !== lastY) {
+      swimmers.forEach(function (el) { el.classList.toggle('is-up', y < lastY); });
+      lastY = y;
+    }
     progress.forEach(function (el) {
       var r = el.getBoundingClientRect(), mode = el.getAttribute('data-progress'), p;
       if (r.bottom < -vh || r.top > vh * 2) return; // lejos de la pantalla

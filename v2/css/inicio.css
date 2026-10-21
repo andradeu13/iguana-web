@@ -299,6 +299,11 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 .plan { position: relative; display: grid; grid-template-rows: auto auto 1fr auto; gap: 14px; padding: 28px 24px 24px; border-radius: var(--ig-radius-xl); background: var(--card); box-shadow: var(--ig-shadow-1); transition: transform var(--ig-dur-base) var(--ig-ease-spring); }
 .plan:hover { transform: translateY(-6px); }
 .plan h3 { font-size: var(--ig-text-lg); font-weight: var(--ig-weight-bold); }
+/* Isla en grabado, tenue: el plan más grande lleva la isla más grande */
+.plan__isla { position: absolute; top: 58px; right: 16px; width: 84px; height: auto; opacity: .22; filter: grayscale(1); mix-blend-mode: multiply; pointer-events: none; transition: opacity var(--ig-dur-base) var(--ig-ease-out); }
+.plan:hover .plan__isla { opacity: .45; }
+.plan--dark .plan__isla { filter: grayscale(1) invert(1); mix-blend-mode: screen; opacity: .18; }
+.plan--dark:hover .plan__isla { opacity: .35; }
 .plan__price b { font-size: 44px; font-weight: var(--ig-weight-extrabold); letter-spacing: var(--ig-tracking-display); line-height: 1; }
 .plan__price span { margin-left: 4px; color: var(--ig-color-text-subtle); }
 .plan ul { display: grid; gap: 8px; align-content: start; margin: 0; padding: 0; list-style: none; color: var(--ig-color-text-muted); font-size: var(--ig-text-base); }
@@ -318,6 +323,11 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 
 /* ---------- FAQ ---------- */
 .faq__list { display: grid; gap: 10px; max-width: 920px; }
+/* La iguana de la línea anterior, en un lateral: acompaña sin robar protagonismo */
+.faq--iguana { display: grid; grid-template-columns: minmax(0, 920px) minmax(0, 1fr); column-gap: clamp(32px, 5vw, 72px); }
+.faq--iguana > .sec-head { grid-column: 1 / -1; }
+.faq__aside { grid-column: 2; grid-row: 2; position: sticky; top: 140px; align-self: start; justify-self: center; width: clamp(200px, 20vw, 290px); }
+.faq__aside img { display: block; width: 100%; height: auto; opacity: .88; translate: 0 calc((.5 - var(--p, .5)) * 50px); }
 .qa { border-radius: var(--ig-radius-lg); background: var(--card); box-shadow: var(--ig-shadow-1); }
 .qa summary { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 68px; padding: 0 16px 0 24px; cursor: pointer; list-style: none; font-size: var(--ig-text-lg); font-weight: var(--ig-weight-bold); letter-spacing: var(--ig-tracking-title); border-radius: inherit; }
 .qa summary::-webkit-details-marker { display: none; }
@@ -444,6 +454,10 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
   .ben__points { display: none; }
   .ben__inner { grid-template-columns: minmax(0, 1fr); }
   .footer__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .faq--iguana { position: relative; grid-template-columns: minmax(0, 1fr); }
+  .faq--iguana > .sec-head { padding-right: 110px; }
+  .faq__aside { position: absolute; grid-area: auto; top: -16px; right: var(--gutter-r, 16px); width: 96px; }
+  .faq__aside img { translate: none; }
   .footer__brand { grid-column: 1 / -1; }
 }
 @media (max-width: 560px) {
@@ -497,6 +511,7 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
   .plan li::before { width: 15px; height: 15px; margin-top: 0; background-size: 10px; }
   .plan__btn { min-height: 40px; font-size: var(--ig-text-sm); }
   .plan__badge { position: static; justify-self: start; order: -1; font-size: 9px; }
+  .plan__isla { top: 12px; right: 10px; width: 46px; }
   .plan--hi { grid-template-rows: auto auto auto 1fr auto; }
   .qa summary { min-height: 58px; font-size: var(--ig-text-base); padding-left: 18px; }
   .qa summary .ig-icon { width: 34px; height: 34px; padding: 7px; }

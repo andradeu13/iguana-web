@@ -115,6 +115,8 @@ Motor de scroll: `v2/js/scroll.js` (`data-reveal`, `data-progress`, `data-words`
 
 Botones: píldoras de solo texto, sin flechas. El oscuro se rellena de lima al pasar el mouse.
 
+Elementos de la línea anterior, en discreto: islas en grabado detrás del precio de cada plan (Inicio y Precios), la iguana sobre rocas en el lateral de la FAQ del Inicio y la iguana nadando junto al riel de la historia de Nosotros (baja con el scroll y se da vuelta al subir).
+
 ## Qué sale del sitio actual
 
 El detalle sección por sección está en [`maps/redistribucion.svg`](maps/redistribucion.svg).

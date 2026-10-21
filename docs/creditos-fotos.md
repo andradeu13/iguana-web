@@ -30,6 +30,14 @@ La [licencia de Unsplash](https://unsplash.com/license) permite uso comercial gr
 
 Propios de Iguana: los logos `logo-blanco.webp` y `logo-oscuro.webp`, recoloreados desde `images/logo-iguana.webp`.
 
+Grabados propios de la línea anterior (`v2/img/grabados/`), copiados de `images/`:
+
+| Archivo | Origen | Uso |
+|---|---|---|
+| `isla-sancristobal.webp`, `isla-santiago.webp`, `isla-santacruz.webp`, `isla-isabela.webp` | `images/isla-*.webp` | Islas tenues en los planes (Básico → A medida, de menor a mayor). Sin nombres de isla en los planes |
+| `iguana-rocas.webp` | `images/iguana-hero.webp` | Lateral de la FAQ del Inicio |
+| `iguana-nado.webp` | `images/iguana nado/1.webp` | Iguana que nada junto al riel en la historia de Nosotros |
+
 Pendiente: reemplazar la foto de cifras (ciudad genérica) por una de Quito o Guayaquil, y las de beneficios por fotos de clientes reales cuando las haya.
 
 ## Logos de herramientas

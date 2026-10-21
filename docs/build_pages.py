@@ -157,13 +157,13 @@ page('servicios.html', 'Servicios · Iguana', 'Agentes IA, automatización, cons
 
 # ================================================================== PRECIOS
 PLANS = [
-    dict(name='Básico', price='$15', who='Para empezar a responder a tiempo.', msg='Hola Iguana, me interesa el plan Básico',
+    dict(name='Básico', isla='sancristobal', price='$15', who='Para empezar a responder a tiempo.', msg='Hola Iguana, me interesa el plan Básico',
          items=['Número de WhatsApp nuevo, solo para tu negocio', '50 mensajes al mes', 'Recordatorios de citas', 'Agenda automática en tus horarios libres', 'Respuestas con el tono que tú apruebas']),
-    dict(name='Estándar', price='$35', who='Para negocios que viven de las citas.', msg='Hola Iguana, me interesa el plan Estándar', cls=' deck__card--hi', badge=True,
+    dict(name='Estándar', isla='santiago', price='$35', who='Para negocios que viven de las citas.', msg='Hola Iguana, me interesa el plan Estándar', cls=' deck__card--hi', badge=True,
          items=['Todo lo del plan Básico', 'Más mensajes al mes', 'Panel para ver citas y conversaciones', 'Soporte por WhatsApp']),
-    dict(name='Pro', price='$60', who='Para negocios con mucho movimiento.', msg='Hola Iguana, me interesa el plan Pro',
+    dict(name='Pro', isla='santacruz', price='$60', who='Para negocios con mucho movimiento.', msg='Hola Iguana, me interesa el plan Pro',
          items=['Todo lo del plan Estándar', 'Aún más mensajes al mes', 'Seguimiento de pagos y cuotas pendientes', 'Ajuste mensual de respuestas']),
-    dict(name='A medida', price='Hablemos', who='Para varias sedes o procesos propios.', msg='Hola Iguana, quiero algo a medida', cls=' deck__card--dark', label='Cotizar',
+    dict(name='A medida', isla='isabela', price='Hablemos', who='Para varias sedes o procesos propios.', msg='Hola Iguana, quiero algo a medida', cls=' deck__card--dark', label='Cotizar',
          items=['Todo lo del plan Pro', 'Varios números o sucursales', 'Integración con tu calendario, tus pagos o tu sistema', 'Flujos diseñados para tu operación', 'Acompañamiento dedicado']),
 ]
 deck = ''
@@ -176,6 +176,7 @@ for i, pl in enumerate(PLANS):
     deck += f'''
       <article class="deck__card{pl.get("cls", "")}" style="--i:{i}" data-progress="stack">
         <div class="deck__head">
+          <img class="deck__isla" src="img/grabados/isla-{pl["isla"]}.webp" alt="" loading="lazy">
           <p class="deck__n">{i + 1:02d} / 04</p>
           {badge}
           <h3>{pl["name"]}</h3>
@@ -284,9 +285,10 @@ body = f'''  <section class="nhero" id="hero" data-progress="exit" aria-labelled
     <p class="scroll-cue" aria-hidden="true">Desliza</p>
   </section>
 
-  <section class="story" data-chapters aria-label="La historia de la iguana">
+  <section class="story" data-chapters data-progress="pin" aria-label="La historia de la iguana">
     <div class="story__stage" aria-hidden="true">
       {smedia}
+      <img class="story__swimmer" data-swim src="img/grabados/iguana-nado.webp" alt="">
       <ol class="story__dots">{sdots}</ol>
     </div>
     <div class="story__steps">{ssteps}
