@@ -44,19 +44,20 @@
 
 ### `/` Inicio
 1. `nav-flotante`
-2. `hero` (titular + 2 CTAs, sin widget)
+2. `hero` (titular + 2 CTAs; sin chips ni widget)
 3. `herramientas`
-4. `cifras`
-5. `servicios-foto`
-6. `beneficios`
-7. `proceso`
-8. `cta-simple`
-9. `planes` (resumen)
-10. `faq`
-11. `cta-final`
-12. `footer`
+4. `servicios-foto`
+5. `galeria`: texto + 3 fotos en grid (referencia Uthao)
+6. `cifras`: tipografía gigante "ADÁPTATE" con foto delante y los datos de mercado (referencia Influence Pro)
+7. `beneficios`
+8. `proceso` (tiempos en negrita, sin chips)
+9. `calculadora` (1 a 5+ tareas, 5 min a 2 h+)
+10. `planes` (resumen)
+11. `faq`
+12. `cta-final`: palabra lima gigante "adáptate" con rayos y una sola frase
+13. `footer` (gris oscuro)
 
-Fondo blanco suave (`#FAFAF8`). El verde solo como acento: botones, íconos y puntos.
+Fondo blanco suave (`#FAFAF8`). Sin chips. El verde solo como acento; paneles oscuros y footer en gris neutro `#1E1F1D`.
 
 **Móvil (390 px):**
 
@@ -69,7 +70,7 @@ Fondo blanco suave (`#FAFAF8`). El verde solo como acento: botones, íconos y pu
 1. `nav-flotante`
 2. `hero-corto` con 4 píldoras de ancla
 3. `servicio` × 4 (`#agentes-ia`, `#automatizacion`, `#consultoria`, `#a-medida`)
-4. `cta-final` ("¿No sabes cuál?" → `/precios#calculadora`)
+4. `cta-final` ("¿No sabes cuál?" → `/#calculadora`)
 5. `footer`
 
 | Servicio | Contenido que se reaprovecha de `main` |
@@ -104,7 +105,7 @@ El detalle sección por sección está en [`maps/redistribucion.svg`](maps/redis
 
 - Mapa de islas 3D en precios: **eliminado**.
 - Planes Esencial / Crecimiento pasan a llamarse Básico / Estándar.
-- Quiz de `/es-para-ti`: reemplazado por la calculadora de Precios; la URL redirige a `/precios#calculadora`.
+- Quiz de `/es-para-ti`: reemplazado por la calculadora del Inicio; la URL redirige a `/#calculadora`.
 - "Tu parte", "Listo en 11 días" y "Tu primer año" se fusionan en un único `#proceso`.
 - Imágenes de Unsplash: **eliminadas**. Solo fotos propias.
 - Enlaces internos `.html` pasan a rutas limpias.
@@ -121,9 +122,9 @@ El detalle sección por sección está en [`maps/redistribucion.svg`](maps/redis
 | Forma orgánica de marca | **Falta** | Fondo del hero; se define en diseño |
 | OG image | Rehacer | Con el nuevo mensaje |
 
-## Calculadora (replanteada, va en `/precios#calculadora`)
+## Calculadora (replanteada)
 
-En el Inicio no va: ahí solo hay un CTA simple. En Precios ayuda a elegir plan.
+Va al final del Inicio, antes de los planes. Si Precios la necesita, enlaza a `/#calculadora`.
 
 Los rangos tienen que ser realistas. Nadie hace 200 tareas al día, y una tarea repetitiva puede tomar más de 15 minutos.
 

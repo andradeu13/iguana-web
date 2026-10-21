@@ -18,7 +18,10 @@ La [licencia de Unsplash](https://unsplash.com/license) permite uso comercial gr
 | `b-procesos.webp` | Beneficio: procesos | https://images.unsplash.com/photo-1454165804606-c3d57bc86b40 |
 | `b-datos.webp` | Beneficio: datos | https://images.unsplash.com/photo-1551288049-bebda4e38f71 |
 | `b-adaptas.webp` | Beneficio: adaptarse | https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e |
-| `cta.webp` | CTA final | https://images.unsplash.com/photo-1528698827591-e19ccd7bc23d |
+| `cta.webp` | Galería (fachada) | https://images.unsplash.com/photo-1528698827591-e19ccd7bc23d |
+| `galeria-alta.webp` | Galería (foto alta) | https://images.unsplash.com/photo-1556742049-0cfed4f6a45d |
+| `tienda.webp` | Galería | https://images.unsplash.com/photo-1556740749-887f6717d7e4 |
+| `mani.webp` | Sección tipográfica de cifras | https://images.unsplash.com/photo-1563986768609-322da13575f3 |
 
 Propios de Iguana: los logos `logo-blanco.webp` y `logo-oscuro.webp`, recoloreados desde `images/logo-iguana.webp`.
 

@@ -11,7 +11,7 @@
 <link rel="icon" href="../favicon.ico">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&family=Anton&display=swap">
 <link rel="stylesheet" href="css/tokens.css">
 <link rel="stylesheet" href="css/base.css">
 <link rel="stylesheet" href="css/inicio.css">
@@ -63,7 +63,6 @@
   <section class="wrap hero-wrap" id="hero">
     <div class="hero" style="background-image:url('img/fotos/hero.webp')">
       <div class="hero__copy">
-        <span class="glass-chip"><span class="dot-live" aria-hidden="true"></span> Agencia de IA · Ecuador</span>
         <h1>Tu negocio no necesita más manos. <em>Necesita evolucionar.</em></h1>
         <p>Automatizamos lo repetitivo, ordenamos tus procesos y te ayudamos a moverte al ritmo de un mercado que cambia cada mes. Con soluciones hechas a la medida de tu negocio.</p>
         <div class="hero__ctas">
@@ -72,11 +71,6 @@
           </a>
           <a class="btn-glass" href="#servicios">Ver servicios</a>
         </div>
-      </div>
-
-      <div class="hero__team glass-chip glass-chip--lg">
-        <span class="avatars" aria-hidden="true"><i>GC</i><i>DE</i><i>EA</i></span>
-        <span><b>Diagnóstico gratis de 15 min</b><small>con el equipo fundador</small></span>
       </div>
 
     </div>
@@ -103,37 +97,9 @@
     </div>
   </section>
 
-  <!-- 3 · CIFRAS -->
-  <section class="wrap" id="cifras" aria-labelledby="cifras-t">
-    <div class="cifras" style="background-image:url('img/fotos/cifras.webp')">
-      <div class="cifras__head">
-        <span class="glass-chip">El mercado</span>
-        <h2 id="cifras-t">El mercado ya se está moviendo. La pregunta es cuándo te mueves tú.</h2>
-      </div>
-      <div class="cifras__grid">
-        <div class="cifra" style="--lift:0">
-          <b data-count="21" data-suffix=" %">21 %</b>
-          <span>de los negocios ecuatorianos ya usa inteligencia artificial</span>
-          <small>GEM Ecuador · Brazilian Journal of Business, 2026</small>
-        </div>
-        <div class="cifra" style="--lift:1">
-          <b data-count="54" data-suffix=" %">54 %</b>
-          <span>de las pymes de las Américas ya trabaja con IA</span>
-          <small>Microsoft, 2025</small>
-        </div>
-        <div class="cifra" style="--lift:2">
-          <b data-count="83.7" data-suffix=" %" data-decimals="1">83,7 %</b>
-          <span>de los ecuatorianos está en internet todos los días</span>
-          <small>DataReportal, 2025</small>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- 4 · SERVICIOS -->
   <section class="wrap servicios" id="servicios" aria-labelledby="serv-t">
     <div class="sec-head">
-      <span class="eyebrow-chip">Lo que hacemos</span>
       <h2 id="serv-t">Soluciones de IA hechas a la medida de tu negocio</h2>
     </div>
     <div class="serv-band" style="background-image:url('img/fotos/servicios.webp')">
@@ -161,11 +127,49 @@
           <span class="ig-arrow-btn ig-arrow-btn--sm serv-card__go" aria-hidden="true"><svg class="ig-icon" aria-hidden="true"><use href="#i-arrow-ur"/></svg></span>
         </a>
       </div>
-      <a class="glass-chip glass-chip--lg serv-medida" href="servicios.html#a-medida">
-        <svg class="ig-icon" aria-hidden="true"><use href="#i-sliders"/></svg>
-        ¿Tu negocio necesita algo distinto? Lo construimos a medida
-        <svg class="ig-icon ig-icon--sm" aria-hidden="true"><use href="#i-arrow-ur"/></svg>
-      </a>
+      <a class="serv-medida" href="servicios.html#a-medida">¿Tu negocio necesita algo distinto? Lo construimos a medida <svg class="ig-icon ig-icon--sm" aria-hidden="true"><use href="#i-arrow-ur"/></svg></a>
+    </div>
+  </section>
+
+  <!-- GALERÍA -->
+  <section class="wrap galeria" id="galeria" aria-labelledby="gal-t">
+    <div class="gal__copy">
+      <p class="kicker">Así se ve</p>
+      <h2 id="gal-t">La IA trabaja detrás del mostrador, tú atiendes de frente</h2>
+      <p>Tus clientes siguen hablando contigo por WhatsApp, Instagram o en persona. Lo repetitivo pasa por detrás: respuestas, citas, pedidos y reportes.</p>
+      <p>Tú ves todo en un solo lugar y decides con datos de tu propio negocio.</p>
+      <a class="btn-dark" href="servicios.html">Ver servicios <span class="btn-dark__arrow"><svg class="ig-icon ig-icon--sm" aria-hidden="true"><use href="#i-arrow-ur"/></svg></span></a>
+    </div>
+    <div class="gal__grid">
+      <img class="gal__tall" src="img/fotos/galeria-alta.webp" alt="Dueño de una cafetería atiende a una clienta que paga con el celular" loading="lazy">
+      <img src="img/fotos/cta.webp" alt="Fachada de una tienda de barrio con vitrina iluminada" loading="lazy">
+      <img src="img/fotos/tienda.webp" alt="Dueño de un local revisa un pedido con un cliente" loading="lazy">
+    </div>
+  </section>
+
+  <!-- MANIFIESTO + CIFRAS (tipografía gigante) -->
+  <section class="wrap" id="cifras" aria-labelledby="mani-t">
+    <div class="mani">
+      <h2 class="ig-sr-only" id="mani-t">El mercado ya se está moviendo</h2>
+      <div class="mani__top">
+        <div class="mani__col">
+          <b data-count="21" data-suffix=" %">21 %</b>
+          <h3>Hoy</h3>
+          <p>de los negocios ecuatorianos ya usa inteligencia artificial.</p>
+          <small>GEM Ecuador · Brazilian Journal of Business, 2026</small>
+        </div>
+        <div class="mani__col mani__col--r">
+          <b data-count="54" data-suffix=" %">54 %</b>
+          <h3>En la región</h3>
+          <p>de las pymes de las Américas ya trabaja con IA.</p>
+          <small>Microsoft, 2025</small>
+        </div>
+      </div>
+      <div class="mani__stage">
+        <p class="mani__word" aria-hidden="true">ADÁPTATE</p>
+        <img class="mani__obj" src="img/fotos/mani.webp" alt="Laptop con un chat de atención al cliente abierto" loading="lazy">
+      </div>
+      <p class="mani__foot"><b data-count="83.7" data-suffix=" %" data-decimals="1">83,7 %</b> de los ecuatorianos está en internet todos los días <small>(DataReportal, 2025)</small>. El mercado ya se movió: la pregunta es cuándo te mueves tú.</p>
     </div>
   </section>
 
@@ -268,7 +272,6 @@
   <!-- 6 · PROCESO (única vez en el sitio) -->
   <section class="wrap proceso" id="proceso" aria-labelledby="proc-t">
     <div class="sec-head">
-      <span class="eyebrow-chip">Cómo trabajamos</span>
       <h2 id="proc-t">De la primera llamada a funcionar, en unos 11 días</h2>
     </div>
     <ol class="steps">
@@ -276,40 +279,86 @@
         <span class="step__n">1</span>
         <h3>Diagnóstico</h3>
         <p>15 minutos por videollamada o WhatsApp. Nos cuentas cómo trabajas y dónde se te va el tiempo.</p>
-        <span class="step__time">Gratis · 15 min</span>
+        <p class="step__time"><b>Gratis · 15 min</b></p>
       </li>
       <li class="step">
         <span class="step__n">2</span>
         <h3>Propuesta</h3>
         <p>Te mostramos qué automatizar primero, con precio cerrado. Tu parte: aprobar el tono y los datos.</p>
-        <span class="step__time">1 a 2 días</span>
+        <p class="step__time"><b>1 a 2 días</b></p>
       </li>
       <li class="step step--hi">
         <span class="step__n">3</span>
         <h3>Implementación</h3>
         <p>Configuramos, conectamos tus herramientas y probamos contigo antes de que lo vean tus clientes.</p>
-        <span class="step__time">~11 días</span>
+        <p class="step__time"><b>~11 días</b></p>
       </li>
       <li class="step">
         <span class="step__n">4</span>
         <h3>Acompañamiento</h3>
         <p>Medimos, ajustamos cada mes y sumamos automatizaciones cuando tu negocio lo pida.</p>
-        <span class="step__time">Mes a mes</span>
+        <p class="step__time"><b>Mes a mes</b></p>
       </li>
     </ol>
   </section>
 
-  <!-- 7 · CTA SIMPLE -->
-  <section class="wrap" id="cta-simple">
-    <div class="cta-band">
-      <div>
-        <h2>¿No sabes por dónde empezar?</h2>
-        <p>En 15 minutos vemos dónde se te va el tiempo y qué conviene automatizar primero.</p>
+  <!-- 7 · CALCULADORA -->
+  <section class="wrap" id="calculadora" aria-labelledby="calc-t">
+    <form class="calc" id="calc" novalidate>
+      <div class="calc__inputs">
+        <h2 id="calc-t">¿Cuánto tiempo te devuelve la IA?</h2>
+        <p class="calc__lead">Elige cuántas tareas repetitivas haces al día y cuánto te toma cada una.</p>
+        <label class="field">
+          <span class="field__label">Tu negocio</span>
+          <select id="c-negocio" class="ig-select">
+            <option>Consultorio o clínica</option>
+            <option>Barbería o salón</option>
+            <option>Restaurante o cafetería</option>
+            <option>Tienda o comercio</option>
+            <option>Taller o servicio técnico</option>
+            <option>Otro</option>
+          </select>
+        </label>
+        <fieldset class="seg" id="c-tareas">
+          <legend class="field__label">Tareas repetitivas al día</legend>
+          <div class="seg__opts">
+            <label><input type="radio" name="tareas" value="1"><span>1</span></label>
+            <label><input type="radio" name="tareas" value="2"><span>2</span></label>
+            <label><input type="radio" name="tareas" value="3" checked><span>3</span></label>
+            <label><input type="radio" name="tareas" value="4"><span>4</span></label>
+            <label><input type="radio" name="tareas" value="5"><span>5+</span></label>
+          </div>
+        </fieldset>
+        <fieldset class="seg seg--6" id="c-tiempo">
+          <legend class="field__label">Tiempo por tarea</legend>
+          <div class="seg__opts">
+            <label><input type="radio" name="tiempo" value="5"><span>5 min</span></label>
+            <label><input type="radio" name="tiempo" value="15"><span>15 min</span></label>
+            <label><input type="radio" name="tiempo" value="30" checked><span>30 min</span></label>
+            <label><input type="radio" name="tiempo" value="60"><span>1 h</span></label>
+            <label><input type="radio" name="tiempo" value="90"><span>1 h 30</span></label>
+            <label><input type="radio" name="tiempo" value="120"><span>2 h+</span></label>
+          </div>
+        </fieldset>
+        <label class="ig-check">
+          <input id="c-sedes" type="checkbox">
+          <span>Tengo varias sedes o necesito integrar mi sistema</span>
+        </label>
       </div>
-      <a class="btn-cta" href="https://wa.me/593959420676?text=Hola%20Iguana%2C%20quiero%20mi%20diagn%C3%B3stico%20gratis" target="_blank" rel="noopener">
-        Agenda tu diagnóstico gratis <span class="btn-cta__arrow"><svg class="ig-icon ig-icon--sm" aria-hidden="true"><use href="#i-arrow-ur"/></svg></span>
-      </a>
-    </div>
+      <div class="calc__result" aria-live="polite">
+        <span class="calc__label">Horas al mes que recuperas</span>
+        <b class="calc__hours"><span id="r-horas">23</span> h</b>
+        <span class="calc__days">≈ <span id="r-dias">3</span> días de trabajo al mes</span>
+        <div class="calc__plan">
+          <span>Plan recomendado</span>
+          <b id="r-plan">Estándar · $35/mes</b>
+        </div>
+        <a class="btn-cta btn-cta--block" id="r-wa" href="https://wa.me/593959420676" target="_blank" rel="noopener">
+          Hablar por WhatsApp <span class="btn-cta__arrow"><svg class="ig-icon ig-icon--sm" aria-hidden="true"><use href="#i-whatsapp"/></svg></span>
+        </a>
+        <p class="calc__formula">Estimación: tareas × tiempo × 22 días × 70 % que se puede automatizar.</p>
+      </div>
+    </form>
   </section>
 
   <!-- 8 · PLANES (resumen) -->
@@ -326,7 +375,7 @@
         <a class="plan__btn" href="https://wa.me/593959420676?text=Hola%20Iguana%2C%20me%20interesa%20el%20plan%20B%C3%A1sico" target="_blank" rel="noopener">Elegir Básico</a>
       </article>
       <article class="plan plan--hi">
-        <span class="plan__badge">Recomendado</span>
+        <p class="plan__badge">Recomendado</p>
         <h3>Estándar</h3>
         <p class="plan__price"><b>$35</b><span>/mes</span></p>
         <ul><li>Todo lo de Básico</li><li>Más mensajes al mes</li><li>Panel de citas y conversaciones</li><li>Soporte por WhatsApp</li></ul>
@@ -378,14 +427,11 @@
 
   <!-- 11 · CTA FINAL -->
   <section class="wrap" id="cta-final">
-    <div class="cta" style="background-image:url('img/fotos/cta.webp')">
-      <div class="cta__glass glass">
+    <div class="cta">
+      <p class="cta__word" aria-hidden="true">adáptate</p>
+      <div class="cta__copy">
         <h2>La iguana se adaptó. ¿Y tú?</h2>
-        <p>Agenda 15 minutos. Te decimos qué automatizar primero y cuánto tiempo te devuelve, sin compromiso.</p>
-        <a class="btn-cta btn-cta--lg" href="https://wa.me/593959420676?text=Hola%20Iguana%2C%20quiero%20mi%20diagn%C3%B3stico%20gratis" target="_blank" rel="noopener">
-          Agenda tu diagnóstico gratis <span class="btn-cta__arrow"><svg class="ig-icon ig-icon--sm" aria-hidden="true"><use href="#i-arrow-ur"/></svg></span>
-        </a>
-        <span class="cta__phone">o escríbenos al <b>+593 95 942 0676</b></span>
+        <a class="btn-dark" href="https://wa.me/593959420676?text=Hola%20Iguana%2C%20quiero%20mi%20diagn%C3%B3stico%20gratis" target="_blank" rel="noopener">Agenda tu diagnóstico gratis <span class="btn-dark__arrow"><svg class="ig-icon ig-icon--sm" aria-hidden="true"><use href="#i-arrow-ur"/></svg></span></a>
       </div>
     </div>
   </section>
@@ -408,6 +454,7 @@
       <h3>Iguana</h3>
       <a href="nosotros.html">Nosotros</a>
       <a href="precios.html">Precios</a>
+      <a href="#calculadora">Calculadora</a>
       <a href="#faq">Preguntas frecuentes</a>
     </div>
     <div>

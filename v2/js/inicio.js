@@ -1,4 +1,4 @@
-/* iguana.ec v2 · Inicio: nav, carrusel de logos, cifras y lista expandible */
+/* iguana.ec v2 · Inicio: nav, carrusel de logos, cifras, lista expandible y calculadora */
 (function () {
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -101,4 +101,33 @@
       place(e);
     });
   });
+
+  /* ---------- Calculadora: 1 a 5+ tareas al día, de 5 min a 2 h+ cada una ---------- */
+  var form = document.getElementById('calc');
+  if (form) {
+    var $ = function (id) { return document.getElementById(id); };
+    var picked = function (name) { return form.querySelector('input[name="' + name + '"]:checked'); };
+    var label = function (input) { return input.nextElementSibling.textContent; };
+    var plan = function (h, multi) {
+      if (multi) return { name: 'A medida', label: 'A medida · hablemos' };
+      if (h < 10) return { name: 'Básico', label: 'Básico · $15/mes' };
+      if (h <= 40) return { name: 'Estándar', label: 'Estándar · $35/mes' };
+      return { name: 'Pro', label: 'Pro · $60/mes' };
+    };
+    var calc = function () {
+      var t = picked('tareas'), m = picked('tiempo');
+      var h = Math.round(+t.value * (+m.value / 60) * 22 * 0.7);
+      var p = plan(h, $('c-sedes').checked);
+      $('r-horas').textContent = h;
+      $('r-dias').textContent = Math.max(1, Math.round(h / 8));
+      $('r-plan').textContent = p.label;
+      var msg = 'Hola Iguana, calculé ' + h + ' h al mes para mi ' + $('c-negocio').value.toLowerCase() +
+        ' (' + label(t) + ' tareas al día de ' + label(m) + '). Me recomendaron el plan ' + p.name + '.';
+      $('r-wa').href = 'https://wa.me/593959420676?text=' + encodeURIComponent(msg);
+    };
+    form.addEventListener('input', calc);
+    form.addEventListener('change', calc);
+    form.addEventListener('submit', function (e) { e.preventDefault(); });
+    calc();
+  }
 })();
