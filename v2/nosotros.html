@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nosotros · Iguana</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Somos una agencia de IA ecuatoriana. Aprendimos de la iguana marina: adaptarse es lo que cuenta.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#FAFAF8">
+<link rel="icon" href="../favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&family=Anton&display=swap">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/inicio.css">
+<link rel="stylesheet" href="css/motion.css">
+<link rel="stylesheet" href="css/pages.css">
+</head>
+<body class="ig-root page-nosotros">
+
+<header class="nav" id="nav">
+  <div class="nav__bar">
+    <a class="nav__logo" href="index.html" aria-label="Iguana, inicio">
+      <img class="nav__logo-light" src="img/logo-blanco.webp" alt="Iguana" width="107" height="40">
+      <img class="nav__logo-dark" src="img/logo-oscuro.webp" alt="" width="107" height="40">
+    </a>
+    <nav class="nav__links" aria-label="Principal">
+      <div class="nav__drop">
+        <button class="nav__link" type="button" aria-expanded="false" aria-controls="menu-servicios" id="btn-servicios">
+          Servicios <svg class="ig-icon ig-icon--sm" aria-hidden="true"><use href="#i-chevron-down"/></svg>
+        </button>
+        <div class="nav__menu" id="menu-servicios" hidden>
+          <a href="servicios.html#agentes-ia"><svg class="ig-icon" aria-hidden="true"><use href="#i-bot"/></svg><span><b>Agentes IA</b><small>WhatsApp, agenda y atención</small></span></a>
+          <a href="servicios.html#automatizacion"><svg class="ig-icon" aria-hidden="true"><use href="#i-refresh"/></svg><span><b>Automatización</b><small>Lo repetitivo, fuera de tu día</small></span></a>
+          <a href="servicios.html#consultoria"><svg class="ig-icon" aria-hidden="true"><use href="#i-trend"/></svg><span><b>Consultoría</b><small>Por dónde empezar con IA</small></span></a>
+          <a href="servicios.html#a-medida"><svg class="ig-icon" aria-hidden="true"><use href="#i-sliders"/></svg><span><b>A medida</b><small>Integraciones y flujos propios</small></span></a>
+        </div>
+      </div>
+      <a class="nav__link" href="precios.html">Precios</a>
+      <a class="nav__link" href="nosotros.html" aria-current="page">Nosotros</a>
+    </nav>
+    <a class="btn-cta nav__cta" href="https://wa.me/593959420676?text=Hola%20Iguana%2C%20quiero%20mi%20diagn%C3%B3stico%20gratis" target="_blank" rel="noopener">
+      Diagnóstico gratis
+    </a>
+    <button class="nav__burger" type="button" aria-expanded="false" aria-controls="sheet" aria-label="Abrir menú">
+      <span></span><span></span>
+    </button>
+  </div>
+  <div class="sheet" id="sheet" hidden>
+    <a href="servicios.html#agentes-ia">Agentes IA</a>
+    <a href="servicios.html#automatizacion">Automatización</a>
+    <a href="servicios.html#consultoria">Consultoría</a>
+    <a href="servicios.html#a-medida">A medida</a>
+    <a href="precios.html">Precios</a>
+    <a href="nosotros.html">Nosotros</a>
+    <a class="btn-cta" href="https://wa.me/593959420676?text=Hola%20Iguana%2C%20quiero%20mi%20diagn%C3%B3stico%20gratis" target="_blank" rel="noopener">Diagnóstico gratis</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="nhero" id="hero" data-progress="exit" aria-labelledby="h1">
+    <img class="nhero__img" src="img/fotos/mar-hero.webp" alt="" fetchpriority="high">
+    <div class="nhero__copy">
+      <p class="shero__kicker">Nosotros</p>
+      <h1 id="h1">Aprendimos de la iguana.</h1>
+      <p>Todas las iguanas saben nadar, pero solo la marina se metió al mar a buscar comida. Eso hacemos con los negocios del Ecuador.</p>
+    </div>
+    <p class="scroll-cue" aria-hidden="true">Desliza</p>
+  </section>
+
+  <section class="story" data-chapters data-progress="pin" aria-label="La historia de la iguana">
+    <div class="story__stage" aria-hidden="true">
+      <img data-media class="is-active" src="img/fotos/mar-calma.webp" alt="" loading="eager"><img data-media src="img/fotos/mar-ola.webp" alt="" loading="lazy"><img data-media src="img/fotos/mar-fondo.webp" alt="" loading="lazy"><img data-media src="img/fotos/mar-roca.webp" alt="" loading="lazy"><img data-media src="img/fotos/servicios.webp" alt="" loading="lazy">
+      <img class="story__swimmer" data-swim src="img/grabados/iguana-nado.webp" alt="">
+      <ol class="story__dots"><li data-dot class="is-active"></li><li data-dot></li><li data-dot></li><li data-dot></li><li data-dot></li></ol>
+    </div>
+    <div class="story__steps">
+      <article class="story__step" data-step>
+        <b class="story__n">01</b>
+        <h2>Todas nadan.</h2>
+        <p>Cualquier iguana sabe nadar. Tener la habilidad no basta: lo que cuenta es usarla.</p>
+      </article>
+      <article class="story__step" data-step>
+        <b class="story__n">02</b>
+        <h2>Solo una se lanzó.</h2>
+        <p>La iguana marina fue a buscar comida donde las demás no se atrevían: bajo el agua, entre las olas.</p>
+      </article>
+      <article class="story__step" data-step>
+        <b class="story__n">03</b>
+        <h2>Se adaptó al entorno.</h2>
+        <p>Aprendió a botar la sal del agua de mar para poder vivir de él. No cambió el mar: cambió ella.</p>
+      </article>
+      <article class="story__step" data-step>
+        <b class="story__n">04</b>
+        <h2>Se ajusta cuando falta.</h2>
+        <p>En años de escasez se hace más pequeña para gastar menos, y cuando vuelve la comida vuelve a crecer.</p>
+      </article>
+      <article class="story__step" data-step>
+        <b class="story__n">05</b>
+        <h2>Tu negocio también puede.</h2>
+        <p>La IA ya está al alcance de todos. La diferencia está en quién se lanza primero.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="grow" data-progress="pin" aria-labelledby="grow-t">
+    <div class="grow__sticky">
+      <h2 class="grow__word" id="grow-t">ADÁPTATE</h2>
+      <img class="grow__obj" src="img/fotos/mani.webp" alt="Laptop con un chat de atención al cliente abierto" loading="lazy">
+      <p class="grow__line">No cambió el mar. Cambió ella.</p>
+    </div>
+  </section>
+
+  <section class="wrap manif" data-progress aria-labelledby="manif-t">
+    <h2 class="kicker" id="manif-t">Qué hacemos</h2>
+    <p class="manif__text" data-words>Somos una agencia de IA. Ayudamos a las personas y a los negocios a ahorrar tiempo, ordenar sus procesos y adaptarse a un mercado que cambia cada mes, con soluciones hechas a su medida.</p>
+    <p class="manif__who" data-reveal>Trabajamos con consultorios, barberías, salones, restaurantes, tiendas y talleres de todo el Ecuador.</p>
+  </section>
+
+  <section class="wrap team" id="equipo" aria-labelledby="equipo-t">
+    <h2 class="kicker" id="equipo-t">El equipo</h2>
+    <ol class="team__list">
+      <li class="tm" data-reveal="left"><p class="tm__role">CEO · Fundador</p><h3 class="tm__name">Gustavo Campana</h3><p class="tm__bio">Estrategia y crecimiento. Lidera la visión de Iguana y la relación con cada negocio que se suma.</p></li>
+      <li class="tm" data-reveal="right"><p class="tm__role">CTO · Fundadora</p><h3 class="tm__name">Doménica Escobar</h3><p class="tm__bio">Tecnología e inteligencia artificial. Diseña cómo funciona todo por dentro para que responda bien y no falle.</p></li>
+      <li class="tm" data-reveal="left"><p class="tm__role">CPO · Fundador</p><h3 class="tm__name">Esteban Andrade</h3><p class="tm__bio">Producto y experiencia. Convierte lo que necesita cada negocio en algo simple de usar desde el primer día.</p></li>
+    </ol>
+  </section>
+
+  <section class="wrap" id="cta-final">
+    <div class="cta" data-progress>
+      <p class="cta__word" aria-hidden="true">hola</p>
+      <div class="cta__copy">
+        <h2>Cuéntanos de tu negocio. Nosotros ponemos la IA.</h2>
+        <a class="btn-dark" href="https://wa.me/593959420676?text=Hola%20Iguana%2C%20quiero%20mi%20diagn%C3%B3stico%20gratis" target="_blank" rel="noopener">Agenda tu diagnóstico gratis</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__grid">
+    <div class="footer__brand">
+      <img src="img/logo-blanco.webp" alt="Iguana" width="107" height="40">
+      <p>Agencia de IA para negocios ecuatorianos.</p>
+    </div>
+    <div>
+      <h3>Servicios</h3>
+      <a href="servicios.html#agentes-ia">Agentes IA</a>
+      <a href="servicios.html#automatizacion">Automatización</a>
+      <a href="servicios.html#consultoria">Consultoría</a>
+      <a href="servicios.html#a-medida">A medida</a>
+    </div>
+    <div>
+      <h3>Iguana</h3>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="precios.html">Precios</a>
+      <a href="index.html#calculadora">Calculadora</a>
+      <a href="index.html#faq">Preguntas frecuentes</a>
+    </div>
+    <div>
+      <h3>Síguenos</h3>
+      <a href="https://www.instagram.com/iguana.ec" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.facebook.com/people/Iguana-Ec/61594253138914/" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.linkedin.com/company/iguanaec" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://wa.me/593959420676" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+  <div class="wrap footer__legal">
+    <span>© 2026 Iguana Corp · Ecuador</span>
+    <span><a href="privacidad.html">Privacidad</a> · <a href="terminos.html">Términos</a></span>
+  </div>
+</footer>
+
+<script src="js/icons.js"></script>
+<script src="js/inicio.js"></script>
+<script src="js/scroll.js"></script>
+</body>
+</html>

@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Iguana · Agencia de IA</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Agencia de IA en Ecuador: automatizamos lo repetitivo, ordenamos tus procesos y te ayudamos a adaptarte con soluciones a la medida de tu negocio.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#FAFAF8">
+<link rel="icon" href="../favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&family=Anton&display=swap">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/inicio.css">
+<link rel="stylesheet" href="css/motion.css">
+</head>
+<body class="ig-root">
+
+<header class="nav" id="nav">
+  <div class="nav__bar">
+    <a class="nav__logo" href="#top" aria-label="Iguana, inicio">
+      <img class="nav__logo-light" src="img/logo-blanco.webp" alt="Iguana" width="107" height="40">
+      <img class="nav__logo-dark" src="img/logo-oscuro.webp" alt="" width="107" height="40">
+    </a>
+    <nav class="nav__links" aria-label="Principal">
+      <div class="nav__drop">
+        <button class="nav__link" type="button" aria-expanded="false" aria-controls="menu-servicios" id="btn-servicios">
+          Servicios <svg class="ig-icon ig-icon--sm" aria-hidden="true"><use href="#i-chevron-down"/></svg>
+        </button>
+        <div class="nav__menu" id="menu-servicios" hidden>
+          <a href="servicios.html#agentes-ia"><svg class="ig-icon" aria-hidden="true"><use href="#i-bot"/></svg><span><b>Agentes IA</b><small>WhatsApp, agenda y atención</small></span></a>
+          <a href="servicios.html#automatizacion"><svg class="ig-icon" aria-hidden="true"><use href="#i-refresh"/></svg><span><b>Automatización</b><small>Lo repetitivo, fuera de tu día</small></span></a>
+          <a href="servicios.html#consultoria"><svg class="ig-icon" aria-hidden="true"><use href="#i-trend"/></svg><span><b>Consultoría</b><small>Por dónde empezar con IA</small></span></a>
+          <a href="servicios.html#a-medida"><svg class="ig-icon" aria-hidden="true"><use href="#i-sliders"/></svg><span><b>A medida</b><small>Integraciones y flujos propios</small></span></a>
+        </div>
+      </div>
+      <a class="nav__link" href="precios.html">Precios</a>
+      <a class="nav__link" href="nosotros.html">Nosotros</a>
+    </nav>
+    <a class="btn-cta nav__cta" href="https://wa.me/593959420676?text=Hola%20Iguana%2C%20quiero%20mi%20diagn%C3%B3stico%20gratis" target="_blank" rel="noopener">
+      Diagnóstico gratis
+    </a>
+    <button class="nav__burger" type="button" aria-expanded="false" aria-controls="sheet" aria-label="Abrir menú">
+      <span></span><span></span>
+    </button>
+  </div>
+  <div class="sheet" id="sheet" hidden>
+    <a href="servicios.html#agentes-ia">Agentes IA</a>
+    <a href="servicios.html#automatizacion">Automatización</a>
+    <a href="servicios.html#consultoria">Consultoría</a>
+    <a href="servicios.html#a-medida">A medida</a>
+    <a href="precios.html">Precios</a>
+    <a href="nosotros.html">Nosotros</a>
+    <a class="btn-cta" href="https://wa.me/593959420676?text=Hola%20Iguana%2C%20quiero%20mi%20diagn%C3%B3stico%20gratis" target="_blank" rel="noopener">Diagnóstico gratis</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- 1 · HERO -->
+  <section class="wrap hero-wrap" id="hero" data-progress="exit">
+    <div class="hero" style="background-image:url('img/fotos/hero.webp')">
+      <div class="hero__copy">
+        <h1>Tu negocio no necesita más manos. <em>Necesita evolucionar.</em></h1>
+        <p>Automatizamos lo repetitivo, ordenamos tus procesos y te ayudamos a moverte al ritmo de un mercado que cambia cada mes. Con soluciones hechas a la medida de tu negocio.</p>
+        <div class="hero__ctas">
+          <a class="btn-cta btn-cta--lg" href="https://wa.me/593959420676?text=Hola%20Iguana%2C%20quiero%20mi%20diagn%C3%B3stico%20gratis" target="_blank" rel="noopener">
+            Agenda tu diagnóstico gratis
+          </a>
+          <a class="btn-glass" href="#servicios">Ver servicios</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 2 · HERRAMIENTAS -->
+  <section class="tools" id="herramientas" aria-labelledby="tools-t">
+    <p class="tools__title" id="tools-t">Herramientas con las que trabajamos</p>
+    <div class="marquee">
+      <ul class="marquee__track">
+        <li><img src="img/logos/whatsapp.svg" alt="" width="28" height="28"><span>WhatsApp</span></li>
+        <li><img src="img/logos/instagram.svg" alt="" width="28" height="28"><span>Instagram</span></li>
+        <li><img src="img/logos/facebook.svg" alt="" width="28" height="28"><span>Facebook</span></li>
+        <li><img src="img/logos/meta.svg" alt="" width="28" height="28"><span>Meta</span></li>
+        <li><img src="img/logos/n8n.svg" alt="" width="28" height="28"><span>n8n</span></li>
+        <li><img src="img/logos/make.svg" alt="" width="28" height="28"><span>Make</span></li>
+        <li><img src="img/logos/openai.svg" alt="" width="28" height="28"><span>OpenAI</span></li>
+        <li><img src="img/logos/claude.svg" alt="" width="28" height="28"><span>Claude</span></li>
+        <li><img src="img/logos/googlegemini.svg" alt="" width="28" height="28"><span>Gemini</span></li>
+        <li><img src="img/logos/googlesheets.svg" alt="" width="28" height="28"><span>Google Sheets</span></li>
+        <li><img src="img/logos/googlecalendar.svg" alt="" width="28" height="28"><span>Google Calendar</span></li>
+        <li><img src="img/logos/notion.svg" alt="" width="28" height="28"><span>Notion</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CIFRAS -->
+  <section class="wrap" id="cifras" aria-labelledby="cifras-t">
+    <div class="cifras" style="background-image:url('img/fotos/cifras.webp')">
+      <div class="cifras__head" data-reveal>
+        <h2 id="cifras-t">El mercado ya se está moviendo. La pregunta es cuándo te mueves tú.</h2>
+      </div>
+      <div class="cifras__grid">
+        <div class="cifra" style="--lift:0" data-reveal>
+          <b data-count="21" data-suffix=" %">21 %</b>
+          <span>de los negocios ecuatorianos ya usa inteligencia artificial</span>
+          <small>GEM Ecuador · Brazilian Journal of Business, 2026</small>
+        </div>
+        <div class="cifra" style="--lift:1;--d:2" data-reveal>
+          <b data-count="54" data-suffix=" %">54 %</b>
+          <span>de las pymes de las Américas ya trabaja con IA</span>
+          <small>Microsoft, 2025</small>
+        </div>
+        <div class="cifra" style="--lift:2;--d:4" data-reveal>
+          <b data-count="83.7" data-suffix=" %" data-decimals="1">83,7 %</b>
+          <span>de los ecuatorianos está en internet todos los días</span>
+          <small>DataReportal, 2025</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 · SERVICIOS -->
+  <section class="wrap servicios" id="servicios" aria-labelledby="serv-t">
+    <div data-reveal class="sec-head">
+      <h2 id="serv-t">Soluciones de IA hechas a la medida de tu negocio</h2>
+    </div>
+    <div class="serv-band" data-progress style="background-image:url('img/fotos/servicios.webp')">
+      <div class="serv-cards">
+        <a data-reveal class="serv-card serv-card--dark" href="servicios.html#agentes-ia">
+          <span class="serv-card__num">01</span>
+          <span class="serv-card__icon"><svg class="ig-icon ig-icon--lg" aria-hidden="true"><use href="#i-bot"/></svg></span>
+          <h3>Agentes IA</h3>
+          <p>Un asistente que responde, agenda y recuerda citas por WhatsApp e Instagram, las 24 horas.</p>
+        </a>
+        <a data-reveal style="--d:2" class="serv-card serv-card--lime" href="servicios.html#automatizacion">
+          <span class="serv-card__num">02</span>
+          <span class="serv-card__icon"><svg class="ig-icon ig-icon--lg" aria-hidden="true"><use href="#i-refresh"/></svg></span>
+          <h3>Automatización</h3>
+          <p>Cotizaciones, pedidos, reportes y seguimientos que se hacen solos con n8n y Make.</p>
+          <img class="serv-card__photo" src="img/fotos/automatizacion.webp" alt="" loading="lazy">
+        </a>
+        <a data-reveal class="serv-card serv-card--photo" href="servicios.html#consultoria" style="--d:4;background-image:url('img/fotos/consultoria.webp')">
+          <span class="serv-card__num">03</span>
+          <span class="serv-card__icon"><svg class="ig-icon ig-icon--lg" aria-hidden="true"><use href="#i-trend"/></svg></span>
+          <h3>Consultoría</h3>
+          <p>Revisamos tus procesos y te decimos dónde la IA te ahorra más, antes de gastar un dólar.</p>
+        </a>
+      </div>
+      <div class="serv-nav" aria-label="Recorrer servicios">
+        <button class="serv-nav__btn" type="button" data-dir="-1" aria-label="Servicio anterior"><svg class="ig-icon ig-icon--sm" aria-hidden="true"><use href="#i-chevron-left"/></svg></button>
+        <div class="serv-dots">
+          <button type="button" aria-label="Ver Agentes IA" aria-current="true"></button>
+          <button type="button" aria-label="Ver Automatización"></button>
+          <button type="button" aria-label="Ver Consultoría"></button>
+        </div>
+        <button class="serv-nav__btn" type="button" data-dir="1" aria-label="Servicio siguiente"><svg class="ig-icon ig-icon--sm" aria-hidden="true"><use href="#i-chevron-right"/></svg></button>
+      </div>
+      <a class="serv-medida" href="servicios.html#a-medida">¿Tu negocio necesita algo distinto? Lo construimos a medida</a>
+    </div>
+  </section>
+
+  <!-- GALERÍA -->
+  <section class="wrap galeria" id="galeria" aria-labelledby="gal-t">
+    <div class="gal__copy" data-reveal>
+      <p class="kicker">Así se ve</p>
+      <h2 id="gal-t">La IA trabaja detrás del mostrador, tú atiendes de frente</h2>
+      <p>Tus clientes siguen hablando contigo por WhatsApp, Instagram o en persona. Lo repetitivo pasa por detrás: respuestas, citas, pedidos y reportes.</p>
+      <p>Tú ves todo en un solo lugar y decides con datos de tu propio negocio.</p>
+      <a class="btn-dark" href="servicios.html">Ver servicios</a>
+    </div>
+    <div class="gal__grid" data-progress>
+      <img class="gal__tall" src="img/fotos/galeria-alta.webp" alt="Dueño de una cafetería atiende a una clienta que paga con el celular" loading="lazy">
+      <img src="img/fotos/cta.webp" alt="Fachada de una tienda de barrio con vitrina iluminada" loading="lazy">
+      <img src="img/fotos/tienda.webp" alt="Dueño de un local revisa un pedido con un cliente" loading="lazy">
+    </div>
+  </section>
+
+  <!-- 5 · BENEFICIOS (lista expandible) -->
+  <section class="wrap beneficios" id="beneficios" aria-labelledby="ben-t">
+    <div data-reveal class="sec-head sec-head--split">
+      <h2 id="ben-t">Por qué los negocios trabajan con Iguana</h2>
+      <p>No vendemos tecnología por moda. Buscamos dónde se te va el tiempo y lo resolvemos con IA, sin que tengas que aprender a programar.</p>
+    </div>
+    <ul class="ben-list" id="ben-list">
+      <li data-reveal style="--d:0" class="ben" data-img="img/fotos/b-tiempo.webp">
+        <button class="ben__row" type="button" aria-expanded="false" aria-controls="ben-1">
+          <span class="ben__icon"><svg class="ig-icon ig-icon--lg" aria-hidden="true"><use href="#i-clock"/></svg></span>
+          <span class="ben__title">Recuperas horas cada semana</span>
+          <span class="ben__points"><span>Menos copiar y pegar</span><span>Menos mensajes repetidos</span><span>Más tiempo para vender</span></span>
+          <span class="ben__toggle" aria-hidden="true"><svg class="ig-icon" aria-hidden="true"><use href="#i-plus"/></svg></span>
+        </button>
+        <div class="ben__panel" id="ben-1" role="region">
+          <div class="ben__inner">
+            <img src="img/fotos/b-tiempo.webp" alt="Persona revisando la hora en su reloj" loading="lazy">
+            <div>
+              <p>La mayoría de dueños de negocio pasa entre 2 y 4 horas al día respondiendo lo mismo, pasando datos de un lado a otro o recordando citas. Eso lo hace la IA. Tú te quedas con lo que de verdad necesita tu criterio.</p>
+              <a class="ig-link" href="https://wa.me/593959420676?text=Hola%20Iguana%2C%20quiero%20recuperar%20horas%20en%20mi%20negocio" target="_blank" rel="noopener">Cuéntanos tu caso →</a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li data-reveal style="--d:1" class="ben" data-img="img/fotos/b-247.webp">
+        <button class="ben__row" type="button" aria-expanded="false" aria-controls="ben-2">
+          <span class="ben__icon"><svg class="ig-icon ig-icon--lg" aria-hidden="true"><use href="#i-chat"/></svg></span>
+          <span class="ben__title">Respondes 24/7 sin vivir pegado al celular</span>
+          <span class="ben__points"><span>Respuestas al instante</span><span>Citas agendadas solas</span><span>Recordatorios automáticos</span></span>
+          <span class="ben__toggle" aria-hidden="true"><svg class="ig-icon" aria-hidden="true"><use href="#i-plus"/></svg></span>
+        </button>
+        <div class="ben__panel" id="ben-2" role="region">
+          <div class="ben__inner">
+            <img src="img/fotos/b-247.webp" alt="Persona usando el celular junto a su laptop" loading="lazy">
+            <div>
+              <p>Tus clientes escriben a las 11 de la noche y un domingo. El asistente responde con tu tono, consulta tu agenda y deja la cita lista. Si algo necesita a una persona, te avisa.</p>
+              <a class="ig-link" href="servicios.html#agentes-ia">Ver Agentes IA →</a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li data-reveal style="--d:2" class="ben" data-img="img/fotos/b-procesos.webp">
+        <button class="ben__row" type="button" aria-expanded="false" aria-controls="ben-3">
+          <span class="ben__icon"><svg class="ig-icon ig-icon--lg" aria-hidden="true"><use href="#i-sliders"/></svg></span>
+          <span class="ben__title">Ordenas tus procesos</span>
+          <span class="ben__points"><span>Pedidos y cobros en un solo lugar</span><span>Nada se queda en un chat</span><span>Tu equipo sabe qué sigue</span></span>
+          <span class="ben__toggle" aria-hidden="true"><svg class="ig-icon" aria-hidden="true"><use href="#i-plus"/></svg></span>
+        </button>
+        <div class="ben__panel" id="ben-3" role="region">
+          <div class="ben__inner">
+            <img src="img/fotos/b-procesos.webp" alt="Escritorio con reportes y una laptop" loading="lazy">
+            <div>
+              <p>Conectamos WhatsApp, tus hojas de cálculo, tu calendario y tus cobros con n8n o Make. Cada pedido sigue el mismo camino y deja registro, sin que nadie tenga que acordarse.</p>
+              <a class="ig-link" href="servicios.html#automatizacion">Ver Automatización →</a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li data-reveal style="--d:3" class="ben" data-img="img/fotos/b-datos.webp">
+        <button class="ben__row" type="button" aria-expanded="false" aria-controls="ben-4">
+          <span class="ben__icon"><svg class="ig-icon ig-icon--lg" aria-hidden="true"><use href="#i-trend"/></svg></span>
+          <span class="ben__title">Decides con datos, no con corazonadas</span>
+          <span class="ben__points"><span>Qué se vende y qué no</span><span>Qué clientes vuelven</span><span>Reportes semanales automáticos</span></span>
+          <span class="ben__toggle" aria-hidden="true"><svg class="ig-icon" aria-hidden="true"><use href="#i-plus"/></svg></span>
+        </button>
+        <div class="ben__panel" id="ben-4" role="region">
+          <div class="ben__inner">
+            <img src="img/fotos/b-datos.webp" alt="Pantalla con gráficos de ventas" loading="lazy">
+            <div>
+              <p>Cada conversación y cada pedido se vuelve un dato. Te entregamos un panel simple con lo que importa: citas, ventas, clientes que no volvieron y en qué horario te escriben más.</p>
+              <a class="ig-link" href="servicios.html#consultoria">Ver Consultoría →</a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li data-reveal style="--d:4" class="ben" data-img="img/fotos/b-adaptas.webp">
+        <button class="ben__row" type="button" aria-expanded="false" aria-controls="ben-5">
+          <span class="ben__icon"><svg class="ig-icon ig-icon--lg" aria-hidden="true"><use href="#i-refresh"/></svg></span>
+          <span class="ben__title">Te adaptas sin dejar de ser tú</span>
+          <span class="ben__points"><span>Tu tono, tus reglas</span><span>Ajustes cada mes</span><span>Sin contrato de permanencia</span></span>
+          <span class="ben__toggle" aria-hidden="true"><svg class="ig-icon" aria-hidden="true"><use href="#i-plus"/></svg></span>
+        </button>
+        <div class="ben__panel" id="ben-5" role="region">
+          <div class="ben__inner">
+            <img src="img/fotos/b-adaptas.webp" alt="Dueña de negocio sonriendo" loading="lazy">
+            <div>
+              <p>El mercado cambia, tus clientes cambian y la IA cambia cada mes. Nosotros nos encargamos de que tu negocio se mueva con ellos, sin perder la forma en que atiendes.</p>
+              <a class="ig-link" href="nosotros.html">Conoce al equipo →</a>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <div class="ben-float" id="ben-float" aria-hidden="true"><img alt=""></div>
+  </section>
+
+  <!-- 6 · PROCESO (única vez en el sitio) -->
+  <section class="wrap proceso" id="proceso" aria-labelledby="proc-t">
+    <div data-reveal class="sec-head">
+      <h2 id="proc-t">De la primera llamada a funcionar, en unos 11 días</h2>
+    </div>
+    <ol class="steps" data-progress>
+      <li data-reveal style="--d:0" class="step">
+        <span class="step__n">1</span>
+        <h3>Diagnóstico</h3>
+        <p>15 minutos por videollamada o WhatsApp. Nos cuentas cómo trabajas y dónde se te va el tiempo.</p>
+        <p class="step__time"><b>Gratis · 15 min</b></p>
+      </li>
+      <li data-reveal style="--d:1" class="step">
+        <span class="step__n">2</span>
+        <h3>Propuesta</h3>
+        <p>Te mostramos qué automatizar primero, con precio cerrado. Tu parte: aprobar el tono y los datos.</p>
+        <p class="step__time"><b>1 a 2 días</b></p>
+      </li>
+      <li data-reveal style="--d:2" class="step step--hi">
+        <span class="step__n">3</span>
+        <h3>Implementación</h3>
+        <p>Configuramos, conectamos tus herramientas y probamos contigo antes de que lo vean tus clientes.</p>
+        <p class="step__time"><b>~11 días</b></p>
+      </li>
+      <li data-reveal style="--d:3" class="step">
+        <span class="step__n">4</span>
+        <h3>Acompañamiento</h3>
+        <p>Medimos, ajustamos cada mes y sumamos automatizaciones cuando tu negocio lo pida.</p>
+        <p class="step__time"><b>Mes a mes</b></p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- 7 · CALCULADORA -->
+  <section class="wrap" id="calculadora" aria-labelledby="calc-t">
+    <form class="calc" id="calc" novalidate>
+      <div class="calc__inputs">
+        <h2 id="calc-t">¿Cuánto tiempo te devuelve la IA?</h2>
+        <p class="calc__lead">Arrastra los controles: cuántas tareas repetitivas haces al día y cuánto te toma cada una.</p>
+        <div class="rng">
+          <div class="rng__head">
+            <label class="field__label" for="c-tareas">Tareas repetitivas al día</label>
+            <output class="rng__val" id="o-tareas" for="c-tareas">3 tareas</output>
+          </div>
+          <input class="rng__input" id="c-tareas" type="range" min="1" max="5" step="1" value="3">
+          <div class="rng__ticks" aria-hidden="true" style="--n:5">
+            <span style="--i:0">1</span><span style="--i:1">2</span><span style="--i:2">3</span><span style="--i:3">4</span><span style="--i:4">5+</span>
+          </div>
+        </div>
+        <div class="rng">
+          <div class="rng__head">
+            <label class="field__label" for="c-tiempo">Tiempo por tarea</label>
+            <output class="rng__val" id="o-tiempo" for="c-tiempo">30 min</output>
+          </div>
+          <input class="rng__input" id="c-tiempo" type="range" min="0" max="5" step="1" value="2">
+          <div class="rng__ticks" aria-hidden="true" style="--n:6">
+            <span style="--i:0">5 min</span><span style="--i:1">15 min</span><span style="--i:2">30 min</span><span style="--i:3">1 h</span><span style="--i:4">1 h 30</span><span style="--i:5">2 h+</span>
+          </div>
+        </div>
+        <label class="ig-check">
+          <input id="c-sedes" type="checkbox">
+          <span>Tengo varias sedes o necesito integrar mi sistema</span>
+        </label>
+      </div>
+      <div class="calc__result" aria-live="polite">
+        <span class="calc__label">Horas al mes que recuperas</span>
+        <b class="calc__hours"><span id="r-horas">23</span> h</b>
+        <span class="calc__days">≈ <span id="r-dias">3</span> días de trabajo al mes</span>
+        <div class="calc__plan">
+          <span>Plan recomendado</span>
+          <b id="r-plan">Estándar · $35/mes</b>
+        </div>
+        <a class="btn-cta btn-cta--block" id="r-wa" href="https://wa.me/593959420676" target="_blank" rel="noopener">
+          Hablar por WhatsApp
+        </a>
+        <p class="calc__formula">Estimación: tareas × tiempo × 22 días × 70 % que se puede automatizar.</p>
+      </div>
+    </form>
+  </section>
+
+  <!-- 8 · PLANES (resumen) -->
+  <section class="wrap planes" id="planes" aria-labelledby="planes-t">
+    <div data-reveal class="sec-head sec-head--split">
+      <h2 id="planes-t">Precios claros, sin letras chicas</h2>
+      <p>IVA y configuración incluidos. Sin contrato de permanencia. <a class="ig-link" href="precios.html">Ver comparativa completa →</a></p>
+    </div>
+    <div class="plan-grid">
+      <article data-reveal style="--d:0" class="plan">
+        <img class="plan__isla" src="img/grabados/isla-sancristobal.webp" alt="" loading="lazy">
+        <h3>Básico</h3>
+        <p class="plan__price"><b>$15</b><span>/mes</span></p>
+        <ul><li>Asistente de WhatsApp con IA</li><li>50 mensajes al mes</li><li>Agenda y recordatorios</li></ul>
+        <a class="plan__btn" href="https://wa.me/593959420676?text=Hola%20Iguana%2C%20me%20interesa%20el%20plan%20B%C3%A1sico" target="_blank" rel="noopener">Elegir Básico</a>
+      </article>
+      <article data-reveal style="--d:1" class="plan plan--hi">
+        <p class="plan__badge">Recomendado</p>
+        <img class="plan__isla" src="img/grabados/isla-santiago.webp" alt="" loading="lazy">
+        <h3>Estándar</h3>
+        <p class="plan__price"><b>$35</b><span>/mes</span></p>
+        <ul><li>Todo lo de Básico</li><li>Más mensajes al mes</li><li>Panel de citas y conversaciones</li><li>Soporte por WhatsApp</li></ul>
+        <a class="plan__btn" href="https://wa.me/593959420676?text=Hola%20Iguana%2C%20me%20interesa%20el%20plan%20Est%C3%A1ndar" target="_blank" rel="noopener">Elegir Estándar</a>
+      </article>
+      <article data-reveal style="--d:2" class="plan">
+        <img class="plan__isla" src="img/grabados/isla-santacruz.webp" alt="" loading="lazy">
+        <h3>Pro</h3>
+        <p class="plan__price"><b>$60</b><span>/mes</span></p>
+        <ul><li>Todo lo de Estándar</li><li>Aún más mensajes</li><li>Seguimiento de pagos</li><li>Ajuste mensual</li></ul>
+        <a class="plan__btn" href="https://wa.me/593959420676?text=Hola%20Iguana%2C%20me%20interesa%20el%20plan%20Pro" target="_blank" rel="noopener">Elegir Pro</a>
+      </article>
+      <article data-reveal style="--d:3" class="plan plan--dark">
+        <img class="plan__isla" src="img/grabados/isla-isabela.webp" alt="" loading="lazy">
+        <h3>A medida</h3>
+        <p class="plan__price"><b>Hablemos</b></p>
+        <ul><li>Varias sedes</li><li>Integraciones con tu sistema</li><li>Flujos propios</li></ul>
+        <a class="plan__btn" href="https://wa.me/593959420676?text=Hola%20Iguana%2C%20quiero%20algo%20a%20medida" target="_blank" rel="noopener">Cotizar</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- 10 · FAQ -->
+  <section class="wrap faq faq--iguana" id="faq" aria-labelledby="faq-t">
+    <div data-reveal class="sec-head">
+      <h2 id="faq-t">Preguntas frecuentes</h2>
+    </div>
+    <div class="faq__list">
+      <details data-reveal style="--d:0" class="qa">
+        <summary>¿Necesito saber de tecnología?<svg class="ig-icon" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+        <p>No. Nosotros configuramos todo y te enseñamos lo justo para usarlo. Si sabes usar WhatsApp, estás listo.</p>
+      </details>
+      <details data-reveal style="--d:1" class="qa">
+        <summary>¿Cuánto tarda en estar funcionando?<svg class="ig-icon" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+        <p>Unos 11 días desde que apruebas la propuesta. Casos con integraciones o varias sedes pueden tomar un poco más; te lo decimos antes de empezar.</p>
+      </details>
+      <details data-reveal style="--d:2" class="qa">
+        <summary>¿Hay contrato de permanencia?<svg class="ig-icon" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+        <p>No. Pagas mes a mes y puedes cancelar cuando quieras.</p>
+      </details>
+      <details data-reveal style="--d:3" class="qa">
+        <summary>¿Funciona con mi número de WhatsApp?<svg class="ig-icon" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+        <p>Lo conectamos a WhatsApp Business. En el diagnóstico vemos si conviene usar tu número actual o uno nuevo para el asistente.</p>
+      </details>
+      <details data-reveal style="--d:4" class="qa">
+        <summary>¿Qué pasa con los datos de mis clientes?<svg class="ig-icon" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+        <p>Son tuyos. Solo los usamos para que el sistema funcione y nunca los compartimos con terceros.</p>
+      </details>
+    </div>
+    <div class="faq__aside" data-reveal="right" aria-hidden="true">
+      <img src="img/grabados/iguana-rocas.webp" alt="" loading="lazy" data-progress>
+    </div>
+  </section>
+
+  <!-- 11 · CTA FINAL -->
+  <section class="wrap" id="cta-final">
+    <div class="cta" data-progress>
+      <p class="cta__word" aria-hidden="true">adáptate</p>
+      <div class="cta__copy">
+        <h2>La iguana se adaptó. ¿Y tú?</h2>
+        <a class="btn-dark" href="https://wa.me/593959420676?text=Hola%20Iguana%2C%20quiero%20mi%20diagn%C3%B3stico%20gratis" target="_blank" rel="noopener">Agenda tu diagnóstico gratis</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__grid">
+    <div class="footer__brand">
+      <img src="img/logo-blanco.webp" alt="Iguana" width="107" height="40">
+      <p>Agencia de IA para negocios ecuatorianos.</p>
+    </div>
+    <div>
+      <h3>Servicios</h3>
+      <a href="servicios.html#agentes-ia">Agentes IA</a>
+      <a href="servicios.html#automatizacion">Automatización</a>
+      <a href="servicios.html#consultoria">Consultoría</a>
+      <a href="servicios.html#a-medida">A medida</a>
+    </div>
+    <div>
+      <h3>Iguana</h3>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="precios.html">Precios</a>
+      <a href="#calculadora">Calculadora</a>
+      <a href="#faq">Preguntas frecuentes</a>
+    </div>
+    <div>
+      <h3>Síguenos</h3>
+      <a href="https://www.instagram.com/iguana.ec" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.facebook.com/people/Iguana-Ec/61594253138914/" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.linkedin.com/company/iguanaec" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://wa.me/593959420676" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+  <div class="wrap footer__legal">
+    <span>© 2026 Iguana Corp · Ecuador</span>
+    <span><a href="privacidad.html">Privacidad</a> · <a href="terminos.html">Términos</a></span>
+  </div>
+</footer>
+
+<script src="js/icons.js"></script>
+<script src="js/inicio.js"></script>
+<script src="js/scroll.js"></script>
+</body>
+</html>
