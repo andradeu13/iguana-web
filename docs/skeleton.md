@@ -23,7 +23,7 @@
 | `hero` | Titular, párrafo, 2 CTAs, tarjeta-foto con chip | Inicio |
 | `hero-corto` | Titular centrado + párrafo (+ píldoras de ancla en Servicios) | Servicios, Precios, Nosotros |
 | `cifras` | 3 cifras gigantes con leyenda y fuente | Inicio |
-| `adaptate` | Palabra gigante "ADÁPTATE" con una foto delante (referencia Influence Pro). CSS listo en `v2/css/adaptate.css` | Nosotros (`#concepto`) |
+| `adaptate` | Palabra gigante "ADÁPTATE" que crece con el scroll y una foto que sube por delante (referencia Influence Pro) | Nosotros |
 | `servicios-foto` | Foto a sangre, titular, 3 tarjetas con "Descubrir" → `/servicios#…` | Inicio |
 | `proceso` | 4 pasos: diagnóstico → propuesta → implementación (~11 días) → acompañamiento. Absorbe "Tu parte" y "Tu primer año" | **Solo Inicio** |
 | `herramientas` | Carrusel de logos: WhatsApp, Instagram, Facebook, Meta, n8n, Make, OpenAI, Claude, Gemini, Google, Notion | Inicio |
@@ -94,7 +94,7 @@ Fondo blanco suave (`#FAFAF8`). Sin chips. El verde solo como acento; paneles os
 ### `/nosotros`
 1. `nav-flotante`
 2. `hero-corto` ("Aprendimos de la iguana")
-3. `concepto` (largo), con el bloque `adaptate` como apertura
+3. `concepto` (largo): historia en capítulos + bloque `adaptate`
 4. `mision`
 5. `equipo`
 6. `cta-final`
@@ -102,14 +102,18 @@ Fondo blanco suave (`#FAFAF8`). Sin chips. El verde solo como acento; paneles os
 
 ## Estado de la implementación (`v2/`)
 
-| Página | Archivo | Estado |
-|---|---|---|
-| Inicio | `v2/index.html` | Listo |
-| Servicios | `v2/servicios.html` | Listo: hero con 4 anclas, 4 bloques `servicio`, CTA a la calculadora |
-| Precios | `v2/precios.html` | Listo: planes, comparativa, condiciones, FAQ de pagos. Contenido de cada plan en borrador |
-| Nosotros | `v2/nosotros.html` | Listo: concepto con bloque `adaptate`, misión, equipo (iniciales mientras no haya fotos) |
+Las páginas internas siguen una dirección **inmersiva**: secciones a pantalla completa, fotos fijas que cambian al hacer scroll y capítulos que aparecen uno a uno. Se generan con `python3 docs/build_pages.py`, que copia el nav y el footer de `v2/index.html`.
 
-Los botones oscuros (`.btn-dark`) y lima (`.btn-cta`) son todos píldora con círculo de flecha.
+| Página | Archivo | Qué tiene |
+|---|---|---|
+| Inicio | `v2/index.html` | Estructura de siempre, con apariciones y parallax al hacer scroll |
+| Servicios | `v2/servicios.html` | Hero a pantalla completa que se encoge a tarjeta · 4 capítulos con foto fija que cambia, contador y riel · CTA a la calculadora |
+| Precios | `v2/precios.html` | "$15" gigante · planes como mazo de tarjetas apiladas · comparativa · condiciones como frases que se encienden · FAQ de pagos |
+| Nosotros | `v2/nosotros.html` | Portada de mar · historia de la iguana en 5 capítulos con foto de fondo · "ADÁPTATE" que crece · manifiesto · equipo en filas gigantes |
+
+Motor de scroll: `v2/js/scroll.js` (`data-reveal`, `data-progress`, `data-words`, `data-chapters`) y `v2/css/motion.css`. Con movimiento reducido o sin JS todo se ve completo y quieto.
+
+Botones: píldoras de solo texto, sin flechas. El oscuro se rellena de lima al pasar el mouse.
 
 ## Qué sale del sitio actual
 

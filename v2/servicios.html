@@ -15,11 +15,12 @@
 <link rel="stylesheet" href="css/tokens.css">
 <link rel="stylesheet" href="css/base.css">
 <link rel="stylesheet" href="css/inicio.css">
+<link rel="stylesheet" href="css/motion.css">
 <link rel="stylesheet" href="css/pages.css">
 </head>
-<body class="ig-root">
+<body class="ig-root page-servicios">
 
-<header class="nav" id="nav" data-solid>
+<header class="nav" id="nav">
   <div class="nav__bar">
     <a class="nav__logo" href="index.html" aria-label="Iguana, inicio">
       <img class="nav__logo-light" src="img/logo-blanco.webp" alt="Iguana" width="107" height="40">
@@ -41,7 +42,7 @@
       <a class="nav__link" href="nosotros.html">Nosotros</a>
     </nav>
     <a class="btn-cta nav__cta" href="https://wa.me/593959420676?text=Hola%20Iguana%2C%20quiero%20mi%20diagn%C3%B3stico%20gratis" target="_blank" rel="noopener">
-      Diagnóstico gratis <span class="btn-cta__arrow"><svg class="ig-icon ig-icon--sm" aria-hidden="true"><use href="#i-arrow-ur"/></svg></span>
+      Diagnóstico gratis
     </a>
     <button class="nav__burger" type="button" aria-expanded="false" aria-controls="sheet" aria-label="Abrir menú">
       <span></span><span></span>
@@ -60,75 +61,72 @@
 
 <main id="top">
 
-  <section class="wrap phero" aria-labelledby="h1">
-    <span class="kicker">Servicios</span>
-    <h1 id="h1">Cuatro formas de <em>recuperar tu tiempo</em></h1>
-    <p class="phero__lead">Agentes, automatizaciones, consultoría y soluciones a medida. Elige una o combínalas: todas parten de cómo trabaja tu negocio hoy.</p>
-    <nav class="anchors" aria-label="Servicios"><a class="anchor" href="#agentes-ia"><svg class="ig-icon ig-icon--lg" aria-hidden="true"><use href="#i-bot"/></svg><span><small>01</small>Agentes IA</span></a><a class="anchor" href="#automatizacion"><svg class="ig-icon ig-icon--lg" aria-hidden="true"><use href="#i-refresh"/></svg><span><small>02</small>Automatización</span></a><a class="anchor" href="#consultoria"><svg class="ig-icon ig-icon--lg" aria-hidden="true"><use href="#i-trend"/></svg><span><small>03</small>Consultoría</span></a><a class="anchor" href="#a-medida"><svg class="ig-icon ig-icon--lg" aria-hidden="true"><use href="#i-sliders"/></svg><span><small>04</small>A medida</span></a></nav>
-  </section>
-
-  <section class="wrap svc" id="agentes-ia" aria-labelledby="agentes-ia-t">
-    <figure class="svc__media">
-      <img src="img/fotos/agentes.webp" alt="Dueño de una tienda atiende a una clienta mientras revisa su celular" loading="lazy">
-      <figcaption class="svc__example"><small>Ejemplo ilustrativo</small><p>Una barbería recibe un mensaje a las once de la noche. El asistente confirma el corte del sábado y deja la cita en la agenda.</p></figcaption>
-    </figure>
-    <div class="svc__body">
-      <span class="kicker">01 · Agentes IA</span>
-      <h2 id="agentes-ia-t">Un asistente que atiende por ti, a cualquier hora</h2>
-      <p class="svc__lead">Responde en WhatsApp e Instagram con tu tono, agenda citas, recuerda pagos pendientes y te avisa cuando un cliente necesita a una persona.</p>
-      <ul class="checks"><li>Un número de WhatsApp para tu negocio</li><li>Respuestas con el tono que tú apruebas</li><li>Agenda automática en tus horarios libres</li><li>Recordatorios de citas y de pagos</li><li>Traspaso a una persona cuando hace falta</li></ul>
-      <a class="btn-cta" href="https://wa.me/593959420676?text=Hola%20Iguana%2C%20me%20interesa%20Agentes%20IA" target="_blank" rel="noopener">Cuéntanos tu caso <span class="btn-cta__arrow"><svg class="ig-icon ig-icon--sm" aria-hidden="true"><use href="#i-arrow-ur"/></svg></span></a>
+  <section class="shero" id="hero" data-progress="exit" aria-labelledby="h1">
+    <div class="shero__media" style="background-image:url('img/fotos/servicios.webp')"></div>
+    <div class="shero__copy">
+      <p class="shero__kicker">Servicios</p>
+      <h1 id="h1">Cuatro formas de recuperar tu tiempo</h1>
+      <p>Agentes, automatizaciones, consultoría y soluciones a medida. Elige una o combínalas: todas parten de cómo trabaja tu negocio hoy.</p>
     </div>
+    <p class="scroll-cue" aria-hidden="true">Desliza</p>
   </section>
 
-  <section class="wrap svc svc--flip" id="automatizacion" aria-labelledby="automatizacion-t">
-    <figure class="svc__media">
-      <img src="img/fotos/automatizacion.webp" alt="Laptop con un panel de reportes abierto" loading="lazy">
-      <figcaption class="svc__example"><small>Ejemplo ilustrativo</small><p>Un taller recibe un pedido por formulario. Se crea la orden, se avisa al cliente y se descuenta del inventario sin que nadie toque el teclado.</p></figcaption>
-    </figure>
-    <div class="svc__body">
-      <span class="kicker">02 · Automatización</span>
-      <h2 id="automatizacion-t">Lo repetitivo, fuera de tu día</h2>
-      <p class="svc__lead">Conectamos tus herramientas con n8n y Make para que las cotizaciones, los pedidos, los reportes y los seguimientos se hagan solos.</p>
-      <ul class="checks"><li>Cotizaciones y confirmaciones de pedido automáticas</li><li>Reportes semanales a tu correo o a tu WhatsApp</li><li>Seguimiento a los clientes que no respondieron</li><li>Datos que pasan de una app a otra sin copiar y pegar</li><li>Avisos cuando algo se sale de lo normal</li></ul>
-      <a class="btn-cta" href="https://wa.me/593959420676?text=Hola%20Iguana%2C%20me%20interesa%20Automatizaci%C3%B3n" target="_blank" rel="noopener">Cuéntanos tu caso <span class="btn-cta__arrow"><svg class="ig-icon ig-icon--sm" aria-hidden="true"><use href="#i-arrow-ur"/></svg></span></a>
+  <section class="chap" data-chapters aria-label="Nuestros servicios">
+    <div class="chap__stage" aria-hidden="true">
+      <div class="chap__media"><img data-media class="is-active" src="img/fotos/agentes.webp" alt="" loading="eager"><img data-media src="img/fotos/automatizacion.webp" alt="" loading="lazy"><img data-media src="img/fotos/consultoria.webp" alt="" loading="lazy"><img data-media src="img/fotos/tienda.webp" alt="" loading="lazy"></div>
+      <p class="chap__num"><span data-num class="is-active">01</span><span data-num>02</span><span data-num>03</span><span data-num>04</span></p>
+      <ol class="chap__dots"><li data-dot class="is-active"></li><li data-dot></li><li data-dot></li><li data-dot></li></ol>
     </div>
-  </section>
-
-  <section class="wrap svc" id="consultoria" aria-labelledby="consultoria-t">
-    <figure class="svc__media">
-      <img src="img/fotos/consultoria.webp" alt="Dos personas celebran un acuerdo en una reunión de trabajo" loading="lazy">
-      <figcaption class="svc__example"><small>Ejemplo ilustrativo</small><p>Una clínica descubre que la mayor parte de su trabajo administrativo son recordatorios de cita. Empieza por ahí y lo demás puede esperar.</p></figcaption>
-    </figure>
-    <div class="svc__body">
-      <span class="kicker">03 · Consultoría</span>
-      <h2 id="consultoria-t">Por dónde empezar con IA, sin gastar de más</h2>
-      <p class="svc__lead">Revisamos cómo trabaja tu negocio, medimos dónde se te va el tiempo y te entregamos una hoja de ruta con prioridades, costos y plazos.</p>
-      <ul class="checks"><li>Diagnóstico de 15 minutos, gratis</li><li>Mapa de tus tareas repetitivas y el tiempo que ahorras</li><li>Hoja de ruta ordenada por impacto</li><li>Recomendación de herramientas y proveedores</li><li>Acompañamiento para ponerla en marcha</li></ul>
-      <a class="btn-cta" href="https://wa.me/593959420676?text=Hola%20Iguana%2C%20me%20interesa%20Consultor%C3%ADa" target="_blank" rel="noopener">Cuéntanos tu caso <span class="btn-cta__arrow"><svg class="ig-icon ig-icon--sm" aria-hidden="true"><use href="#i-arrow-ur"/></svg></span></a>
-    </div>
-  </section>
-
-  <section class="wrap svc svc--flip" id="a-medida" aria-labelledby="a-medida-t">
-    <figure class="svc__media">
-      <img src="img/fotos/tienda.webp" alt="Dueño de un local revisa un pedido junto a su empleado" loading="lazy">
-      <figcaption class="svc__example"><small>Ejemplo ilustrativo</small><p>Una cadena de tres locales junta citas, pagos y mensajes en un solo panel, sin cambiar el sistema que ya usa cada sede.</p></figcaption>
-    </figure>
-    <div class="svc__body">
-      <span class="kicker">04 · A medida</span>
-      <h2 id="a-medida-t">Si tu negocio es distinto, la solución también</h2>
-      <p class="svc__lead">Varias sedes, sistemas propios, flujos que nadie más tiene. Diseñamos e integramos lo que necesitas, incluidas páginas web que llevan al cliente directo a tu WhatsApp.</p>
-      <ul class="checks"><li>Varios números o sucursales</li><li>Integración con tu calendario, tus pagos o tu sistema actual</li><li>Flujos diseñados para tu operación</li><li>Páginas web conectadas a WhatsApp</li><li>Acompañamiento dedicado</li></ul>
-      <a class="btn-cta" href="https://wa.me/593959420676?text=Hola%20Iguana%2C%20me%20interesa%20A%20medida" target="_blank" rel="noopener">Cuéntanos tu caso <span class="btn-cta__arrow"><svg class="ig-icon ig-icon--sm" aria-hidden="true"><use href="#i-arrow-ur"/></svg></span></a>
+    <div class="chap__steps">
+      <article class="chap__step" data-step id="agentes-ia" aria-labelledby="agentes-ia-t">
+        <div class="chap__card">
+          <p class="chap__kicker">01 · Agentes IA</p>
+          <h2 id="agentes-ia-t">Un asistente que atiende por ti, a cualquier hora</h2>
+          <p class="chap__lead">Responde en WhatsApp e Instagram con tu tono, agenda citas, recuerda pagos pendientes y te avisa cuando un cliente necesita a una persona.</p>
+          <ul class="checks"><li>Un número de WhatsApp para tu negocio</li><li>Respuestas con el tono que tú apruebas</li><li>Agenda automática en tus horarios libres</li><li>Recordatorios de citas y de pagos</li><li>Traspaso a una persona cuando hace falta</li></ul>
+          <p class="chap__example"><small>Ejemplo ilustrativo</small>Una barbería recibe un mensaje a las once de la noche. El asistente confirma el corte del sábado y deja la cita en la agenda.</p>
+          <a class="btn-cta" href="https://wa.me/593959420676?text=Hola%20Iguana%2C%20me%20interesa%20Agentes%20IA" target="_blank" rel="noopener">Cuéntanos tu caso</a>
+        </div>
+      </article>
+      <article class="chap__step" data-step id="automatizacion" aria-labelledby="automatizacion-t">
+        <div class="chap__card">
+          <p class="chap__kicker">02 · Automatización</p>
+          <h2 id="automatizacion-t">Lo repetitivo, fuera de tu día</h2>
+          <p class="chap__lead">Conectamos tus herramientas con n8n y Make para que las cotizaciones, los pedidos, los reportes y los seguimientos se hagan solos.</p>
+          <ul class="checks"><li>Cotizaciones y confirmaciones de pedido automáticas</li><li>Reportes semanales a tu correo o a tu WhatsApp</li><li>Seguimiento a los clientes que no respondieron</li><li>Datos que pasan de una app a otra sin copiar y pegar</li><li>Avisos cuando algo se sale de lo normal</li></ul>
+          <p class="chap__example"><small>Ejemplo ilustrativo</small>Un taller recibe un pedido por formulario. Se crea la orden, se avisa al cliente y se descuenta del inventario sin que nadie toque el teclado.</p>
+          <a class="btn-cta" href="https://wa.me/593959420676?text=Hola%20Iguana%2C%20me%20interesa%20Automatizaci%C3%B3n" target="_blank" rel="noopener">Cuéntanos tu caso</a>
+        </div>
+      </article>
+      <article class="chap__step" data-step id="consultoria" aria-labelledby="consultoria-t">
+        <div class="chap__card">
+          <p class="chap__kicker">03 · Consultoría</p>
+          <h2 id="consultoria-t">Por dónde empezar con IA, sin gastar de más</h2>
+          <p class="chap__lead">Revisamos cómo trabaja tu negocio, medimos dónde se te va el tiempo y te entregamos una hoja de ruta con prioridades, costos y plazos.</p>
+          <ul class="checks"><li>Diagnóstico de 15 minutos, gratis</li><li>Mapa de tus tareas repetitivas y el tiempo que ahorras</li><li>Hoja de ruta ordenada por impacto</li><li>Recomendación de herramientas y proveedores</li><li>Acompañamiento para ponerla en marcha</li></ul>
+          <p class="chap__example"><small>Ejemplo ilustrativo</small>Una clínica descubre que la mayor parte de su trabajo administrativo son recordatorios de cita. Empieza por ahí y lo demás puede esperar.</p>
+          <a class="btn-cta" href="https://wa.me/593959420676?text=Hola%20Iguana%2C%20me%20interesa%20Consultor%C3%ADa" target="_blank" rel="noopener">Cuéntanos tu caso</a>
+        </div>
+      </article>
+      <article class="chap__step" data-step id="a-medida" aria-labelledby="a-medida-t">
+        <div class="chap__card">
+          <p class="chap__kicker">04 · A medida</p>
+          <h2 id="a-medida-t">Si tu negocio es distinto, la solución también</h2>
+          <p class="chap__lead">Varias sedes, sistemas propios, flujos que nadie más tiene. Diseñamos e integramos lo que necesitas, incluidas páginas web que llevan al cliente directo a tu WhatsApp.</p>
+          <ul class="checks"><li>Varios números o sucursales</li><li>Integración con tu calendario, tus pagos o tu sistema actual</li><li>Flujos diseñados para tu operación</li><li>Páginas web conectadas a WhatsApp</li><li>Acompañamiento dedicado</li></ul>
+          <p class="chap__example"><small>Ejemplo ilustrativo</small>Una cadena de tres locales junta citas, pagos y mensajes en un solo panel, sin cambiar el sistema que ya usa cada sede.</p>
+          <a class="btn-cta" href="https://wa.me/593959420676?text=Hola%20Iguana%2C%20me%20interesa%20A%20medida" target="_blank" rel="noopener">Cuéntanos tu caso</a>
+        </div>
+      </article>
     </div>
   </section>
 
   <section class="wrap" id="cta-final">
-    <div class="cta">
+    <div class="cta" data-progress>
       <p class="cta__word" aria-hidden="true">elige</p>
       <div class="cta__copy">
         <h2>¿No sabes cuál? Calcula cuánto tiempo recuperas.</h2>
-        <a class="btn-dark" href="index.html#calculadora">Abrir la calculadora <span class="btn-dark__arrow"><svg class="ig-icon ig-icon--sm" aria-hidden="true"><use href="#i-arrow-ur"/></svg></span></a>
+        <a class="btn-dark" href="index.html#calculadora">Abrir la calculadora</a>
       </div>
     </div>
   </section>
@@ -170,5 +168,6 @@
 
 <script src="js/icons.js"></script>
 <script src="js/inicio.js"></script>
+<script src="js/scroll.js"></script>
 </body>
 </html>

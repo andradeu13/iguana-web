@@ -21,7 +21,12 @@ La [licencia de Unsplash](https://unsplash.com/license) permite uso comercial gr
 | `cta.webp` | Galería (fachada) | https://images.unsplash.com/photo-1528698827591-e19ccd7bc23d |
 | `galeria-alta.webp` | Galería (foto alta) | https://images.unsplash.com/photo-1556742049-0cfed4f6a45d |
 | `tienda.webp` | Galería | https://images.unsplash.com/photo-1556740749-887f6717d7e4 |
-| `mani.webp` | Sección tipográfica de cifras | https://images.unsplash.com/photo-1563986768609-322da13575f3 |
+| `mani.webp` | Nosotros: momento "ADÁPTATE" | https://images.unsplash.com/photo-1563986768609-322da13575f3 |
+| `mar-hero.webp` | Nosotros: portada (mar oscuro) | https://images.unsplash.com/photo-1494791368093-85217fbbf8de |
+| `mar-calma.webp` | Nosotros: capítulo 01 | https://images.unsplash.com/photo-1518837695005-2083093ee35b |
+| `mar-ola.webp` | Nosotros: capítulo 02 | https://images.unsplash.com/photo-1502680390469-be75c86b636f |
+| `mar-fondo.webp` | Nosotros: capítulo 03 | https://images.unsplash.com/photo-1551244072-5d12893278ab |
+| `mar-roca.webp` | Nosotros: capítulo 04 | https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5 |
 
 Propios de Iguana: los logos `logo-blanco.webp` y `logo-oscuro.webp`, recoloreados desde `images/logo-iguana.webp`.
 
