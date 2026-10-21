@@ -23,10 +23,10 @@
 | `comparativa` | Tabla comparativa | Filas de características × 4 planes | Precios |
 | `condiciones` | Sin letras chicas | IVA incluido, configuración incluida, sin permanencia, listo en ~11 días | Precios, Cómo trabajamos |
 | `quiz` | Quiz | Preguntas → recomendación de servicio + plan → WhatsApp | Es para ti |
-| `concepto` | Por qué la iguana | La iguana que se adaptó (versión corta) | Home, Nosotros (versión larga) |
+| `concepto` | Por qué la iguana | La iguana que se adaptó ("Todas las iguanas saben nadar…") | Home (corto), Nosotros (hereda el carrusel "Por qué la iguana") |
 | `mision` | Misión | Qué hacemos y para quién | Nosotros |
 | `equipo` | Equipo | 3 fundadores: nombre, rol, foto | Nosotros |
-| `valores` | Valores | 3-5 ideas (heredan "Por qué Galápagos", recortado) | Nosotros |
+| `valores` | Valores | 3-5 ideas sobre cómo trabajamos con el cliente | Nosotros |
 | `faq` | FAQ | Acordeón; corto (4-5) o completo por grupos | Todas (corto), FAQ (completo) |
 | `canales` | Canales de contacto | WhatsApp, redes, qué pasa en el diagnóstico de 15 min | Contacto |
 | `cta-final` | CTA final | Frase de cierre + botón diagnóstico | Todas |
@@ -69,7 +69,7 @@ Misma plantilla para `automatizacion`, `agentes-ia`, `consultoria` y `a-medida`:
 
 | Servicio | Contenido base que se reaprovecha del sitio actual |
 |---|---|
-| Automatización | "Agentes de IA a medida: cotizaciones, pedidos, seguimientos" (home actual) |
+| Automatización | "Agentes de IA a medida: cotizaciones, pedidos, seguimientos" (home) + "Más automatización" de "Lo que viene" (precios) |
 | Agentes IA | Todo el asistente de WhatsApp: responde, agenda, recuerda; conversaciones de ejemplo por negocio |
 | Consultoría | "Consultoría de procesos con IA" (home actual) + datos de mercado |
 | A medida | Plan A medida (varias sedes, integraciones, flujos propios) + "Páginas web que llevan al WhatsApp" |
@@ -85,10 +85,10 @@ Misma plantilla para `automatizacion`, `agentes-ia`, `consultoria` y `a-medida`:
 
 | Plan | Precio (USD/mes, IVA incl.) | Antes |
 |---|---|---|
-| Básico | $15 | Esencial / San Cristóbal |
-| Estándar *(recomendado)* | $35 | Crecimiento / Santiago |
-| Pro | $60 | Pro / Santa Cruz |
-| A medida | Hablemos | A medida / Isabela |
+| Básico | $15 | Esencial |
+| Estándar *(recomendado)* | $35 | Crecimiento |
+| Pro | $60 | Pro |
+| A medida | Hablemos | A medida |
 
 ### `/es-para-ti`: Quiz
 1. `nav` · 2. `quiz` (con progreso) · 3. resultado: servicio + plan + WhatsApp · 4. `casos-uso` ("¿Te reconoces?") · 5. `cta-final` ("Probar no te cuesta") · 6. `footer`
@@ -103,7 +103,7 @@ Lógica base actual en `js/main.js` (`computeResult`). Se amplía con una pregun
 | Algo propio de mi negocio / varias sedes | A medida |
 
 ### `/nosotros`
-1. `nav` · 2. `hero` ("Aprendimos de la iguana") · 3. `mision` · 4. `concepto` (versión larga) · 5. `valores` · 6. `equipo` · 7. `cta-final` · 8. `footer`
+1. `nav` · 2. `hero` ("Aprendimos de la iguana") · 3. `mision` · 4. `concepto` (versión larga, hereda "Por qué la iguana") · 5. `valores` · 6. `equipo` · 7. `cta-final` · 8. `footer`
 
 ### `/faq`
 1. `nav` · 2. `hero` (corto) · 3. `faq` completo por grupos: Qué hacemos · Precios y pagos · Implementación · Datos y privacidad · Cancelación · 4. `cta-final` · 5. `footer`
@@ -114,19 +114,22 @@ Lógica base actual en `js/main.js` (`computeResult`). Se amplía con una pregun
 ### `/404`, `/privacidad`, `/terminos`
 `nav` · bloque de texto simple · `footer`. 404 con enlaces a Inicio y Servicios.
 
-## Qué se elimina o cambia del sitio actual
+## Qué se elimina o cambia del sitio actual (rama `main`)
+
+El detalle sección por sección está en [`maps/redistribucion.svg`](maps/redistribucion.svg).
 
 | Elemento actual | Destino |
 |---|---|
-| Nombres de isla en planes ("Elige tu isla") | **Eliminado**: Básico / Estándar / Pro / A medida |
-| Hero "Tu negocio, atendiendo solo." | Pasa a `/servicios/agentes-ia`; la home habla de la agencia |
-| "Lo que viene" (Pinzón, Cormorán, Tortuga Gigante) | **Eliminado** (los nombres de complementos ya no aplican) |
-| "Tu día, antes y después" (nosotros) | Pasa a `casos-uso` en servicios |
-| "Por qué Galápagos" (5 ideas) | `valores` en Nosotros, recortado |
-| Carrusel "Así trabaja en cada negocio" | `verticales` en `/soluciones` |
-| Rails de tipos de negocio | `verticales` |
-| Imágenes Unsplash | **Eliminadas**: solo fotos propias o ilustración |
-| Marcadores "Imagen de ejemplo" | Se resuelven en fase de diseño |
+| Nombres de planes Esencial / Crecimiento | Básico / Estándar (Pro y A medida se quedan) |
+| "Mientras más grande, más hace por ti" (mapa de islas 3D en precios) | **Eliminado** |
+| Hero "Tu negocio no necesita más manos. Necesita evolucionar." | Se queda como idea del `hero` de la home, ampliado a agencia de IA |
+| "Así se ve" (conversaciones de ejemplo) | `casos-uso` en Agentes IA |
+| "Lo que viene" (personalización, automatización, memoria) | Se reparte en `incluye` de Automatización y A medida |
+| "Tu parte", "Listo en 11 días", "Tu primer año" (precios) | Pasan a `/como-trabajamos` |
+| "Por qué la iguana" (nosotros) y "Todas las iguanas saben nadar…" (home) | `concepto` |
+| "Tu día, antes y después" (nosotros) | `casos-uso` en Soluciones |
+| Imágenes de Unsplash (14, sobre todo en nosotros) | **Eliminadas**: solo fotos propias o ilustración |
+| Enlaces internos `.html` | Rutas limpias sin extensión |
 
 ## Inventario de assets
 
@@ -134,7 +137,7 @@ Lógica base actual en `js/main.js` (`computeResult`). Se amplía con una pregun
 |---|---|---|
 | `images/logo-iguana.webp`, favicons, `og-image.jpg` | Existe | `nav`, `footer`, OG (rehacer OG con el nuevo mensaje) |
 | `images/iguana-hero.webp`, `images/iguana nado/1.webp`, `images/hero-rocas.webp` | Existe | `hero` / `concepto` |
-| `images/isla-*.webp` (5) | Existe | `valores` o fondos; ya no se ligan a planes |
+| `images/isla-*.webp` (5) | Existe | Opcional como fondos; ya no se ligan a planes |
 | Fotos del equipo | **Falta** (hoy hay iniciales) | `equipo` |
 | Mockups de producto (WhatsApp, panel) | **Falta** | Agentes IA, `casos-uso` |
 | Íconos de servicios y pilares | **Falta** | `servicios-grid`, `pilares` |

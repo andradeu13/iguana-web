@@ -134,32 +134,30 @@ def sitemap():
 
 # ---------------------------------------------------------- redistribucion.svg
 OLD = [
-    ("index.html (home actual)", [
-        ("Hero «Tu negocio, atendiendo solo»", "/servicios/agentes-ia", "hero", "move"),
-        ("Rails de tipos de negocio", "/soluciones", "verticales", "move"),
-        ("«Solo el 21 %…» (datos)", "/", "stats", "move"),
-        ("Carrusel «Así trabaja en cada negocio»", "/soluciones", "casos-uso", "move"),
-        ("«Tus clientes ya están…» (cifras)", "/servicios/agentes-ia", "stats", "merge"),
-        ("«Simple desde el primer día»", "/como-trabajamos", "proceso", "move"),
+    ("index.html (home en main)", [
+        ("Hero «Tu negocio no necesita más manos…»", "/", "hero", "move"),
+        ("«No es falta de talento» (dolores)", "/", "problema", "move"),
+        ("«Solo 2 de cada 10 negocios… usa IA»", "/", "stats", "move"),
         ("«Lo que hacemos» (6 servicios)", "/servicios", "servicios-grid", "merge"),
-        ("«Hecho para negocios como el tuyo»", "/soluciones", "verticales", "merge"),
-        ("«Por qué la iguana»", "/", "concepto", "move"),
+        ("«Así se ve» (conversaciones de ejemplo)", "/servicios/agentes-ia", "casos-uso", "move"),
+        ("«Todas las iguanas saben nadar…»", "/", "concepto", "merge"),
         ("CTA «La iguana se adaptó. ¿Y tú?»", "/", "cta-final", "move"),
     ]),
     ("precios.html", [
         ("Hero «Planes desde $15 al mes»", "/precios", "hero", "move"),
         ("Franja de condiciones", "/precios", "condiciones", "move"),
-        ("«Elige tu isla» (planes con islas)", "/precios", "planes", "rename"),
+        ("«Elige tu plan» (Esencial, Crecimiento…)", "/precios", "planes", "rename"),
+        ("«Mientras más grande…» (mapa de islas 3D)", None, None, "drop"),
         ("«Tu parte»", "/como-trabajamos", "tu-parte", "move"),
         ("«Listo en 11 días»", "/como-trabajamos", "proceso", "merge"),
         ("«Tu primer año»", "/como-trabajamos", "despues", "move"),
-        ("«Lo que viene» (Pinzón, Cormorán…)", None, None, "drop"),
+        ("«Lo que viene» (automatización, memoria…)", "/servicios/automatizacion", "incluye", "merge"),
     ]),
     ("nosotros.html", [
         ("Hero «Aprendimos de la iguana»", "/nosotros", "hero", "move"),
-        ("«Por qué Galápagos» (5 ideas)", "/nosotros", "valores", "merge"),
+        ("«Por qué la iguana» (carrusel)", "/nosotros", "concepto", "merge"),
         ("«El equipo»", "/nosotros", "equipo", "move"),
-        ("«Tu día, antes y después»", "/servicios/agentes-ia", "casos-uso", "move"),
+        ("«Tu día, antes y después»", "/soluciones", "casos-uso", "move"),
     ]),
     ("es-para-ti.html", [
         ("Quiz de 4 preguntas", "/es-para-ti", "quiz", "merge"),
@@ -250,7 +248,7 @@ def redistribucion():
         '<defs><marker id="arr" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto">'
         f'<path d="M0,0 L8,4 L0,8 z" fill="{DARK}"/></marker></defs>',
         t(40, 46, "Redistribución: sitio actual → sitio nuevo", 22, 700),
-        t(40, 70, "Cada sección actual, a qué página y bloque (#id del esqueleto) pasa. Los nombres de islas de los planes se eliminan.", 13, 400, MID),
+        t(40, 70, "Sitio actual = rama main. Cada sección, a qué página y bloque (#id del esqueleto) pasa.", 13, 400, MID),
     ]
     # leyenda
     ly = H - 110
@@ -261,8 +259,8 @@ def redistribucion():
            t(100, ly + 52, "se fusiona o recorta dentro de otro bloque", 12.5),
            r(40, ly + 64, 50, 18, "#fff", MID, rx=4, dash="4 3"),
            t(100, ly + 78, "se elimina", 12.5),
-           t(520, ly + 26, "Planes: Esencial/San Cristóbal → Básico $15 · Crecimiento/Santiago → Estándar $35", 12.5),
-           t(520, ly + 52, "Pro/Santa Cruz → Pro $60 · A medida/Isabela → A medida", 12.5)]
+           t(520, ly + 26, "Planes: Esencial → Básico $15 · Crecimiento → Estándar $35", 12.5),
+           t(520, ly + 52, "Pro → Pro $60 · A medida → A medida (sin islas ni mapa de islas)", 12.5)]
     write("redistribucion.svg", svg(W, H, head + paths + b + leg, "Mapa de redistribución del sitio actual al nuevo"))
 
 
@@ -610,8 +608,8 @@ PAGES = [
         ("cta-final", "«Probar no te cuesta»"), ("footer", "")]),
     ("nosotros", "Nosotros", "/nosotros", "confianza", [
         ("nav", ""), ("hero", "«Aprendimos de la iguana»", {"short": True}),
-        ("mision", "Misión"), ("concepto", "La iguana que se adaptó\n(versión larga)"),
-        ("valores", "Valores\n(hereda «Por qué Galápagos»)"),
+        ("mision", "Misión"), ("concepto", "La iguana que se adaptó\n(hereda «Por qué la iguana»)"),
+        ("valores", "Valores\ncómo trabajamos con el cliente"),
         ("equipo", "Gustavo Campana · Doménica Escobar\nEsteban Andrade"),
         ("cta-final", ""), ("footer", "")]),
     ("faq", "FAQ", "/faq", "resolver objeciones", [

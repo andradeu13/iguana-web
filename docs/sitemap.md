@@ -1,5 +1,7 @@
 # Sitemap: iguana.ec (rediseño 2026)
 
+> "Sitio actual" = rama `main` (`90070b5`).
+
 > Fase 1 del rediseño: **sitemap → esqueleto → diseño → copy**.
 > Este documento define *qué páginas existen y para qué*. El orden de secciones de cada página está en [`skeleton.md`](skeleton.md) y los mapas visuales en [`maps/`](maps/).
 
@@ -8,8 +10,8 @@
 | Antes | Ahora |
 |---|---|
 | Producto único: asistente de WhatsApp con IA | **Agencia de IA**: varios servicios, el asistente es uno más |
-| Promesa: "Tu negocio, atendiendo solo." | Promesa: **ahorrar tiempo, ordenar procesos y adaptarse** a un mercado que cambia muy rápido |
-| Planes con nombre de isla (Esencial/San Cristóbal…) | Planes genéricos: **Básico · Estándar · Pro · A medida** |
+| Promesa: "Tu negocio no necesita más manos. Necesita evolucionar." (home en `main`) | Se amplía a **ahorrar tiempo, ordenar procesos y adaptarse** a un mercado que cambia muy rápido |
+| Planes Esencial / Crecimiento / Pro / A medida, con mapa de islas | Planes genéricos: **Básico · Estándar · Pro · A medida**, sin islas |
 | Paquetes cerrados | **Soluciones a medida** de cada negocio como mensaje central |
 
 Se mantienen el concepto de marca (la iguana que se adaptó), el tono (tuteo, directo, "sin letras chicas", sin permanencia), el diagnóstico gratis de 15 min y la implementación en unos 11 días.
@@ -83,7 +85,7 @@ Todo termina en **WhatsApp `wa.me/593959420676`** con mensaje prellenado según 
 |---|---|---|
 | `/index.html` | `/` | URLs sin extensión (Cloudflare ya lo hace) |
 | `/precios.html`, `/nosotros.html`, `/es-para-ti.html` | sin `.html` | Ídem; además los enlaces internos deben usar la ruta limpia |
-| `/#soluciones` (ancla de la home actual) | `/soluciones` | La sección pasa a página propia |
+| `/#soluciones` (ancla de "Lo que hacemos" en la home actual) | `/servicios` | La sección pasa a página propia |
 
 ## Fase 2 (fuera del MVP)
 

@@ -52,7 +52,7 @@
 </g>
 <line x1="766" y1="481" x2="784" y2="481" stroke="#b8b8b8"/>
 <text x="790" y="485" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1a1a1a" text-anchor="start">La iguana que se adaptó</text>
-<text x="790" y="502" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#6b6b6b" text-anchor="start">(versión larga)</text>
+<text x="790" y="502" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#6b6b6b" text-anchor="start">(hereda «Por qué la iguana»)</text>
 <g id="blk-valores">
 <rect x="40" y="686" width="720" height="160" rx="0" fill="#fff" stroke="#b8b8b8" stroke-width="1"/>
 <rect x="64.0" y="710" width="126.4" height="110" rx="8" fill="#fff" stroke="#b8b8b8" stroke-width="1"/>
@@ -80,7 +80,7 @@
 </g>
 <line x1="766" y1="701" x2="784" y2="701" stroke="#b8b8b8"/>
 <text x="790" y="705" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#1a1a1a" text-anchor="start">Valores</text>
-<text x="790" y="722" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#6b6b6b" text-anchor="start">(hereda «Por qué Galápagos»)</text>
+<text x="790" y="722" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#6b6b6b" text-anchor="start">cómo trabajamos con el cliente</text>
 <g id="blk-equipo">
 <rect x="40" y="846" width="720" height="190" rx="0" fill="#fff" stroke="#b8b8b8" stroke-width="1"/>
 <circle cx="170.66666666666669" cy="914" r="42" fill="#efefef" stroke="#b8b8b8"/>
