@@ -97,6 +97,32 @@
     </div>
   </section>
 
+  <!-- CIFRAS -->
+  <section class="wrap" id="cifras" aria-labelledby="cifras-t">
+    <div class="cifras" style="background-image:url('img/fotos/cifras.webp')">
+      <div class="cifras__head">
+        <h2 id="cifras-t">El mercado ya se está moviendo. La pregunta es cuándo te mueves tú.</h2>
+      </div>
+      <div class="cifras__grid">
+        <div class="cifra" style="--lift:0">
+          <b data-count="21" data-suffix=" %">21 %</b>
+          <span>de los negocios ecuatorianos ya usa inteligencia artificial</span>
+          <small>GEM Ecuador · Brazilian Journal of Business, 2026</small>
+        </div>
+        <div class="cifra" style="--lift:1">
+          <b data-count="54" data-suffix=" %">54 %</b>
+          <span>de las pymes de las Américas ya trabaja con IA</span>
+          <small>Microsoft, 2025</small>
+        </div>
+        <div class="cifra" style="--lift:2">
+          <b data-count="83.7" data-suffix=" %" data-decimals="1">83,7 %</b>
+          <span>de los ecuatorianos está en internet todos los días</span>
+          <small>DataReportal, 2025</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- 4 · SERVICIOS -->
   <section class="wrap servicios" id="servicios" aria-labelledby="serv-t">
     <div class="sec-head">
@@ -127,6 +153,15 @@
           <span class="ig-arrow-btn ig-arrow-btn--sm serv-card__go" aria-hidden="true"><svg class="ig-icon" aria-hidden="true"><use href="#i-arrow-ur"/></svg></span>
         </a>
       </div>
+      <div class="serv-nav" aria-label="Recorrer servicios">
+        <button class="serv-nav__btn" type="button" data-dir="-1" aria-label="Servicio anterior"><svg class="ig-icon ig-icon--sm" aria-hidden="true"><use href="#i-chevron-left"/></svg></button>
+        <div class="serv-dots">
+          <button type="button" aria-label="Ver Agentes IA" aria-current="true"></button>
+          <button type="button" aria-label="Ver Automatización"></button>
+          <button type="button" aria-label="Ver Consultoría"></button>
+        </div>
+        <button class="serv-nav__btn" type="button" data-dir="1" aria-label="Servicio siguiente"><svg class="ig-icon ig-icon--sm" aria-hidden="true"><use href="#i-chevron-right"/></svg></button>
+      </div>
       <a class="serv-medida" href="servicios.html#a-medida">¿Tu negocio necesita algo distinto? Lo construimos a medida <svg class="ig-icon ig-icon--sm" aria-hidden="true"><use href="#i-arrow-ur"/></svg></a>
     </div>
   </section>
@@ -144,32 +179,6 @@
       <img class="gal__tall" src="img/fotos/galeria-alta.webp" alt="Dueño de una cafetería atiende a una clienta que paga con el celular" loading="lazy">
       <img src="img/fotos/cta.webp" alt="Fachada de una tienda de barrio con vitrina iluminada" loading="lazy">
       <img src="img/fotos/tienda.webp" alt="Dueño de un local revisa un pedido con un cliente" loading="lazy">
-    </div>
-  </section>
-
-  <!-- MANIFIESTO + CIFRAS (tipografía gigante) -->
-  <section class="wrap" id="cifras" aria-labelledby="mani-t">
-    <div class="mani">
-      <h2 class="ig-sr-only" id="mani-t">El mercado ya se está moviendo</h2>
-      <div class="mani__top">
-        <div class="mani__col">
-          <b data-count="21" data-suffix=" %">21 %</b>
-          <h3>Hoy</h3>
-          <p>de los negocios ecuatorianos ya usa inteligencia artificial.</p>
-          <small>GEM Ecuador · Brazilian Journal of Business, 2026</small>
-        </div>
-        <div class="mani__col mani__col--r">
-          <b data-count="54" data-suffix=" %">54 %</b>
-          <h3>En la región</h3>
-          <p>de las pymes de las Américas ya trabaja con IA.</p>
-          <small>Microsoft, 2025</small>
-        </div>
-      </div>
-      <div class="mani__stage">
-        <p class="mani__word" aria-hidden="true">ADÁPTATE</p>
-        <img class="mani__obj" src="img/fotos/mani.webp" alt="Laptop con un chat de atención al cliente abierto" loading="lazy">
-      </div>
-      <p class="mani__foot"><b data-count="83.7" data-suffix=" %" data-decimals="1">83,7 %</b> de los ecuatorianos está en internet todos los días <small>(DataReportal, 2025)</small>. El mercado ya se movió: la pregunta es cuándo te mueves tú.</p>
     </div>
   </section>
 
@@ -307,39 +316,27 @@
     <form class="calc" id="calc" novalidate>
       <div class="calc__inputs">
         <h2 id="calc-t">¿Cuánto tiempo te devuelve la IA?</h2>
-        <p class="calc__lead">Elige cuántas tareas repetitivas haces al día y cuánto te toma cada una.</p>
-        <label class="field">
-          <span class="field__label">Tu negocio</span>
-          <select id="c-negocio" class="ig-select">
-            <option>Consultorio o clínica</option>
-            <option>Barbería o salón</option>
-            <option>Restaurante o cafetería</option>
-            <option>Tienda o comercio</option>
-            <option>Taller o servicio técnico</option>
-            <option>Otro</option>
-          </select>
-        </label>
-        <fieldset class="seg" id="c-tareas">
-          <legend class="field__label">Tareas repetitivas al día</legend>
-          <div class="seg__opts">
-            <label><input type="radio" name="tareas" value="1"><span>1</span></label>
-            <label><input type="radio" name="tareas" value="2"><span>2</span></label>
-            <label><input type="radio" name="tareas" value="3" checked><span>3</span></label>
-            <label><input type="radio" name="tareas" value="4"><span>4</span></label>
-            <label><input type="radio" name="tareas" value="5"><span>5+</span></label>
+        <p class="calc__lead">Arrastra los controles: cuántas tareas repetitivas haces al día y cuánto te toma cada una.</p>
+        <div class="rng">
+          <div class="rng__head">
+            <label class="field__label" for="c-tareas">Tareas repetitivas al día</label>
+            <output class="rng__val" id="o-tareas" for="c-tareas">3 tareas</output>
           </div>
-        </fieldset>
-        <fieldset class="seg seg--6" id="c-tiempo">
-          <legend class="field__label">Tiempo por tarea</legend>
-          <div class="seg__opts">
-            <label><input type="radio" name="tiempo" value="5"><span>5 min</span></label>
-            <label><input type="radio" name="tiempo" value="15"><span>15 min</span></label>
-            <label><input type="radio" name="tiempo" value="30" checked><span>30 min</span></label>
-            <label><input type="radio" name="tiempo" value="60"><span>1 h</span></label>
-            <label><input type="radio" name="tiempo" value="90"><span>1 h 30</span></label>
-            <label><input type="radio" name="tiempo" value="120"><span>2 h+</span></label>
+          <input class="rng__input" id="c-tareas" type="range" min="1" max="5" step="1" value="3">
+          <div class="rng__ticks" aria-hidden="true" style="--n:5">
+            <span style="--i:0">1</span><span style="--i:1">2</span><span style="--i:2">3</span><span style="--i:3">4</span><span style="--i:4">5+</span>
           </div>
-        </fieldset>
+        </div>
+        <div class="rng">
+          <div class="rng__head">
+            <label class="field__label" for="c-tiempo">Tiempo por tarea</label>
+            <output class="rng__val" id="o-tiempo" for="c-tiempo">30 min</output>
+          </div>
+          <input class="rng__input" id="c-tiempo" type="range" min="0" max="5" step="1" value="2">
+          <div class="rng__ticks" aria-hidden="true" style="--n:6">
+            <span style="--i:0">5 min</span><span style="--i:1">15 min</span><span style="--i:2">30 min</span><span style="--i:3">1 h</span><span style="--i:4">1 h 30</span><span style="--i:5">2 h+</span>
+          </div>
+        </div>
         <label class="ig-check">
           <input id="c-sedes" type="checkbox">
           <span>Tengo varias sedes o necesito integrar mi sistema</span>

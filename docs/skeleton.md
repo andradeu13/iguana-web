@@ -23,12 +23,13 @@
 | `hero` | Titular, párrafo, 2 CTAs, tarjeta-foto con chip | Inicio |
 | `hero-corto` | Titular centrado + párrafo (+ píldoras de ancla en Servicios) | Servicios, Precios, Nosotros |
 | `cifras` | 3 cifras gigantes con leyenda y fuente | Inicio |
+| `adaptate` | Palabra gigante "ADÁPTATE" con una foto delante (referencia Influence Pro). CSS listo en `v2/css/adaptate.css` | Nosotros (`#concepto`) |
 | `servicios-foto` | Foto a sangre, titular, 3 tarjetas con "Descubrir" → `/servicios#…` | Inicio |
 | `proceso` | 4 pasos: diagnóstico → propuesta → implementación (~11 días) → acompañamiento. Absorbe "Tu parte" y "Tu primer año" | **Solo Inicio** |
 | `herramientas` | Carrusel de logos: WhatsApp, Instagram, Facebook, Meta, n8n, Make, OpenAI, Claude, Gemini, Google, Notion | Inicio |
 | `beneficios` | Lista expandible: hover muestra foto, clic abre detalle | Inicio |
 | `cta-simple` | Tarjeta blanca: "¿No sabes por dónde empezar?" + botón | Inicio |
-| `calculadora` | Tipo de negocio · tareas al día (1-5+) · tiempo por tarea (5 min-2 h+) → horas/mes, plan, WhatsApp | Precios |
+| `calculadora` | Deslizadores: tareas al día (1-5+) · tiempo por tarea (5 min-2 h+) → horas/mes, plan, WhatsApp | Inicio |
 | `planes` | Básico $15 · Estándar $35 (recomendado) · Pro $60 · A medida. En el Inicio, resumen; completo en Precios | Inicio (resumen), Precios |
 | `comparativa` | Tabla de características × 4 planes | Precios |
 | `condiciones` | IVA incluido · configuración incluida · sin permanencia · listo en ~11 días | Precios |
@@ -46,12 +47,12 @@
 1. `nav-flotante`
 2. `hero` (titular + 2 CTAs; sin chips ni widget)
 3. `herramientas`
-4. `servicios-foto`
-5. `galeria`: texto + 3 fotos en grid (referencia Uthao)
-6. `cifras`: tipografía gigante "ADÁPTATE" con foto delante y los datos de mercado (referencia Influence Pro)
+4. `cifras`: 3 datos de mercado sobre foto oscura de ciudad, con conectores punteados
+5. `servicios-foto` (carrusel en móvil, con puntos y flechas)
+6. `galeria`: texto + 3 fotos en grid (referencia Uthao)
 7. `beneficios`
 8. `proceso` (tiempos en negrita, sin chips)
-9. `calculadora` (1 a 5+ tareas, 5 min a 2 h+)
+9. `calculadora`: deslizadores de 1 a 5+ tareas y de 5 min a 2 h+
 10. `planes` (resumen)
 11. `faq`
 12. `cta-final`: palabra lima gigante "adáptate" con rayos y una sola frase
@@ -93,7 +94,7 @@ Fondo blanco suave (`#FAFAF8`). Sin chips. El verde solo como acento; paneles os
 ### `/nosotros`
 1. `nav-flotante`
 2. `hero-corto` ("Aprendimos de la iguana")
-3. `concepto` (largo)
+3. `concepto` (largo), con el bloque `adaptate` como apertura
 4. `mision`
 5. `equipo`
 6. `cta-final`
@@ -130,11 +131,11 @@ Los rangos tienen que ser realistas. Nadie hace 200 tareas al día, y una tarea 
 
 | Entrada | Control | Valores |
 |---|---|---|
-| Tipo de negocio | Select | Consultorio, barbería o salón, restaurante, tienda, taller, otro |
-| Tareas repetitivas al día | Selector de 1 a 5 | 1 · 2 · 3 · 4 · **5+** |
-| Tiempo por tarea | Selector | 5 min · 15 min · 30 min · 1 h · 1 h 30 · **2 h+** |
+| Tareas repetitivas al día | Deslizador de 1 a 5 | 1 · 2 · 3 · 4 · **5+** |
+| Tiempo por tarea | Deslizador de 6 pasos | 5 min · 15 min · 30 min · 1 h · 1 h 30 · **2 h+** |
 | Varias sedes o integración | Casilla | Recomienda "A medida" |
 
 - **Fórmula:** `horas/mes = tareas × horas por tarea × 22 días × 70 %` (lo automatizable). Ejemplo: 3 tareas de 30 min → 23 h al mes.
 - **Plan recomendado:** < 10 h → Básico; 10-40 h → Estándar; > 40 h → Pro; casilla marcada → A medida.
 - **Resultado:** horas al mes, equivalente en días de trabajo, plan y botón de WhatsApp con el resumen.
+- Sin selector de tipo de negocio: el mensaje de WhatsApp solo lleva horas, tareas, tiempo y plan.

@@ -1,4 +1,4 @@
-/* iguana.ec v2 · Inicio: nav, carrusel de logos, cifras, lista expandible y calculadora */
+/* iguana.ec v2 · Inicio: nav, carrusel de logos, cifras, carrusel de servicios, lista expandible y calculadora */
 (function () {
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -102,27 +102,93 @@
     });
   });
 
-  /* ---------- Calculadora: 1 a 5+ tareas al día, de 5 min a 2 h+ cada una ---------- */
+  /* ---------- Servicios: carrusel en móvil (puntos, flechas y arrastre con mouse) ---------- */
+  var track = document.querySelector('.serv-cards');
+  if (track) {
+    var cards = track.querySelectorAll('.serv-card');
+    var dots = document.querySelectorAll('.serv-dots button');
+    var arrows = document.querySelectorAll('.serv-nav__btn');
+    var current = function () {
+      var best = 0, min = Infinity, left = track.getBoundingClientRect().left;
+      cards.forEach(function (c, i) { var d = Math.abs(c.getBoundingClientRect().left - left - 16); if (d < min) { min = d; best = i; } });
+      return best;
+    };
+    var go = function (i) {
+      i = Math.max(0, Math.min(cards.length - 1, i));
+      var dx = cards[i].getBoundingClientRect().left - track.getBoundingClientRect().left - 16;
+      track.scrollTo({ left: track.scrollLeft + dx, behavior: reduce ? 'auto' : 'smooth' });
+    };
+    var sync = function () {
+      var i = current();
+      dots.forEach(function (d, j) { d.setAttribute('aria-current', j === i ? 'true' : 'false'); });
+      arrows[0].disabled = i === 0;
+      arrows[1].disabled = i === cards.length - 1;
+    };
+    dots.forEach(function (d, j) { d.addEventListener('click', function () { go(j); }); });
+    arrows.forEach(function (b) { b.addEventListener('click', function () { go(current() + +b.dataset.dir); }); });
+    var raf;
+    track.addEventListener('scroll', function () { cancelAnimationFrame(raf); raf = requestAnimationFrame(sync); }, { passive: true });
+    sync();
+
+    // Arrastre con mouse (en táctil el desplazamiento es nativo)
+    var startX, startLeft, moved = false;
+    track.addEventListener('pointerdown', function (e) {
+      if (e.pointerType !== 'mouse' || track.scrollWidth <= track.clientWidth) return;
+      startX = e.clientX; startLeft = track.scrollLeft; moved = false;
+      var move = function (ev) {
+        var dx = ev.clientX - startX;
+        if (!moved && Math.abs(dx) > 5) { moved = true; track.classList.add('is-drag'); }
+        if (moved) track.scrollLeft = startLeft - dx;
+      };
+      var up = function (ev) {
+        window.removeEventListener('pointermove', move);
+        window.removeEventListener('pointerup', up);
+        if (!moved) return;
+        var i = current(), dx = ev.clientX - startX;
+        track.classList.remove('is-drag');
+        go(Math.abs(dx) > 40 && i === current() ? i + (dx < 0 ? 1 : -1) : i);
+      };
+      window.addEventListener('pointermove', move);
+      window.addEventListener('pointerup', up);
+    });
+    // Que soltar después de arrastrar no abra el enlace de la tarjeta
+    track.addEventListener('click', function (e) { if (moved) { e.preventDefault(); moved = false; } }, true);
+  }
+
+  /* ---------- Calculadora: deslizadores de 1 a 5+ tareas al día y de 5 min a 2 h+ cada una ---------- */
   var form = document.getElementById('calc');
   if (form) {
     var $ = function (id) { return document.getElementById(id); };
-    var picked = function (name) { return form.querySelector('input[name="' + name + '"]:checked'); };
-    var label = function (input) { return input.nextElementSibling.textContent; };
+    var MIN = [5, 15, 30, 60, 90, 120];
+    var MIN_LABEL = ['5 min', '15 min', '30 min', '1 h', '1 h 30', '2 h+'];
     var plan = function (h, multi) {
       if (multi) return { name: 'A medida', label: 'A medida · hablemos' };
       if (h < 10) return { name: 'Básico', label: 'Básico · $15/mes' };
       if (h <= 40) return { name: 'Estándar', label: 'Estándar · $35/mes' };
       return { name: 'Pro', label: 'Pro · $60/mes' };
     };
+    // Relleno de la pista, marca activa y texto que lee el lector de pantalla
+    var paint = function (input, text) {
+      var f = (input.value - input.min) / (input.max - input.min);
+      input.style.setProperty('--f', f);
+      input.setAttribute('aria-valuetext', text);
+      input.parentNode.querySelectorAll('.rng__ticks span').forEach(function (s, i) { s.classList.toggle('is-on', i === input.value - input.min); });
+    };
     var calc = function () {
-      var t = picked('tareas'), m = picked('tiempo');
-      var h = Math.round(+t.value * (+m.value / 60) * 22 * 0.7);
+      var t = +$('c-tareas').value, i = +$('c-tiempo').value;
+      var tLabel = t === 5 ? '5+' : String(t);
+      var tText = tLabel + (t === 1 ? ' tarea' : ' tareas');
+      $('o-tareas').textContent = tText;
+      $('o-tiempo').textContent = MIN_LABEL[i];
+      paint($('c-tareas'), tText);
+      paint($('c-tiempo'), MIN_LABEL[i] + ' por tarea');
+      var h = Math.round(t * (MIN[i] / 60) * 22 * 0.7);
       var p = plan(h, $('c-sedes').checked);
       $('r-horas').textContent = h;
       $('r-dias').textContent = Math.max(1, Math.round(h / 8));
       $('r-plan').textContent = p.label;
-      var msg = 'Hola Iguana, calculé ' + h + ' h al mes para mi ' + $('c-negocio').value.toLowerCase() +
-        ' (' + label(t) + ' tareas al día de ' + label(m) + '). Me recomendaron el plan ' + p.name + '.';
+      var msg = 'Hola Iguana, calculé ' + h + ' h al mes (' + tText + ' al día de ' + MIN_LABEL[i] +
+        '). Me recomendaron el plan ' + p.name + '.';
       $('r-wa').href = 'https://wa.me/593959420676?text=' + encodeURIComponent(msg);
     };
     form.addEventListener('input', calc);

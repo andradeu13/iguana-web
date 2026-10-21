@@ -19,7 +19,7 @@ Se mantienen:
 
 ```
 iguana.ec
-├── /            Inicio      hero · herramientas · servicios sobre foto · galería · cifras tipográficas · beneficios · proceso · calculadora · planes · FAQ · CTA
+├── /            Inicio      hero · herramientas · cifras · servicios sobre foto · galería · beneficios · proceso · calculadora · planes · FAQ · CTA
 ├── /servicios   Servicios   #agentes-ia · #automatizacion · #consultoria · #a-medida
 ├── /precios     Precios     planes · comparativa · condiciones · FAQ de precios
 └── /nosotros    Nosotros    concepto · misión · equipo
@@ -37,7 +37,7 @@ Footer: privacidad · términos (texto simple) · redes · WhatsApp
 
 - **Cada bloque vive completo en una sola página.** En las demás aparece, como mucho, un enlace.
 - **El proceso de 4 pasos (`#proceso`) solo está en el Inicio.** Servicios, Precios y Nosotros no repiten etapas; cada servicio muestra qué incluye y un ejemplo.
-- **Los tipos de negocio** (lo que antes era "Soluciones") se usan como selector de la calculadora y como ejemplos dentro de cada servicio. No tienen página propia.
+- **Los tipos de negocio** (lo que antes era "Soluciones") aparecen como ejemplos dentro de cada servicio. No tienen página propia.
 - **La FAQ general va en el Inicio** y la de pagos va en Precios. Las preguntas no se duplican.
 
 ## Navegación
@@ -55,7 +55,7 @@ Todos terminan en `wa.me/593959420676` con un mensaje prellenado según de dónd
 | Header / Inicio / Nosotros | "Hola Iguana, quiero mi diagnóstico gratis" |
 | Servicio | "Hola Iguana, me interesa {servicio}" |
 | Plan | "Hola Iguana, me interesa el plan {Básico/Estándar/Pro}" |
-| Calculadora | "Hola Iguana, calculé {N} h/mes para mi {negocio}; me recomendaron {plan}" |
+| Calculadora | "Hola Iguana, calculé {N} h al mes ({tareas} al día de {tiempo}). Me recomendaron el plan {plan}" |
 
 ## Redirecciones
 
