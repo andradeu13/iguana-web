@@ -19,25 +19,25 @@ Se mantienen:
 
 ```
 iguana.ec
-├── /            Inicio      hero · cifras · servicios sobre foto · proceso · calculadora · planes · concepto · FAQ · CTA
+├── /            Inicio      hero · herramientas · cifras · servicios sobre foto · beneficios · proceso · CTA simple · planes · FAQ · CTA
 ├── /servicios   Servicios   #agentes-ia · #automatizacion · #consultoria · #a-medida
-├── /precios     Precios     planes · comparativa · condiciones · FAQ de precios
+├── /precios     Precios     planes · calculadora · comparativa · condiciones · FAQ de precios
 └── /nosotros    Nosotros    concepto · misión · equipo
 Footer: privacidad · términos (texto simple) · redes · WhatsApp
 ```
 
 | URL | Objetivo | CTA primario |
 |---|---|---|
-| `/` | Entender en 10 s qué hace Iguana, ver cuánto tiempo ahorraría y pedir el diagnóstico | Diagnóstico gratis (WhatsApp) |
+| `/` | Entender en 10 s qué hace Iguana y pedir el diagnóstico. Inicio liviano: sin calculadora | Diagnóstico gratis (WhatsApp) |
 | `/servicios` | Elegir servicio; cada uno con su ancla para enlazar desde anuncios y desde el Inicio | WhatsApp prellenado con el servicio |
-| `/precios` | Precio claro: Básico $15 · Estándar $35 (recomendado) · Pro $60 · A medida | WhatsApp prellenado con el plan |
+| `/precios` | Precio claro: Básico $15 · Estándar $35 (recomendado) · Pro $60 · A medida, y calculadora de tiempo que recomienda plan | WhatsApp prellenado con el plan |
 | `/nosotros` | Confianza: quiénes somos y por qué la iguana | Diagnóstico gratis |
 
 ## Regla anti-repetición
 
 - **Cada bloque vive completo en una sola página.** En las demás aparece, como mucho, un enlace.
 - **El proceso de 4 pasos (`#proceso`) solo está en el Inicio.** Servicios, Precios y Nosotros no repiten etapas; cada servicio muestra qué incluye y un ejemplo.
-- **Los tipos de negocio** (lo que antes era "Soluciones") se usan como selector de la calculadora y como ejemplos dentro de cada servicio. No tienen página propia.
+- **Los tipos de negocio** (lo que antes era "Soluciones") se usan como selector de la calculadora (en Precios) y como ejemplos dentro de cada servicio. No tienen página propia.
 - **La FAQ general va en el Inicio** y la de pagos va en Precios. Las preguntas no se duplican.
 
 ## Navegación
@@ -61,7 +61,7 @@ Todos terminan en `wa.me/593959420676` con un mensaje prellenado según de dónd
 
 | Ruta | Destino |
 |---|---|
-| `/es-para-ti` | `/#calculadora` (la calculadora reemplaza al quiz) |
+| `/es-para-ti` | `/precios#calculadora` (la calculadora reemplaza al quiz) |
 | `/index.html`, `/precios.html`, `/nosotros.html`, `/es-para-ti.html` | Rutas sin `.html` |
 
 No se crean `/faq`, `/contacto`, `/soluciones`, `/como-trabajamos` ni las subpáginas `/servicios/*`.
@@ -75,5 +75,4 @@ No se crean `/faq`, `/contacto`, `/soluciones`, `/como-trabajamos` ni las subpá
 ## Decisiones abiertas
 
 - ¿Qué incluye cada plan ahora que no es solo el asistente? Propuesta: los planes cubren Agentes IA y automatizaciones simples; Consultoría y A medida van por cotización.
-- Cifras del Inicio: datos de mercado (21 % · 54 % · 83,7 %) o datos propios (15 min · ~11 días · desde $15).
-- Fórmula de la calculadora y umbrales para recomendar cada plan.
+- Umbrales finales de la calculadora para recomendar cada plan (propuesta en `skeleton.md`).

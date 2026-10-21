@@ -1,6 +1,5 @@
-/* iguana.ec v2 · Inicio: nav, carrusel de logos, cifras, lista expandible, calculadora */
+/* iguana.ec v2 · Inicio: nav, carrusel de logos, cifras y lista expandible */
 (function () {
-  var WA = 'https://wa.me/593959420676?text=';
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   /* ---------- Nav: sólida al hacer scroll, menú de servicios y hoja móvil ---------- */
@@ -101,46 +100,5 @@
       if (li.classList.contains('is-open')) { float.classList.remove('is-on'); return; }
       place(e);
     });
-  });
-
-  /* ---------- Calculadora ---------- */
-  var $ = function (id) { return document.getElementById(id); };
-  var negocio = $('c-negocio'), tareas = $('c-tareas'), mins = $('c-min'), sedes = $('c-sedes');
-
-  function plan(h, multi) {
-    if (multi) return { name: 'A medida', label: 'A medida · hablemos' };
-    if (h < 15) return { name: 'Básico', label: 'Básico · $15/mes' };
-    if (h <= 50) return { name: 'Estándar', label: 'Estándar · $35/mes' };
-    return { name: 'Pro', label: 'Pro · $60/mes' };
-  }
-  function fill(r) {
-    var p = (r.value - r.min) / (r.max - r.min) * 100;
-    r.style.setProperty('--fill', p + '%');
-  }
-  function calc() {
-    var t = +tareas.value, m = +mins.value;
-    var h = Math.round(t * m * 22 / 60 * 0.7);
-    var p = plan(h, sedes.checked);
-    $('o-tareas').textContent = t;
-    $('o-min').textContent = m;
-    $('r-horas').textContent = h;
-    $('r-dias').textContent = Math.max(1, Math.round(h / 8));
-    $('r-plan').textContent = p.label;
-    fill(tareas); fill(mins);
-    var msg = 'Hola Iguana, calculé ' + h + ' h al mes para mi ' + negocio.value.toLowerCase() +
-      ' (' + t + ' tareas al día de ' + m + ' min). Me recomendaron el plan ' + p.name + '.';
-    $('r-wa').href = WA + encodeURIComponent(msg);
-  }
-  [negocio, tareas, mins, sedes].forEach(function (el) { el.addEventListener('input', calc); });
-  calc();
-
-  /* Mini calculadora del hero: pasa los valores y baja a la calculadora */
-  $('mini-calc').addEventListener('submit', function (e) {
-    e.preventDefault();
-    negocio.value = $('mini-negocio').value;
-    var t = Math.max(5, Math.min(200, Math.round((+$('mini-tareas').value || 40) / 5) * 5));
-    tareas.value = t;
-    calc();
-    $('calculadora').scrollIntoView({ behavior: reduce ? 'auto' : 'smooth' });
   });
 })();

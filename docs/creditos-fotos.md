@@ -20,7 +20,7 @@ La [licencia de Unsplash](https://unsplash.com/license) permite uso comercial gr
 | `b-adaptas.webp` | Beneficio: adaptarse | https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e |
 | `cta.webp` | CTA final | https://images.unsplash.com/photo-1528698827591-e19ccd7bc23d |
 
-Propias de Iguana: `v2/img/iguana-hero.webp` (grabado) y los logos `logo-blanco.webp` y `logo-oscuro.webp`, recoloreados desde `images/logo-iguana.webp`.
+Propios de Iguana: los logos `logo-blanco.webp` y `logo-oscuro.webp`, recoloreados desde `images/logo-iguana.webp`.
 
 Pendiente: reemplazar la foto de cifras (ciudad genérica) por una de Quito o Guayaquil, y las de beneficios por fotos de clientes reales cuando las haya.
 

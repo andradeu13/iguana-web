@@ -7,7 +7,7 @@
 <meta name="claude:viewport-fit-sides" content="cover">
 <meta name="description" content="Agencia de IA en Ecuador: automatizamos lo repetitivo, ordenamos tus procesos y te ayudamos a adaptarte con soluciones a la medida de tu negocio.">
 <meta name="robots" content="noindex">
-<meta name="theme-color" content="#17330B">
+<meta name="theme-color" content="#FAFAF8">
 <link rel="icon" href="../favicon.ico">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -70,45 +70,15 @@
           <a class="btn-cta btn-cta--lg" href="https://wa.me/593959420676?text=Hola%20Iguana%2C%20quiero%20mi%20diagn%C3%B3stico%20gratis" target="_blank" rel="noopener">
             Agenda tu diagnóstico gratis <span class="btn-cta__arrow"><svg class="ig-icon ig-icon--sm" aria-hidden="true"><use href="#i-arrow-ur"/></svg></span>
           </a>
-          <a class="btn-glass" href="#calculadora">Calcula tu ahorro</a>
+          <a class="btn-glass" href="#servicios">Ver servicios</a>
         </div>
       </div>
-
-      <form class="hero__widget glass" id="mini-calc" aria-labelledby="mini-calc-t">
-        <div class="widget__head">
-          <span class="widget__icon"><svg class="ig-icon" aria-hidden="true"><use href="#i-clock"/></svg></span>
-          <div>
-            <h2 id="mini-calc-t">¿Cuánto tiempo recuperas?</h2>
-            <p>Calcúlalo en 10 segundos</p>
-          </div>
-        </div>
-        <label class="glass-field">
-          <span>Tu negocio</span>
-          <select id="mini-negocio">
-            <option>Consultorio o clínica</option>
-            <option>Barbería o salón</option>
-            <option>Restaurante o cafetería</option>
-            <option>Tienda o comercio</option>
-            <option>Taller o servicio técnico</option>
-            <option>Otro</option>
-          </select>
-        </label>
-        <label class="glass-field">
-          <span>Mensajes o tareas al día</span>
-          <input id="mini-tareas" type="number" inputmode="numeric" min="1" max="500" value="40">
-        </label>
-        <button class="btn-cta btn-cta--block" type="submit">Calcular <span class="btn-cta__arrow"><svg class="ig-icon ig-icon--sm" aria-hidden="true"><use href="#i-arrow-ur"/></svg></span></button>
-      </form>
 
       <div class="hero__team glass-chip glass-chip--lg">
         <span class="avatars" aria-hidden="true"><i>GC</i><i>DE</i><i>EA</i></span>
         <span><b>Diagnóstico gratis de 15 min</b><small>con el equipo fundador</small></span>
       </div>
 
-      <div class="hero__stats">
-        <div class="glass stat-glass"><b>~11 días</b><span>de la idea a funcionar</span></div>
-        <div class="glass stat-glass"><b>0</b><span>contratos de permanencia</span></div>
-      </div>
     </div>
   </section>
 
@@ -218,7 +188,7 @@
             <img src="img/fotos/b-tiempo.webp" alt="Persona revisando la hora en su reloj" loading="lazy">
             <div>
               <p>La mayoría de dueños de negocio pasa entre 2 y 4 horas al día respondiendo lo mismo, pasando datos de un lado a otro o recordando citas. Eso lo hace la IA. Tú te quedas con lo que de verdad necesita tu criterio.</p>
-              <a class="ig-link" href="#calculadora">Calcula cuántas horas recuperas →</a>
+              <a class="ig-link" href="https://wa.me/593959420676?text=Hola%20Iguana%2C%20quiero%20recuperar%20horas%20en%20mi%20negocio" target="_blank" rel="noopener">Cuéntanos tu caso →</a>
             </div>
           </div>
         </div>
@@ -329,54 +299,16 @@
     </ol>
   </section>
 
-  <!-- 7 · CALCULADORA -->
-  <section class="wrap calc-wrap" id="calculadora" aria-labelledby="calc-t">
-    <div class="calc">
-      <div class="calc__blob" aria-hidden="true"></div>
-      <div class="sec-head">
-        <span class="eyebrow-chip">Calculadora</span>
-        <h2 id="calc-t">¿Cuánto tiempo te devuelve la IA?</h2>
+  <!-- 7 · CTA SIMPLE -->
+  <section class="wrap" id="cta-simple">
+    <div class="cta-band">
+      <div>
+        <h2>¿No sabes por dónde empezar?</h2>
+        <p>En 15 minutos vemos dónde se te va el tiempo y qué conviene automatizar primero.</p>
       </div>
-      <form class="calc__card glass glass--light" id="calc" novalidate>
-        <div class="calc__inputs">
-          <label class="field">
-            <span class="field__label">Tu negocio</span>
-            <select id="c-negocio" class="ig-select">
-              <option>Consultorio o clínica</option>
-              <option>Barbería o salón</option>
-              <option>Restaurante o cafetería</option>
-              <option>Tienda o comercio</option>
-              <option>Taller o servicio técnico</option>
-              <option>Otro</option>
-            </select>
-          </label>
-          <label class="field">
-            <span class="field__label">Mensajes o tareas repetidas al día <output id="o-tareas" for="c-tareas">40</output></span>
-            <input id="c-tareas" type="range" min="5" max="200" step="5" value="40">
-          </label>
-          <label class="field">
-            <span class="field__label">Minutos que te toma cada una <output id="o-min" for="c-min">3</output></span>
-            <input id="c-min" type="range" min="1" max="15" step="1" value="3">
-          </label>
-          <label class="ig-check">
-            <input id="c-sedes" type="checkbox">
-            <span>Tengo varias sedes o necesito integrar mi sistema</span>
-          </label>
-          <p class="calc__formula">Estimación: tareas × minutos × 22 días ÷ 60 × 70 % que se puede automatizar.</p>
-        </div>
-        <div class="calc__result" aria-live="polite">
-          <span class="calc__label">Horas al mes que recuperas</span>
-          <b class="calc__hours"><span id="r-horas">31</span> h</b>
-          <span class="calc__days">≈ <span id="r-dias">4</span> días de trabajo</span>
-          <div class="calc__plan">
-            <span>Plan recomendado</span>
-            <b id="r-plan">Estándar · $35/mes</b>
-          </div>
-          <a class="btn-cta btn-cta--block" id="r-wa" href="#" target="_blank" rel="noopener">
-            Hablar por WhatsApp <span class="btn-cta__arrow"><svg class="ig-icon ig-icon--sm" aria-hidden="true"><use href="#i-whatsapp"/></svg></span>
-          </a>
-        </div>
-      </form>
+      <a class="btn-cta" href="https://wa.me/593959420676?text=Hola%20Iguana%2C%20quiero%20mi%20diagn%C3%B3stico%20gratis" target="_blank" rel="noopener">
+        Agenda tu diagnóstico gratis <span class="btn-cta__arrow"><svg class="ig-icon ig-icon--sm" aria-hidden="true"><use href="#i-arrow-ur"/></svg></span>
+      </a>
     </div>
   </section>
 
@@ -412,19 +344,6 @@
         <ul><li>Varias sedes</li><li>Integraciones con tu sistema</li><li>Flujos propios</li></ul>
         <a class="plan__btn" href="https://wa.me/593959420676?text=Hola%20Iguana%2C%20quiero%20algo%20a%20medida" target="_blank" rel="noopener">Cotizar</a>
       </article>
-    </div>
-  </section>
-
-  <!-- 9 · CONCEPTO -->
-  <section class="wrap concepto" id="concepto" aria-labelledby="conc-t">
-    <div class="concepto__art ig-spark">
-      <img src="img/iguana-hero.webp" alt="Grabado de una iguana marina sobre rocas volcánicas" width="560" height="585">
-    </div>
-    <div class="concepto__copy">
-      <span class="eyebrow-chip">Por qué la iguana</span>
-      <h2 id="conc-t">Todas las iguanas saben nadar. Solo una se metió al mar a buscar comida.</h2>
-      <p>La iguana marina de Galápagos no dejó de ser iguana: aprendió a moverse en un mundo nuevo. Eso hacemos con los negocios ecuatorianos. Los llevamos a lo digital sin cambiar quiénes son.</p>
-      <a class="ig-link" href="nosotros.html">Conoce nuestra historia →</a>
     </div>
   </section>
 
@@ -489,7 +408,6 @@
       <h3>Iguana</h3>
       <a href="nosotros.html">Nosotros</a>
       <a href="precios.html">Precios</a>
-      <a href="#calculadora">Calculadora</a>
       <a href="#faq">Preguntas frecuentes</a>
     </div>
     <div>

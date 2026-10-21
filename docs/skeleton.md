@@ -25,46 +25,51 @@
 | `cifras` | 3 cifras gigantes con leyenda y fuente | Inicio |
 | `servicios-foto` | Foto a sangre, titular, 3 tarjetas con "Descubrir" → `/servicios#…` | Inicio |
 | `proceso` | 4 pasos: diagnóstico → propuesta → implementación (~11 días) → acompañamiento. Absorbe "Tu parte" y "Tu primer año" | **Solo Inicio** |
-| `calculadora` | Tipo de negocio · tareas al día · minutos por tarea → horas/mes, plan recomendado, WhatsApp | Inicio |
+| `herramientas` | Carrusel de logos: WhatsApp, Instagram, Facebook, Meta, n8n, Make, OpenAI, Claude, Gemini, Google, Notion | Inicio |
+| `beneficios` | Lista expandible: hover muestra foto, clic abre detalle | Inicio |
+| `cta-simple` | Tarjeta blanca: "¿No sabes por dónde empezar?" + botón | Inicio |
+| `calculadora` | Tipo de negocio · tareas al día (1-5+) · tiempo por tarea (5 min-2 h+) → horas/mes, plan, WhatsApp | Precios |
 | `planes` | Básico $15 · Estándar $35 (recomendado) · Pro $60 · A medida. En el Inicio, resumen; completo en Precios | Inicio (resumen), Precios |
 | `comparativa` | Tabla de características × 4 planes | Precios |
 | `condiciones` | IVA incluido · configuración incluida · sin permanencia · listo en ~11 días | Precios |
 | `servicio` | Foto + qué resuelve + qué incluye + un ejemplo + CTA WhatsApp; alterna lados | Servicios (×4) |
-| `concepto` | La iguana que se adaptó (corto en Inicio, largo en Nosotros) | Inicio, Nosotros |
+| `concepto` | La iguana que se adaptó, solo texto (sin ilustración grande) | Nosotros |
 | `mision` | Qué hacemos y para quién | Nosotros |
 | `equipo` | Gustavo Campana (CEO), Doménica Escobar (CTO), Esteban Andrade (CPO) | Nosotros |
 | `faq` | Acordeón: general en Inicio, pagos en Precios | Inicio, Precios |
-| `cta-final` | Banda verde redondeada + botón | Todas |
+| `cta-final` | Foto con panel de vidrio + botón | Todas |
 | `footer` | Columnas, legal, redes, WhatsApp | Todas |
 
 ## Páginas
 
 ### `/` Inicio
 1. `nav-flotante`
-2. `hero`
-3. `cifras`
-4. `servicios-foto`
-5. `proceso`
-6. `calculadora`
-7. `planes` (resumen)
-8. `concepto` (corto)
-9. `faq`
-10. `cta-final`
-11. `footer`
+2. `hero` (titular + 2 CTAs, sin widget)
+3. `herramientas`
+4. `cifras`
+5. `servicios-foto`
+6. `beneficios`
+7. `proceso`
+8. `cta-simple`
+9. `planes` (resumen)
+10. `faq`
+11. `cta-final`
+12. `footer`
 
-**Móvil:**
+Fondo blanco suave (`#FAFAF8`). El verde solo como acento: botones, íconos y puntos.
 
-- se apila en el mismo orden;
-- la tarjeta-foto va debajo del titular;
-- cifras en columna;
-- servicios y planes en carrusel horizontal;
-- proceso en lista vertical.
+**Móvil (390 px):**
+
+- hero sin widget;
+- cifras en 2 columnas (número | texto);
+- servicios en carrusel horizontal;
+- proceso y planes en grid de 2 columnas compacto.
 
 ### `/servicios`
 1. `nav-flotante`
 2. `hero-corto` con 4 píldoras de ancla
 3. `servicio` × 4 (`#agentes-ia`, `#automatizacion`, `#consultoria`, `#a-medida`)
-4. `cta-final` ("¿No sabes cuál?" → `/#calculadora`)
+4. `cta-final` ("¿No sabes cuál?" → `/precios#calculadora`)
 5. `footer`
 
 | Servicio | Contenido que se reaprovecha de `main` |
@@ -99,7 +104,7 @@ El detalle sección por sección está en [`maps/redistribucion.svg`](maps/redis
 
 - Mapa de islas 3D en precios: **eliminado**.
 - Planes Esencial / Crecimiento pasan a llamarse Básico / Estándar.
-- Quiz de `/es-para-ti`: reemplazado por `#calculadora`; la URL redirige.
+- Quiz de `/es-para-ti`: reemplazado por la calculadora de Precios; la URL redirige a `/precios#calculadora`.
 - "Tu parte", "Listo en 11 días" y "Tu primer año" se fusionan en un único `#proceso`.
 - Imágenes de Unsplash: **eliminadas**. Solo fotos propias.
 - Enlaces internos `.html` pasan a rutas limpias.
@@ -115,3 +120,20 @@ El detalle sección por sección está en [`maps/redistribucion.svg`](maps/redis
 | Fotos del equipo | **Falta** | `equipo` |
 | Forma orgánica de marca | **Falta** | Fondo del hero; se define en diseño |
 | OG image | Rehacer | Con el nuevo mensaje |
+
+## Calculadora (replanteada, va en `/precios#calculadora`)
+
+En el Inicio no va: ahí solo hay un CTA simple. En Precios ayuda a elegir plan.
+
+Los rangos tienen que ser realistas. Nadie hace 200 tareas al día, y una tarea repetitiva puede tomar más de 15 minutos.
+
+| Entrada | Control | Valores |
+|---|---|---|
+| Tipo de negocio | Select | Consultorio, barbería o salón, restaurante, tienda, taller, otro |
+| Tareas repetitivas al día | Selector de 1 a 5 | 1 · 2 · 3 · 4 · **5+** |
+| Tiempo por tarea | Selector | 5 min · 15 min · 30 min · 1 h · 1 h 30 · **2 h+** |
+| Varias sedes o integración | Casilla | Recomienda "A medida" |
+
+- **Fórmula:** `horas/mes = tareas × horas por tarea × 22 días × 70 %` (lo automatizable). Ejemplo: 3 tareas de 30 min → 23 h al mes.
+- **Plan recomendado:** < 10 h → Básico; 10-40 h → Estándar; > 40 h → Pro; casilla marcada → A medida.
+- **Resultado:** horas al mes, equivalente en días de trabajo, plan y botón de WhatsApp con el resumen.
