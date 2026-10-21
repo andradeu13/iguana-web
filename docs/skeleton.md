@@ -100,6 +100,17 @@ Fondo blanco suave (`#FAFAF8`). Sin chips. El verde solo como acento; paneles os
 6. `cta-final`
 7. `footer`
 
+## Estado de la implementación (`v2/`)
+
+| Página | Archivo | Estado |
+|---|---|---|
+| Inicio | `v2/index.html` | Listo |
+| Servicios | `v2/servicios.html` | Listo: hero con 4 anclas, 4 bloques `servicio`, CTA a la calculadora |
+| Precios | `v2/precios.html` | Listo: planes, comparativa, condiciones, FAQ de pagos. Contenido de cada plan en borrador |
+| Nosotros | `v2/nosotros.html` | Listo: concepto con bloque `adaptate`, misión, equipo (iniciales mientras no haya fotos) |
+
+Los botones oscuros (`.btn-dark`) y lima (`.btn-cta`) son todos píldora con círculo de flecha.
+
 ## Qué sale del sitio actual
 
 El detalle sección por sección está en [`maps/redistribucion.svg`](maps/redistribucion.svg).

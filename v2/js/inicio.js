@@ -1,11 +1,13 @@
-/* iguana.ec v2 · Inicio: nav, carrusel de logos, cifras, carrusel de servicios, lista expandible y calculadora */
+/* iguana.ec v2 · Todas las páginas: nav, carrusel de logos, cifras, carrusel de servicios, lista expandible y calculadora */
 (function () {
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   /* ---------- Nav: sólida al hacer scroll, menú de servicios y hoja móvil ---------- */
   var nav = document.getElementById('nav');
   var hero = document.getElementById('hero');
+  var always = nav.hasAttribute('data-solid'); // páginas internas: sin foto debajo
   function onScroll() {
+    if (always) { nav.classList.add('is-solid'); return; }
     var limit = hero ? hero.offsetTop + hero.offsetHeight - 120 : 200;
     nav.classList.toggle('is-solid', window.scrollY > limit);
   }
@@ -62,9 +64,9 @@
   /* ---------- Beneficios: hover muestra foto flotante, clic expande ---------- */
   var list = document.getElementById('ben-list');
   var float = document.getElementById('ben-float');
-  var floatImg = float.querySelector('img');
+  var floatImg = float && float.querySelector('img');
   var section = document.getElementById('beneficios');
-  var bens = Array.prototype.slice.call(list.querySelectorAll('.ben'));
+  var bens = list && float ? Array.prototype.slice.call(list.querySelectorAll('.ben')) : [];
 
   bens.forEach(function (li) {
     var btn = li.querySelector('.ben__row');

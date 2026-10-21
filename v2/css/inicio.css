@@ -79,10 +79,17 @@ main > .tools { margin-top: clamp(40px, 6vw, 64px); }
 .btn-cta--lg { min-height: 56px; padding-left: 26px; font-size: var(--ig-text-md); }
 .btn-cta--lg .btn-cta__arrow { width: 44px; height: 44px; }
 .btn-cta--block { width: 100%; }
-/* Botón oscuro: píldora + cuadrito con flecha (referencia Uthao) */
-.btn-dark { display: inline-flex; align-items: center; min-height: 48px; padding-left: 22px; border-radius: 14px; background: var(--ink-panel); color: #fff; text-decoration: none; font: var(--ig-weight-semibold) var(--ig-text-base)/1 var(--ig-font-sans); }
-.btn-dark__arrow { display: grid; place-items: center; width: 48px; height: 48px; margin-left: 16px; border-radius: 14px; background: var(--ink-panel); box-shadow: -4px 0 0 var(--page); color: #fff; --ig-icon-tint: transparent; transition: transform var(--ig-dur-base) var(--ig-ease-spring), background var(--ig-dur-fast) var(--ig-ease-out), color var(--ig-dur-fast) var(--ig-ease-out); }
-.btn-dark:hover .btn-dark__arrow { background: var(--ig-green-400); color: var(--ig-gray-900); transform: rotate(45deg); }
+/* Botón oscuro: píldora con círculo de flecha (mismo lenguaje que .btn-cta) */
+.btn-dark {
+  display: inline-flex; align-items: center; justify-content: space-between; gap: 14px; min-height: 48px; padding: 0 6px 0 22px;
+  border-radius: var(--ig-radius-pill); background: var(--ink-panel); color: #fff; text-decoration: none; white-space: nowrap;
+  font: var(--ig-weight-bold) var(--ig-text-base)/1 var(--ig-font-sans);
+  transition: transform var(--ig-dur-fast) var(--ig-ease-out), box-shadow var(--ig-dur-fast) var(--ig-ease-out);
+}
+.btn-dark:hover { transform: translateY(-2px); box-shadow: 0 12px 28px rgba(20, 24, 18, .28); }
+.btn-dark:active { transform: scale(.97); }
+.btn-dark__arrow { display: grid; place-items: center; width: 36px; height: 36px; border-radius: 50%; background: var(--ig-green-400); color: var(--ig-gray-900); --ig-icon-tint: transparent; transition: transform var(--ig-dur-base) var(--ig-ease-spring); }
+.btn-dark:hover .btn-dark__arrow { transform: rotate(45deg); }
 .btn-glass {
   display: inline-flex; align-items: center; min-height: 56px; padding: 0 24px; border-radius: var(--ig-radius-pill);
   color: #fff; text-decoration: none; font: var(--ig-weight-semibold) var(--ig-text-md)/1 var(--ig-font-sans);
@@ -393,7 +400,6 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 .cta__word { position: absolute; z-index: -1; left: 50%; top: 50%; transform: translate(-50%, -56%); margin: 0; font: 700 clamp(120px, 24vw, 380px)/1 var(--ig-font-sans); letter-spacing: -.06em; color: var(--ig-green-400); white-space: nowrap; pointer-events: none; user-select: none; }
 .cta__copy { display: grid; justify-items: center; gap: 24px; text-align: center; }
 .cta__copy h2 { max-width: 14ch; font-size: clamp(32px, 4.8vw, 64px); font-weight: var(--ig-weight-bold); letter-spacing: var(--ig-tracking-display); line-height: 1.02; color: var(--ig-gray-950); text-wrap: balance; }
-.cta__copy .btn-dark__arrow { box-shadow: -4px 0 0 var(--card); }
 
 /* ---------- FOOTER ---------- */
 .footer { margin-top: var(--sec-gap); padding-block: 56px calc(28px + env(safe-area-inset-bottom, 0px)); background: var(--ink-panel); color: rgba(255, 255, 255, .78); border-radius: var(--ig-radius-xl) var(--ig-radius-xl) 0 0; }
@@ -462,11 +468,7 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
   .hero h1 { max-width: none; font-size: clamp(31px, 9.2vw, 42px); }
   .hero__ctas { display: grid; grid-template-columns: minmax(0, 1fr); width: 100%; gap: 10px; }
   .hero__ctas .btn-cta { justify-content: space-between; }
-  .hero__ctas /* Botón oscuro: píldora + cuadrito con flecha (referencia Uthao) */
-.btn-dark { display: inline-flex; align-items: center; min-height: 48px; padding-left: 22px; border-radius: 14px; background: var(--ink-panel); color: #fff; text-decoration: none; font: var(--ig-weight-semibold) var(--ig-text-base)/1 var(--ig-font-sans); }
-.btn-dark__arrow { display: grid; place-items: center; width: 48px; height: 48px; margin-left: 16px; border-radius: 14px; background: var(--ink-panel); box-shadow: -4px 0 0 var(--page); color: #fff; --ig-icon-tint: transparent; transition: transform var(--ig-dur-base) var(--ig-ease-spring), background var(--ig-dur-fast) var(--ig-ease-out), color var(--ig-dur-fast) var(--ig-ease-out); }
-.btn-dark:hover .btn-dark__arrow { background: var(--ig-green-400); color: var(--ig-gray-900); transform: rotate(45deg); }
-.btn-glass { justify-content: center; min-height: 48px; }
+  .hero__ctas .btn-glass { justify-content: center; min-height: 48px; }
   .btn-cta--lg { min-height: 52px; font-size: var(--ig-text-base); }
   .btn-cta--lg .btn-cta__arrow { width: 40px; height: 40px; }
   .tools { gap: 14px; }
